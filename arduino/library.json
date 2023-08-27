@@ -1,0 +1,20 @@
+{
+    "name": "ENGR 100-980",
+    "version": "1.0.0",
+    "keywords": "Arduino,library",
+    "description": "UMich ENGR 100-980 Library",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/engin100/980.git"
+    },
+    "authors": [
+        {
+            "name": "Eric Andrechek",
+            "email": "ericandrechek@gmail.com",
+            "url": "https://github.com/engin100/980/arduino",
+            "maintainer": true
+        }
+    ],
+    "frameworks": "arduino",
+    "platforms": "*"
+  }

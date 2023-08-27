@@ -1,5 +1,6 @@
 ---
 layout: spec
+latex: true
 ---
 
 # Engineering 100 Section 980 Homepage
