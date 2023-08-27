@@ -1,0 +1,4 @@
+---
+layout: spec
+latex: true
+---
