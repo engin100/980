@@ -10,3 +10,8 @@ kramdown:
 readme_index:
     remove_originals: true
     with_frontmatter: true
+
+title: Engineering 100-980
+description: "Homepage of UMich ENGR 100-980: Rocket Science"
+primerSpec:
+    sitemap: true

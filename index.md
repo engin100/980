@@ -17,4 +17,19 @@ View the syllabus [here](/syllabus)
 
 The labs will be made publicly visible as they are released in the week leading up to lab. You can find them linked here:
 
-1. [Lab 1: Arduinos and LEDs](/labs/lab-1)
+1. [Lab 1: Arduino 101](/labs/lab-1)
+2. [Lab 2: Integration + Plots](/labs/)
+3. [Lab 3: Reading Sensors](/labs/)
+4. [Lab 4: Writing Data](/labs/)
+5. [Lab 5: Acceleration Data](/labs/)
+6. [Lab 6: CAD Intro](/labs/)
+7. [Lab 7: Altium](/labs/)
+
+## Supplemental Resources
+
+Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more.
+Check them out [here](/resources).
+
+## Tutorials
+
+View all walk-through tutorials on how to install, use, and debug resources we are using [here](/tutorials).
