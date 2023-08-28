@@ -93,7 +93,7 @@ TBD||
 
 |                                                                   |                             |                                                                                           |
 | ----------------------------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------- |
-| Prof. Aaron Ridley_Technical lead, attends labs_                  | <ridley@umich.edu>1416 CSRB | Office Hours: Mon & Tue  3:00-4:30 PM                                                     |
+| Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu>1416 CSRB | Office Hours: Mon & Tue  3:00-4:30 PM                                                     |
 | Dr. Alan Hogg_Communication Instructor - lead__Discussion leader_ | <alanhogg@umich.edu>307 GFL | Office Hours: Tu 1:30-2:30 PM & W 3-4 PM or by appointment                                |
 | Dr. Walter Merryman *Communication Instructor__Discussion leader* | <wmerryma@umich.edu>310 GFL | Office Hours: Tue/Thurs[Schedule and sign-up](https://calendly.com/wmerryma/office-hours) |
 | Jakob Gorisek-Gazze_IA_                                           | <jgorisek@umich.edu>        | Office Hours:  TBDLab: Tues 981 (1:30 - 3:30)                                             |
