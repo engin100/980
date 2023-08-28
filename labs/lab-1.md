@@ -71,7 +71,7 @@ Your lab instructors will demonstrate using a breadboard before the lab begins. 
 1. Build the LED circuit shown in the schematic below. When built, it should look similar to the voltage divider circuit in Fig. 3, except one of the resistors will now be an LED. Be aware that LEDs only turn on when placed in your circuit in the correct orientation. Try switching the orientation of your LED if it doesn't turn on after completing step 2.
 
     <div class="primer-spec-callout info" markdown="1">
-        **Hint:** one leg is longer than the other! Check the [references](/references) page for more...
+    **Hint:** one leg is longer than the other! Check the [references](/references) page for more...
     </div>
 
     ![LED Circuit to build](/media/lab1-led-circuit.png){: .invert-colors-in-dark-mode }
@@ -82,7 +82,7 @@ Your lab instructors will demonstrate using a breadboard before the lab begins. 
 4. Make sure the correct board is connected under the "Tools" menu. The board should be "Arduino Nano". You might have to change the selected port if the IDE is failing to find the board.
 
 <div class="primer-spec-callout warning" markdown="1">
-    Do not continue to the next section unless you can see your Arduino Nano and its port in your Arduino IDE, and there are LED(s) on its board that are lit up.
+Do not continue to the next section unless you can see your Arduino Nano and its port in your Arduino IDE, and there are LED(s) on its board that are lit up.
 </div>
 
 ### 2. LED Blink
@@ -91,9 +91,10 @@ Your lab instructors will demonstrate using a breadboard before the lab begins. 
 2. Now, let's try making an external LED blink instead of the built-in one. To do this, connect your LED and resistor circuit's positive side to one of the digital pins on the Arduino. Make sure you modify the code such that `#define LED_PIN 5` replaces "5" with the pin number you are plugged into. For example, D7 would replace "5" with "7".
 3. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
 4. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
-   <div class="primer-spec-callout info" markdown="1">
-        **Note:** If you are having trouble finding a partner, you do not need to swap with someone, simply having someone else change your board without you watching will suffice.
-    </div>
+
+<div class="primer-spec-callout info" markdown="1">
+**Note:** If you are having trouble finding a partner, you do not need to swap with someone, simply having someone else change your board without you watching will suffice.
+</div>
 
 ### 3. Voltage Divider
 
@@ -102,7 +103,7 @@ Consider a voltage divider shown below. The output voltage is related to the inp
 $$ V_{out} = \frac{R_2}{R_1 + R_2} V_{in} $$
 
 <div class="primer-spec-callout info" markdown="1">
-    **Note:** The order of the resistors here matters a great deal, getting them confused will lead you to the wrong value.
+**Note:** The order of the resistors here matters a great deal, getting them confused will lead you to the wrong value.
 </div>
 
 ![Simple voltage divider schematic](../media/voltage-divider-simple.png){: .invert-colors-in-dark-mode }
@@ -131,5 +132,5 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE.**
 
 <div class="primer-spec-callout danger" markdown="1">
-    Submitting anything other than a single PDF may result in your work not being graded or your scores being heavily delayed.
+Submitting anything other than a single PDF may result in your work not being graded or your scores being heavily delayed.
 </div>
