@@ -3,7 +3,7 @@ layout: spec
 latex: true
 ---
 
-# Engineering 100 Section 980 Homepage
+# Engineering 100-980 Homepage
 
 Welcome to Engineering 100-980! Over the course of the next semester, you will be learning how to solder, program Arduino micro-controllers, design circuit boards, create 3D CAD files, and launch rockets!
 

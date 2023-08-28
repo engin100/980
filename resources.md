@@ -16,6 +16,7 @@ A collection of useful cheat-sheets and diagrams you may find yourself referring
   - [Voltage Divider](#voltage-divider)
   - [LED Diode vs Cathode](#led-diode-vs-cathode)
   - [Basic Circuitry Formulas](#basic-circuitry-formulas)
+  - [Resistor Color Codes](#resistor-color-codes)
 
 ## Arduino Nano Pinout
 
@@ -50,3 +51,7 @@ Voltage (V in Volts) = Current (I in Amps) * Resistance (R in Ohms)
 Power (Watts) = Voltage (Volts) * Current (Amps)
 
 Similarly, Watt-hours = Volts * Amp-hours
+
+## Resistor Color Codes
+
+![Resistor color code chart](https://eepower.com/uploads/education/resistor_color_codes_chart.png)
