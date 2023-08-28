@@ -82,7 +82,7 @@ After running the Arduino IDE, either click the library manager on the left (loo
 
 ![Library manager](media/library-manager.png)
 
-In the bar that says "Filter your search..." type "ENGR 100-980" and press <kbd>Enter</kbd>.
+In the bar that says "Filter your search..." type "ENGR100-980" and press <kbd>Enter</kbd>.
 
 TODO: show library to install once accepted.
 
