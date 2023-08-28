@@ -37,11 +37,11 @@ Here is contact information for all the course staff. If you have a question tha
 | ---------- | -------- | ------------ |
 | Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu><br>1416 CSRB | During All Labs |
 | Dr. Alan Hogg <br> Communication Instructor - lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom) |Tue/Thu 1:30 - 2:30 PM |
-| Dr. Evan Radeen <br> Communication Instructor - lead | eradeen@umich.edu <br> XXX GFL| TBD <br> or by appointment|
+| Dr. Evan Radeen <br> Communication Instructor - lead | eradeen@umich.edu <br> zoom! | Mon 10-11 AM <br> Fri 11 AM - 12 noon|
 | Eric Andrechek <br> IA| ericandr@umich.edu <br>1210 CSRB | Mon 12:30 - 2:30 PM|
 | Hannah Barnard <br> IA| hbarnard@umich.edu <br> 1210 CSRB | Tue 4 - 6 PM|
 | Yichen Wang <br> IA| yicmwang@umich.edu <br>1210 CSRB | Tue 10 AM - 12 noon |
-| Jack Woods <br> IA| jfwoods@umich.edu <br> 1210 CSRB | TBD |
+| Jack Woods <br> IA| jfwoods@umich.edu <br> 1210 CSRB | Tue 2 - 3 PM <br> Thu 4:30 - 5:30 PM |
 | Ben Miller <br> IA| benjamen@umich.edu <br> 1210 CSRB | Mon 2:30 - 4:30 PM |
 
 ### Office Hours
