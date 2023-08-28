@@ -3,8 +3,6 @@ layout: spec
 latex: true
 ---
 
-***NOTE: THE BELOW SYLLABUS IS OUTDATED AND PURELY A PLACEHOLDER. We will clean up the markdown of the final syllabus.***
-
 # Engineering 100-980 “Rocket Science” Fall 2023
 
 ## Course Overview
@@ -15,7 +13,7 @@ In this section of ENGR100, we will focus on Rocket Science - learning about orb
 
 Engineering 100 is a team-based, project-based course. It is intended to provide you with an introduction to the disciplines of engineering and technical communication, and an opportunity to develop your engineering “tool kit” within the context of an authentic project with a team and managers who are looking for reviews and updates.
 
-The learning objectives for Engineering 100 are described in the docs/engr100.md document.
+[The learning objectives for Engineering 100 are described in this document.](docs/engr100.md).
 
 ### Course Structure
 
@@ -37,14 +35,14 @@ Here is contact information for all the course staff. If you have a question tha
 
 | Instructor | Contact  | Office Hours |
 | ---------- | -------- | ------------ |
-| Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu><br>1416 CSRB | TBD |
-| Dr. Alan Hogg <br> Communication Instructor - lead | <alanhogg@umich.edu> <br> 307 GFL |TBD or or by appointment                                |
+| Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu><br>1416 CSRB | During All Labs |
+| Dr. Alan Hogg <br> Communication Instructor - lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom) |Tue/Thu 1:30 - 2:30 PM |
 | Dr. Evan Radeen <br> Communication Instructor - lead | eradeen@umich.edu <br> XXX GFL| TBD <br> or by appointment|
-| Eric Andrechek <br> IA| ericandr@umich.edu | TBD|
+| Eric Andrechek <br> IA| ericandr@umich.edu | Mon 12:30 - 2:30 PM|
 | Hannah Barnard <br> IA| hbarnard@umich.edu| TBD|
-| Yichen Wang <br> IA| yicmwang@umich.edu| TBD |
+| Yichen Wang <br> IA| yicmwang@umich.edu| Tue 10 AM - 12 noon |
 | Jack Woods <br> IA| jfwoods@umich.edu| TBD |
-| Ben Miller <br> IA| benjamen@umich.edu | TBD |
+| Ben Miller <br> IA| benjamen@umich.edu | Mon 2:30 - 4:30 PM |
 
 ### Office Hours
 
@@ -150,7 +148,7 @@ In general, the grading is close to 50/50 technical and tech comm and 50/50 indi
 |     70.0 > x ≥ 68.0     |        D+        |
 |     68.0 > x ≥ 63.0     |        D       |
 |     63.0 > x ≥ 60.0     |        D-       |
-|   60.0 > x-----------  |        E       |
+|     60.0 > x            |        E       |
 
 ### Late Submission Policy
 
@@ -178,16 +176,12 @@ If you do not have a diagnosed disability but believe that we could make pedagog
 
 The University of Michigan is committed to student learning and the development of the whole student in a diverse and multicultural campus community. We seek to engender a diverse community that is accessible, safe, and inclusive. We value a community that appreciates and learns from our similarities and differences. We pledge our commitment to support the success of all community members. If you experience anything, directly or indirectly, that goes against this commitment, please talk to any instructor, GSI, or IA -  anyone that you feel comfortable talking to. We want to know! We try hard not to knowingly do or say something that will cause harm or stress to you. Many of us are constantly going to workshops and reading papers about how to have the most inclusive classroom that we can have. But we are human and sometimes we mess up! If we do, we sincerely hope you will come talk to one of us so that we can see things from your point of view, and we can learn how to improve our class for the next semester.
 
-## For Physical and Mental Health
+### For Physical and Mental Health
 
 Please see our [separate document on health](docs/health.md).
 
 TL;DR: Reach out if you need help.
 
-
-## The Myth of Multitasking with Technology
-
-Please see the docs/multitasking.md document. TL;DR: Come to lecture, lab, and discussion to learn, not to use social media and watch videos.
 
 ## General Observations and Advice
 
@@ -199,6 +193,14 @@ We have taught Engr 100 for a *long time* now. Here are some tips that will help
 - Back up your work! If you have your own computer, make use of your U-M disk space, Google Drive, DropBox, etc. for backups. We highly recommend using an automated backup system for these cloud services.
 - Taking a professional approach to your studies is extremely important. Treat your studies like a job. When you are given a major assignment, generate a first draft as soon as possible. Share this draft with your instructors and IA for maximum benefit.
 - Make use of your prep work! If you get your prep work done before discussion and lab, you will be in an excellent position to interact in class. This practice will also save time in taking notes because you will know what is covered in other documents.
+
+### The Myth of Multitasking with Technology
+
+Please see the [multitasking document](docs/multitasking.md).
+
+TL;DR: Come to lecture, lab, and discussion to learn, not to use social media and watch videos.
+
+
 
 ## Rules and Policies
 
