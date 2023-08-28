@@ -5,7 +5,7 @@ latex: true
 
 ***NOTE: THE BELOW SYLLABUS IS OUTDATED AND PURELY A PLACEHOLDER. We will clean up the markdown of the final syllabus.***
 
-# Engineering 100-980 “Rocket Science” Fall 2022
+# Engineering 100-980 “Rocket Science” Fall 2023
 
 ## Course Overview
 
@@ -13,13 +13,13 @@ In this section of ENGR100, we will focus on Rocket Science - learning about orb
 
 ## Course Objectives
 
-Engineering 100 is a team-based, project-based course.  It is intended to provide you with an introduction to the disciplines of engineering and technical communication, and an opportunity to develop your engineering “tool kit” within the context of an authentic project with a team and managers who are looking for reviews and updates. The learning objectives for all sections of E100 are provided in the following table:
+Engineering 100 is a team-based, project-based course. It is intended to provide you with an introduction to the disciplines of engineering and technical communication, and an opportunity to develop your engineering “tool kit” within the context of an authentic project with a team and managers who are looking for reviews and updates. The learning objectives for all sections of E100 are provided in the following:
 
 *In Engineering 100, you will practice thinking, communicating, and acting like an engineer. In this course, you will build your professional skills and develop your own engineering “toolkit”  as you work to solve engineering problems. By the end of this class, you will be able to:*- **Employ the Engineering Design Process:** develop innovative solutions to an open-ended design project, by: defining a complex problem and breaking it down into manageable pieces; evaluating stakeholder impact; identifying and utilizing appropriate tools and resources; learning and applying relevant technical content; ideating, iterating, and refining solution paths; and testing and evaluating solutions.
 
 - **Communicate Effectively as an Engineer:** identify and articulate your message, your purpose for writing/speaking, and your audience’s needs; create deliverables that balance your purpose and message with your audience’s needs; and organize deliverables using best practices for informative and persuasive communication
 - **Collaborate in Diverse Teams:** collaboratively identify, analyze, and address complex problems; create an inclusive team environment where all team members feel heard and valued; apply best practices for effective teamwork (e.g. mutual accountability; task distribution for learning; working, writing, and listening effectively in a diverse team environment).
-- **Understand and Practice Professional Engineering Values:** describe how you and others bring unique experiences to an engineering problem; explain how your experiences can contribute to and impact a diverse and inclusive community; consider environmental, local, global, economic, and societal impact of engineering solutions in your design process; apply ethical decision making; identify and execute standard engineering practices/competencies; act professionally. |
+- **Understand and Practice Professional Engineering Values:** describe how you and others bring unique experiences to an engineering problem; explain how your experiences can contribute to and impact a diverse and inclusive community; consider environmental, local, global, economic, and societal impact of engineering solutions in your design process; apply ethical decision making; identify and execute standard engineering practices/competencies; act professionally.
 
 ## Course Structure
 
@@ -27,27 +27,69 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 
 **Locations and Times**
 
-**Lecture (980): MW 1:30-3:00, 1130 LBME**
+**Lecture (980): TuTh 3:00-4:30, 1017 DOW**
 
-Lab (981): Tu 1:30-3:30, 2230 CSRB
+Lab (981): W 3:30-5:30, 1225 CSRB
+Discussion (982): W 2:30-3:30, 1008 EECS
 
-Discussion (982): Tu 12:30-1:30, 104 EWRE
+Lab (983): Th 12:30-2:30, 1225 CSRB
+Discussion (984): W 12:30-1:30, 1018 DOW
 
-Lab (983): Tu 4:30-6:30, 2230 CSRB
+Lab (985): W 12:30-2:30, 1225 CSRB
+Discussion (986): W 11:30-12:30, 1018 DOW
 
-Discussion (984): Tu 3:30-4:30, 2238 CSRB
-
-Lab (985): W 11:30-1:30, G610 IOE
-
-Discussion (986): W 10:30-11:30, 4440 EECS
-
-Lab (987): M 4:30-6:30, 4440 EECS
-
-Discussion (988): M 3:30-4:30, 4440 EECS
 
 ## Instructor Information
 
 Here is contact information for all the course staff. If you have a question that might be relevant to others, **please use the course Slack workspace first** (either in the #general channel or direct message, see [Email Policy](https://docs.google.com/document/u/1/d/e/2PACX-1vQa6Gp4kuvSjpsSFilGEghIfq5EmZpL8GRDead6Zxbv7l8D0Jl_EthJM0wGnNm40A2ZYkP4utesM8c5/pub#h.h6ih342gf5hz) below). Otherwise, please do email us with any questions or concerns that you have about class. We’re very happy to set up one-on-one meetings.
+
+
+#|
+||Instructor|
+Contact|
+Office Hours||
+||Prof. Aaron Ridley
+Technical lead |
+ridley@umich.edu
+1416 CSRB|
+Working on it||
+||Dr. Alan Hogg
+Communication Instructor - lead
+Discussion leader|
+alanhogg@umich.edu
+307 GFL|
+Tu/Th 1:30-2:30 PM
+or by appointment||
+||Dr. Evan Radeen
+Communication Instructor - lead
+Discussion leader|
+eradeen@umich.edu
+XXX GFL|
+TBD
+or by appointment||
+||Eric Andrechek
+IA|
+ericandr@umich.edu|
+TBD||
+||Hannah Barnard
+IA|
+hbarnard@umich.edu|
+TBD||
+||Yichen Wang
+IA|
+yicmwang@umich.edu|
+TBD||
+||Jack Woods
+IA|
+jfwoods@umich.edu|
+TBD||
+||Ben Miller
+IA|
+benjamen@umich.edu|
+TBD||
+|#
+
+
 
 |                                                                   |                             |                                                                                           |
 | ----------------------------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------- |
