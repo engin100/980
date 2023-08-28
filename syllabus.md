@@ -36,9 +36,8 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 
 ## Instructor Information
 
-Here is contact information for all the course staff. If you have a question that might be relevant to others, **please use the course Slack workspace first** (either in the #general channel or direct message, see [Email Policy](https://docs.google.com/document/u/1/d/e/2PACX-1vQa6Gp4kuvSjpsSFilGEghIfq5EmZpL8GRDead6Zxbv7l8D0Jl_EthJM0wGnNm40A2ZYkP4utesM8c5/pub#h.h6ih342gf5hz) below). Otherwise, please do email us with any questions or concerns that you have about class. We’re very happy to set up one-on-one meetings.
+Here is contact information for all the course staff. If you have a question that might be relevant to others, **please use the course Slack workspace first**. Otherwise, please do email us with any questions or concerns that you have about class. We’re very happy to set up one-on-one meetings.
 
-| ---------- | -------- | ------------ |
 | Instructor | Contact  | Office Hours |
 | ---------- | -------- | ------------ |
 | Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu><br>1416 CSRB | TBD |
@@ -49,13 +48,14 @@ Here is contact information for all the course staff. If you have a question tha
 | Yichen Wang <br> IA| yicmwang@umich.edu| TBD |
 | Jack Woods <br> IA| jfwoods@umich.edu| TBD |
 | Ben Miller <br> IA| benjamen@umich.edu | TBD |
-| ---------- | -------- | ------------ |
 
 ## Office Hours (In-person, Zoom, or Slack)
 
-Office hours are a chance to get to know the course staff, to get clarification on concepts presented in class, and get encouragement on homework and labs. Extensive office hours will be held throughout the semester. In person office hours are posted above. We will also be available for virtual office hours via Zoom and asynchronous Q\&A office hours via Slack.
+Office hours are a chance to get to know the course staff, to get clarification on concepts presented in class, and get encouragement on homework and labs. Extensive office hours will be held throughout the semester. In person office hours are posted above.
 
-**For an up-to-date listing of office hours, always refer to the week’s agenda on Canvas.** Staff schedules may occasionally change, so please check the week’s office hours in advance. In general, we will try to make sure there are many options to meet with course faculty, and we hope you’ll take advantage of this option! Please talk with us -- we want to talk with you. All office hours will be linked on the weekly agendas on Canvas. All instructors are willing to make appointments by email or Slack direct messaging (DM).
+**For an up-to-date listing of office hours, always refer to the week’s agenda on Canvas.**
+[https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20]
+(There is a google calendar available here.)
 
 ## Canvas & Course Resources
 
