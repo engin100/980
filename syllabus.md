@@ -11,17 +11,15 @@ latex: true
 
 In this section of ENGR100, we will focus on Rocket Science - learning about orbital mechanics, different types of rocket engines, and the basics of interplanetary travel. We will learn how to solve Newton's Laws on a computer and how large simulation software works. Labs will build on each other to provide a foundation for the team project, which will focus on asteroid mitigation.
 
-## Course Objectives
+### Course Objectives
 
 Engineering 100 is a team-based, project-based course. It is intended to provide you with an introduction to the disciplines of engineering and technical communication, and an opportunity to develop your engineering “tool kit” within the context of an authentic project with a team and managers who are looking for reviews and updates.
 
 The learning objectives for Engineering 100 are described in the docs/engr100.md document.
 
-## Course Structure
+### Course Structure
 
 You enrolled in a course with lectures, a discussion, and a lab. Your discussion and lab together make up a three-hour block on Monday, Tuesday, or Wednesday, and attendance during this time is critical to course success. Your teams will be assigned from within the \~20 students of your discussion/lab section. Teams will complete some of their work during these slots, though you will likely also need to arrange some time on your own.
-
-**Locations and Times**
 
 | Class | Time | Location |
 | ----- | ---- | -------- |
@@ -32,9 +30,8 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 | Discussion (984) | W 12:30-1:30 | 1018 DOW |
 | Lab (985) | W 12:30-2:30 | 1225 CSRB |
 | Discussion (986) | W 11:30-12:30 | 1018 DOW |
-| ----- | ---- | -------- |
 
-## Instructor Information
+### Instructor Information
 
 Here is contact information for all the course staff. If you have a question that might be relevant to others, **please use the course Slack workspace first**. Otherwise, please do email us with any questions or concerns that you have about class. We’re very happy to set up one-on-one meetings.
 
@@ -49,7 +46,7 @@ Here is contact information for all the course staff. If you have a question tha
 | Jack Woods <br> IA| jfwoods@umich.edu| TBD |
 | Ben Miller <br> IA| benjamen@umich.edu | TBD |
 
-## Office Hours (In-person, Zoom, or Slack)
+### Office Hours
 
 Office hours are a chance to get to know the course staff, to get clarification on concepts presented in class, and get encouragement on homework and labs. Extensive office hours will be held throughout the semester. In person office hours are posted above.
 
@@ -123,7 +120,7 @@ Please note the following guidelines about submitting your assignments:
 
 - We provide feedback on your returned assignments. Make sure you read it!
 
-## Grading
+### Grading
 
 A breakdown of the grading for this class is shown in the table below:
 
@@ -155,7 +152,7 @@ In general, the grading is close to 50/50 technical and tech comm and 50/50 indi
 |     63.0 > x ≥ 60.0     |        D-       |
 |   60.0 > x-----------  |        E       |
 
-## Late Submission Policy
+### Late Submission Policy
 
 Late assignments will be docked 10% per day for up to 10 days, with the exception of survey assignments and assignments that are due at the end of the semester.
 
@@ -177,18 +174,20 @@ The University of Michigan is committed to providing equal opportunity for parti
 
 If you do not have a diagnosed disability but believe that we could make pedagogical accommodations that would increase your ability to learn in this course, please come talk to us. We are very happy to make any reasonable arrangements that will help ensure your success!
 
-## Diversity, Equity, and Inclusion
+### Diversity, Equity, and Inclusion
 
 The University of Michigan is committed to student learning and the development of the whole student in a diverse and multicultural campus community. We seek to engender a diverse community that is accessible, safe, and inclusive. We value a community that appreciates and learns from our similarities and differences. We pledge our commitment to support the success of all community members. If you experience anything, directly or indirectly, that goes against this commitment, please talk to any instructor, GSI, or IA -  anyone that you feel comfortable talking to. We want to know! We try hard not to knowingly do or say something that will cause harm or stress to you. Many of us are constantly going to workshops and reading papers about how to have the most inclusive classroom that we can have. But we are human and sometimes we mess up! If we do, we sincerely hope you will come talk to one of us so that we can see things from your point of view, and we can learn how to improve our class for the next semester.
+
+## For Physical and Mental Health
+
+Please see our [separate document on health](docs/health.md).
+
+TL;DR: Reach out if you need help.
 
 
 ## The Myth of Multitasking with Technology
 
 Please see the docs/multitasking.md document. TL;DR: Come to lecture, lab, and discussion to learn, not to use social media and watch videos.
-
-## For Physical and Mental Health
-
-Please see the docs/health.md document. TL;DR: Reach out if you need help.
 
 ## General Observations and Advice
 
