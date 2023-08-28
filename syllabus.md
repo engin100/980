@@ -23,22 +23,22 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 
 **Locations and Times**
 
-**Lecture (980): TuTh 3:00-4:30, 1017 DOW**
-
-Lab (981): W 3:30-5:30, 1225 CSRB
-Discussion (982): W 2:30-3:30, 1008 EECS
-
-Lab (983): Th 12:30-2:30, 1225 CSRB
-Discussion (984): W 12:30-1:30, 1018 DOW
-
-Lab (985): W 12:30-2:30, 1225 CSRB
-Discussion (986): W 11:30-12:30, 1018 DOW
-
+| Class | Time | Location |
+| ----- | ---- | -------- |
+| **Lecture (980)** | TuTh 3:00-4:30 | 1017 DOW |
+| Lab (981) | W 3:30-5:30 | 1225 CSRB |
+| Discussion (982) | W 2:30-3:30 | 1008 EECS |
+| Lab (983) | Th 12:30-2:30 | 1225 CSRB |
+| Discussion (984) | W 12:30-1:30 | 1018 DOW |
+| Lab (985) | W 12:30-2:30 | 1225 CSRB |
+| Discussion (986) | W 11:30-12:30 | 1018 DOW |
+| ----- | ---- | -------- |
 
 ## Instructor Information
 
 Here is contact information for all the course staff. If you have a question that might be relevant to others, **please use the course Slack workspace first** (either in the #general channel or direct message, see [Email Policy](https://docs.google.com/document/u/1/d/e/2PACX-1vQa6Gp4kuvSjpsSFilGEghIfq5EmZpL8GRDead6Zxbv7l8D0Jl_EthJM0wGnNm40A2ZYkP4utesM8c5/pub#h.h6ih342gf5hz) below). Otherwise, please do email us with any questions or concerns that you have about class. We’re very happy to set up one-on-one meetings.
 
+| ---------- | -------- | ------------ |
 | Instructor | Contact  | Office Hours |
 | ---------- | -------- | ------------ |
 | Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu><br>1416 CSRB | TBD |
@@ -49,6 +49,7 @@ Here is contact information for all the course staff. If you have a question tha
 | Yichen Wang <br> IA| yicmwang@umich.edu| TBD |
 | Jack Woods <br> IA| jfwoods@umich.edu| TBD |
 | Ben Miller <br> IA| benjamen@umich.edu | TBD |
+| ---------- | -------- | ------------ |
 
 ## Office Hours (In-person, Zoom, or Slack)
 
