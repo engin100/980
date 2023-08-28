@@ -43,64 +43,16 @@ Discussion (986): W 11:30-12:30, 1018 DOW
 
 Here is contact information for all the course staff. If you have a question that might be relevant to others, **please use the course Slack workspace first** (either in the #general channel or direct message, see [Email Policy](https://docs.google.com/document/u/1/d/e/2PACX-1vQa6Gp4kuvSjpsSFilGEghIfq5EmZpL8GRDead6Zxbv7l8D0Jl_EthJM0wGnNm40A2ZYkP4utesM8c5/pub#h.h6ih342gf5hz) below). Otherwise, please do email us with any questions or concerns that you have about class. We’re very happy to set up one-on-one meetings.
 
-
-#|
-||Instructor|
-Contact|
-Office Hours||
-||Prof. Aaron Ridley
-Technical lead |
-ridley@umich.edu
-1416 CSRB|
-Working on it||
-||Dr. Alan Hogg
-Communication Instructor - lead
-Discussion leader|
-alanhogg@umich.edu
-307 GFL|
-Tu/Th 1:30-2:30 PM
-or by appointment||
-||Dr. Evan Radeen
-Communication Instructor - lead
-Discussion leader|
-eradeen@umich.edu
-XXX GFL|
-TBD
-or by appointment||
-||Eric Andrechek
-IA|
-ericandr@umich.edu|
-TBD||
-||Hannah Barnard
-IA|
-hbarnard@umich.edu|
-TBD||
-||Yichen Wang
-IA|
-yicmwang@umich.edu|
-TBD||
-||Jack Woods
-IA|
-jfwoods@umich.edu|
-TBD||
-||Ben Miller
-IA|
-benjamen@umich.edu|
-TBD||
-|#
-
-
-
-|                                                                   |                             |                                                                                           |
-| ----------------------------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------------------- |
-| Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu>1416 CSRB | Office Hours: Mon & Tue  3:00-4:30 PM                                                     |
-| Dr. Alan Hogg_Communication Instructor - lead__Discussion leader_ | <alanhogg@umich.edu>307 GFL | Office Hours: Tu 1:30-2:30 PM & W 3-4 PM or by appointment                                |
-| Dr. Walter Merryman *Communication Instructor__Discussion leader* | <wmerryma@umich.edu>310 GFL | Office Hours: Tue/Thurs[Schedule and sign-up](https://calendly.com/wmerryma/office-hours) |
-| Jakob Gorisek-Gazze_IA_                                           | <jgorisek@umich.edu>        | Office Hours:  TBDLab: Tues 981 (1:30 - 3:30)                                             |
-| Lara Tobias-Tarsh_IA_                                             | <laratt@umich.edu>          | Office Hours: TBDLab: Tues (4:30 - 6:30)                                                  |
-| Eric Andrechek_IA_                                                | <ericandr@umich.edu>        | Office Hours: TBDLab: Monday & Tuesday (1:30-3:30)                                        |
-| Rachelle Winterberger_IA_                                         | <wintrac@umich.edu>         | Office Hours: TBDLab: Monday (4:30-6:30)                                                  |
-| Yichen Wang_IA_                                                   | <yicmwang@umich.edu>        | Office Hours: TBDLab: Tuesday (4:30 - 6:30)                                               |
+| Instructor | Contact  | Office Hours |
+| ---------- | -------- | ------------ |
+| Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu><br>1416 CSRB | TBD |
+| Dr. Alan Hogg <br> Communication Instructor - lead | <alanhogg@umich.edu> <br> 307 GFL |TBD or or by appointment                                |
+| Dr. Evan Radeen <br> Communication Instructor - lead | eradeen@umich.edu <br> XXX GFL| TBD <br> or by appointment|
+| Eric Andrechek <br> IA| ericandr@umich.edu | TBD|
+| Hannah Barnard <br> IA| hbarnard@umich.edu| TBD|
+| Yichen Wang <br> IA| yicmwang@umich.edu| TBD |
+| Jack Woods <br> IA| jfwoods@umich.edu| TBD |
+| Ben Miller <br> IA| benjamen@umich.edu | TBD |
 
 ## Office Hours (In-person, Zoom, or Slack)
 
