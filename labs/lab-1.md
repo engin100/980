@@ -34,7 +34,7 @@ For this lab, you will need:
 
 ## Introduction
 
-Welcome to ENGR100-950! Over the course of the next semester, you will be designing and building your own circuit board, complete with measurement instruments to gather information on all sorts of atmospheric data. To get to that point, we will spend the first couple labs learning about various components and eventually how to combine them into a cohesive system.
+Welcome to ENGR100-950! Over the course of the next semester, you will be designing and building your own circuit board, complete with measurement instruments to gather information on acceleration and pressure (altitude!) data. To get to that point, we will spend the first several labs learning about various components and eventually how to combine them into a cohesive system.
 
 In lecture, you've had a crash course on the ins and outs of micro-controllers. Now, you'll be working with your own **Arduino Nano** micro-controller so you can begin to learn how to use it. The Nano will be the brain of your payload; it is very well-suited to these sorts of applications, as you will see.
 
@@ -62,24 +62,30 @@ Before actually launching into the building of circuits, it's important to under
 
 The pins of the electronic devices go into the holes in the breadboard. These holes are related to each other in that every row of 5, as defined on the board, are electrically connected. This means that if, for instance, you connect a 5V battery to a given hole, all of the holes in that row are raised to 5V. The Arduino Nano will supply 5V, so if you supply a given hole with 5V, all of the holes in that row will have 5V.
 
+[Here is a helpful video on breadboards](https://www.youtube.com/watch?v=fq6U5Y14oM4)
+
 Circuit elements are connected in breadboards by connecting the input pins of one device to the same row as the output pins of another device. In this way, devices can be chained together to create complex circuits. An example is shown below. This circuit is called a voltage divider, and consists of two resistors connected end to end. A formal circuit diagram of a voltage divider is shown later in this manual, and in [resources](\resources#voltage-divider).
 
 ![Voltage divider on a breadboard](../media/voltage-divider-breadboard.png)
 
 Your lab instructors will demonstrate using a breadboard before the lab begins. If you have questions about whether or not you are connecting devices appropriately, please don't hesitate to ask.
 
-1. Build the LED circuit shown in the schematic below. When built, it should look similar to the voltage divider circuit in Fig. 3, except one of the resistors will now be an LED. Be aware that LEDs only turn on when placed in your circuit in the correct orientation. Try switching the orientation of your LED if it doesn't turn on after completing step 2.
+1. [Check out the first half of this video.](https://www.youtube.com/watch?v=QM6EY0VEqBA)  This shows how to connect an LED to the 5V output pin of the Arduino, a resistor, and then to ground.  This circuit will work without any Arduino code at all and is a good test for the circuit board and powering the Arduino!  This is the circuit you will build in step 2.
 
+2. Build the LED circuit shown in the schematic below. When built, it should look similar to the voltage divider circuit in Fig. 3, except one of the resistors will now be an LED. Be aware that LEDs only turn on when placed in your circuit in the correct orientation. Try switching the orientation of your LED if it doesn't turn on after completing step 2.
     <div class="primer-spec-callout info" markdown="1">
     **Hint:** one leg is longer than the other! Check the [references](/references) page for more...
     </div>
-
     ![LED Circuit to build](/media/lab1-led-circuit.png){: .invert-colors-in-dark-mode }
-2. Turn on the Arduino by plugging in the mini USB cord into the device and the USB into the computer. Note that an LED built into the micro-controller should begin glowing. The LED you connected to the Arduino should also begin to glow if your circuit is correct.
-3. To run any code on the Arduino, you will need to set your environment. Open up the Arduino IDE on your computer. We will need to add a library to access the starter code for our class. To setup your Arduino IDE and required library, follow the instructions in [tutorials](/tutorials).
+    Note: Vin refers to the 5V pin on the Arduino for now.  We will move this in **2.3** below.
+
+3. Turn on the Arduino by plugging in the mini USB cord into the device and the USB into the computer. Note that an LED built into the micro-controller should begin glowing. The LED you connected to the Arduino should also begin to glow if your circuit is correct.
+
+4. To run any code on the Arduino, you will need to set your environment. Open up the Arduino IDE on your computer. We will need to add a library to access the starter code for our class. To setup your Arduino IDE and required library, follow the instructions in [tutorials](/tutorials).
 
    *[IDE]: Integrated Development Environment
-4. Make sure the correct board is connected under the "Tools" menu. The board should be "Arduino Nano". You might have to change the selected port if the IDE is failing to find the board.
+
+5. Make sure the correct board is connected under the "Tools" menu. The board should be "Arduino Nano". You might have to change the selected port if the IDE is failing to find the board.
 
 <div class="primer-spec-callout warning" markdown="1">
 Do not continue to the next section unless you can see your Arduino Nano and its port in your Arduino IDE, and there are LED(s) on its board that are lit up.
@@ -87,10 +93,11 @@ Do not continue to the next section unless you can see your Arduino Nano and its
 
 ### 2. LED Blink
 
-1. Let's run our first code. Navigate to File → Examples → ENGR100-980 → Lab1-LED. A new window should open up, with some code on it. (Make sure to set the proper micro-controller and processor under the Tools menu). Upload and run the code, and observe what happens.
-2. Now, let's try making an external LED blink instead of the built-in one. To do this, connect your LED and resistor circuit's positive side to one of the digital pins on the Arduino. Make sure you modify the code such that `#define LED_PIN 5` replaces "5" with the pin number you are plugged into. For example, D7 would replace "5" with "7".
-3. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
-4. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
+1. [Check out this video that walks you through how to do this part.](https://www.youtube.com/watch?v=vD98tOiiRws)
+2. Let's run our first code. Navigate to File → Examples → ENGR100-980 → Lab1-LED. A new window should open up, with some code on it. (Make sure to set the proper micro-controller and processor under the Tools menu). Upload and run the code, and observe what happens.
+3. Now, let's try making an external LED blink instead of the built-in one. To do this, connect your LED and resistor circuit's positive side to one of the digital pins on the Arduino. Make sure you modify the code such that `#define LED_PIN 5` replaces "5" with the pin number you are plugged into. For example, D7 would replace "5" with "7".
+4. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
+5. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
 
 <div class="primer-spec-callout info" markdown="1">
 **Note:** If you are having trouble finding a partner, you do not need to swap with someone, simply having someone else change your board without you watching will suffice.
@@ -110,9 +117,24 @@ $$ V_{out} = \frac{R_2}{R_1 + R_2} V_{in} $$
 
 The concept of the voltage divider can be extended to any number of resistors. The output voltage at each node is simply the total resistance below that node divided by the total resistance of the circuit. As you might have guessed from the formula, when resistances are placed in-series like so, their resistances add. Make sure you understand the concept, you'll need it for future labs.
 
-1. Disassemble any circuits you have from the previous parts of the lab. Plug a wire directly from the 5V line of the Arduino into A2 of the Arduino. Go to File → Examples → ENGR100-980 → "Lab1-Voltage-Divider" to open the starter code for this section.Here we will use the `analogRead()` function to read in the voltage.To send the data back from the Arduino to your computer our sample codes uses `Serial`. First it specifies `Serial.begin(9600)` to initiate communications between the Arduino and your computer. The "9600" specifies the baud rate, and lets the Arduino know how fast to send data to the computer. Then, to actually transmit data, we use `Serial.print(dataHere)`. The variable `dataHere` can be data of many types, including integers, doubles, and character arrays. To see the data sent from the Arduino to the computer, open the Serial monitor inside of the Arduino IDE. This can be done by clicking the magnifying glass in the top, left-hand corner of the IDE. At the bottom of the Serial monitor, make sure the baud rate is set at 9600 to match the Arduino. Record the value returned by `analogRead()`, as you’ll need it later.
-2. Build a voltage divider by setting $$V_{in}$$ as the 5V line of the Arduino, have $$R_1$$ be 2k$$\Omega$$ and $$R_2$$ be 2k$$\Omega$$. Plug $$V_{out}$$ into A1 of the Arduino. Resistance is denoted by a band color code, which you should get used to reading. Check the chart in [resources](/resources#resistor-color-codes) for info and data on how to read resistances of resistors using their colors. Our code uses the `analogRead()` function to read in the voltage and record the raw number that the function returns. Try playing with various resistor values, and take down the values from two more combinations of resistors. Make sure to write down the resistor combinations as well as the analog output for both of your additional experiments.
-3. Come up with a combination of resistors that will result in an output voltage of less than 1.25V. You can convert the raw output from `analogRead()` into voltage values by multiplying by 5/1023. You will learn why in lab 3! Try it and see if it works.
+1. Disassemble any circuits you have from the previous parts of the lab.
+
+2. Plug a wire directly from the 5V line of the Arduino to the A2 pin of the Arduino.
+
+3. Go to File → Examples → ENGR100-980 → "Lab1-Voltage-Divider" to open the starter code for this section.
+  - Here we will use the `analogRead()` function to read in the voltage.
+  - To send the data back from the Arduino to your computer our sample codes uses `Serial`. First it specifies `Serial.begin(9600)` to initiate communications between the Arduino and your computer. The "9600" specifies the baud rate, and lets the Arduino know how fast to send data to the computer. Then, to actually transmit data, we use `Serial.print(dataHere)`. The variable `dataHere` can be data of many types, including integers, doubles, and character arrays.
+4. To see the data sent from the Arduino to the computer, open the Serial monitor inside of the Arduino IDE. This can be done by clicking the magnifying glass in the top, left-hand corner of the IDE.
+  - At the bottom of the Serial monitor, make sure the baud rate is set at 9600 to match the Arduino.
+  - Record the value returned by `analogRead()`, as you’ll need it later.
+5. Build a voltage divider by setting $$V_{in}$$ as the 5V line of the Arduino, have $$R_1$$ be 2k$$\Omega$$ and $$R_2$$ be 2k$$\Omega$$.
+  - Plug $$V_{out}$$ into A1 of the Arduino.
+  - Resistance is denoted by a band color code, which you should get used to reading. Check the chart in [resources](/resources#resistor-color-codes) for info and data on how to read resistances of resistors using their colors.
+  - Our code uses the `analogRead()` function to read in the voltage and record the raw number that the function returns.
+6. Try playing with various resistor values, and take down the values from two more combinations of resistors. Make sure to write down the resistor combinations as well as the analog output for both of your additional experiments.
+7. Come up with a combination of resistors that will result in an output voltage of less than 1.25V.
+  - You can convert the raw output from `analogRead()` into voltage values by multiplying by 5/1023.
+  - You will learn why in lab 3! Try it and see if it works.
 
 ## Post-Lab Questions
 
