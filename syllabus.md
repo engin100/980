@@ -38,11 +38,11 @@ Here is contact information for all the course staff. If you have a question tha
 | Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu><br>1416 CSRB | During All Labs |
 | Dr. Alan Hogg <br> Communication Instructor - lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom) |Tue/Thu 1:30 - 2:30 PM |
 | Dr. Evan Radeen <br> Communication Instructor - lead | eradeen@umich.edu <br> XXX GFL| TBD <br> or by appointment|
-| Eric Andrechek <br> IA| ericandr@umich.edu | Mon 12:30 - 2:30 PM|
-| Hannah Barnard <br> IA| hbarnard@umich.edu| TBD|
-| Yichen Wang <br> IA| yicmwang@umich.edu| Tue 10 AM - 12 noon |
-| Jack Woods <br> IA| jfwoods@umich.edu| TBD |
-| Ben Miller <br> IA| benjamen@umich.edu | Mon 2:30 - 4:30 PM |
+| Eric Andrechek <br> IA| ericandr@umich.edu <br>1210 CSRB | Mon 12:30 - 2:30 PM|
+| Hannah Barnard <br> IA| hbarnard@umich.edu <br> 1210 CSRB | Tue 4 - 6 PM|
+| Yichen Wang <br> IA| yicmwang@umich.edu <br>1210 CSRB | Tue 10 AM - 12 noon |
+| Jack Woods <br> IA| jfwoods@umich.edu <br> 1210 CSRB | TBD |
+| Ben Miller <br> IA| benjamen@umich.edu <br> 1210 CSRB | Mon 2:30 - 4:30 PM |
 
 ### Office Hours
 
@@ -80,12 +80,14 @@ We have organized all the assignments in this course into several different type
 
 There are several types of assignments that you will complete as part of this course:
 
-- **Pre-lab work** -- done on your own with no collaboration
-- **Individual assignments** -- done on your own with no collaboration
-- **In-discussion and in-lab activities**-- done with a group (initially, with a random group and later with a project group) with significant collaboration
-- **Group assignments** -- done with your project group with significant collaboration required
+- **Individual assignments** - done on your own with no collaboration
+- **Peer Reviews** - done on your own with no collaboration
+- **In-Class, In-discussion, and In-lab activities** - done with significant collaboration. Turn in your own work, though.
+- **Group assignments** -- done with your project group with significant collaboration required. One assignment turned in for the entire group.
 
 These assignment types are described in more detail in the next sections.  
+
+### Exams
 
 **There will not be any exams.**
 
@@ -93,30 +95,32 @@ These assignment types are described in more detail in the next sections.  
 
 Please note the following guidelines about submitting your assignments:
 
-- All assignments are due by 11:59 pm on the day due unless otherwise specified in the schedule or in class.
+- Please turn all assignments in on time.
 
-- All homework assignments will be submitted via Canvas unless otherwise specified.
+- All homework assignments must be submitted via Canvas.
 
 - Each assignment will be listed individually in Canvas > Assignments.
 
-- You can arrange the Assignments either by due date or by “folder” (meaning the assignment type). Choose whichever option makes the most sense to you!
-
-- If you choose to arrange your assignments by type, make sure you scroll down to find all the assignments, including Tandem and the Prelabs.
-
-- Make sure you get your work in on time!
-
-- **ALL assignments that require a submission must be submitted in .pdf form with the exception of links to video submissions.** Assignments submitted in any other form will not be graded (Canvas won’t let you submit anything else).
+- **Pay attention to the format of the required submission (PDF, video, screenshot, etc.)** Canvas won’t let you submit anything else!
 
 - Your assignment submissions must be named in a clear and professional manner.
 
   - Example: Ridley\_Aaron\_IndividualDesignProposal.pdf or Team04\_TeamAwesome\_PDRPresentation.pdf
-  - This helps us a great deal when grading.  Points will be deducted for not naming things properly, since it is extremely inconvenient to have 20 documents called “lab2.pdf”.
+  - This helps us a great deal when grading. **Points will be deducted for not naming things properly, since it is extremely inconvenient to have 20 documents called “lab2.pdf”.**
 
 - It is YOUR responsibility to make sure that you upload the correct assignment and version to the proper place in Canvas > Assignments. We will grade whatever is (or is NOT) there when the assignment closes.
 
 - Graded assignments will be returned to you via Canvas > Assignments.
 
 - We provide feedback on your returned assignments. Make sure you read it!
+
+### Late Submission Policy
+
+Late assignments will be docked 10% per day for up to 10 days. There are exceptions.  No late assignments are allowed for:
+- PDR, Go/No-Go, Final Poster, Final Report
+- Team Surveys
+Late assignment exceptions will be made for:
+- Students register for classes late for assignments due in the month of September. 
 
 ### Grading
 
@@ -149,10 +153,6 @@ In general, the grading is close to 50/50 technical and tech comm and 50/50 indi
 |     68.0 > x ≥ 63.0     |        D       |
 |     63.0 > x ≥ 60.0     |        D-       |
 |     60.0 > x            |        E       |
-
-### Late Submission Policy
-
-Late assignments will be docked 10% per day for up to 10 days, with the exception of survey assignments and assignments that are due at the end of the semester.
 
 ### Professionalism and Missed Meetings or Deadlines
 
