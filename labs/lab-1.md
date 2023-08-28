@@ -64,7 +64,7 @@ The pins of the electronic devices go into the holes in the breadboard. These ho
 
 Circuit elements are connected in breadboards by connecting the input pins of one device to the same row as the output pins of another device. In this way, devices can be chained together to create complex circuits. An example is shown below. This circuit is called a voltage divider, and consists of two resistors connected end to end. A formal circuit diagram of a voltage divider is shown later in this manual, and in [resources](\resources#voltage-divider).
 
-![Voltage divider on a breadboard](../media/voltage-divider-breadboard.png){: .invert-colors-in-dark-mode }
+![Voltage divider on a breadboard](../media/voltage-divider-breadboard.png)
 
 Your lab instructors will demonstrate using a breadboard before the lab begins. If you have questions about whether or not you are connecting devices appropriately, please don't hesitate to ask.
 
@@ -74,7 +74,7 @@ Your lab instructors will demonstrate using a breadboard before the lab begins. 
         **Hint:** one leg is longer than the other! Check the [references](/references) page for more...
     </div>
 
-    ![LED Circuit to build](/media/lab1-led-circuit.png)
+    ![LED Circuit to build](/media/lab1-led-circuit.png){: .invert-colors-in-dark-mode }
 2. Turn on the Arduino by plugging in the mini USB cord into the device and the USB into the computer. Note that an LED built into the micro-controller should begin glowing. The LED you connected to the Arduino should also begin to glow if your circuit is correct.
 3. To run any code on the Arduino, you will need to set your environment. Open up the Arduino IDE on your computer. We will need to add a library to access the starter code for our class. To setup your Arduino IDE and required library, follow the instructions in [tutorials](/tutorials).
 
@@ -82,8 +82,8 @@ Your lab instructors will demonstrate using a breadboard before the lab begins. 
 4. Make sure the correct board is connected under the "Tools" menu. The board should be "Arduino Nano". You might have to change the selected port if the IDE is failing to find the board.
 
 <div class="primer-spec-callout warning" markdown="1">
-        Do not continue to the next section unless you can see your Arduino Nano and its port in your Arduino IDE, and there are LED(s) on its board that are lit up.
-    </div>
+    Do not continue to the next section unless you can see your Arduino Nano and its port in your Arduino IDE, and there are LED(s) on its board that are lit up.
+</div>
 
 ### 2. LED Blink
 
