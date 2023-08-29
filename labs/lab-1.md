@@ -127,7 +127,7 @@ The concept of the voltage divider can be extended to any number of resistors. T
 4. To see the data sent from the Arduino to the computer, open the Serial monitor inside of the Arduino IDE. This can be done by clicking the magnifying glass in the top, left-hand corner of the IDE.
   - At the bottom of the Serial monitor, make sure the baud rate is set at 9600 to match the Arduino.
   - Record the value returned by `analogRead()`, as you’ll need it later.
-5. Build a voltage divider by setting $$V_{in}$$ as the 5V line of the Arduino, have $$R_1$$ be 2k$$\Omega$$ and $$R_2$$ be 2k$$\Omega$$.
+5. Build a voltage divider by setting $$V_{in}$$ as the 5V line of the Arduino, have $$R_1$$ be 1k$$\Omega$$ and $$R_2$$ be 1k$$\Omega$$.
   5a. Plug $$V_{out}$$ into A1 of the Arduino.
   5b. Resistance is denoted by a band color code, which you should get used to reading. Check the chart in [resources](/resources#resistor-color-codes) for info and data on how to read resistances of resistors using their colors.
   - Our code uses the `analogRead()` function to read in the voltage and record the raw number that the function returns.
@@ -141,7 +141,10 @@ The concept of the voltage divider can be extended to any number of resistors. T
 1. Write a short blurb explaining what your peer changed on your breadboard and why you think this would cause it to not work as normal (or, why you think their change would not have impacted anything).
 2. What combination of resistors did you use to get to less than 1.25V at the analog pin in step 3.7? Draw them in a circuit and upload/attach a picture of this circuit to make it clear where you put the resistors.
 3. Using three resistors in series, draw a voltage divider circuit with two $$V_{out}$$s (one between resistors 1 and 2 and one between resistors 2 and 3). $$V_{out1}$$ should be equal to $$\frac{2}{3} V_{in}$$ and $$V_{out2}$$ should be equal to $$\frac{1}{3} V_{in}$$. Give possible values those resistors could take. What would happen if we doubled the value of all of the resistors?
-  - Hint: Resistors in series add together.  So, if you have three resistors that are each 100$$\Omega$$, and measured the voltage between the first and second resistors, the voltage divider circuit would have 100$$\Omega$$ on one side and 200$$\Omega$$ on the other side.
+
+<div class="primer-spec-callout info" markdown="1">
+Hint: Resistors in series add together.  So, if you have three resistors that are each 100$$\Omega$$, and measured the voltage between the first and second resistors, the voltage divider circuit would have 100$$\Omega$$ on one side and 200$$\Omega$$ on the other side.
+</div>
 
 ## Submission
 

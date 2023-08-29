@@ -1,7 +1,7 @@
 /*
   ReadAnalogVoltage
 
-  Reads an analog input on pin 2, converts it to voltage, and prints the result to the Serial Monitor.
+  Reads an analog input on pin 1, converts it to voltage, and prints the result to the Serial Monitor.
   Graphical representation is available using Serial Plotter (Tools > Serial Plotter menu).
 
   This example code is in the public domain.
@@ -17,8 +17,8 @@ void setup() {
 
 // the loop routine runs over and over again forever:
 void loop() {
-  // read the input on analog pin 2:
-  int sensorValue = analogRead(A2);
+  // read the input on analog pin 1:
+  int sensorValue = analogRead(A1);
   // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 5V):
   float voltage = sensorValue * (5.0 / 1023.0);
   // print out the value you read:
