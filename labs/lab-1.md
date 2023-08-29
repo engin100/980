@@ -128,11 +128,11 @@ The concept of the voltage divider can be extended to any number of resistors. T
   - At the bottom of the Serial monitor, make sure the baud rate is set at 9600 to match the Arduino.
   - Record the value returned by `analogRead()`, as you’ll need it later.
 5. Build a voltage divider by setting $$V_{in}$$ as the 5V line of the Arduino, have $$R_1$$ be 1k$$\Omega$$ and $$R_2$$ be 1k$$\Omega$$.
-  5a. Plug $$V_{out}$$ into A1 of the Arduino.
-  5b. Resistance is denoted by a band color code, which you should get used to reading. Check the chart in [resources](/resources#resistor-color-codes) for info and data on how to read resistances of resistors using their colors.
+  - Plug $$V_{out}$$ into A1 of the Arduino.
+  - Resistance is denoted by a band color code, which you should get used to reading. Check the chart in [resources](/resources#resistor-color-codes) for info and data on how to read resistances of resistors using their colors.
   - Our code uses the `analogRead()` function to read in the voltage and record the raw number that the function returns.
-6. Try playing with various resistor values, and take down the values from two more combinations of resistors. Make sure to write down the resistor combinations as well as the analog output for both of your additional experiments.
-7. Come up with a combination of resistors that will result in an output voltage of less than 1.25V.
+1. Try playing with various resistor values, and take down the values from two more combinations of resistors. Make sure to write down the resistor combinations as well as the analog output for both of your additional experiments.
+2. Come up with a combination of resistors that will result in an output voltage of less than 1.25V.
   - You can convert the raw output from `analogRead()` into voltage values by multiplying by 5/1023.
   - You will learn why in lab 3! Try it and see if it works.
 
