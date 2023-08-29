@@ -17,6 +17,7 @@ latex: true
     - [3. Voltage Divider](#3-voltage-divider)
   - [Post-Lab Questions](#post-lab-questions)
   - [Submission](#submission)
+  - [Post-Lab Extra Assignment](#post-lab-extra-assignment)
 
 ## Materials
 
@@ -25,11 +26,9 @@ For this lab, you will need:
 - [ ] 1 Arduino Nano
 - [ ] 1 Breadboard
 - [ ] 1 Programming Cable (and adapters if necessary)
-- [ ] 9 LEDs
-- [ ] 3 1k$$\Omega$$ resistors
-- [ ] 3 2k$$\Omega$$ resistors
-- [ ] 3 7.5k$$\Omega$$ resistors
-- [ ] 3 10k$$\Omega$$ resistors
+- [ ] 6 LEDs
+- [ ] 2 1k$$\Omega$$ resistors
+- [ ] A hand-full of jumper wires (it is possible to do the whole lab without any)
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
 ## Introduction
@@ -96,8 +95,9 @@ Do not continue to the next section unless you can see your Arduino Nano and its
 1. [Check out this video that walks you through how to do this part.](https://www.youtube.com/watch?v=vD98tOiiRws)
 2. Let's run our first code. Navigate to File → Examples → ENGR100-980 → Lab1-LED. A new window should open up, with some code on it. (Make sure to set the proper micro-controller and processor under the Tools menu). Upload and run the code, and observe what happens.
 3. Now, let's try making an external LED blink instead of the built-in one. To do this, connect your LED and resistor circuit's positive side to one of the digital pins on the Arduino. Make sure you modify the code such that `#define LED_PIN 5` replaces "5" with the pin number you are plugged into. For example, D7 would replace "5" with "7".
-4. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
-5. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
+4. Once this works, we are going to connect 5 more LEDs all to different pins. Your goal here is to take your new knowledge about breadboards to connect all 6 of your LEDs to your breadboard while using only 1 resistor. (Each LED still needs to be connected through a resistor though!) Configure the code to label these LEDs as you did for the previous step. If everything has set up in order, you should now see the lights turning on and off in a wave sort of order.
+5. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
+6. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
 
 <div class="primer-spec-callout info" markdown="1">
 **Note:** If you are having trouble finding a partner, you do not need to swap with someone, simply having someone else change your board without you watching will suffice.
