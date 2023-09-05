@@ -11,13 +11,13 @@ As we publish labs, they will become available here.
 
 Learning how to program and wire an Arduino micro-controller to control LEDs on a breadboard.
 
-[Link to lab](/labs/lab-1)
+[Link to lab 1](/labs/lab-1)
 
 ## Lab 2: Integration + Plots
 
 Learning how to become an Excel (or Google Sheets) wiz to manipulate and integrate data, and make beautiful and practical plots.
 
-:soon: Unpublished
+[Link to lab 2](/labs/lab-2)
 
 ## Lab 3: Reading Sensors
 
