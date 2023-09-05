@@ -119,7 +119,7 @@ The concept of the voltage divider can be extended to any number of resistors. T
 
 1. Disassemble any circuits you have from the previous parts of the lab.
 
-2. Plug a wire directly from the 5V line of the Arduino to the A2 pin of the Arduino.
+2. Plug a wire directly from the 5V line of the Arduino to the A1 pin of the Arduino.
 
 3. Go to File → Examples → ENGR100-980 → "Lab1-Voltage-Divider" to open the starter code for this section.
   - Here we will use the `analogRead()` function to read in the voltage.

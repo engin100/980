@@ -140,6 +140,8 @@ When your Arduino is plugged in, you don't need to compile/verify, the upload bu
 
 If your code is failing to upload to your Arduino, try the troubleshooting steps listed above, as well as trying to press and hold the reset button on the Arduino for a period of time and continue holding it while plugging it into the computer. Sometimes this can help an Arduino that is stuck executing code forever to take a break to accept your new code.
 
+Additionally, if uploading is failing, try changing to a different bootloader. This is under tools, and you can try switching between the old and new bootloaders.
+
 ### Viewing Arduino Output
 
 Arduinos have 2 main ways of interfacing and displaying data on your computer. These are through the Serial Monitor, and the Serial Plotter. Both are accessible via the buttons in the top right-hand corner of the Arduino IDE.

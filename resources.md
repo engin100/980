@@ -14,7 +14,7 @@ A collection of useful cheat-sheets and diagrams you may find yourself referring
   - [Arduino Nano Pinout](#arduino-nano-pinout)
   - [Arduino Nano Tech-Specs](#arduino-nano-tech-specs)
   - [Voltage Divider](#voltage-divider)
-  - [LED Diode vs Cathode](#led-diode-vs-cathode)
+  - [LED Anode vs Cathode](#led-anode-vs-cathode)
   - [Basic Circuitry Formulas](#basic-circuitry-formulas)
   - [Resistor Color Codes](#resistor-color-codes)
 
@@ -40,7 +40,7 @@ For more detailed specs, see [the Arduino Nano website](https://docs.arduino.cc/
 
 ![Voltage divider schematic](media/voltage-divider.png)
 
-## LED Diode vs Cathode
+## LED Anode vs Cathode
 
 ![LED pinout diagram](media/LED-pinout-anode-cathode.png)
 
