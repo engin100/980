@@ -3,11 +3,8 @@ layout: spec
 latex: true
 ---
 
-# Lab 1: Iterative Numerical Analysis in a Computer
+# Lab 2: Iterative Numerical Analysis in a Computer
 
-## Contents
-
--
 ## Materials
 
 For this lab, you will need
@@ -26,12 +23,12 @@ One of the assumptions of basic kinematic equations is that acceleration is cons
 
 We are not in a position for that yet, so we will simplify things to get started! Let's look at some of the simple kinematic equations and explore solving a system of equations. The basic variables in kinematic equations are:
 
-###Kinematic Equations
+### Kinematic Equations
 
 - **Time (t):** the time of the system (units: s). Often, we have variables that are labeled with a zero (0), which means “initial”, or the value at the start. So, **t<sub>0</sub>** is the initial time, while "**t**" is the current time. The difference in time between the start and current time can be thought of as delta time, or **&Delta;t**.
-- **Position (x): where the object is (units: m). The initial position is **x<sub>0</sub>**, while the change in position is **&Delta;t**.
-- **Velocity (v): how fast the object is moving, or the change in position over time (units: m/s). The initial velocity is **v<sub>o</sub>**, while the change in velocity is ****&Delta;v**.
-- Acceleration (a): the change in velocity over time (units: m/s<sup>2</sup>) Here we are going to assume that acceleration is constant.
+- **Position (x)**: where the object is (units: m). The initial position is **x<sub>0</sub>**, while the change in position is **&Delta;t**.
+- **Velocity (v)**: how fast the object is moving, or the change in position over time (units: m/s). The initial velocity is **v<sub>o</sub>**, while the change in velocity is **&Delta;v**.
+- **Acceleration (a)**: the change in velocity over time (units: m/s<sup>2</sup>) Here we are going to assume that acceleration is constant.
 
 These variables can be related through these kinematic equations:
 1. $$ \Delta t = t - t_0 $$
@@ -71,7 +68,7 @@ However, when we have curves with less defined shapes, it can be harder to find 
 
 For this method, we create bars of a width dx using the height of the curve on the left hand side of this box. For example, here we approximate the area under this curve $$y = sin(x) + 2$$ in the domain $$[0, 10]$$ with a $$dx$$ of 1.
 
-![Sine Bar and Line Graph](..media/lab02_sine_bar_and_line.png)
+![Sine Bar and Line Graph](media/sin_and_bar.png)
 
 You then can find the area of each box based on the width and height. When you add all the areas together, you have an approximation of the area under the curve.
 
