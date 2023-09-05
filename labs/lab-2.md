@@ -80,7 +80,8 @@ $$ A_N = dx \cdot yN$$.          (The area of the box is AN.)
 $$A = \sum_{N=1}^B A_N$$         Where A is the approximate area under the curve and B is the total 
 number of boxes created.
 
-Let’s play with this a bit for real. [There is a viewable spreadsheet here you can make a copy of](https://docs.google.com/spreadsheets/d/1xl7DczPknd83Nsr2LQn84r-fFm-Jviuj7_fKSWT7bS4/edit#gid=0):
+Let’s play with this a bit for real.
+<a href="https://docs.google.com/spreadsheets/d/1xl7DczPknd83Nsr2LQn84r-fFm-Jviuj7_fKSWT7bS4/edit#gid=0" target="_blank">There is a viewable spreadsheet here you can make a copy of</a>:
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQe7ig7Hy0ZXIOurjdu-nj-3fsAgQJhs9wC_-qtnadnWLVPsBRAcP46Pu0sXaqbQoVN3HGiqpE15Xao/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
