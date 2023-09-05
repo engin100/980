@@ -130,22 +130,27 @@ We’re going to apply this information to three types of common curves: a linea
 ### Linear Curve:
 
 $$y = x$$
+
 Domain: $$x =  [0, 20]$$
+
 Exact area under the curve: 200 square units
 
+### Polynomial:
 
-### Quadratic Curve:
+$$y = x^3 - 15x^2 + 71x - 105$$
 
-$$y = x2$$
 Domain: $$x = [0, 9]$$
-Exact area under the curve: 243 square units
 
+Exact area under the curve: -74.25 square units
 
 ### Logarithmic Curve:
 
 $$Y = ln(x)$$  (where ln is the natural logarithm)
+
 Note: the excel function for this is LN(#), where # is your chosen value.
+
 Domain: $$x = [1, 10]$$
+
 Exact area under the curve: 10ln(10) - 9 square units (use this expression for greater resolution in error calculations)
 
 ### Deliverables:
