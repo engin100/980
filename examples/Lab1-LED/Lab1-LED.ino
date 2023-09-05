@@ -27,6 +27,14 @@
 
 // Change this variable to the pin you plug your LED circuit into:
 #define LED_PIN 5
+// set these to the next pins in your circuit. Make sure that the physical order of the LEDs
+// on your board are in the order they are labelled here.
+
+#define LED_PIN_2 5
+#define LED_PIN_3 5
+#define LED_PIN_4 5
+#define LED_PIN_5 5
+#define LED_PIN_6 5
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -35,14 +43,50 @@ void setup() {
 
   // initialize digital pin LED_PIN as an output.
   pinMode(LED_PIN, OUTPUT);
+  pinMode(LED_PIN_2, OUTPUT);
+  pinMode(LED_PIN_3, OUTPUT);
+  pinMode(LED_PIN_4, OUTPUT);
+  pinMode(LED_PIN_5, OUTPUT);
+  pinMode(LED_PIN_6, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  digitalWrite(LED_PIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
+  
+  digitalWrite(LED_PIN, HIGH);
+  delay(100);
+  digitalWrite(LED_PIN_2, HIGH);
+  delay(100);
+  digitalWrite(LED_PIN_3, HIGH);
+  digitalWrite(LED_PIN, LOW);
+  delay(100);
+  digitalWrite(LED_PIN_4, HIGH);
+  digitalWrite(LED_PIN_2, LOW);
+  delay(100);
+  digitalWrite(LED_PIN_5, HIGH);
+  digitalWrite(LED_PIN_3, LOW);
+  delay(100);
+  digitalWrite(LED_PIN_6, HIGH);
+  digitalWrite(LED_PIN_4, LOW);
+  delay(100);
+  digitalWrite(LED_PIN_5, LOW);
   digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  digitalWrite(LED_PIN, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);                      // wait for a second
+  delay(100);
+  digitalWrite(LED_PIN_5, HIGH);
+  delay(100);
+  digitalWrite(LED_PIN_4, HIGH);
+  digitalWrite(LED_PIN_6, LOW);
+  delay(100);
+  digitalWrite(LED_PIN_3, HIGH);
+  digitalWrite(LED_PIN_5, LOW);
+  delay(100);
+  digitalWrite(LED_PIN_2, HIGH);
+  digitalWrite(LED_PIN_4, LOW);
+  delay(100);
+  digitalWrite(LED_PIN, HIGH);
+  digitalWrite(LED_PIN_3, LOW);
+  delay(100);
+  digitalWrite(LED_PIN_2, LOW);
+  delay(100);
 }

@@ -17,6 +17,7 @@ latex: true
     - [3. Voltage Divider](#3-voltage-divider)
   - [Post-Lab Questions](#post-lab-questions)
   - [Submission](#submission)
+  - [Post-Lab Extra Assignment](#post-lab-extra-assignment)
 
 ## Materials
 
@@ -25,11 +26,9 @@ For this lab, you will need:
 - [ ] 1 Arduino Nano
 - [ ] 1 Breadboard
 - [ ] 1 Programming Cable (and adapters if necessary)
-- [ ] 9 LEDs
-- [ ] 3 1k$$\Omega$$ resistors
-- [ ] 3 2k$$\Omega$$ resistors
-- [ ] 3 7.5k$$\Omega$$ resistors
-- [ ] 3 10k$$\Omega$$ resistors
+- [ ] 6 LEDs
+- [ ] 2 1k$$\Omega$$ resistors
+- [ ] A hand-full of jumper wires (it is possible to do the whole lab without any)
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
 ## Introduction
@@ -96,8 +95,9 @@ Do not continue to the next section unless you can see your Arduino Nano and its
 1. [Check out this video that walks you through how to do this part.](https://www.youtube.com/watch?v=vD98tOiiRws)
 2. Let's run our first code. Navigate to File → Examples → ENGR100-980 → Lab1-LED. A new window should open up, with some code on it. (Make sure to set the proper micro-controller and processor under the Tools menu). Upload and run the code, and observe what happens.
 3. Now, let's try making an external LED blink instead of the built-in one. To do this, connect your LED and resistor circuit's positive side to one of the digital pins on the Arduino. Make sure you modify the code such that `#define LED_PIN 5` replaces "5" with the pin number you are plugged into. For example, D7 would replace "5" with "7".
-4. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
-5. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
+4. Once this works, we are going to connect 5 more LEDs all to different pins. Your goal here is to take your new knowledge about breadboards to connect all 6 of your LEDs to your breadboard while using only 1 resistor. (Each LED still needs to be connected through a resistor though!) Configure the code to label these LEDs as you did for the previous step. If everything has set up in order, you should now see the lights turning on and off in a wave sort of order.
+5. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
+6. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
 
 <div class="primer-spec-callout info" markdown="1">
 **Note:** If you are having trouble finding a partner, you do not need to swap with someone, simply having someone else change your board without you watching will suffice.
@@ -127,12 +127,12 @@ The concept of the voltage divider can be extended to any number of resistors. T
 4. To see the data sent from the Arduino to the computer, open the Serial monitor inside of the Arduino IDE. This can be done by clicking the magnifying glass in the top, left-hand corner of the IDE.
   - At the bottom of the Serial monitor, make sure the baud rate is set at 9600 to match the Arduino.
   - Record the value returned by `analogRead()`, as you’ll need it later.
-5. Build a voltage divider by setting $$V_{in}$$ as the 5V line of the Arduino, have $$R_1$$ be 2k$$\Omega$$ and $$R_2$$ be 2k$$\Omega$$.
-  5a. Plug $$V_{out}$$ into A1 of the Arduino.
-  5b. Resistance is denoted by a band color code, which you should get used to reading. Check the chart in [resources](/resources#resistor-color-codes) for info and data on how to read resistances of resistors using their colors.
+5. Build a voltage divider by setting $$V_{in}$$ as the 5V line of the Arduino, have $$R_1$$ be 1k$$\Omega$$ and $$R_2$$ be 1k$$\Omega$$.
+  - Plug $$V_{out}$$ into A1 of the Arduino.
+  - Resistance is denoted by a band color code, which you should get used to reading. Check the chart in [resources](/resources#resistor-color-codes) for info and data on how to read resistances of resistors using their colors.
   - Our code uses the `analogRead()` function to read in the voltage and record the raw number that the function returns.
-6. Try playing with various resistor values, and take down the values from two more combinations of resistors. Make sure to write down the resistor combinations as well as the analog output for both of your additional experiments.
-7. Come up with a combination of resistors that will result in an output voltage of less than 1.25V.
+1. Try playing with various resistor values, and take down the values from two more combinations of resistors. Make sure to write down the resistor combinations as well as the analog output for both of your additional experiments.
+2. Come up with a combination of resistors that will result in an output voltage of less than 1.25V.
   - You can convert the raw output from `analogRead()` into voltage values by multiplying by 5/1023.
   - You will learn why in lab 3! Try it and see if it works.
 
@@ -141,7 +141,10 @@ The concept of the voltage divider can be extended to any number of resistors. T
 1. Write a short blurb explaining what your peer changed on your breadboard and why you think this would cause it to not work as normal (or, why you think their change would not have impacted anything).
 2. What combination of resistors did you use to get to less than 1.25V at the analog pin in step 3.7? Draw them in a circuit and upload/attach a picture of this circuit to make it clear where you put the resistors.
 3. Using three resistors in series, draw a voltage divider circuit with two $$V_{out}$$s (one between resistors 1 and 2 and one between resistors 2 and 3). $$V_{out1}$$ should be equal to $$\frac{2}{3} V_{in}$$ and $$V_{out2}$$ should be equal to $$\frac{1}{3} V_{in}$$. Give possible values those resistors could take. What would happen if we doubled the value of all of the resistors?
-  - Hint: Resistors in series add together.  So, if you have three resistors that are each 100$$\Omega$$, and measured the voltage between the first and second resistors, the voltage divider circuit would have 100$$\Omega$$ on one side and 200$$\Omega$$ on the other side.
+
+<div class="primer-spec-callout info" markdown="1">
+Hint: Resistors in series add together.  So, if you have three resistors that are each 100$$\Omega$$, and measured the voltage between the first and second resistors, the voltage divider circuit would have 100$$\Omega$$ on one side and 200$$\Omega$$ on the other side.
+</div>
 
 ## Submission
 

@@ -84,7 +84,7 @@ After running the Arduino IDE, either click the library manager on the left (loo
 
 In the bar that says "Filter your search..." type "ENGR100-980" and press <kbd>Enter</kbd>.
 
-TODO: show library to install once accepted.
+![Library download](media/library-screenshot.png)
 
 Click on the "Install" button on the library. If no errors pop-up, you are good to go!
 
@@ -96,7 +96,7 @@ For the majority of projects in our class, we will give you sample starter code 
 
 To access this starter code within the Arduino IDE, go to File>Examples>ENGR 100-980, and click on the desired starter code.
 
-TODO: add screenshots
+![Example selecting library starter code](media/library-example-selection.png)
 
 ### Saving Code
 

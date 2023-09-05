@@ -13,7 +13,7 @@ In this section of ENGR100, we will focus on Rocket Science - learning about orb
 
 Engineering 100 is a team-based, project-based course. It is intended to provide you with an introduction to the disciplines of engineering and technical communication, and an opportunity to develop your engineering “tool kit” within the context of an authentic project with a team and managers who are looking for reviews and updates.
 
-[The learning objectives for Engineering 100 are described in this document.](docs/engr100.md).
+[The learning objectives for Engineering 100 are described in this document.](docs/engr100.md)
 
 ### Course Structure
 
