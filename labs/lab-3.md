@@ -9,7 +9,7 @@ latex: true
 
 - [Lab 3: Reading Sensors](#lab-3-reading-sensors)
   - [Contents](#contents)
-  - [Material](#material)
+  - [Materials](#materials)
   - [Introduction](#introduction)
     - [How Analog to Digital Converters (ADCs) Work](#how-analog-to-digital-converters-adcs-work)
   - [Procedure](#procedure)
@@ -22,7 +22,7 @@ latex: true
   - [Post-Lab Questions](#post-lab-questions)
   - [Submission](#submission)
 
-## Material
+## Materials
 
 - [ ] 1 Arduino Nano
 - [ ] 1 Breadboard
@@ -47,11 +47,12 @@ Over the next few weeks, you will become very familiar with the sensors used in 
 
 ### How Analog to Digital Converters (ADCs) Work
 
-In the previous lab, you probably figured out the form of the relationship between the raw voltage and value returned by `analogRead()`. However, it's unlikely you got this relationship exactly right, as that requires a slightly deeper understanding of how they work at the physical level. We wanted you to simply begin to think about how it worked before. Now, we'll cover this subject more deeply than both the prior lab and videos did.
+In lab 1, you may have figured out the form of the relationship between the raw voltage and value returned by `analogRead()`. However, it's unlikely you got this relationship exactly right, as that requires a slightly deeper understanding of how they work at the physical level. We wanted you to simply begin to think about how it worked before. Now, we'll cover this subject more deeply than both the prior labs and videos did.
 
 To begin, we have to consider the differences between the real world and the digital world. The digital world is essentially finite, whereas the real world is essentially continuous (we are going to ignore quantum mechanics). This means that when converting from the real world to the digital world, there will be some loss of information. This is an important fact to consider when evaluating a sensor or other tool.
 
 The ADC we're using in class is no exception - the maximum resolution, or how finely the instrument can be read, is controlled by the number of bits in the ADC. The more bits an ADC has, the higher the resolution. The equation below lets you calculate an approximate resolution. $$V_{ref}$$ is the maximum voltage of the ADC and bits is the number of bits in the ADC.
+
 $$ Resolution = \frac{V_{ref}}{(2^{bits}-1)} $$
 
 Now, to turn the raw value returned by `analogRead()` into a voltage, you need to simply multiply it by the resolution of the ADC. This is shown by the formula below.
@@ -107,7 +108,7 @@ To build this two-point calibration curve, we need, as the name suggests, two po
 
 Now that you have filled out your basic table of indoor and outdoor temperature and voltages, plug these values into your spreadsheet to calculate your calibration curve.
 
-Your calibration curve for a TMP36 will be linear, unlike a curve for a thermistor as described in the introduction. This means your final calibrated equation will take the form of $$y=mx+b$$, where $$m$$ is the slope and $$b$$ is the y-intercept.
+Your calibration curve for a TMP36 will be linear, unlike a curve for a thermocouple as described in the introduction. This means your final calibrated equation will take the form of $$y=mx+b$$, where $$m$$ is the slope and $$b$$ is the y-intercept.
 
 The $$m$$ and $$b$$ values calculated from this step are what you will use in the next step.
 
@@ -123,7 +124,7 @@ Run your code again and look at the Serial monitor. You should now see values th
 
 ### 6. Field Trip Pt. 2
 
-Finally we are ready to record our temperatures as we go outside. Start by opening the Serial plotter:
+We are now finally ready to record our temperatures as we go outside. Start by opening the Serial plotter:
 
 ![Serial Plotter](https://docs.arduino.cc/static/007eb89dc4e226a14834d28da2b3f8b6/4ef49/serial-plotter-open.png)
 
@@ -135,8 +136,8 @@ While you have the Serial plotter open, walk outside and wait for your temperatu
 
 To get you thinking critically about how your 2-point calibration curve works, as well as more comfortable with using a spreadsheet, answer the following questions:
 
-1. If your Arduino read in a voltage of 0.4V, what temperature would that equate to on your calibration curve?
-2. What would the voltage (based on your own calibration curve) be if it output a temperature of 6 °C?
+1. If your Arduino read in a voltage of 0.4V, what temperature would that equate to on your calibration curve? (Show your work!)
+2. What would the voltage (based on your own calibration curve) be if it output a temperature of 6 °C? (Show work!)
 3. What **binary value** would your Arduino be reading in for a voltage of 0V? 2.5V? 5V? If you are stuck on this, try re-reading the section about [how analog to digital converters (ADCs) work](#how-analog-to-digital-converters-adcs-work) and try working backwards through the Arduino code. The `analogRead()` function is what actually returns the binary value, so if you know the voltage, could you re-arrange the equation given in the starter code to solve for the binary value?
 
 ## Submission
