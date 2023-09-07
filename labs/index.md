@@ -19,15 +19,15 @@ Learning how to become an Excel (or Google Sheets) wiz to manipulate and integra
 
 [Link to lab 2](/labs/lab-2)
 
-## Lab 3: Reading Sensors
+## Lab 3: Temperature Sensing
 
-Using our Arduino knowledge to read more data from multiple sensors all on one breadboard.
+Using our Arduino and circuitry knowledge to read data from a temperature sensor and plot it in real-time.
 
-:no_entry_sign: Unpublished
+[Link to lab 3](/labs/lab-3)
 
-## Lab 4: Writing Data
+## Lab 4: Creating a Standalone Arduino
 
-Saving Arduino sensor data to a microSD card to that we can use it later.
+Saving Arduino sensor data to a microSD card to that we can use it later, and powering an Arduino with a battery.
 
 :warning: This *may* come in handy when launching rockets...
 

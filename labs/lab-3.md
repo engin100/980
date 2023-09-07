@@ -3,11 +3,11 @@ layout: spec
 latex: true
 ---
 
-# Lab 3: Reading Sensors
+# Lab 3: Temperature Sensing
 
 ## Contents
 
-- [Lab 3: Reading Sensors](#lab-3-reading-sensors)
+- [Lab 3: Temperature Sensing](#lab-3-temperature-sensing)
   - [Contents](#contents)
   - [Materials](#materials)
   - [Introduction](#introduction)
