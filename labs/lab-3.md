@@ -20,6 +20,7 @@ latex: true
     - [5. Modifying the Code](#5-modifying-the-code)
     - [6. Field Trip Pt. 2](#6-field-trip-pt-2)
   - [Post-Lab Questions](#post-lab-questions)
+  - [Memo](#memo)
   - [Submission](#submission)
 
 ## Materials
@@ -140,6 +141,12 @@ To get you thinking critically about how your 2-point calibration curve works, a
 2. What would the voltage (based on your own calibration curve) be if it output a temperature of 6 °C? (Show work!)
 3. What **binary value** would your Arduino be reading in for a voltage of 0V? 2.5V? 5V? If you are stuck on this, try re-reading the section about [how analog to digital converters (ADCs) work](#how-analog-to-digital-converters-adcs-work) and try working backwards through the Arduino code. The `analogRead()` function is what actually returns the binary value, so if you know the voltage, could you re-arrange the equation given in the starter code to solve for the binary value?
 
+## Memo
+
+In addition to the pdf you will create as detailed in the submission below, you will also be writing a memo for this lab.
+
+For details about the memo, [see the Canvas assignment](https://umich.instructure.com/courses/618909/assignments/2136869).
+
 ## Submission
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
@@ -148,6 +155,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 - [ ] Your data table of indoor and outdoor temperatures and voltages.
 - [ ] A screenshot of your Arduino IDE's Serial Plotter output showing both the temperature as it changes as you walk outside.
 - [ ] Answers (and any work you may have) to the post-lab questions.
+- [ ] Also upload your memo as a PDF to the Memo 1 - Temperature Sensing assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab.
 
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
