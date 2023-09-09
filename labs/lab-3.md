@@ -36,7 +36,7 @@ latex: true
 
 [This video goes through how to set up the TMP36 and is very useful to watch before you get started.](https://www.youtube.com/watch?v=Mdx2m6hNuqc)
 
-This lab represents the start of your journey into the development of your rocket's sensor board. Your board will measure an ensemble of variables, including temperature, pressure, humidity, acceleration vector, and altitude. We will begin with the simplest, most visceral metric: temperature. This lab will introduce you to the temperature sensor associated with your sensor board.
+This lab represents the start of your journey into the development of your rocket's sensor board. Your board will measure an ensemble of variables, including temperature, pressure (to derive altitude), and acceleration vector. We will begin with the simplest, most visceral metric: temperature. This lab will introduce you to the temperature sensor associated with your sensor board.
 
 A **sensor** is a device that provides measurement of some environmental observable. Many times, sensors work by **transduction** whereby they convert one form of energy into another, often times converting input to electrical energy. However, how do we know what the relationship is between the input and the output? If, for instance, the output from a temperature sensor reads as 2 Volts at room temperature, what does an output of 3 Volts mean? In order to answer this question, we need to generate a **calibration curve** for the sensor: an equation that maps input values against output values.
 
@@ -50,7 +50,7 @@ Over the next few weeks, you will become very familiar with the sensors used in 
 
 In lab 1, you may have figured out the form of the relationship between the raw voltage and value returned by `analogRead()`. However, it's unlikely you got this relationship exactly right, as that requires a slightly deeper understanding of how they work at the physical level. We wanted you to simply begin to think about how it worked before. Now, we'll cover this subject more deeply than both the prior labs and videos did.
 
-To begin, we have to consider the differences between the real world and the digital world. The digital world is essentially finite, whereas the real world is essentially continuous (we are going to ignore quantum mechanics). This means that when converting from the real world to the digital world, there will be some loss of information. This is an important fact to consider when evaluating a sensor or other tool.
+To begin, we have to consider the differences between the real world and the digital world. The digital world is essentially discrete, whereas the real world is essentially continuous (we are going to ignore quantum mechanics). This means that when converting from the real world to the digital world, there will be some loss of information. This is an important fact to consider when evaluating a sensor or other tool.
 
 The ADC we're using in class is no exception - the maximum resolution, or how finely the instrument can be read, is controlled by the number of bits in the ADC. The more bits an ADC has, the higher the resolution. The equation below lets you calculate an approximate resolution. $$V_{ref}$$ is the maximum voltage of the ADC and bits is the number of bits in the ADC.
 
@@ -102,12 +102,12 @@ To build this two-point calibration curve, we need, as the name suggests, two po
     | Indoor Test  |         |                  |
     | Outdoor Test |         |                  |
 
-3. Now, let your circuit sit still on your workbench for a minute to let it adjust to the temperature in the lab. Record (using Serial monitor), what the rough average voltage reading is while it is stationary inside. Additionally, make a note of what the temperature in the room is, which will be written on the whiteboard in lab.
-4. Next, pick up your whole circuit and computer, and take a field trip outside. Find a nice spot in the sun (or out of the rain if the weather doesn't cooperate) and again let your board sit for a while. While you wait, you should be able to watch the voltage readings in your Serial monitor slowly level out. Once there is no longer much change between their values, take their rough average current value and record it into the table in your spreadsheet. Record this along with the current temperature outside.
+3. Now, let your circuit sit still on your workbench for a minute to let it adjust to the temperature in the lab. Record (using Serial monitor), what the rough average voltage reading is while it is stationary inside. Additionally, make a note of the temperature in the room, which will be written on the whiteboard in lab.
+4. Next, pick up your whole circuit and computer, and take a field trip outside. Find a nice spot in the sun (or out of the rain if the weather doesn't cooperate) and again let your board sit for a while. While you wait, you should be able to watch the voltage readings in your Serial monitor slowly level out. Once there is no longer much change between their values, take their rough average current value and record it into the table in your spreadsheet. Record this along with the current temperature outside. (You could also find a regfrigerator or freezer around the building and put your board in one of these.  There are thermometers in the lab that can be used to measure the temperature of an object - as one of the IAs for one of these.)
 
 ### 4. Making a Calibration Curve
 
-Now that you have filled out your basic table of indoor and outdoor temperature and voltages, plug these values into your spreadsheet to calculate your calibration curve.
+Now that you have filled out your basic table of indoor and outdoor (or refridge) temperature and voltages, plug these values into your spreadsheet to calculate your calibration curve.
 
 Your calibration curve for a TMP36 will be linear, unlike a curve for a thermocouple as described in the introduction. This means your final calibrated equation will take the form of $$y=mx+b$$, where $$m$$ is the slope and $$b$$ is the y-intercept.
 
@@ -155,10 +155,10 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 - [ ] Your data table of indoor and outdoor temperatures and voltages.
 - [ ] A screenshot of your Arduino IDE's Serial Plotter output showing both the temperature as it changes as you walk outside.
 - [ ] Answers (and any work you may have) to the post-lab questions.
-- [ ] Also upload your memo as a PDF to the Memo 1 - Temperature Sensing assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab.
 
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
-<div class="primer-spec-callout danger" markdown="1">
-Submitting anything other than a single PDF may result in your work not being graded or your scores being heavily delayed.
-</div>
+**Seperately**:
+
+- [ ] Also upload your memo as a PDF to the Memo 1 - Temperature Sensing assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab.
+
