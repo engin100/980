@@ -17,6 +17,7 @@ A collection of useful cheat-sheets and diagrams you may find yourself referring
   - [LED Anode vs Cathode](#led-anode-vs-cathode)
   - [Basic Circuitry Formulas](#basic-circuitry-formulas)
   - [Resistor Color Codes](#resistor-color-codes)
+  - [TMP36 Wiring](#tmp36-wiring)
 
 ## Arduino Nano Pinout
 
@@ -55,3 +56,7 @@ Similarly, Watt-hours = Volts * Amp-hours
 ## Resistor Color Codes
 
 ![Resistor color code chart](https://eepower.com/uploads/education/resistor_color_codes_chart.png)
+
+## TMP36 Wiring
+
+[![TMP36 Pinout](https://cdn-learn.adafruit.com/assets/assets/000/000/471/large1024/temperature_tmp36pinout.gif?1447975787)](https://learn.adafruit.com/tmp36-temperature-sensor/overview)
