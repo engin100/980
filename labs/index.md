@@ -31,7 +31,7 @@ Saving Arduino sensor data to a microSD card to that we can use it later, and po
 
 :warning: This *may* come in handy when launching rockets...
 
-[Link to lab 2](/labs/lab-4)
+[Link to lab 4](/labs/lab-4)
 
 ## Lab 5: Acceleration Data
 
