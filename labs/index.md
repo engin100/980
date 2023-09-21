@@ -33,7 +33,7 @@ Saving Arduino sensor data to a microSD card to that we can use it later, and po
 
 [Link to lab 4](/labs/lab-4)
 
-## Lab 5: Acceleration Data
+## Lab 5: Acceleration & Pressure
 
 :no_entry_sign: Unpublished
 
