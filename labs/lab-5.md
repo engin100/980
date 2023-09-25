@@ -42,7 +42,7 @@ latex: true
 
 ## Introduction
 
-This lab should be one of your easiest yet. By the end of the lab, you will have re-built your circuit from lab 4, and added an accelerometer and pressure sensor.
+This lab should be one of your easiest yet. By the end of the lab, you will have re-built your circuit from lab 4, and added an accelerometer and pressure sensor, as well as made calibration curves for each of the sensors.
 
 Most of the time involved in this lab will be re-wiring what you have previously built, as well as working on calibrating your accelerometer and pressure sensors.
 
@@ -72,11 +72,11 @@ Plug your Arduino onto your breadboard and hook it up to your computer. These ne
 
 In the real world of electrical and computer engineering, there most likely won't always be a tutorial to hold your hand and tell you how to wire up a component. As such, instead of *showing you* exactly how to wire up your pressure sensor, [here are the sensor's technical specs, which include wiring information on **page 9**](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1001/MPX4115A.pdf).
 
-Our sensor uses style 1 as listed in the docs. You should only need to connect three pins (Vout, Vin, and GND). Since this is an analog sensor, connect Vout to an analog input pin on the Arduino, and run your code to get values you can use to calibrate the sensor.
+Our sensor uses style 1 as listed in the docs. You should only need to connect three pins (Vout, Vin (5V), and GND). Since this is an analog sensor, connect Vout to an analog input pin on the Arduino, and run your code to get values you can use to calibrate the sensor.
 
-Up until now we have been taking two very different measurements (like for the TMP36 temperature sensor) of both a room temperature reading and a very cold reading (like in the cold chamber) in order to build a calibration curve. Unfortunately, for the pressure sensor, it is hard for us to find two wildly different pressures. As such, we are letting you assume that at 0V the pressure is 0. You will need to measure another point and calculate the calibration curve for this sensor accordingly.
+Up until now we have been taking two very different measurements (like for the TMP36 temperature sensor) of both a room temperature reading and a very cold reading (like in the cold chamber) in order to build a calibration curve. Unfortunately, for the pressure sensor, it is hard for us to find two wildly different pressures. As such, we are letting you assume that at 0V the pressure is 0. You will need to measure another point and calculate the calibration curve for this sensor accordingly (for example, what does your weather app say the pressure is right now?). To be more precise about the 0 pressure being a 0V measurement, the spec sheet may provide more info, if you are interested.
 
-Make a Google Sheet (or Excel) file to record these calibration values and calculate your calibration curve.
+Copy your Google Sheet (or Excel file), record these calibration values and calculate your calibration curve.
 
 ### 3. Accelerometer
 
@@ -90,9 +90,9 @@ To read the number of Gs coming in on each axis, we will simply read the analog 
 
 When calibrating this sensor, we will use our understanding of what 1 G is to our advantage. You will need to pay careful attention to the small 3-axis figure printed on the sensor module. When the sensor is flat on the table, the Z-axis should be vertical, and the others will be parallel to the table/ground.
 
-In this orientation, the Z-axis is straight up and down and is therefore experiencing 1G. X and Y are both perpendicular to the force of gravity and would be recording 0Gs. Rotate your sensor around as needed so that each axis has at least one data-point where it is parallel to the force of gravity, and perpendicular to it.
+In this orientation, the Z-axis is straight up and down and is therefore experiencing -1G. X and Y are both perpendicular to the force of gravity and would be recording 0Gs. If you turn your board upside down, the Z axis should read +1G. Rotate your sensor around as needed so that each axis has at least two data-points where it is (anti-)parallel to the force of gravity.
 
-With this calibration process completed, each axis will have a calibration value of 0 and 1G. Record these values in your spreadsheet again, and calculate the calibration curve for each axis.
+With this calibration process completed, each axis will have a calibration value of -1G and 1G. Record these values in your spreadsheet again, and calculate the calibration curve for each axis.
 
 ### 4. Putting It All Together
 
@@ -104,7 +104,7 @@ Modify the code given for the previous lab to add your new sensors to the csv th
 
 ### 5. Collecting Data
 
-With everything plugged into the 9V and running, unplug the Arduino from your computer. Walk around with your Arduino and try to think about things you can do to wildly influence the sensor values (without breaking your circuit!). More interesting changes will be more visible and easier to see in your final plots.
+With everything plugged into the 9V and running, unplug the Arduino from your computer. Walk around with your Arduino and try to think about things you can do to wildly influence the sensor values (without breaking your circuit!). More interesting changes will be more visible and easier to see in your final plots. (Question - will walking up 4 flights of stairs cause the pressure sensor to change?)
 
 Now, before you jump ahead and start to dissemble your board, take a picture of it in its final working state! You will be submitting this!
 
