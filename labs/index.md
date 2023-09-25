@@ -35,7 +35,7 @@ Saving Arduino sensor data to a microSD card to that we can use it later, and po
 
 ## Lab 5: Acceleration & Pressure
 
-:no_entry_sign: Unpublished
+[Link to lab 5](/labs/lab-5)
 
 ## Lab 6: CAD Intro
 

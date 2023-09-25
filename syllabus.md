@@ -71,7 +71,6 @@ In this course, we’ll be checking in on your group each week with surveys. We 
 
 A good portion of this class is about learning to succeed on a team. We devote class time to helping you build the empathy and interpersonal skills needed to successfully navigate a team and complete a project, and we expect you to use these skills to handle the inevitable challenges of working on a team. However, sometimes there are circumstances that are beyond your control, such as a severe personality clash between two teammates or an unexpected tragedy outside of class that affects a teammate’s ability to properly contribute to the team. If this happens, please tell your instructors as soon as you start to see indicators of a major issue. There are many things we can do to help, but *only if we know about it early on!*
 
-
 ## Assignments
 
 We have organized all the assignments in this course into several different types so that we (and you) can see how the course shapes up.
@@ -117,6 +116,7 @@ Please note the following guidelines about submitting your assignments:
 ### Late Submission Policy
 
 Late assignments will be docked 10% per day for up to 10 days. There are exceptions.  No late assignments are allowed for:
+
 - PDR, Go/No-Go, Final Poster, Final Report
 - Team Surveys
 Late assignment exceptions will be made for:
@@ -133,7 +133,7 @@ A breakdown of the grading for this class is shown in the table below:
 | Individual technical communication |              |
 | Team engineering/technical         |              |
 | Team technical communication       |             |
-| **Total**                          |     ** 000 **    |
+| **Total**                          |     **000**    |
 
 In general, the grading is close to 50/50 technical and tech comm and 50/50 individual and group. Certain assignments may be technical only, and some assignments may be tech comm only. Final letter grades will be assigned at the end of term and will be based on the points you have earned vs. the total points available in the class. We will grade on a “straight scale”:
 
@@ -182,7 +182,6 @@ Please see our [separate document on health](docs/health.md).
 
 TL;DR: Reach out if you need help.
 
-
 ## General Observations and Advice
 
 We have taught Engr 100 for a *long time* now. Here are some tips that will help you be less frustrated:
@@ -200,12 +199,9 @@ Please see the [multitasking document](docs/multitasking.md).
 
 TL;DR: Come to lecture, lab, and discussion to learn, not to use social media and watch videos.
 
-
-
 ## Rules and Policies
 
 This course is inherently more involved than other courses that do not have a laboratory aspect. The following sections outline the basic rules and policies of the course.
-
 
 ### Engineering 100 Honor Code and Plagiarism Policies
 
@@ -221,10 +217,18 @@ We will be using Slack to host the majority of the communication and asynchronou
 
 **We do not answer questions that are relevant to the whole class via email.** In order to save everyone time, we want all students to have the benefit of seeing each question and its answer, so please use Slack to ask questions.
 
-
 ### Recordings
 
 Lectures will be audio/video recorded and made available on canvas. If you do not wish to be recorded, please contact a course instructor the first week of class to discuss alternative arrangements.
+
+### Generative AI Policy
+
+ChatGPT and similar Generative AI (“GenAI”) technologies are rapidly becoming part of our professional lives. Learning how to use GenAI tools is important for all of us. But, in the case of writing and communication, you must first learn how to perform these tasks yourself and develop your own writing practice, voice, and expertise.
+As a first-year writing course, ENGR-100 helps you build the foundational writing and communication skillset you need to advance your engineering career, including clearly explaining technical content, effectively persuading readers, communicating with stakeholders, and more. Using Gen AI at this stage in your academic writing development is not conducive to learning, and can in fact inhibit your ability to develop this important foundational skillset. Honing this skillset is essential before incorporating ChatGPT and similar GenAI technologies in your academic and professional careers.
+
+Thus, the use of GenAI tools to produce written content in ENGR-100 is not allowed. This includes composing drafts, constructing sentences, creating paragraphs, revising for style, etc. Using GenAI for these tasks in ENGR-100 violates the Engineering Honor Code, and can be reported to the Honor Council for investigation as academic misconduct.
+
+GenAI is an advanced writing tool, and will be incorporated into your writing curriculum in upper-level courses.”
 
 ***
 
