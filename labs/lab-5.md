@@ -33,12 +33,14 @@ latex: true
 - [ ] 1 Data Logger
 - [ ] 1 MicroSD Card - USB Adapter
 - [ ] 2 1k$$\Omega$$ resistors
-- [ ] 20-ish jumper wires
-- [ ] 1 9V battery
-- [ ] 1 9V battery connector
+- [ ] 5-ish Black Jumper Wires
+- [ ] 5-ish Red Jumper Wires
+- [ ] 10-ish Other Colored Jumper Wires
+- [ ] 1 9V Battery
+- [ ] 1 9V Battery Connector
 - [ ] 1 ADXL335 3-Axis Accelerometer
 - [ ] 1 MPX4115A Pressure Sensor
-- [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
+- [ ] A Computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
 ## Introduction
 
@@ -67,6 +69,10 @@ As mentioned in the introduction, this lab is not going to give you nearly as de
 To start, we are going to wire in a pressure sensor and calibrate it, and then an acceleration sensor and calibrate it. See the next 2 steps for more details about wiring each component.
 
 Plug your Arduino onto your breadboard and hook it up to your computer. These next 2 steps will have you doing calibrations on analog sensors, meaning we will be reading analog values over Serial. Was there a lab (maybe lab 3...) where we had start code to do exactly this that you could repurpose?
+
+<div class="primer-spec-callout info" markdown="1">
+Note: Later in this lab we will ask for a picture of your finished circuit. Part of the requirements for this circuit are that one side of your breadboard's power rail is for 5V, one is for 3.3V, and both sides should have common ground. Additionally it is required that all power is routed with red jumper cables, all ground with black, and all data with other colors.
+</div>
 
 ### 2. Pressure Sensor
 
@@ -97,6 +103,10 @@ With this calibration process completed, each axis will have a calibration value
 ### 4. Putting It All Together
 
 With your calibration curves calculated for both new sensors, we will now begin putting everything together. You can refer to the procedure in the previous lab should you need help.
+
+Again, note that as described earlier, there are organizational and color requirements for breadboard wiring this lab. This makes it easier for other people to quickly look at and understand, and will make things more organized when moving into Altium later.
+
+To re-iterate these requirements, you need a 5V power rail on one side of the breadboard, a 3.3V power rail on the other side, and 2 GND rails on either side. Additionally, all the GND connections should use black wires, all the 5V and 3.3V should use red wires (it is also ok if 5V uses red and 3.3V uses say orange), and all data wires (like analog in and SD card connections) using another color not used by any of the power circuitry.
 
 The end result will be a temperature sensor, pressure sensor, accelerometer, and voltage divider all wired to an Arduino which stores data onto a microSD card and receives power via a 9V battery.
 
@@ -133,7 +143,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 - [ ] A screenshot of your calibration curves and data for both new sensors added. This should be 4 total calibration curves (1 from each axis of the accelerometer).
 - [ ] Your plot comparing temperature and pressure to time.
 - [ ] Your plot comparing max acceleration and acceleration on each axis to time.
-- [ ] A picture of your final breadboard with all the sensors connected.
+- [ ] A picture of your final breadboard with all the sensors connected and all of the power rail and wire color requirements satisfied.
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
