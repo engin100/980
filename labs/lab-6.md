@@ -3,11 +3,11 @@ layout: spec
 latex: true
 ---
 
-# Lab 5: SolidWorks Modeling
+# Lab 6: SolidWorks Modeling
 
 ## Contents
 
-- [Lab 5: SolidWorks Modeling](#lab-5-solidworks-modeling)
+- [Lab 6: SolidWorks Modeling](#lab-6-solidworks-modeling)
   - [Contents](#contents)
   - [Resources](#resources)
   - [Introduction](#introduction)
