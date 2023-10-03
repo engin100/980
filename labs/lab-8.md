@@ -36,7 +36,7 @@ Although you have been given teams, this lab is done in partners and submitted i
 
 Galileo Galilei, a 16th century astronomer, philosopher, mathematician, and central figure in the Scientific Revolution of the 17th Century, once wrote that, in the absence of resistance caused by air, a hammer and a feather would fall at the same rate. His claim was verified centuries later on the moon by the crew of Apollo 15, which is also known as the all-UMich Apollo astronaut crew. You can watch the demonstration in the video [Hammer vs Feather - Physics on the moon](https://youtu.be/KDp1tiUsZw8?feature=shared).
 
-This phenomena is not random, and is instead due to drag forces. While we know that the acceleration due to gravity is constant for all object, we also know that not all objects fall at the same rate, even if it seems they should. This is because of drag force, which is related to properties of the object as well as the cross-sectional area of the object. Terminal velocity is the maximum speed an object can reach while in free-fall. Historically, we have used this to our advantage with the use of parachutes to lead to safe fall speeds for things like payloads, or even humans.
+This phenomena is not random, and is instead due to drag forces. While we know that the acceleration due to gravity is constant for all objects, we also know that not all objects fall at the same rate, even if it seems they should. This is because of drag force, which is related to properties of the object as well as the cross-sectional area of the object. Terminal velocity is the maximum speed an object can reach while in free-fall. Historically, we have used this to our advantage with the use of parachutes to lead to safe fall speeds for things like payloads, or even humans.
 
 [![The Drag Equation](https://www1.grc.nasa.gov/wp-content/uploads/drageq-1-scaled.jpg)](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-equation/)
 
@@ -56,7 +56,7 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
   - Think about the difference between a half-circumference of a sphere and the radius of the sphere. Drawing this in 2D may help.
 
-- The density of air is typically 1.29 $ \frac{kg}{m^3} $.
+- The density of air is typically 1.29 kg/m^3.
 
 ## Procedure
 
@@ -125,7 +125,6 @@ Although you have been given teams, this lab is done in partners and submitted i
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 - [ ] Screenshots of your three plots: parachute trials, streamer trials with one mass, and streamer trials with the other mass.
-- [ ] The answers to the post-lab questions.
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
