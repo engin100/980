@@ -108,7 +108,7 @@ Next, we are going to perform similar trials using streamers. The concept of str
 
 - With all of your trials completed and recorded in your spreadsheet, calculate the terminal velocity of each trial in the provided column. HINT: The height of the top of the second floor, the time it takes to reach the second floor, and the time it takes to reach the ground are particularly helpful in this calculation.
 
-- Plot three graphs showing the folliwing:
+- Plot three graphs showing the following:
 
   - Parachute trials denoting terminal velocities vs your varying mass.
 
