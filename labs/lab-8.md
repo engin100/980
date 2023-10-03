@@ -116,16 +116,6 @@ Next, we are going to perform similar trials using streamers. The concept of str
 
   - Streamer trials denoting terminal velocities vs your varying length of streamer for your **second** weight (three binder clips)
 
-### Post-Lab Questions
-
-1. Why do we have you record the time it takes our objects to travel from the second floor to the ground? Why wouldn't you want to record time from the initial height?
-
-2. Plot your experimentally determined terminal velocities along with the theoretical terminal velocity calculated in the spreadsheet and the analytically calculated terminal velocities from your terminal velocity equation for your varying parameter. (Hint: create a small table of these projected values as you vary your parameter. You will have three different lines on the plot!)
-
-3. Is the terminal velocity with a parachute proportional to mass? How about for streamers?
-
-4. With your answers to these questions in mind, for a rocket of 6 oz mass, what mode of drag is best? Consider factors such as time spent in the air, and speed with which the rocket will impact the ground!
-
 ## Submission
 
 <div class="primer-spec-callout danger" markdown="1">
