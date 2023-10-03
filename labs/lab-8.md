@@ -68,7 +68,7 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 3. Measure ***ONE*** binder clip and record this mass in your spreadsheet.
 
-4. Measure the mass of your 45" role of streamer tape and record this value in the spreadsheet.
+4. Measure the mass of your 45" roll of streamer tape and record this value in the spreadsheet.
 
 <div class="primer-spec-callout warning" markdown="1">
 For consistency, measure the mass of one binder clip and for each iteration with a different total mass, make sure to use the same kind and size of binder clip. Then you can simply multiply the number of clips and add the mass of the parachute for each iteration to find the total mass rather than re-weighing the entire system for every trial.
