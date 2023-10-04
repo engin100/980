@@ -51,7 +51,7 @@ You begin with an idea. A circuit or device that you’d like to realize in a PC
 _Figure 1: A drawing of a schematic, that pretty closely resembles the schematic you’d make in Altium._
 
 Fig. 2 shows Fig. 1 as an Altium schematic. The schematic is defined in a document with the extension **.SchDoc.**
-![Fig 1 schematic](/labs/media/lab-7_figures/fig1schematic.jpg)
+![Fig 1 schematic](/labs/media/lab-7_figures/fig1schematic.png)
 _Figure 2: The schematic of an astable multivibrator as displayed through Altium._
 
 Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre- loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so, as we will discuss in the procedure, you can simply drag and drop them into place.
