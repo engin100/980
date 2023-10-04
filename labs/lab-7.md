@@ -66,6 +66,7 @@ Note the white lines that connect each of the footprints in Figure 3. These repr
 _Figure 3: The PCB Layout in Altium_
 
 Finally, we have a completed board! Altium creates a cartoon (Figure 4) that we can view before moving on to the final stage: Design Rule Check.
+
 ![Fig. 4](/labs/media/lab-7_figures/Assembly.gif)
 _Figure 4: Completed PCB_
 
