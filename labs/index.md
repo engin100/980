@@ -49,7 +49,7 @@ Learning how to use a CAD program to design a 3D model of a SpaceX Starship Boos
 
 :no_entry_sign: Unpublished
 
-Drop test lab is here:
+## Lab 8: Drop Test
 
 [Link to lab 8](/labs/lab-8)
 
