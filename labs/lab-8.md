@@ -88,6 +88,8 @@ To start, we are going to measure the terminal velocity of your parachute setup 
 
   - **Note:** The top of the second floor refers to the height of the ceiling above someone walking on floor two.
 
+![Robotics Dimensions](../media/robotics-dimensions.png)
+
 - Repeat this with all three binder clips attached to the parachute, recording the total masses and timestamps for both trials in your spreadsheet.
 
 ### Streamer Trials
