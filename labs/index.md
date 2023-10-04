@@ -51,5 +51,7 @@ Learning how to use a CAD program to design a 3D model of a SpaceX Starship Boos
 
 ## Lab 8: Drop Test
 
+Analyzing terminal velocities of different drag-inducing objects under varying masses.
+
 [Link to lab 8](/labs/lab-8)
 
