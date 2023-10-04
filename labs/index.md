@@ -48,3 +48,8 @@ Learning how to use a CAD program to design a 3D model of a SpaceX Starship Boos
 ## Lab 7: Altium
 
 :no_entry_sign: Unpublished
+
+Drop test lab is here:
+
+[Link to lab 8](/labs/lab-8)
+
