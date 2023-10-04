@@ -36,7 +36,7 @@ Although you have been given teams, this lab is done in partners and submitted i
 
 Galileo Galilei, a 16th century astronomer, philosopher, mathematician, and central figure in the Scientific Revolution of the 17th Century, once wrote that, in the absence of resistance caused by air, a hammer and a feather would fall at the same rate. His claim was verified centuries later on the moon by the crew of Apollo 15, which is also known as the all-UMich Apollo astronaut crew. You can watch the demonstration in the video [Hammer vs Feather - Physics on the moon](https://youtu.be/KDp1tiUsZw8?feature=shared).
 
-This phenomena is not random, and is instead due to drag forces. While we know that the acceleration due to gravity is constant for all object, we also know that not all objects fall at the same rate, even if it seems they should. This is because of drag force, which is related to properties of the object as well as the cross-sectional area of the object. Terminal velocity is the maximum speed an object can reach while in free-fall. Historically, we have used this to our advantage with the use of parachutes to lead to safe fall speeds for things like payloads, or even humans.
+This phenomena is not random, and is instead due to drag forces. While we know that the acceleration due to gravity is constant for all objects, we also know that not all objects fall at the same rate, even if it seems they should. This is because of drag force, which is related to properties of the object as well as the cross-sectional area of the object. Terminal velocity is the maximum speed an object can reach while in free-fall. Historically, we have used this to our advantage with the use of parachutes to lead to safe fall speeds for things like payloads, or even humans.
 
 [![The Drag Equation](https://www1.grc.nasa.gov/wp-content/uploads/drageq-1-scaled.jpg)](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-equation/)
 
@@ -56,7 +56,7 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
   - Think about the difference between a half-circumference of a sphere and the radius of the sphere. Drawing this in 2D may help.
 
-- The density of air is typically 1.29 $ \frac{kg}{m^3} $.
+- The density of air is typically 1.29 kg/m^3.
 
 ## Procedure
 
@@ -68,7 +68,7 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 3. Measure ***ONE*** binder clip and record this mass in your spreadsheet.
 
-4. Measure the mass of your 45" role of streamer tape and record this value in the spreadsheet.
+4. Measure the mass of your 45" roll of streamer tape and record this value in the spreadsheet.
 
 <div class="primer-spec-callout warning" markdown="1">
 For consistency, measure the mass of one binder clip and for each iteration with a different total mass, make sure to use the same kind and size of binder clip. Then you can simply multiply the number of clips and add the mass of the parachute for each iteration to find the total mass rather than re-weighing the entire system for every trial.
@@ -108,23 +108,13 @@ Next, we are going to perform similar trials using streamers. The concept of str
 
 - With all of your trials completed and recorded in your spreadsheet, calculate the terminal velocity of each trial in the provided column. HINT: The height of the top of the second floor, the time it takes to reach the second floor, and the time it takes to reach the ground are particularly helpful in this calculation.
 
-- Plot three graphs showing the folliwing:
+- Plot three graphs showing the following:
 
   - Parachute trials denoting terminal velocities vs your varying mass.
 
   - Streamer trials denoting terminal velocities vs your varying length of streamer for your **first** weight (one binder clip)
 
   - Streamer trials denoting terminal velocities vs your varying length of streamer for your **second** weight (three binder clips)
-
-### Post-Lab Questions
-
-1. Why do we have you record the time it takes our objects to travel from the second floor to the ground? Why wouldn't you want to record time from the initial height?
-
-2. Plot your experimentally determined terminal velocities along with the theoretical terminal velocity calculated in the spreadsheet and the analytically calculated terminal velocities from your terminal velocity equation for your varying parameter. (Hint: create a small table of these projected values as you vary your parameter. You will have three different lines on the plot!)
-
-3. Is the terminal velocity with a parachute proportional to mass? How about for streamers?
-
-4. With your answers to these questions in mind, for a rocket of 6 oz mass, what mode of drag is best? Consider factors such as time spent in the air, and speed with which the rocket will impact the ground!
 
 ## Submission
 
@@ -135,7 +125,6 @@ Although you have been given teams, this lab is done in partners and submitted i
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 - [ ] Screenshots of your three plots: parachute trials, streamer trials with one mass, and streamer trials with the other mass.
-- [ ] The answers to the post-lab questions.
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
