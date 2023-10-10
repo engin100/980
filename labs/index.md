@@ -60,3 +60,10 @@ Analyzing terminal velocities of different drag-inducing objects under varying m
 Submit a separate PDF for the memo assignment aligning with the lab 8 memo guidelines.
 
 [Link to memo guidelines](https://980.engr100.org/labs/memo-guidelines)
+
+## Rocket Selection Guidelines
+
+Read through the rocket selection guidelines to choose your group's rocket and indicate your choice in the attached form.
+
+- [Link to selection guidelines](https://980.engr100.org/labs/rocket-selection)
+- [Link to form](https://docs.google.com/forms/d/e/1FAIpQLScnKEXi57qTo04cYHIfSr4qqNmIUd--aQWvp2jopl6VV9e9Og/viewform)
