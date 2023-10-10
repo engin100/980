@@ -46,15 +46,27 @@ Broadly, the workflow in Altium is divided up into three steps: Schematic, PCB, 
 
 ### Schematic
 
+#### Background
 You begin with an idea. A circuit or device that you’d like to realize in a PCB. The first thing you need to do is tell Altium the components you’ll be using, and their relationships to one another. Consider the drawing of a ‘self-running a stable multivibrator’ below. 
 ![Multivibrator schematic](/labs/media/lab-7_figures/multivibratorSchematic.jpg)
-_Figure 1: A drawing of a schematic, that pretty closely resembles the schematic you’d make in Altium._
+_Figure 1: A drawing of a schematic, that pretty closely resembles a schematic you’d make in Altium._
 
 Fig. 2 shows Fig. 1 as an Altium schematic. The schematic is defined in a document with the extension **.SchDoc.**
 ![Fig 1 schematic](/labs/media/lab-7_figures/fig1schematic.jpg)
 _Figure 2: The schematic of an astable multivibrator as displayed through Altium._
 
+For additional reference, here is the schematic you made following Lab 1:
+![Lab 1 schematic](/labs/media/lab-7_figures/postlab1bSchDoc.jpg)
+_Figure 3: The schematic completed in the Postlab 1 assignment_
+
 Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre- loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so, as we will discuss in the procedure, you can simply drag and drop them into place.
+
+
+#### Your Schematic Contents
+
+Obviously, the functionality we're trying to put on a PCB is the ability to record data from a model rocket, so starting your schematic off by adding your full Lab 5 circuit is a good starting point. Additionally, we decided that turning on and off your board would be nice, so add the included on/off switch between the positive terminal of the battery and the VIN pin on the Arduino.
+
+LEDs are also useful when diagnosing software bugs without a computer, telling you if the board is on or off, and also making cool light patterns. Please wire pins D4-D10 to their own LED with a 1K resistor on each LED. This way, you have 6 LEDs to diagnose problems and play with.
 
 ### PCB
 
@@ -99,7 +111,7 @@ _Pressing 1 on your keyboard takes you to the board design view. Pressing 2 take
 
 1. To create a new PCB file, right click your project name under your Projects tab, click New → Add New to Project → PCB.
 2. Import your schematic components. Go to Design → Import Changes from Project name. Validate your changes, make sure you see only green check marks next to each change. Then execute them. By zooming in and out on your board (by pressing the mouse scroll button and moving around), you should see a big red box containing all of the components. You can drag and drop them onto the board, which is the black rectangle.
-3. Now we should adjust the size of our board. To do this, press 1 on your keyboard. Navigate to Design → Edit Board Shape. The board should be no bigger than 1 inch by 4 inches. You can toggle between Imperial and Metric units by pressing Q. [This shows you how to do that.](https://resources.altium.com/p/layout-guide-changing-board-sizes-altium-designer)
+3. Now we should adjust the size of our board. To do this, press 1 on your keyboard. Navigate to Design → Edit Board Shape. The board should be no bigger than 2 inches by 4 inches. You can toggle between Imperial and Metric units by pressing Q. [This shows you how to do that.](https://resources.altium.com/p/layout-guide-changing-board-sizes-altium-designer)
 4. We will add some design rules. Press 2 on your keyboard to ensure that you are on the component layout screen. Navigate to Design → Rules. . . A PCB rules window should pop up. Set the following design rules:
     * Electrical → Clearance = 6 mil
     * Routing → Width
