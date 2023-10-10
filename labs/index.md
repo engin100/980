@@ -55,3 +55,8 @@ Analyzing terminal velocities of different drag-inducing objects under varying m
 
 [Link to lab 8](/labs/lab-8)
 
+### Memo Guidelines: Lab 8
+
+Submit a separate PDF for the memo assignment aligning with the lab 8 memo guidelines.
+
+[Link to memo guidelines](https://980.engr100.org/labs/memo-guidelines)
