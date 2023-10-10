@@ -22,7 +22,7 @@ latex: true
 - [ ] [Estes Body Tube Sizes](http://www.ninfinger.org/rockets/body_tubes.html)
 
 <div class="primer-spec-callout danger" markdown="1">
-The inclusion of a rocket on the "Rocket Options" sheet does not imply that the rocket is a good choice. While there are good options on that list, not all models will work well with our final project. Use the following information to inform your decision.
+The inclusion of a rocket on the "Rocket Options" sheet does not imply that the rocket is a good choice. While there are good options on that list, not all models will work well with our final project. Use the following information and the links above to inform your decision.
 </div>
 
 ## Background Information
