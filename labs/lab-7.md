@@ -30,7 +30,7 @@ There is no post-lab for this lab, but you will be reviewing each other's PCBs. 
 
 ## Participation
 
-Working at a computer often can become a one person deal. It is important to avoid this during this lab. Our goal is for all students in this course to learn the basics of Altium. When you are working on your PCBs, have at least one person spotting the person at the computer. This will help you share the work that goes into creating the PCB and eliminate mistakes that can render your finished product useless. It is important that no team member works alone, even during office hours. 
+Working at a computer often can become a one person deal. It is important to avoid this during the lab. Our goal is for all students in this course learn the basics of Altium. When you are working on your PCBs, have at least one person spotting the person at the computer. This will help you share the work that goes into creating the PCB and eliminate mistakes that can render your finished product useless. It is important that no team member works alone, even during office hours. 
 
 ## Lab Timeline
 
@@ -50,22 +50,25 @@ Broadly, the workflow in Altium is divided up into three steps: Schematic, PCB, 
 #### Background
 You begin with an idea. A circuit or device that you'd like to realize in a PCB. The first thing you need to do is tell Altium the components you'll be using, and their relationships to one another. Consider the drawing of a 'self-running a stable multivibrator' below. 
 ![Multivibrator schematic](/labs/media/lab-7_figures/multivibratorSchematic.jpg)
+
 _Figure 1: A drawing of a schematic, that pretty closely resembles a schematic you’d make in Altium._
 
 Fig. 2 shows Fig. 1 as an Altium schematic. The schematic is defined in a document with the extension **.SchDoc.**
 ![Fig 1 schematic](/labs/media/lab-7_figures/fig1schematic.png)
+
 _Figure 2: The schematic of an astable multivibrator as displayed through Altium._
 
 For additional reference, here is the schematic you made following Lab 1:
 ![Lab 1 schematic](/labs/media/lab-7_figures/postlab1bSchDoc.jpg)
+
 _Figure 3: The schematic completed in the Postlab 1 assignment_
 
-Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre-loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so, as we will discuss in the procedure, you can simply drag and drop them into place.
+Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre- loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so as we will discuss in the procedure, you can simply drag and drop them into place.
 
 
 #### Your Schematic Contents
 
-Obviously, the functionality we're trying to put on a PCB is the ability to record data from a model rocket, so starting your schematic off by adding your full Lab 5 circuit is a good starting point. Additionally, we decided that turning on and off your board would be nice, so add the included on/off switch between the positive terminal of the battery and the VIN pin on the Arduino.
+Obviously, the functionality we're trying to put on a PCB is the ability to record data from a model rocket, so starting your schematic off by adding your full Lab 5 circuit is a good starting point. Additionally, we decided that turning on and off your board would be nice, so add the on/off switch included in the library between the positive terminal of the battery and the VIN pin on the Arduino.
 
 LEDs are also useful when diagnosing software bugs without a computer, telling you if the board is on or off, and also making cool light patterns. Please wire pins D4-D9 to their own LED with a 1K resistor on each LED. This way, you have 6 LEDs to diagnose problems and play with.
 
@@ -76,15 +79,24 @@ It is extremely helpful to draw this out on a piece of paper first.  Remember, t
 1. Download the resources provided in the Canvas Files section for the Altium lab.
 2. Open Altium Designer on a CAEN computer. Navigate to File -> New -> Project...
 3. Choose the PCB project type.
-4. The "Folder" field allows you to choose where this folder is created. You can save it to your "Documents" folder for it to sync across all CAEN instances or, you can navigate to "This PC" -> "U-M Google Drive (I:)" as shown in Fig. 6 and save it in a folder here so that you can share it with teammates.
-5. Name your project with your team number and name, and click "OK". See Fig. 5 for an example Project Creation.
+4. The "Folder" field allows you to choose where this folder is created. You can save it to your "Documents" folder for it to sync across all CAEN instances or, you can navigate to "This PC" -> "U-M Google Drive (I:)" as shown in Fig. 5 and save it in a folder here so that you can share it with teammates. Just be sure that whatever you do, **do not save the project in your Downloads folder. On CAEN machines, this location is wiped every 24 hours.**
+    ![Fig. 4](/labs/media/lab-7_figures/fig5.jpg)
+    
+    _Figure 4: CAEN File Explorer_
+5. Name your project with your team number and name, and click "OK". See Fig. 6 for an example Project Creation.
+    ![Fig. 5](/labs/media/lab-7_figures/fig6createWiz.jpg)
+    
+    _Figure 5: Project Creation Wizard popup_
 6. Now you should add two libraries we will give you. To do this, go to the Projects tab on the left side of the screen. A picture of this tab is shown in Fig. 7. If you see something else here, see if you can click the word "Projects" at the bottom left of the window.
+    ![Fig. 6](/labs/media/lab-7_figures/oldFig7.jpg)
+    
+    _Figure 6: Project Tab_
 7. Right click your project name in bold and click Add Existing to Project. Navigate to your saved PCB libraries and select both of them.
 8. Look at the Projects Tab on the left side of the screen. Right click your project name in bold and click Add New to Project -> Schematic. A blank piece of paper should appear on the screen. This is where you are to lay out your schematic drawing. A few instructions for laying out a schematic:
 
-    * The 'Components: Final PCBs' spreadsheet on Canvas under Files / Labs / Lab 6 Altium Resources lists all components you might need for your system, their schematic names, and footprint names. It is important to note: all 1 kOhm resistors must use a 1206 resistor footprint.
+    * The "Components: Final PCBs" spreadsheet on Canvas under Files / Labs / Lab 6 Altium Resources lists all components you might need for your system, their schematic names, and footprint names. It is important to note: all 1 kOhm resistors must use a 1206 resistor footprint.
 
-    * Go to Place -> Part to place a component. Navigate to the library you would like to use with the dropdown menu. A keyboard shortcut is to simply press 'P' twice in a row.
+    * Go to Place -> Part to place a component. Navigate to the library you would like to use with the dropdown menu. A keyboard shortcut is to simply press "P" twice in a row.
 
     * You can either connect everything together with wires or use "nets". Nets are a convenient way to connect two pins without explicitly drawing a wire between them. You can place a net using Place -> Net Label. This is a great way to make sure things don't get too messy. One issue with nets is that it may be hard to see what is connected to what. The most common net is ground - it is so common that there is a special button for it. You can click on the ground (GND) button and attach this to all of the ground pins on all of your components.  This tells Altium that they are all connected together to a ground pin. 
     
@@ -107,6 +119,7 @@ The PCB is designed as a separate document with the extension **.PcbDoc.** We ca
 Note the white lines that connect each of the footprints in Figure 3. These represent what pins on each part that should be connected via traces. This should be done manually, similar to how wires were drawn in the schematic. One notable difference is that physical traces should never be drawn at right angles - instead, they should be at obtuse angles. This is to minimize field leakage and reflection at corners.
 
 ![Fig. 3](/labs/media/lab-7_figures/fig3.jpg)
+
 _Figure 3: The PCB Layout in Altium_
 
 #### Procedure: Designing the PCB
@@ -134,6 +147,7 @@ _Pressing 1 on your keyboard takes you to the board design view. Pressing 2 take
 Finally, we have a completed board! Altium creates a cartoon (Figure 4) that we can view before moving on to the final stage: Design Rule Check.
 
 ![Fig. 4](/labs/media/lab-7_figures/Assembly.gif)
+
 _Figure 4: Completed PCB_
 
 ### DRC
@@ -142,24 +156,28 @@ The DRC, or Design Rule Check is a way to check the validity of your PCB with re
 
 #### Procedure: Design Rules Check
 
-
 1. Recall that you created a set of Design Rules before creating your PCB. The Design Rule Check (DRC) assesses your design in light of these rules, and highlights any discrepancies between your layout and those rules. Your DRC must return ZERO errors before your PCB can be considered complete. Design Rule Check can be run by navigating to Tools -> Design Rule Check. Click Run Design Rule Check to run DRC. Generally, errors are highlighted in bright green.
 2. Once you have passed all design rule checks, take a screenshot of your error-free DRC screen.
 
-## Peer Review
-
-After the lab, every student will be required to peer review the PCBs of three other teams. Each team must upload a single zip file containing **all project files and a screenshot showing all DRCs passed** to this designated Google Drive folder (click here) by 11:59pm on Friday, October 17th, 2023. Make sure that your PCB passes all design rule checks before submitting it to the Google Drive folder. Each student will peer review three PCBs with rubrics provided on Canvas. Peer reviews are due by 11:59pm on Tuesday, October 24th, 2023.
-
 ## Final Deliverable
 
-Your team will have 65 hours between 11:59pm on Tuesday, October 24th, 2023, and 5pm on Friday, October 27th, to implement changes recommended by peer reviews. Then, rename your project with the ending ’-FINAL’ and re-upload the single zip file containing all project files and a screenshot showing all DRCs passed to this designated Google Drive folder (click here) by 5pm on Friday, October 27th, 2023. **All design rule checks must be satisfied or you will be penalized on the assignment.** Spend a lot of time ensuring that your design is correct. Do not hesitate to talk to the IAs or Professor Ridley.
+Each team must upload a single zip file containing **all project files and a screenshot showing all DRCs passed** to this designated Google Drive folder [(click here)](https://drive.google.com/drive/folders/1dqrIZPnpz_5BiepUqeAE46O8Z0YM9a0D) by 11:59pm on October 17th, 2023. Make sure that your PCB passes all design rule checks before submitting it to the Google Drive folder. Each student will peer review three PCBs with rubrics provided on Canvas. 
+
+The zip file must:
+* Contain all information so that another person can unzip the file, open Altium, and see you schematic and PCB.
+* Be named with the following template: team_xx_altium.zip, which xx is your team number expressed as two digits (e.g., 01, 02, 10, 11, etc.)
+
+
+## Peer Review
+
+After the lab, every student will be required to peer review the PCBs of three other teams. 
+
+Peer reviews are due by 11:59pm on Tuesday, October 24th, 2023.  There is a canvas assignment as well as a google form that must be filled out for each review.
 
 
 ## Peer Review and Final Submission
 
-- [ ] Submit your error-free DRC screenshot and all project files to the designated Google Drive folder by **February 17th, 2023, 11:59pm**.
-- [ ] Peer review three other teams' PCBs using provided rubrics by **February 20th, 2023, 11:59pm**.
-- [ ] Implement peer review recommendations between **February 20th, 2023, 11:59pm**, and **February 23rd, 2023, 5pm**.
-- [ ] Rename your project with '-FINAL' and re-upload all files to the designated Google Drive folder by **February 23rd, 2023, 5pm**.
+- [ ] Submit your error-free DRC screenshot and all project files to the designated Google Drive folder by **October 17th, 2023, 11:59pm**.
+- [ ] Peer review three other teams' PCBs using provided rubrics by **October 24th, 2023, 11:59pm**.
 
 Remember, accuracy and collaboration are essential. Reach out to IAs, Professor Ridley, or the **#lab-help** channel on Slack for assistance if needed. Good luck with your PCB design!
