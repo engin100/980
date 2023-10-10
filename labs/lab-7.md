@@ -52,7 +52,7 @@ You begin with an idea. A circuit or device that you’d like to realize in a PC
 _Figure 1: A drawing of a schematic, that pretty closely resembles a schematic you’d make in Altium._
 
 Fig. 2 shows Fig. 1 as an Altium schematic. The schematic is defined in a document with the extension **.SchDoc.**
-![Fig 1 schematic](/labs/media/lab-7_figures/fig1schematic.jpg)
+![Fig 1 schematic](/labs/media/lab-7_figures/fig1schematic.png)
 _Figure 2: The schematic of an astable multivibrator as displayed through Altium._
 
 For additional reference, here is the schematic you made following Lab 1:
@@ -78,6 +78,7 @@ Note the white lines that connect each of the footprints in Figure 3. These repr
 _Figure 3: The PCB Layout in Altium_
 
 Finally, we have a completed board! Altium creates a cartoon (Figure 4) that we can view before moving on to the final stage: Design Rule Check.
+
 ![Fig. 4](/labs/media/lab-7_figures/Assembly.gif)
 _Figure 4: Completed PCB_
 
