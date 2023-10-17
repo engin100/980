@@ -19,6 +19,12 @@ The labs will be made publicly visible as they are released in the week leading 
 
 [Lab Manuals](/labs/)
 
+## Project
+
+The full project specification, including PDR, Go/No-Go tests, poster, and final report is here:
+
+[Project Specification](/project/project.md)
+
 ## Supplemental Resources
 
 Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more.
