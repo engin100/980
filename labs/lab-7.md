@@ -68,7 +68,7 @@ Note that each component is defined with its own individual symbol. Capacitors, 
 
 #### Your Schematic Contents
 
-Obviously, the functionality we're trying to put on a PCB is the ability to record data from a model rocket, so starting your schematic off by adding your full Lab 5 circuit is a good starting point. Additionally, we decided that turning on and off your board would be nice, so add the on/off switch included in the library between the positive terminal of the battery and the VIN pin on the Arduino.
+Obviously, the functionality we're trying to put on a PCB is the ability to record data from a model rocket, so starting your schematic off by adding your full Lab 5 circuit is a good starting point. Additionally, we decided that turning on and off your board would be nice, so add the SW-SPST switch included in the miscellaneous devices library between the positive terminal of the battery and the VIN pin on the Arduino.
 
 LEDs are also useful when diagnosing software bugs without a computer, telling you if the board is on or off, and also making cool light patterns. Please wire pins D4-D9 to their own LED with a 1K resistor on each LED. This way, you have 6 LEDs to diagnose problems and play with.
 
@@ -76,7 +76,7 @@ It is extremely helpful to draw this out on a piece of paper first.  Remember, t
 
 #### Procedure: Starting Your Design and Creating A Schematic
 
-1. Download the resources provided in the Canvas Files section for the Altium lab.
+1. Download the resources provided in the Canvas Files section for the Altium lab. There should be 1 folder called 'Altium Libraries' for you to download.
 2. Open Altium Designer on a CAEN computer. Navigate to File -> New -> Project...
 3. Choose the PCB project type.
 4. The "Folder" field allows you to choose where this folder is created. You can save it to your "Documents" folder for it to sync across all CAEN instances or, you can navigate to "This PC" -> "U-M Google Drive (I:)" as shown in Fig. 5 and save it in a folder here so that you can share it with teammates. Just be sure that whatever you do, **do not save the project in your Downloads folder. On CAEN machines, this location is wiped every 24 hours.**
@@ -93,8 +93,6 @@ It is extremely helpful to draw this out on a piece of paper first.  Remember, t
     _Figure 6: Project Tab_
 7. Right click your project name in bold and click Add Existing to Project. Navigate to your saved PCB libraries and select both of them.
 8. Look at the Projects Tab on the left side of the screen. Right click your project name in bold and click Add New to Project -> Schematic. A blank piece of paper should appear on the screen. This is where you are to lay out your schematic drawing. A few instructions for laying out a schematic:
-
-    * The "Components: Final PCBs" spreadsheet on Canvas under Files / Labs / Lab 6 Altium Resources lists all components you might need for your system, their schematic names, and footprint names. It is important to note: all 1 kOhm resistors must use a 1206 resistor footprint.
 
     * Go to Place -> Part to place a component. Navigate to the library you would like to use with the dropdown menu. A keyboard shortcut is to simply press "P" twice in a row.
 
@@ -116,7 +114,7 @@ That's a lot to keep in mind! The path to success involves moving slowing and me
 
 The PCB is designed as a separate document with the extension **.PcbDoc.** We can create a new PCB document and correlate it to our schematic. This will import all the components to the PCB document. Then, just as in the schematic document, we can manually place each footprint. As before, the footprints will be provided via a custom library we have prepared for you.
 
-Note the white lines that connect each of the footprints in Figure 3. These represent what pins on each part that should be connected via traces. This should be done manually, similar to how wires were drawn in the schematic. One notable difference is that physical traces should never be drawn at right angles - instead, they should be at obtuse angles. This is to minimize field leakage and reflection at corners.
+Note the white lines that connect each of the footprints in Figure 3. These represent what pins on each part that should be connected via traces. This should be done manually, similar to how wires were drawn in the schematic. One notable difference is that physical traces should never be drawn at right angles - instead, they should be at obtuse angles. This is to minimize field leakage and reflection at corners.  It is important to note: all 1 kOhm resistors must use a 1206 footprint. If your resistors do not use this footprint by default, switch the footprint to the 'C1206' footprint in the miscellaneous devices library using the properties window.
 
 ![Fig. 3](/labs/media/lab-7_figures/fig3.jpg)
 
@@ -127,7 +125,7 @@ _Figure 3: The PCB Layout in Altium_
 _Pressing 1 on your keyboard takes you to the board design view. Pressing 2 takes you to the component layout screen. Pressing 3 takes you to the cartoon mockup screen. You should do your layout work (e.g. most of the work) in mode 2._
 
 1. To create a new PCB file, right click your project name under your Projects tab, click New -> Add New to Project -> PCB.
-2. Import your schematic components. Go to Design -> Import Changes from Project name. Validate your changes, make sure you see only green check marks next to each change. Then execute them. By zooming in and out on your board (by pressing the mouse scroll button and moving around), you should see a big red box containing all of the components. You can drag and drop them onto the board, which is the black rectangle.
+2. Import your schematic components. Go to Design -> Import Changes from Project name. Validate your changes, make sure you see only green check marks next to each change. Then execute them. By zooming in and out on your board (by pressing the mouse scroll button and moving around), you should see a big red box containing all of the components. You can drag and drop them onto the board, which is the black rectangle. If you want to rotate a component, click and hold on it and then press the spacebar. Another option is to click it  and press M, which will bring up a menu for moving components. One of these menu options is the 'rotate selection' feature. This is better if you want to rotate it a specific amount and not in increments of 90 degrees.
 3. Now we should adjust the size of our board. To do this, press 1 on your keyboard. Navigate to Design -> Edit Board Shape. The board should be no bigger than 2 inches by 4 inches. You can toggle between Imperial and Metric units by pressing Q. [This shows you how to do that.](https://resources.altium.com/p/layout-guide-changing-board-sizes-altium-designer)
 4. We will add some design rules. Press 2 on your keyboard to ensure that you are on the component layout screen. Navigate to Design -> Rules. A PCB rules window should pop up. Set the following design rules:
     * Electrical -> Clearance = 6 mil
