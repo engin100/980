@@ -27,35 +27,64 @@ D. Calculate the velocity of the rocket as a function of time.
 E. Calculate the altitude of the rocket as a function of time.
 The coding language can be Google Spreadsheets, Excel, Python, Matlab, or C++.
 
-5. Test all aspects of the system (rocket and sensor board), showing that both operate as expected.  Specifically, tests include:
-A. Bench test - validate that the system works while sitting on the workbench and that all sensors are calibrated.  Data plots must indicate passing of this test.  Video should show the LEDs indicating when the sensor package is waiting for the time delay and when it is taking data.
-B. Pendulum test - attach the sensor board (with battery) to different lengths of strings.  Take data while the sensor board swings back and forth.  Show that the measured 3D acceleration can be used in a way to provide the angle and velocity of the sensor board as it swings.  Show that the period of the pendulum is as expected from an analytic solution.  If your team is focusing on simulations, you should have a simulation of the pendulum that shows that you are getting consistent results between the measurements and the simulations.
-C. Parachute test - While the sensor board is running and installed into your rocket, open the rocket and remove the parachute, but do not unfold it.  Drop it from a 4th floor (EECS or Robotics) so that the parachute has time to open and fully deploy.  You may want to practice this on something besides your rocket, so that you know that it will work (i.e., attatch your parachute to a mass that is comparable to your rocket and practice folding and dropping the system). You also may want to do a couple of tests with no sensor board on your rocket, so that the system has less weight and the terminal velocity is lower, so if there is terminal failure your rocket won't be destroyed. You have to show video of the final complete drop and the acceleration results during the test.
-D. Drop test - This will be the scariest test.  Drop your fully assembled rocket with sensor package installed and running from 2 meters height, with the nose cone pointed towards the ground.  Do this over a grassy area, so that the rocket does not impact a super hard surface.  You have to show video of this being done and the acceleration results during the test.
-E. Elevator test - You must find a building that is at least 10 stories and ride an elevator from the bottom floor to at least the 10th floor. The sensor package must be taking data during the elevator ride and should be placed on the floor so that it is measuring the acceleration of the elevator.  There should be at least two stops on the way to the 10th floor, so the stopping and starting can be noted and correlated with the pressure data.  The pressure must be converted to altitude.  The acceleration should be integrated to be converted into velocity and altitude.  The pressure / altitude must be differentiated to convert it to velocity and acceleration.  Plots need to show the results of this test.
-F. Simulation test - Show that your rocket with the sensor board incorporated will reach at least 500 ft and will not exceed 1200 ft with one of the recommended motors.  The exact motor that your group would like will be specified with this test.  Plots will prove that this test passed.
+5. Conduct data analysis by comparing and contrasting the different methods of calculating acceleration, velocity, and position for the flight and simulation data.  This comparison must be included in the poster and final reports, as described below.
+
+## Go / No-Go Testing
+
+Test all aspects of the system (rocket and sensor board), showing that both operate as expected.  Specifically, tests include:
+
+1. Bench test - validate that the system works while sitting on the workbench and that all sensors are calibrated.  Data plots must indicate passing of this test.  Video should show the LEDs indicating when the sensor package is waiting for the time delay and when it is taking data.
+
+2. Pendulum test - attach the sensor board (with battery) to different lengths of strings.  Take data while the sensor board swings back and forth.  Show that the measured 3D acceleration can be used in a way to provide the angle and velocity of the sensor board as it swings.  Show that the period of the pendulum is as expected from an analytic solution.  If your team is focusing on simulations, you should have a simulation of the pendulum that shows that you are getting consistent results between the measurements and the simulations.
+
+3. Parachute test - While the sensor board is running and installed into your rocket, open the rocket and remove the parachute, but do not unfold it.  Drop it from a 4th floor (EECS or Robotics) so that the parachute has time to open and fully deploy.  You may want to practice this on something besides your rocket, so that you know that it will work (i.e., attatch your parachute to a mass that is comparable to your rocket and practice folding and dropping the system). You also may want to do a couple of tests with no sensor board on your rocket, so that the system has less weight and the terminal velocity is lower, so if there is terminal failure your rocket won't be destroyed. You have to show video of the final complete drop and the acceleration results during the test.
+
+4. Drop test - This will be the scariest test.  Drop your fully assembled rocket with sensor package installed and running from 2 meters height, with the nose cone pointed towards the ground.  Do this over a grassy area, so that the rocket does not impact a super hard surface.  You have to show video of this being done and the acceleration results during the test.
+
+5. Elevator test - You must find a building that is at least 10 stories and ride an elevator from the bottom floor to at least the 10th floor. The sensor package must be taking data during the elevator ride and should be placed on the floor so that it is measuring the acceleration of the elevator.  There should be at least two stops on the way to the 10th floor, so the stopping and starting can be noted and correlated with the pressure data.  The pressure must be converted to altitude.  The acceleration should be integrated to be converted into velocity and altitude.  The pressure / altitude must be differentiated to convert it to velocity and acceleration.  Plots need to show the results of this test.
+
+6. Simulation test - Show that your rocket with the sensor board incorporated will reach at least 500 ft and will not exceed 1200 ft with one of the recommended motors.  The exact motor that your group would like will be specified with this test.  Plots will prove that this test passed.
+
 All tests need to be presented at the Go/No-Go meeting.  Each team must pass all tests before being OKed for launch.
 
-6. All teams must collectively present a preliminary design review, which must include:
-A. Team number, name, members with a logo
-B. Focus area for the project
-C. Level 1 Requirements for the project
-E. System-level block diagram - Very much like your schematic, but simplified and with connections (5V, 3.3V, analog, digital)
-F. Sensor board physical specifications.
-G. Chosen rocket with images and preliminary measurements.
-H. A mass budget spreadsheet!
-I. Your extra sensor (if you have one) and its characteristics
-J. Initial simulation results if you have any.  Otherwise, the simulation design strategy.
-K. How your design was shaped by the requirements.
-L. Testing strategies that you have come up with.
-M. Any test results that you have at this point.
-N. Which team member will be responsible for which aspect of the project, including a back-up member.
+## Preliminary Design Review
 
-7. Compare and contrast the different methods of calculating acceleration, velocity, and position for the flight and simulation data.  This comparison must be included in the poster and final reports, as described below.
+All teams must collectively present a preliminary design review, which must include:
 
+1. Team number, name, members with a logo
 
-8. All team members must collectively design, create, and present a poster.  The poster should be persuasive, convincing those who look at it that their project was successful. Teams should be able to highlight the aspects of their project (images, CAD drawings, physical rocket, simulation results, flight results) that convinces their audience (other class members, teaching staff, deans, etc.) that their project was a success.
+2. Focus area for the project
 
-9. All team members must collectively write a final report.  The final report should be persuasive, convincing those who read it that the team has designed the best software, best rocket, and/or best sensor package. The team should use as much evidence as they can (i.e., testing results and flight data / comparisons) to help convince the audience.  The final report should be written as a memo, and directed towards the teaching staff, who are (hypothetically) forming a new rocket company and are looking the best products they can to maximize their profitability.  Because all new companies need to hire raw talent, the final report should highlight which team members contributed in which areas.
+3. Level 1 Requirements for the project
+
+4. System-level block diagram - Very much like your schematic, but simplified and with connections (5V, 3.3V, analog, digital)
+
+5. Sensor board physical specifications.
+
+6. Chosen rocket with images and preliminary measurements.
+
+7. A mass budget spreadsheet!
+
+8. Your extra sensor (if you have one) and its characteristics
+
+9. Initial simulation results if you have any.  Otherwise, the simulation design strategy.
+
+10. How your design was shaped by the requirements.
+
+11. Testing strategies that you have come up with.
+
+12. Any test results that you have at this point.
+
+13. Which team member will be responsible for which aspect of the project, including a back-up member.
+
+## Poster Presentation
+
+All team members must collectively design, create, and present a poster.  The poster should be persuasive, convincing those who look at it that their project was successful. Teams should be able to highlight the aspects of their project (images, CAD drawings, physical rocket, simulation results, flight results) that convinces their audience (other class members, teaching staff, deans, etc.) that their project was a success.  The size and characteristics of the poster are provided in discussion.
+
+## Final Report
+
+All team members must collectively write a final report.  The final report should be persuasive, convincing those who read it that the team has designed the best software, best rocket, and/or best sensor package. The team should use as much evidence as they can (i.e., testing results and flight data / comparisons) to help convince the audience.  The final report should be written as a memo, and directed towards the teaching staff, who are (hypothetically) forming a new rocket company and are looking the best products they can to maximize their profitability.  Because all new companies need to hire raw talent, the final report should highlight which team members contributed in which areas.
+
+We specifically are not providing minimum / maximum page counts or requirement on sections.  We are looking to see if your team makes a convincing argument that is backed up by data. 
 
 
