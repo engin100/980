@@ -25,6 +25,12 @@ The full project specification, including PDR, Go/No-Go tests, poster, and final
 
 [Project Specification](/project/project.md)
 
+## Course Calendar
+
+Calendar containing office hours and lecture/lab/discussion times.
+
+[Link to course calendar](https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+
 ## Supplemental Resources
 
 Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more.
