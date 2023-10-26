@@ -24,6 +24,7 @@ Now that you can see how everything goes together, let's look at a few important
 2. For the 6 LEDs, the negative pin of the LED goes in the square outlined pin, or the bottom row if you have the switch at the bottom like in Figure 2.
 3. Although the pressure sensor is marked P1 on the top layer, we reccomend putting the sensor on the bottom layer. Again, look at Fig. 2 to see which pin is #1 (the marked pin on the pressure sensor)
 4. Looking at the buzzer, you should notice a + and - directly above the footprint. This corrosponds with a + on the buzzer. 
+5. Solder the Arduino and SD card reader directly to the board, and then use headers for the pressure sensor and accelerometer.
 
 ![Rocket Board Layout](/media/Rocket%20Board%20Markup.jpg)
 
