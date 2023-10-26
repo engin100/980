@@ -24,6 +24,7 @@ The labs will be made publicly visible as they are released in the week leading 
 The full project specification, including PDR, Go/No-Go tests, poster, and final report is here:
 
 [Project Specification](/project/project.md)
+[PCB Documentation](/project/sensor-board.md)
 
 ## Course Calendar
 
