@@ -22,6 +22,7 @@ Now that you can see how everything goes together, let's look at a few important
 
 1. For the battery connector, BT1, the positive terminal goes in the square outlined pin, while the negative terminal goes in the circular outlined pin (with the white silkscreen square around it)
 2. Put a piece of electrical tape over the solder joints that go below the SD card module so that nothing short circuits on the SD card module.
+3. Solder female headers in for the pressure sensor and accelerometer, and solder male headers onto the accelerometer. 
 3. For the 6 LEDs, the negative pin of the LED goes in the square outlined pin, or the bottom row if you have the switch at the bottom like in Figure 2.
 3. Although the pressure sensor is marked P1 on the top layer, we reccomend putting the sensor on the bottom layer. Again, look at Fig. 2 to see which pin is #1 (the marked pin on the pressure sensor)
 4. Looking at the buzzer, you should notice a + and - directly above the footprint. This corrosponds with the symbol on the buzzer. 
