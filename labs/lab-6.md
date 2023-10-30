@@ -222,7 +222,7 @@ To change your view, you can push down on the scroll wheel of the mouse and drag
 
 ![Booster Base](../media/lab-6_figures/booster-base.png)
 
-26. Hightlight the field under *Features and Faces* and select the one landing leg.
+26. Highlight the field under *Features and Faces* and select the one landing leg.
 
 27. Change the angle to 60 degrees and set the number of components to 6.
 
