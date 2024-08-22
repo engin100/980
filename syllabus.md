@@ -3,7 +3,7 @@ layout: spec
 latex: true
 ---
 
-# Engineering 100-980 “Rocket Science” Fall 2023
+# Engineering 100-980 “Rocket Science” Fall 2024
 
 ## Course Overview
 
@@ -11,7 +11,7 @@ In this section of ENGR100, we will focus on Rocket Science - learning about orb
 
 ### Course Objectives
 
-Engineering 100 is a team-based, project-based course. It is intended to provide you with an introduction to the disciplines of engineering and technical communication, and an opportunity to develop your engineering “tool kit” within the context of an authentic project with a team and managers who are looking for reviews and updates.
+Engineering 100 is a team-based, project-based course. It is intended to provide an introduction to the disciplines of engineering and technical communication, and an opportunity to develop your engineering “tool kit” within the context of an authentic project with a team and managers who are looking for reviews and updates.
 
 [The learning objectives for Engineering 100 are described in this document.](docs/engr100.md)
 
@@ -21,13 +21,13 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 
 | Class | Time | Location |
 | ----- | ---- | -------- |
-| **Lecture (980)** | TuTh 3:00-4:30 | 1017 DOW |
+| **Lecture (980)** | TuTh 3:00-4:30 | TBA |
 | Lab (981) | W 3:30-5:30 | 1225 CSRB |
-| Discussion (982) | W 2:30-3:30 | 1008 EECS |
+| Discussion (982) | W 2:30-3:30 | TBA |
 | Lab (983) | Th 12:30-2:30 | 1225 CSRB |
-| Discussion (984) | W 12:30-1:30 | 1018 DOW |
+| Discussion (984) | W 12:30-1:30 | TBA |
 | Lab (985) | W 12:30-2:30 | 1225 CSRB |
-| Discussion (986) | W 11:30-12:30 | 1018 DOW |
+| Discussion (986) | W 11:30-12:30 | TBA |
 
 ### Instructor Information
 
@@ -35,25 +35,25 @@ Here is contact information for all the course staff. If you have a question tha
 
 | Instructor | Contact  | Office Hours |
 | ---------- | -------- | ------------ |
-| Prof. Aaron Ridley<br>Technical lead  | <ridley@umich.edu><br>1416 CSRB | During All Labs |
-| Dr. Alan Hogg <br> Communication Instructor - lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom) |Tue/Thu 1:30 - 2:30 PM |
-| Dr. Evan Radeen <br> Communication Instructor - lead | eradeen@umich.edu <br> zoom! | Mon 10-11 AM <br> Fri 11 AM - 12 noon|
-| Eric Andrechek <br> IA| ericandr@umich.edu <br>1210 CSRB | Mon 12:30 - 2:30 PM|
-| Hannah Barnard <br> IA| hbarnard@umich.edu <br> 1210 CSRB | Tue 4 - 6 PM|
-| Yichen Wang <br> IA| yicmwang@umich.edu <br>1210 CSRB | Tue 10 AM - 12 noon |
-| Jack Woods <br> IA| jfwoods@umich.edu <br> 1210 CSRB | Tue 2 - 3 PM <br> Thu 4:30 - 5:30 PM |
-| Ben Miller <br> IA| benjamen@umich.edu <br> 1210 CSRB | Mon 2:30 - 4:30 PM |
+| **Dr. Chris Ruf** <br>Technical Lead  | <cruf@umich.edu> <br>2527A CSRB | TBA |
+| **Dr. Alan Hogg** <br> Communication Instructor - Lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom) | TBA |
+| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> TBA | TBA |
+| **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br>1210 CSRB | TBA |
+| **Jack Woods** <br> Instructional Assistant | <jfwoods@umich.edu> <br> 1210 CSRB | TBA |
+| **Hannah Barnard** <br> Instructional Assistant | <hbarnard@umich.edu> <br> 1210 CSRB | TBA |
+| **Rafe Symonds** <br> Instructional Assistant | <rsymonds@umich.edu> <br>1210 CSRB | TBA |
 
 ### Office Hours
 
 Office hours are a chance to get to know the course staff, to get clarification on concepts presented in class, and get encouragement on homework and labs. Extensive office hours will be held throughout the semester. In person office hours are posted above.
 
 **For an up-to-date listing of office hours, always refer to the week’s agenda on Canvas.**
-[There is a google calendar available here.](https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+
+Link to the course Google Calendar will be posted soon.
 
 ## Canvas & Course Resources
 
-We will use Canvas as our main online portal for this course. Canvas is the Learning Management System (LMS) of choice for U-M. Canvas should be your starting point – all other resources are linked from there, and Canvas will remind you about assignments and due dates. Make sure you are set up to receive course announcements on Canvas, since we will post critical information there. Also, monitor your “to do” list on Canvas for reminders about all assignments except some minor in-class activities. Many of your homework assignments will be on Canvas also. Yeah, Canvas. Pay attention there!
+We will use Canvas as our main online portal for this course. Canvas is the Learning Management System (LMS) of choice for U-M. Canvas should be your starting point – all other resources are linked from there, and Canvas will remind you about assignments and due dates. Make sure you are set up to receive course announcements on Canvas, since we will post critical information there. Also, monitor your “to do” list on Canvas for reminders about all assignments except some minor in-class activities. Many of your homework assignments will be on Canvas also. Pay attention there!
 
 ## Working with Teams
 
@@ -119,8 +119,9 @@ Late assignments will be docked 10% per day for up to 10 days. There are excepti
 
 - PDR, Go/No-Go, Final Poster, Final Report
 - Team Surveys
+
 Late assignment exceptions will be made for:
-- Students register for classes late for assignments due in the month of September. 
+- Students register for classes late, for assignments due in the month of September. 
 
 ### Grading
 
@@ -129,11 +130,11 @@ A breakdown of the grading for this class is shown in the table below:
 |                                    |                 |
 | ---------------------------------- | :-------------: |
 | **Item**                           | **# of points** |
-| Individual engineering/technical   |             |
-| Individual technical communication |              |
-| Team engineering/technical         |              |
-| Team technical communication       |             |
-| **Total**                          |     **000**    |
+| Individual engineering/technical   | TBA |
+| Individual technical communication | TBA |
+| Team engineering/technical         | TBA |
+| Team technical communication       | TBA |
+| **Total**                          | **TBA**|
 
 In general, the grading is close to 50/50 technical and tech comm and 50/50 individual and group. Certain assignments may be technical only, and some assignments may be tech comm only. Final letter grades will be assigned at the end of term and will be based on the points you have earned vs. the total points available in the class. We will grade on a “straight scale”:
 
