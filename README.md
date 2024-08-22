@@ -16,7 +16,3 @@ View the library status from Arduino [here](https://downloads.arduino.cc/librari
 ## Rocket Boards
 
 The KiCAD files for the PCBs we print and launch in model rockets can be found [here](https://github.com/engin100/980-rocket-boards).
-
-## Solder Challenge
-
-We use [this](https://github.com/engin100/solder-challenge) project for our PCBs to print and the BOM linked in that repo for parts to order to run student solder challenges.

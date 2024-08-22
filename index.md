@@ -17,7 +17,7 @@ View the syllabus [here](/syllabus)
 
 The labs will be made publicly visible as they are released in the week leading up to lab. You can find them linked here:
 
-[Lab Manuals](/labs/)
+[Lab Manuals](/labs/index)
 
 ## Project
 
@@ -30,7 +30,7 @@ The full project specification, including PDR, Go/No-Go tests, poster, and final
 
 Calendar containing office hours and lecture/lab/discussion times.
 
-[Link to course calendar](https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+**Link to course calendar will be linked soon**
 
 ## Supplemental Resources
 

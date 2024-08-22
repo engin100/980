@@ -7,6 +7,7 @@ latex: true
 
 As we publish labs, they will become available here.
 
+<!--
 ## Lab 1: Arduino 101
 
 Learning how to program and wire an Arduino micro-controller to control LEDs on a breadboard.
@@ -67,3 +68,4 @@ Read through the rocket selection guidelines to choose your group's rocket and i
 
 - [Link to selection guidelines](https://980.engr100.org/labs/rocket-selection)
 - [Link to form](https://docs.google.com/forms/d/e/1FAIpQLScnKEXi57qTo04cYHIfSr4qqNmIUd--aQWvp2jopl6VV9e9Og/viewform)
+-->
