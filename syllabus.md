@@ -21,13 +21,13 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 
 | Class | Time | Location |
 | ----- | ---- | -------- |
-| **Lecture (980)** | TuTh 3:00-4:30 | TBA |
+| **Lecture (980)** | TuTh 3:00-4:30 | 1017 DOW |
 | Lab (981) | W 3:30-5:30 | 1225 CSRB |
-| Discussion (982) | W 2:30-3:30 | TBA |
+| Discussion (982) | W 2:30-3:30 | 1032 FXB |
 | Lab (983) | Th 12:30-2:30 | 1225 CSRB |
-| Discussion (984) | W 12:30-1:30 | TBA |
+| Discussion (984) | W 12:30-1:30 | 4440 EECS |
 | Lab (985) | W 12:30-2:30 | 1225 CSRB |
-| Discussion (986) | W 11:30-12:30 | TBA |
+| Discussion (986) | W 11:30-12:30 | 4440 EECS |
 
 ### Instructor Information
 
