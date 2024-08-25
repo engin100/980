@@ -7,13 +7,13 @@ latex: true
 
 As we publish labs, they will become available here.
 
-<!--
 ## Lab 1: Arduino 101
 
 Learning how to program and wire an Arduino micro-controller to control LEDs on a breadboard.
 
 [Link to lab 1](/labs/lab-1)
 
+<!--
 ## Lab 2: Iterative Numerical Analysis in a Computer
 
 Learning how to become an Excel (or Google Sheets) wiz to manipulate and integrate data, and make beautiful and practical plots.
