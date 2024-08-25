@@ -49,7 +49,7 @@ Office hours are a chance to get to know the course staff, to get clarification 
 
 **For an up-to-date listing of office hours, always refer to the week’s agenda on Canvas.**
 
-[There is a google calendar available here.](https://calendar.google.com/calendar/u/0?cid=Y19hMWVjNDA3MTJmZGZkNDhlYzA3NmNiYmE2MTliYWM5MDI0MWZkYWI1NmY2NmUxYTRhNGUwZDFiYjkwZDY3OTU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+There is a google calendar available [here,](https://calendar.google.com/calendar/u/0?cid=Y19hMWVjNDA3MTJmZGZkNDhlYzA3NmNiYmE2MTliYWM5MDI0MWZkYWI1NmY2NmUxYTRhNGUwZDFiYjkwZDY3OTU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) and shown below.
 
 <iframe src="https://calendar.google.com/calendar/embed?src=c_a1ec40712fdfd48ec076cbba619bac90241fdab56f66e1a4a4e0d1bb90d67957%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
