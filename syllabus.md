@@ -21,13 +21,13 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 
 | Class | Time | Location |
 | ----- | ---- | -------- |
-| **Lecture (980)** | TuTh 3:00-4:30 | 1017 DOW |
-| Lab (981) | W 3:30-5:30 | 1225 CSRB |
-| Discussion (982) | W 2:30-3:30 | 1032 FXB |
-| Lab (983) | Th 12:30-2:30 | 1225 CSRB |
-| Discussion (984) | W 12:30-1:30 | 4440 EECS |
-| Lab (985) | W 12:30-2:30 | 1225 CSRB |
-| Discussion (986) | W 11:30-12:30 | 4440 EECS |
+| **Lecture (980)** | TuTh 3:00-4:30p | 1017 DOW |
+| Lab (981) | W 3:30-5:30p | 1225 CSRB |
+| Discussion (982) | W 2:30-3:30p | 1032 FXB |
+| Lab (983) | Th 12:30-2:30p | 1225 CSRB |
+| Discussion (984) | W 12:30-1:30p | 4440 EECS |
+| Lab (985) | W 12:30-2:30p | 1225 CSRB |
+| Discussion (986) | W 11:30a-12:30p | 4440 EECS |
 
 ### Instructor Information
 
@@ -35,13 +35,13 @@ Here is contact information for all the course staff. If you have a question tha
 
 | Instructor | Contact  | Office Hours |
 | ---------- | -------- | ------------ |
-| **Dr. Chris Ruf** <br>Technical Lead  | <cruf@umich.edu> <br>2527A CSRB | TBA |
+| **Dr. Chris Ruf** <br>Technical Lead  | <cruf@umich.edu> <br> 2527A CSRB | TBA |
 | **Dr. Alan Hogg** <br> Communication Instructor - Lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom) | TBA |
-| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> TBA | TBA |
-| **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br>1210 CSRB | TBA |
-| **Jack Woods** <br> Instructional Assistant | <jfwoods@umich.edu> <br> 1210 CSRB | TBA |
-| **Hannah Barnard** <br> Instructional Assistant | <hbarnard@umich.edu> <br> 1210 CSRB | TBA |
-| **Rafe Symonds** <br> Instructional Assistant | <rsymonds@umich.edu> <br>1210 CSRB | TBA |
+| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 325 GFL | TBA |
+| **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | Tu 1:30-3:00p |
+| **Jack Woods** <br> Instructional Assistant | <jfwoods@umich.edu> <br> 1210 CSRB | M 12:30-2:30p |
+| **Hannah Barnard** <br> Instructional Assistant | <hbarnard@umich.edu> <br> 1210 CSRB | Tu 4:30-6:30p |
+| **Rafe Symonds** <br> Instructional Assistant | <rsymonds@umich.edu> <br> 1210 CSRB | M 8:30-10:30a |
 
 ### Office Hours
 
@@ -49,7 +49,9 @@ Office hours are a chance to get to know the course staff, to get clarification 
 
 **For an up-to-date listing of office hours, always refer to the week’s agenda on Canvas.**
 
-Link to the course Google Calendar will be posted soon.
+[There is a google calendar available here.](https://calendar.google.com/calendar/u/0?cid=Y19hMWVjNDA3MTJmZGZkNDhlYzA3NmNiYmE2MTliYWM5MDI0MWZkYWI1NmY2NmUxYTRhNGUwZDFiYjkwZDY3OTU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+
+<iframe src="https://calendar.google.com/calendar/embed?src=c_a1ec40712fdfd48ec076cbba619bac90241fdab56f66e1a4a4e0d1bb90d67957%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## Canvas & Course Resources
 
