@@ -21,7 +21,7 @@ The labs will be made publicly visible as they are released in the week leading 
 
 ## Course Calendar
 
-There is a google calendar available [here,](https://calendar.google.com/calendar/u/0?cid=Y19hMWVjNDA3MTJmZGZkNDhlYzA3NmNiYmE2MTliYWM5MDI0MWZkYWI1NmY2NmUxYTRhNGUwZDFiYjkwZDY3OTU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) and shown below.
+There is a google calendar available [here,](https://calendar.google.com/calendar/u/0?cid=Y19hMWVjNDA3MTJmZGZkNDhlYzA3NmNiYmE2MTliYWM5MDI0MWZkYWI1NmY2NmUxYTRhNGUwZDFiYjkwZDY3OTU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) and shown below. This calendar shows labs, lectures, discussions, and office hours. For a detailed schedule of assignments, make sure to check the course Canvas page.
 
 <iframe src="https://calendar.google.com/calendar/embed?src=c_a1ec40712fdfd48ec076cbba619bac90241fdab56f66e1a4a4e0d1bb90d67957%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
