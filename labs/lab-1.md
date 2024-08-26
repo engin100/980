@@ -73,7 +73,7 @@ Your lab instructors will demonstrate using a breadboard before the lab begins. 
 
 2. Build the LED circuit shown in the schematic below. When built, it should look similar to the voltage divider circuit in Fig. 3, except one of the resistors will now be an LED. Be aware that LEDs only turn on when placed in your circuit in the correct orientation. Try switching the orientation of your LED if it doesn't turn on after completing step 2.
     <div class="primer-spec-callout info" markdown="1">
-    **Hint:** one leg is longer than the other! Check the [references](/references) page for more...
+    **Hint:** one leg is longer than the other! Check the [references](/resources.md) page for more...
     </div>
     ![LED Circuit to build](/media/lab1-led-circuit.png){: .invert-colors-in-dark-mode }
     Note: Vin refers to the 5V pin on the Arduino for now.  We will move this in **2.3** below.
@@ -94,13 +94,22 @@ Do not continue to the next section unless you can see your Arduino Nano and its
 
 1. [Check out this video that walks you through how to do this part.](https://www.youtube.com/watch?v=vD98tOiiRws)
 2. Let's run our first code. Navigate to File → Examples → ENGR100-980 → Lab1-LED. A new window should open up, with some code on it. (Make sure to set the proper micro-controller and processor under the Tools menu). Upload and run the code, and observe what happens.
-3. Now, let's try making an external LED blink instead of the built-in one. To do this, connect your LED and resistor circuit's positive side to one of the digital pins on the Arduino. Make sure you modify the code such that `#define LED_PIN 5` replaces "5" with the pin number you are plugged into. For example, D7 would replace "5" with "7".
-4. Once this works, we are going to connect 5 more LEDs all to different pins. Your goal here is to take your new knowledge about breadboards to connect all 6 of your LEDs to your breadboard while using only 1 resistor. (Each LED still needs to be connected through a resistor though!) Configure the code to label these LEDs as you did for the previous step. If everything has set up in order, you should now see the lights turning on and off in a wave sort of order.
+3. Now, let's try making an external LED blink instead of the built-in one. To do this, connect your LED and resistor circuit's positive side to one of the digital pins on the Arduino. Make sure you modify the code such that `#define LED_PIN_0 ?` replaces "?" with the pin number you are plugged into. For example, D7 would replace "?" with "7".
+4. Once this works, we are going to connect 5 more LEDs all to different pins. Your goal here is to take your new knowledge about breadboards to connect all 6 of your LEDs to your breadboard while using only 1 resistor. (Each LED still needs to be connected through a resistor though!) Now edit the code, using the existing lines as context, to make all 6 LEDs (not the built-in LED) flash in a wave pattern (Knightrider).
 5. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
+
+<div class="primer-spec-callout danger" markdown="1">
+REMEMBER TO TAKE A PICTURE, YOU WILL BE SUBMITTING IT!
+</div>
+
 6. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
 
 <div class="primer-spec-callout info" markdown="1">
 **Note:** If you are having trouble finding a partner, you do not need to swap with someone, simply having someone else change your board without you watching will suffice.
+</div>
+
+<div class="primer-spec-callout danger" markdown="1">
+AGAIN, DON'T FORGET THE PICTURE FOR YOUR SUBMISSION.
 </div>
 
 ### 3. Voltage Divider
@@ -138,7 +147,7 @@ The concept of the voltage divider can be extended to any number of resistors. T
 
 ## Post-Lab Questions
 
-1. Write a short blurb explaining what your peer changed on your breadboard and why you think this would cause it to not work as normal (or, why you think their change would not have impacted anything).
+1. Write a short explanation of what your peer changed on your breadboard and why you think this would cause it to not work as normal (or, why you think their change would not have impacted anything).
 2. What combination of resistors did you use to get to less than 1.25V at the analog pin in step 3.7? Draw them in a circuit and upload/attach a picture of this circuit to make it clear where you put the resistors.
 3. Using three resistors in series, draw a voltage divider circuit with two $$V_{out}$$s (one between resistors 1 and 2 and one between resistors 2 and 3). $$V_{out1}$$ should be equal to $$\frac{2}{3} V_{in}$$ and $$V_{out2}$$ should be equal to $$\frac{1}{3} V_{in}$$. Give possible values those resistors could take. What would happen if we doubled the value of all of the resistors?
 
@@ -163,4 +172,4 @@ Submitting anything other than a single PDF may result in your work not being gr
 
 ## Post-Lab Extra Assignment
 
-This semester, we are going to use a tool called **Altium**.  We are also going to work with schematics a LOT.  Instead of hand drawing all of the schematics, we are going to draw them in Altium.  Therefore, as part of our first lab, we are going to have you do an exercise that walks you through how to draw a simple schematic in Altium.  This is a separate assignment on Canvas.
+This semester, we are going to use a tool called **Altium**.  We are also going to work with schematics a LOT.  Instead of hand drawing all of the schematics, we are going to draw them in Altium.  Therefore, as part of our first lab, we are going to have you do an exercise that walks you through how to draw a simple schematic in Altium.  This is a separate lab assignment called Postlab 1b.
