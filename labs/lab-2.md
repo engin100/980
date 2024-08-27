@@ -189,6 +189,12 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 Submitting anything other than a single PDF may result in your work not being graded or your scores being heavily delayed.
 </div>
 
+## Post-Lab Extra Assignment
+
+This semester, we are going to use a tool called **Altium**.  We are also going to work with schematics a LOT.  Instead of hand drawing all of the schematics, we are going to draw them in Altium.  Therefore, as part of our first lab, we are going to have you do an exercise that walks you through how to draw a simple schematic in Altium.  This is a separate lab assignment called Postlab 2b.
+
+[Link to lab 2b](/labs/lab-2b)
+
 ## Bonus Material (not required)
 
 ### Midpoint Riemann Sums

@@ -13,18 +13,18 @@ Learning how to program and wire an Arduino micro-controller to control LEDs on 
 
 [Link to lab 1](/labs/lab-1)
 
-### Lab 1b: Creating an Altium Schematic
-
-Learning how to produce a PCB schematic in Altium, in preparation for later labs.
-
-[Link to lab 1b](/labs/lab-1b)
-
 <!--
 ## Lab 2: Iterative Numerical Analysis in a Computer
 
 Learning how to become an Excel (or Google Sheets) wiz to manipulate and integrate data, and make beautiful and practical plots.
 
 [Link to lab 2](/labs/lab-2)
+
+### Lab 2b: Creating an Altium Schematic
+
+Learning how to produce a PCB schematic in Altium, in preparation for later labs.
+
+[Link to lab 2b](/labs/lab-2b)
 
 ## Lab 3: Temperature Sensing
 

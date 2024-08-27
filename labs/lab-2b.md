@@ -3,7 +3,7 @@ layout: spec
 latex: true
 ---
 
-# Lab 1b: Creating an Altium Schematic
+# Lab 2b: Creating an Altium Schematic
 
 <div class="primer-spec-callout danger" markdown="1">
 Note: While it is okay to work next to someone else to accomplish this goal and to help each other with it, each person needs to work through this and provide their own screenshot.  Please do not work as a team and turn in the same screenshot.
@@ -13,7 +13,7 @@ Note: While it is okay to work next to someone else to accomplish this goal and 
 
 ## Contents
 
-- [Lab 1b: Creating an Altium Schematic](#lab-1b-creating-an-altium-schematic)
+- [Lab 2b: Creating an Altium Schematic](#lab-1b-creating-an-altium-schematic)
     - [Contents](#contents)
     - [Resources](#resources)
     - [Getting Started](#getting-started)
