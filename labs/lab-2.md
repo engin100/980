@@ -189,7 +189,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 Submitting anything other than a single PDF may result in your work not being graded or your scores being heavily delayed.
 </div>
 
-## Bonus Material
+## Bonus Material (not required)
 
 ### Midpoint Riemann Sums
 
