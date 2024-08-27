@@ -17,7 +17,7 @@ Learning how to program and wire an Arduino micro-controller to control LEDs on 
 
 Learning how to produce a PCB schematic in Altium, in preparation for later labs.
 
-[Link to lab 1b](/labs/lab-1b.md)
+[Link to lab 1b](/labs/lab-1b)
 
 <!--
 ## Lab 2: Iterative Numerical Analysis in a Computer
