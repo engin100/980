@@ -173,3 +173,5 @@ Submitting anything other than a single PDF may result in your work not being gr
 ## Post-Lab Extra Assignment
 
 This semester, we are going to use a tool called **Altium**.  We are also going to work with schematics a LOT.  Instead of hand drawing all of the schematics, we are going to draw them in Altium.  Therefore, as part of our first lab, we are going to have you do an exercise that walks you through how to draw a simple schematic in Altium.  This is a separate lab assignment called Postlab 1b.
+
+[Link to lab 1b](/labs/lab-1b.md)
