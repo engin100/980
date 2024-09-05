@@ -90,7 +90,7 @@ Before we move on to collecting data, let's make sure the circuit is working as 
 
 Now we have a circuit and some code to tell us what the raw voltage our TMP36 is reading in, as explained above in [How Analog to Digital Converters (ADCs) Work](#how-analog-to-digital-converters-adcs-work).
 
-In order to turn this voltage into a useful temperature, we need to do some math with a calibration curve. This is where the spreadsheet you made during Tuesday's lecture (which you definitely attended, right?), comes in handy.
+In order to turn this voltage into a useful temperature, we need to do some math with a calibration curve.
 
 To build this two-point calibration curve, we need, as the name suggests, two points. For this lab, we will collect one temperature inside, and one outside.
 
