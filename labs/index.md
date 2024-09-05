@@ -25,13 +25,13 @@ Learning how to produce a PCB schematic in Altium, in preparation for later labs
 
 [Link to lab 2b](/labs/lab-2b)
 
-<!--
 ## Lab 3: Temperature Sensing
 
 Using our Arduino and circuitry knowledge to read data from a temperature sensor and plot it in real-time.
 
 [Link to lab 3](/labs/lab-3)
 
+<!--
 ## Lab 4: Creating a Standalone Arduino
 
 Saving Arduino sensor data to a microSD card to that we can use it later, and powering an Arduino with a battery.
