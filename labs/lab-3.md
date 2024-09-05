@@ -29,7 +29,7 @@ latex: true
 - [ ] 1 Breadboard
 - [ ] 1 Programming Cable (and adapters if necessary)
 - [ ] 1 TMP36 Temperature Sensor
-- [ ] A hand-full of jumper wires (it is possible to do the whole lab without any)
+- [ ] A hand-full of jumper wires
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
 ## Introduction
@@ -145,7 +145,7 @@ To get you thinking critically about how your 2-point calibration curve works, a
 
 In addition to the pdf you will create as detailed in the submission below, you will also be writing a memo for this lab.
 
-For details about the memo, [see the Canvas assignment](https://umich.instructure.com/courses/618909/assignments/2136869).
+For details about the memo, [see the Canvas assignment](https://umich.instructure.com/courses/709939/assignments/2446362).
 
 ## Submission
 
