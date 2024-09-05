@@ -153,7 +153,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 - [ ] A **screenshot** of your calibration curve spreadsheet.
 - [ ] Your data table of indoor and outdoor temperatures and voltages.
-- [ ] A screenshot of your Arduino IDE's Serial Plotter output showing both the temperature as it changes as you walk outside.
+- [ ] A screenshot of your Arduino IDE's Serial Plotter output showing the temperature as it changes as you walk outside.
 - [ ] Answers (and any work you may have) to the post-lab questions.
 
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
