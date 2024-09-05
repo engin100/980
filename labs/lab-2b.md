@@ -168,7 +168,7 @@ them.
 
 ## Schematic to PCB
 
-Later on, in lab 6 prelab, you will turn this schematic into a PCB! The instructions to do so can be found [here](/labs/lab-6-prelab).
+Later on, in lab 6 prelab, you will turn this schematic into a PCB!
 
 ## Submission
 
