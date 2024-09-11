@@ -40,7 +40,7 @@ Starting in this lab, you will be graded on your use of color coding when wiring
 - **Red:** Power (5v, 3.3v, etc.)
 - **Black:** Ground
 - **Blue:** Analog (Pins labeled with an A, and most likely used for analogRead or sensor data)
-- **Yellow:** Digital (Pins labeled a D, most likely used to control things or for more complicated sensors)
+- **Yellow:** Digital (Pins labeled with a D, most likely used to control things or for more complicated sensors)
 
 **Use of vertical breadboard rails:** Utilize the breadboard rails (blue and red) to run power and ground lines for easy access across the entire breadboard. For example, run a black jumper cabled from the Arduino ground pin to one of the blue rails, and then connect another black jumper from the grounded blue rail to the other blue rail. Now both blue rails are grounded, and can be used as the ground terminal for any components. Similarly, you could connect a red jumper from the 5v pin on the Arduino to one of the red rails, and use that rail for a 5v supply. In future labs, when we're working with 5v and 3.3v, we will have you run a rail for each voltage.
 </div>
@@ -166,6 +166,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 - [ ] Your data table of indoor and outdoor temperatures and voltages.
 - [ ] A screenshot of your Arduino IDE's Serial Plotter output showing the temperature as it changes as you walk outside.
 - [ ] Answers (and any work you may have) to the post-lab questions.
+- [ ] Photo of completed breadboard circuit. (You'll receive full points for submitting this. We will simply be using it to give feedback on color coding in preparation for stricter grading in later labs.)
 
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
