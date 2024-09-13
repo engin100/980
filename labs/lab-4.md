@@ -102,7 +102,15 @@ Just like we did in the last lab, we now need to plug in the TMP36 to an analog 
 
 Unlike the other sensors and modules we have used so far, the MicroSD module we are using uses the Arduino's digital pins. Luckily for us, there are libraries (that you should have installed when following the tutorial and initially setting up your Arduino IDE), that handle all the complicated digital interfacing for us. All we need to know is which pins to plug the adapter module into.
 
+<div class="primer-spec-callout danger" markdown="1">
+This image is a reference for pin labelling. Make sure to follow the standard color conventions listed at the top of this lab manual.
+</div>
+
 ![MicroSD Adapter Module Wiring](../media/SD-Card-Wiring.png){: .invert-colors-in-dark-mode }
+
+<div class="primer-spec-callout danger" markdown="1">
+Again... this image is a reference for pin labelling. Make sure to follow the standard color conventions listed at the top of this lab manual.
+</div>
 
 While your Arduino is powered off and disconnected from the 9V, plug your module in as shown above. The Arduino pins for this **DO** matter and cannot easily be changed, unlike the analog pins.
 
