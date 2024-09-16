@@ -27,7 +27,7 @@ All of these materials are presorted into the correct number you need in the sol
 - [ ] 5 Through-Hole LEDs
 - [ ] 4 Surface Mount LEDs
 - [ ] 1 9v Battery Connector
-- [ ] 2 10 Pin Headers
+- [ ] 2 15 Pin Headers
 
 ## General Tips and Tricks
 
