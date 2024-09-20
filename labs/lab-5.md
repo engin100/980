@@ -42,9 +42,13 @@ latex: true
 - [ ] 1 MPX4115A Pressure Sensor
 - [ ] A Computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
+<div class="primer-spec-callout danger" markdown="1">
+This is your first team lab! You can (and should) all work together to complete it and have one student submit the assignment on behalf of the team.
+</div>
+
 ## Introduction
 
-This lab should be one of your easiest yet. By the end of the lab, you will have re-built your circuit from lab 4, and added an accelerometer and pressure sensor, as well as made calibration curves for each of the sensors.
+By the end of this lab, you will have re-built your circuit from lab 4, and added an accelerometer and pressure sensor, as well as made calibration curves for each of the sensors.
 
 Most of the time involved in this lab will be re-wiring what you have previously built, as well as working on calibrating your accelerometer and pressure sensors.
 
@@ -88,7 +92,7 @@ Copy your Google Sheet (or Excel file), record these calibration values and calc
 
 The accelerometer is relatively straightforward to wire compared to the pressure sensor. All of the pinouts are clearly labelled on the sensor. You will wire GND to GND, X, Y, and Z each to its own analog pin on the Arduino, and **VCC to the 3V3 pin on the Arduino**.
 
-<div class="primer-spec-callout warning" markdown="1">
+<div class="primer-spec-callout danger" markdown="1">
 This accelerometer sensor takes 3.3V input, not 5V like everything else we have used so far. Plugging it into 5V can break the sensor or cause other bad and unintended things to happen!
 </div>
 
