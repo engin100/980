@@ -21,7 +21,7 @@ All of these materials are presorted into the correct number you need in the sol
 </div>
 
 - [ ] 1 Solder Challenge PCB
-- [ ] 1 Arduino with Solder-Tester code uploaded (from ENGR100-950 library)
+- [ ] 1 Arduino with Solder-Tester code uploaded from ENGR100-980 library (don't worry about this item until you are done soldering)
 - [ ] 8 1k$$\Omega$$ Through-Hole Resistors
 - [ ] 6 1k$$\Omega$$ Surface Mount Resistors (1001 Resistors)
 - [ ] 5 Through-Hole LEDs
@@ -128,7 +128,7 @@ READ ALL OF THESE ITEMS CAREFULLY. DO NOT SKIP ANY OF THESE ITEMS.
 
 ![](/soldering/soldering-media/final.png)
 
-20. Upload the code Solder-Tester from the ENGR100-950 library to an Arduino, and then plug the Arduino, carefully, into the header pins on your completed board (USB should no longer be attached). When inserting a battery, you should see a pattern of lights flashing. Check with an instructor to see what these lights mean, or read the comments at the top of the code file!
+20. Upload the code Solder-Tester from the ENGR100-980 library to an Arduino, and then plug the Arduino, carefully, into the header pins on your completed board (USB should no longer be attached). When inserting a battery, you should see a pattern of lights flashing. Check with an instructor to see what these lights mean, or read the comments at the top of the code file!
 
 ## Submission
 
