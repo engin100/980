@@ -46,6 +46,8 @@ latex: true
 
   - Figures should follow Tech Comm best practices from lecture.
 
+  - [Link to TC lecture slides, "Figures and Tables"](https://drive.google.com/file/d/1wF_2sew3AUR0CahXwRlC7FNN-Dnxxz6n/view?usp=sharing)
+
 ### Page 2
 
 - Plot of terminal velocity vs mass for both parachutes and streamers following Tech Comm guidelines from class.

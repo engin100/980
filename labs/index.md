@@ -49,11 +49,11 @@ Learning how to use a CAD program to design a 3D model of a SpaceX Starship Boos
 
 [Link to lab 6](/labs/lab-6)
 
-<!--
 ## Lab 7: Altium
 
 [Link to lab 7](/labs/lab-7)
 
+<!--
 ## Lab 8: Drop Test
 
 Analyzing terminal velocities of different drag-inducing objects under varying masses.
