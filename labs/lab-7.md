@@ -63,7 +63,7 @@ For additional reference, here is the schematic you made following Lab 1:
 
 _Figure 3: The schematic completed in the Postlab 1 assignment_
 
-Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre- loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so as we will discuss in the procedure, you can simply drag and drop them into place.
+Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre- loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so as we will discuss in the procedure, you can simply drag and drop them into place. **Make sure that your team is using the schematic components from the ENGR100 _.SchLib_ files. Using the Simulation Genaric Components library will cause issues down the road.**
 
 
 #### Your Schematic Contents
