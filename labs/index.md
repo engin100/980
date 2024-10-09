@@ -31,12 +31,9 @@ Using our Arduino and circuitry knowledge to read data from a temperature sensor
 
 [Link to lab 3](/labs/lab-3)
 
-<!--
 ## Lab 4: Creating a Standalone Arduino
 
 Saving Arduino sensor data to a microSD card to that we can use it later, and powering an Arduino with a battery.
-
-:warning: This *may* come in handy when launching rockets...
 
 [Link to lab 4](/labs/lab-4)
 
@@ -56,6 +53,7 @@ Learning how to use a CAD program to design a 3D model of a SpaceX Starship Boos
 
 [Link to lab 7](/labs/lab-7)
 
+<!--
 ## Lab 8: Drop Test
 
 Analyzing terminal velocities of different drag-inducing objects under varying masses.

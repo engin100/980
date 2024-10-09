@@ -37,6 +37,17 @@ latex: true
 - [ ] 1 9V battery connector
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
+<div class="primer-spec-callout warning" markdown="1">
+Remember, you are required to use proper color-coding conventions. They are listed again below for your reference.
+
+- **Red:** Power (5v, 3.3v, etc.)
+- **Black:** Ground
+- **Blue:** Analog (Pins labeled with an A, and most likely used for analogRead or sensor data)
+- **Yellow:** Digital (Pins labeled with a D, most likely used to control things or for more complicated sensors)
+
+**Use of vertical breadboard rails:** Utilize the breadboard rails (blue and red) to run power and ground lines for easy access across the entire breadboard. For example, run a black jumper cabled from the Arduino ground pin to one of the blue rails, and then connect another black jumper from the grounded blue rail to the other blue rail. Now both blue rails are grounded, and can be used as the ground terminal for any components. Similarly, you should connect a red jumper from the 5v pin on the Arduino to one of the red rails, and use that rail for a 5v supply. In future labs, when we're working with 5v and 3.3v, we will have you run a rail for each voltage.
+</div>
+
 ## Introduction
 
 So far, every time we have used our Arduino to log data, we have read the data through Arduino's Serial monitor, and have powered the Arduino via our computer's USB port. While this has worked so far, our end goal is to launch these Arduinos in rockets! We cannot use a computer for power and data logging for that!
@@ -91,7 +102,15 @@ Just like we did in the last lab, we now need to plug in the TMP36 to an analog 
 
 Unlike the other sensors and modules we have used so far, the MicroSD module we are using uses the Arduino's digital pins. Luckily for us, there are libraries (that you should have installed when following the tutorial and initially setting up your Arduino IDE), that handle all the complicated digital interfacing for us. All we need to know is which pins to plug the adapter module into.
 
+<div class="primer-spec-callout danger" markdown="1">
+This image is a reference for pin labelling. Make sure to follow the standard color conventions listed at the top of this lab manual.
+</div>
+
 ![MicroSD Adapter Module Wiring](../media/SD-Card-Wiring.png){: .invert-colors-in-dark-mode }
+
+<div class="primer-spec-callout danger" markdown="1">
+Again... this image is a reference for pin labelling. Make sure to follow the standard color conventions listed at the top of this lab manual.
+</div>
 
 While your Arduino is powered off and disconnected from the 9V, plug your module in as shown above. The Arduino pins for this **DO** matter and cannot easily be changed, unlike the analog pins.
 
@@ -133,8 +152,9 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 - [ ] A plot of temperature (C) versus time. Time should be your independent variable.
 - [ ] A plot comparing 9V battery voltage to time. Time is again your independent variable.
-- [ ] A plot of both 5V reference variables versus time. Both 5V reference variables means both your TMP36's voltage, and your battery's voltage divider voltage (before being scaled up to the voltage pre-voltage divider).
+- [ ] A screenshot of your completed data table. (You only need to submit a screenshot of whatever number of rows fits into a single image)
 - [ ] A plot of both raw value variables versus time.
+- [ ] An image of your fully color-coded breadboard.
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 

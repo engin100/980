@@ -21,13 +21,13 @@ All of these materials are presorted into the correct number you need in the sol
 </div>
 
 - [ ] 1 Solder Challenge PCB
-- [ ] 1 Arduino with Solder-Tester code uploaded (from ENGR100-950 library)
+- [ ] 1 Arduino with Solder-Tester code uploaded from ENGR100-980 library (don't worry about this item until you are done soldering)
 - [ ] 8 1k$$\Omega$$ Through-Hole Resistors
 - [ ] 6 1k$$\Omega$$ Surface Mount Resistors (1001 Resistors)
 - [ ] 5 Through-Hole LEDs
 - [ ] 4 Surface Mount LEDs
 - [ ] 1 9v Battery Connector
-- [ ] 2 10 Pin Headers
+- [ ] 2 15 Pin Headers
 
 ## General Tips and Tricks
 
@@ -52,11 +52,15 @@ READ ALL OF THESE ITEMS CAREFULLY. DO NOT SKIP ANY OF THESE ITEMS.
 
 4. **DO NOT** try cleaning your iron with the sponge if it is not damp... this is (should be) self explanatory. If you do decide to use the damp sponge as a cleaner, do not do it very often or for long periods of time. The irons have a ceramic heating element with a metal cover. Going from extreme heat to extreme cold is hard on these materials.
 
-5. Wear safety glasses while soldering if you don't already wear glasses that sufficiently cover your eyes.
+5. Wear safety glasses while soldering!
 
 ## Procedure
 
-1. Turn on the carbon filter fan, and turn on the soldering iron. It will begin to heat up, and should stop at a value of somewhere around 700-850 degrees Fahrenheit. If not, check with an instructor for help changing the temperature.
+1. Turn on the carbon filter fan, and turn on the soldering iron. It will begin to heat up, and should stop at a value of somewhere around 700 degrees Fahrenheit. If not, check with an instructor for help changing the temperature.
+
+<div class="primer-spec-callout info" markdown="1">
+The most common mixture for soldering wire contains lead. When heating leaded solder, the working temperature hovers somewhere around 600 degrees Fahrenheit. When working with unleaded solder the melting point is higher, and thus requires a slightly higher temperature to maintain sufficient heating. This explains the higher temperatures we use with our irons in this lab.
+</div>
 
 2. Gather your materials from the list at the beginning of the document. They are separated for you, so you shouldn't need to cut any packaging or tape rolls.
 
@@ -128,7 +132,7 @@ READ ALL OF THESE ITEMS CAREFULLY. DO NOT SKIP ANY OF THESE ITEMS.
 
 ![](/soldering/soldering-media/final.png)
 
-20. Upload the code Solder-Tester from the ENGR100-950 library to an Arduino, and then plug the Arduino, carefully, into the header pins on your completed board (USB should no longer be attached). When inserting a battery, you should see a pattern of lights flashing. Check with an instructor to see what these lights mean, or read the comments at the top of the code file!
+20. Upload the code Solder-Tester from the ENGR100-980 library to an Arduino, and then plug the Arduino, carefully, into the header pins on your completed board (USB should no longer be attached). When inserting a battery, you should see a pattern of lights flashing. Check with an instructor to see what these lights mean, or read the comments at the top of the code file!
 
 ## Submission
 
