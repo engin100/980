@@ -34,8 +34,8 @@ Working at a computer often can become a one person deal. It is important to avo
 
 ## Lab Timeline
 
-- **October 17th, 2023, 11:59pm**: Initial PCB design submission.
-- **October 24th, 2023, 11:59pm**: Peer review submissions due.
+- **October 22nd, 2024, 11:59pm**: Initial PCB design submission.
+- **October 29th, 2024, 11:59pm**: Peer review submissions due.
 
 ## Altium
 
@@ -159,7 +159,7 @@ The DRC, or Design Rule Check is a way to check the validity of your PCB with re
 
 ## Final Deliverable
 
-Each team must upload a single zip file containing **all project files and a screenshot showing all DRCs passed** to this designated Google Drive folder [(click here)](https://drive.google.com/drive/folders/1dqrIZPnpz_5BiepUqeAE46O8Z0YM9a0D) by 11:59pm on October 17th, 2023. Make sure that your PCB passes all design rule checks before submitting it to the Google Drive folder. Each student will peer review three PCBs with rubrics provided on Canvas. 
+Each team must upload a single zip file containing **all project files and a screenshot showing all DRCs passed** to this designated Google Drive folder [(click here)](https://drive.google.com/drive/folders/1y27cAo7rI_dbcW6PWJHTmzySY-dYiv7R) by 11:59pm on October 22nd, 2024. Make sure that your PCB passes all design rule checks before submitting it to the Google Drive folder. Each student will peer review three PCBs with rubrics provided on Canvas. 
 
 The zip file must:
 * Contain all information so that another person can unzip the file, open Altium, and see you schematic and PCB.
@@ -170,12 +170,12 @@ The zip file must:
 
 After the lab, every student will be required to peer review the PCBs of three other teams. 
 
-Peer reviews are due by 11:59pm on Tuesday, October 24th, 2023.  There is a canvas assignment as well as a google form that must be filled out for each review.
+Peer reviews are due by 11:59pm on Tuesday, October 29th, 2024.  There is a canvas assignment as well as a google form that must be filled out for each review.
 
 
 ## Peer Review and Final Submission
 
-- [ ] Submit your error-free DRC screenshot and all project files to the designated Google Drive folder by **October 17th, 2023, 11:59pm**.
-- [ ] Peer review three other teams' PCBs using provided rubrics by **October 24th, 2023, 11:59pm**.
+- [ ] Submit your error-free DRC screenshot and all project files to the designated Google Drive folder by **October 22nd, 2024, 11:59pm**.
+- [ ] Peer review three other teams' PCBs using provided rubrics by **October 29th, 2024, 11:59pm**.
 
-Remember, accuracy and collaboration are essential. Reach out to IAs, Professor Ridley, or the **#lab-help** channel on Slack for assistance if needed. Good luck with your PCB design!
+Remember, accuracy and collaboration are essential. Reach out to the IAs or the **#lab-help** channel on Slack for assistance if needed. Good luck with your PCB design!
