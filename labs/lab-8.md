@@ -24,7 +24,7 @@ latex: true
 - [ ] 1 - 12" Parachute
 - [ ] 1 - 15" Parachute
 - [ ] 1 - 18" Parachute
-- [ ] 3 Masses
+- [ ] 4-5 Figurines
 - [ ] Stopwatch, camera, or other timing method
 - [ ] **Optional:** A fitness watch to track the large number of stairs you're going to climb...
 
@@ -40,7 +40,7 @@ This phenomena is not random, and is instead due to drag forces. While we know t
 
 [![Reference Area](https://www1.grc.nasa.gov/wp-content/uploads/sized.jpg)](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/size-effects-on-drag/)
 
-In the case of an object attached to a parachute, we can consider the object as a projectile with no thrust that starts from a y-position of greater than 0. We also need to incorporate drag force into our standard projectile equations to help us determine when the object will reach its terminal velocity. We have provided a [starter spreadsheet](https://docs.google.com/spreadsheets/d/1i1tA8Tf3p17-aFP-UT3sTd0ahJDdGCRagowuNc-9yh4/edit?usp=sharing) that integrates these concepts of drag and terminal velocity.
+In the case of an object attached to a parachute, we can consider the object as a projectile with no thrust that starts from a y-position of greater than 0. We also need to incorporate drag force into our standard projectile equations to help us determine when the object will reach its terminal velocity.
 
 Terminal velocity is when the drag force is equal to the weight of the object, as noted below:
 
@@ -60,13 +60,9 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 1. Measure each parachute's area and record the values in the spreadsheet given below.
 
-2. Measure each parachute's mass and record the values in the spreadsheet given below.
+2. Measure the mass of the payload you are carrying for each iteration. (1, 2, 4-5 figurines).
 
-3. Measure ***ONE*** mass and record the value in your spreadsheet.
-
-<div class="primer-spec-callout warning" markdown="1">
-For consistency, measure the mass of one binder clip and for each iteration with a different total mass, make sure to use the same kind and size of binder clip. Then you can simply multiply the number of clips and add the mass of the parachute for each iteration to find the total mass rather than re-weighing the entire system for every trial.
-</div>
+3. Measure the mass of each parachute with the payload bucket attached.
 
 ### Parachute Trials
 
@@ -74,7 +70,7 @@ We are going to measure the terminal velocity of your different sized parachutes
 
 - Go to the EECS building across the street. If you have three team members present, designate one as the person transporting the system back up the stairs between trials, one as the dropper, and one as the recorder.
 
-- Prepare your parachute by attaching a single binder clip to the army guy.
+- Prepare your parachute by attaching a payload bucket and placing a single figurine into the bucket.
 
 - Drop the parachute and have the partner on the ground take a video of the parachute as it falls.
 
@@ -82,23 +78,25 @@ We are going to measure the terminal velocity of your different sized parachutes
 
   - **Note:** The top of the second floor refers to the height of the ceiling above someone walking on the second floor.
 
-- Repeat this with two and three binder clips attached to the parachute, recording the total masses and time differences for all trials in your spreadsheet.
+- Repeat this with 2 and 4-5 figurines loaded into the bucket, recording the total masses and time differences for all trials in your spreadsheet.
 
 ### Computations
 
 - With all of your trials completed and recorded in your spreadsheet, calculate the terminal velocity of each trial in the provided column. HINT: The height of the top of the second floor, the time it takes to reach the second floor, and the time it takes to reach the ground are particularly helpful in this calculation.
 
-- Produce one graph with the following:
+- Produce two graphs with the following:
 
   - Plot all 9 trials on the same graph. Use a legend to show the differences between parachute areas (m^2, not the given inches), the y-axis will be terminal velocity, and the x-axis will be mass.
 
   - You'll end up with three terminal velocity vs mass graphs (each with three data points) plotted on the same figure, with a legend clarifying parachute area.
 
+  - Repeat this same plot again but with the theoretically determined terminal velocities.
+
 ## Submission
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
-- [ ] Screenshot of the plot made above.
+- [ ] Screenshots of the two plots made above.
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
