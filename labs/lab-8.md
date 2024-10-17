@@ -66,6 +66,11 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 ### Parachute Trials
 
+<div class="primer-spec-callout info" markdown="1">
+Note: The distance from the floor to the ceiling of the second floor is: 
+Imagine you are on the ground. If you walk up one set of stairs the ceiling above your head is this height^.
+</div>
+
 We are going to measure the terminal velocity of your different sized parachutes with three mass configurations, and create plots of terminal velocity vs mass for different parachutes. We have created a [spreadsheet](https://docs.google.com/spreadsheets/d/1g0C3GjiIXb2twbJVo77Gfwd3KZr_5--W4aGh4ZKWDxo/edit?usp=sharing) for you to record your values in.
 
 - Go to the EECS building across the street. If you have three team members present, designate one as the person transporting the system back up the stairs between trials, one as the dropper, and one as the recorder.
