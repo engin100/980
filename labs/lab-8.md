@@ -67,7 +67,7 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 ### Parachute Trials
 
 <div class="primer-spec-callout info" markdown="1">
-Note: The distance from the floor to the ceiling of the second floor is: 
+Note: The distance from the floor to the ceiling of the second floor is: 10' 6".
 Imagine you are on the ground. If you walk up one set of stairs the ceiling above your head is this height^.
 </div>
 
