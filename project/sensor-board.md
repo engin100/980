@@ -32,4 +32,4 @@ Now that you can see how everything goes together, let's look at a few important
 
 _Figure 2: Rocket Board Diagram_
 
-Everything else should be labeled in such a way that you can deduce the orientation of the component. As always, don't hesitate to reach out to Prof. Ridley or the IAs (Jack will probably give you the best answer, he designed the board) if you need help!
+Everything else should be labeled in such a way that you can deduce the orientation of the component. As always, don't hesitate to reach out to the IAs (Jack will probably give you the best answer, he designed the board) if you need help!

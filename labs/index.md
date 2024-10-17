@@ -53,10 +53,9 @@ Learning how to use a CAD program to design a 3D model of a SpaceX Starship Boos
 
 [Link to lab 7](/labs/lab-7)
 
-<!--
 ## Lab 8: Drop Test
 
-Analyzing terminal velocities of different drag-inducing objects under varying masses.
+Analyzing terminal velocities of different parachute sizes under varying masses.
 
 [Link to lab 8](/labs/lab-8)
 
@@ -71,5 +70,4 @@ Submit a separate PDF for the memo assignment aligning with the lab 8 memo guide
 Read through the rocket selection guidelines to choose your group's rocket and indicate your choice in the attached form.
 
 - [Link to selection guidelines](https://980.engr100.org/labs/rocket-selection)
-- [Link to form](https://docs.google.com/forms/d/e/1FAIpQLScnKEXi57qTo04cYHIfSr4qqNmIUd--aQWvp2jopl6VV9e9Og/viewform)
--->
+- [Link to form](https://umich.instructure.com/courses/709939/quizzes/410817)
