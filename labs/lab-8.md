@@ -44,7 +44,7 @@ This phenomena is not random, and is instead due to drag forces. While we know t
 
 [![Reference Area](https://www1.grc.nasa.gov/wp-content/uploads/sized.jpg)](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/size-effects-on-drag/)
 
-In the case of an object attached to a parachute, we can consider the object as a projectile with no thrust and starts from a y-position of greater than 0. We also need to incorporate drag force into our standard projectile equations to help us determine when the object will reach its terminal velocity. We have provided a [starter spreadsheet](https://docs.google.com/spreadsheets/d/1i1tA8Tf3p17-aFP-UT3sTd0ahJDdGCRagowuNc-9yh4/edit?usp=sharing) that integrates these concepts of drag and terminal velocity.
+In the case of an object attached to a parachute, we can consider the object as a projectile with no thrust that starts from a y-position of greater than 0. We also need to incorporate drag force into our standard projectile equations to help us determine when the object will reach its terminal velocity. We have provided a [starter spreadsheet](https://docs.google.com/spreadsheets/d/1i1tA8Tf3p17-aFP-UT3sTd0ahJDdGCRagowuNc-9yh4/edit?usp=sharing) that integrates these concepts of drag and terminal velocity.
 
 Terminal velocity is when the drag force is equal to the weight of the object, as noted below:
 
