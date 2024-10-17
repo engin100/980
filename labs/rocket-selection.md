@@ -50,5 +50,3 @@ If you are a team of 5 people, you are not allowed to select the Estes Green Egg
 ## Submission
 
 Have **ONE** team member fill out the [Canvas Form](https://umich.instructure.com/courses/709939/quizzes/410817) attached to this page.
-
-- There is no Canvas submission for this form.
