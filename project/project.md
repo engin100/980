@@ -7,16 +7,21 @@ latex: true
 
 ## Contents
 
+- [Project Specification](#project-specification)
+- [Preliminary Design Review](#preliminary-design-review)
+- [Go / No-Go Testing](#go--no-go-testing)
+- [Poster Presentation](#poster-presentation)
+- [Final Report](#final-report)
 
 ## Project Specification
 
 The goal of this semester's project is to:
 
-1. Build a (model) rocket that will ascend to approximately 1,000 ft altitude carrying a (roughly) 3 oz payload in the nose cone, with a specified length, width, and height.  The selection criteria and choice of the model rockets is provided in [this document](https://980.engr100.org/labs/rocket-selection).  The nose cone or body tube may need to be modified to allow the sensor board and battery to be safely enclosed with no motion during the flight.  The nose cone or body may need to be further modified to allow the team to see the LEDs on the sensor board - the LEDs must be visible after the sensor board is enclosed in the nose cone or body. The rocket must survive and operate properly in all phases of the flight (thrust, drift, descent). (Extra: body tube must be modified to allow sensor payload to be installed within body tube.  This should create an extra-long nose cone, such that when the ejection charge goes off, the cut body tube is ejected with the nose cone.)
+1. Build a (model) rocket that will ascend to approximately 1,000 ft altitude carrying a (roughly) 3 oz payload in the nose cone, with a specified length, width, and height.  The selection criteria and choice of the model rockets is provided in [this document](https://980.engr100.org/labs/rocket-selection).  The nose cone or body tube may need to be modified to allow the sensor board and battery to be safely enclosed with no motion during the flight.  The nose cone or body may need to be further modified to allow the team to see the LEDs on the sensor board - the LEDs must be visible after the sensor board is enclosed in the nose cone or body. The rocket must survive and operate properly in all phases of the flight (thrust, drift, descent).
 
-2. Provide a complete CAD drawing of your chosen rocket, complete with dimensions.  The CAD must include all aspects of the rocket, including: nose cone, sensor payload in the nose cone, body tube, parachute and connection points, motor housing, motor, motor holder, and fins. (Extra: CAD must include descent phase also, with parachute deployed.)
+2. Provide a complete CAD drawing of your chosen rocket, complete with dimensions.  The CAD must include all aspects of the rocket, including: nose cone, sensor payload in the nose cone, body tube, parachute and connection points, motor housing, motor, motor holder, and fins. Additionally, the CAD model must include descent phase also, with parachute deployed.
 
-3. Build a sensor board that will measure the rocket's acceleration and altitude during both the ascent and descent phase of the launch.  The acceleration must capture the different phases of the flight with enough robustness that the velocity and altitude can be determined.  The pressure sensor readings must be translated to altitude with enough robustness that the velocity and acceleration can be determined.  The sensor board needs to survive the flight using a 9V battery and store all of the data on a microSD card.  The sensor board needs to have a timer so that the user can turn the sensor board on, pack it into the nose cone in a way that it will survive the flight, put the nose cone back on to the rocket, put the rocket onto the launch pad, and prep the rocket for launch, all before the sensor board STARTS taking data.  The sensor board should provide some indication that it is counting down and should provide the user with warnings when it is just about ready to start taking data, and then when it is actually taking data.  The board should continue to take data until turned off.  All data should be recorded on the SD card as it is being taken.  It should be stored in a format that is easy for the user to read (such as a csv file).  All sensors must be calibrated. (Extra: An extra sensor must be included in the sensor package.  The sensor must be authorized by the teaching staff.) **For more information, check out the Sensor Board documentation** [here.](sensor-board.md)
+3. Build a sensor board that will measure the rocket's acceleration and altitude during both the ascent and descent phase of the launch.  The acceleration must capture the different phases of the flight with enough robustness that the velocity and altitude can be determined.  The pressure sensor readings must be translated to altitude with enough robustness that the velocity and acceleration can be determined.  The sensor board needs to survive the flight using a 9V battery and store all of the data on a microSD card.  The sensor board needs to have a timer so that the user can turn the sensor board on, pack it into the nose cone in a way that it will survive the flight, put the nose cone back on to the rocket, put the rocket onto the launch pad, and prep the rocket for launch, all before the sensor board STARTS taking data.  The sensor board should provide some indication that it is counting down and should provide the user with warnings when it is just about ready to start taking data, and then when it is actually taking data.  The board should continue to take data until turned off.  All data should be recorded on the SD card as it is being taken.  It should be stored in a format that is easy for the user to read (such as a csv file).  All sensors must be calibrated. Additionally, an extra sensor must be included in the sensor package. The sensor must be authorized by the teaching staff. (Analog sensor, such as a humidity sensor...!) **For more information, check out the Sensor Board documentation** [here.](sensor-board.md)
 
 4. Build a simulation package that describes the different phases of the flight (thrust, drift, descent) robustly.  This simulation package must:
 A. Calculate the changing accelerations given the (vertical) forces that are acting on the rocket at the time.
@@ -24,11 +29,9 @@ B. Take into account the changing mass of the rocket.
 C. Take into account the changing area of the rocket.
 D. Calculate the velocity of the rocket as a function of time.
 E. Calculate the altitude of the rocket as a function of time.
-The coding language can be Google Spreadsheets, Excel, Python, Matlab, or C++. (Extra: The simulation should accurately capture the thrust profile of the specific rocket engine used and should accurately capture the deployment of the parachute over the course of the time specified through experimentation.)
+The coding language can be Google Spreadsheets, Excel, Python, Matlab, or C++. Additionally, the simulation should accurately capture the thrust profile of the specific rocket engine used and should accurately capture the deployment of the parachute over the course of the time specified through experimentation.
 
 5. Conduct data analysis by comparing and contrasting the different methods of calculating acceleration, velocity, and position for the flight and simulation data.  This comparison must be included in the poster and final reports, as described below.
-
-Teams that have 5 members must complete all extra components. Teams that have 4 members must complete two of the four extra components.  Teams that have 3 members don't have to complete any of the extra components.
 
 ## Preliminary Design Review
 
@@ -48,9 +51,9 @@ All teams must collectively present a preliminary design review, which must incl
 
 7. A mass budget spreadsheet!
 
-8. Your extra sensor (if you have one) and its characteristics
+8. Your extra sensor and its characteristics
 
-9. Initial simulation results if you have any.  Otherwise, the simulation design strategy.
+9. Initial simulation results if you have any. Otherwise, the simulation design strategy.
 
 10. How your design was shaped by the requirements.
 
@@ -66,7 +69,7 @@ All teams must collectively present a preliminary design review, which must incl
 
 Test all aspects of the system (rocket and sensor board), showing that both operate as expected.  Specifically, tests include:
 
-1. Bench test - validate that the system works while sitting on the workbench and that all sensors are calibrated.  Data plots must indicate passing of this test.  Video should show the LEDs indicating when the sensor package is waiting for the time delay and when it is taking data.  Video should also highlight the buzzer going off at an appropriate time.
+1. Bench test - validate that the system works while sitting on the workbench and that all sensors are calibrated.  Data plots must indicate passing of this test.  Video should show the LEDs indicating when the sensor package is waiting for the time delay and when it is taking data. Video should also highlight the buzzer going off at an appropriate time.
 
 2. Pendulum test - attach the sensor board (with battery) to different lengths of strings.  Take data while the sensor board swings back and forth.  Show that the measured 3D acceleration can be used in a way to provide the angle and velocity of the sensor board as it swings.  Show that the period of the pendulum is as expected from an analytic solution.  If your team is focusing on simulations, you should have a simulation of the pendulum that shows that you are getting consistent results between the measurements and the simulations.
 

@@ -35,7 +35,7 @@ Here is contact information for all the course staff. If you have a question tha
 
 | Instructor | Contact  | Office Hours |
 | ---------- | -------- | ------------ |
-| **Dr. Chris Ruf** <br> Technical Lead  | <cruf@umich.edu> <br> 2527A CSRB | TBA |
+| **Dr. Chris Ruf** <br> Technical Lead  | <cruf@umich.edu> <br> 2527A CSRB | M 2:00-3:00p |
 | **Dr. Alan Hogg** <br> Communication Instructor - Lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom, scheduled through Slack/email) | TBA |
 | **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) | Th 1:30-2:30p & 4:30-5:30p |
 | **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | Tu 1:30-3:00p |
