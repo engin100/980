@@ -63,6 +63,8 @@ In Fig. 2, you'll find the technical drawing of the board. Note that the three m
 
 ![Rocket Board Drawing](/media/rocketboarddrawing.png)
 
+_Figure 2: Rocket Board Drawing_
+
 ## Things your team needs to do:
 1. Assemble the board!
 2. Figure out how you'll mount it within your rocket
