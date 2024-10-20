@@ -58,4 +58,4 @@ latex: true
 
 4. Why do we have you time from the third or second story instead of from the moment it drops? (Think about the kinematic equations about velocity). Compare your calculation of the time-dependent position and velocity to the assumption we made. Does this make sense?
 
-5. At what altitude does the falling object reach terminal velocity? Does this depend on your parameter you chose to vary? How?
+5. At what altitude does the falling object reach terminal velocity? Does this depend on the parameter you chose to vary? How?

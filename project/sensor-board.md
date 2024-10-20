@@ -48,8 +48,8 @@ Now that you can see how everything goes together, let's look at a few important
 1. Put a piece of electrical tape over the solder joints that go below the SD card module so that nothing short circuits on the SD card module.
 2. Solder female headers in for the pressure sensor and accelerometer.
 3. For each of the 6 LEDs, the hole with the **square border** is for the negative pin, which is the shorter of the pins on the LED. 
-4. Although the pressure sensor is marked P1 on the top layer, we reccomend putting the sensor on the bottom layer. Again, look at Fig. 1 to see which pin is #1 (the marked pin on the pressure sensor)
-5. Looking at the buzzer, you should notice a + and - directly above the footprint. This corrosponds with the symbol on the buzzer. 
+4. Although the pressure sensor is marked P1 on the top layer, we recommend putting the sensor on the bottom layer. Again, look at Fig. 1 to see which pin is #1 (the marked pin on the pressure sensor)
+5. Looking at the buzzer, you should notice a + and - directly above the footprint. This corresponds with the symbol on the buzzer. 
 6. Solder the SD card reader and Arduino directly to the board, and then use headers for the pressure sensor and accelerometer. 
 
 ![Rocket Board Layout](/media/Rocket%20Board%20Markup.jpg)
@@ -68,6 +68,6 @@ _Figure 2: Rocket Board Drawing_
 ## Things your team needs to do:
 1. Assemble the board!
 2. Figure out how you'll mount it within your rocket
-3. Figure out how you'd like to 
+3. Figure out how you'd like to collect data using Arduino IDE
 
 As always, don't hesitate to reach out to Prof. Ruf or the IAs (Jack will probably give you the best answer, he designed the board) if you need help, or have any questions!
