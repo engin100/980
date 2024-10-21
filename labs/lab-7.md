@@ -170,7 +170,7 @@ The zip file must:
 
 After the lab, every student will be required to peer review the PCBs of three other teams. 
 
-Peer reviews are due by 11:59pm on Tuesday, October 29th, 2024.  There is a canvas assignment as well as a google form that must be filled out for each review.
+Peer reviews are due by 11:59pm on Tuesday, October 29th, 2024. Each person on your team will personally review the PCBs of three other teams. You will evaluate each one by filling out a [Google form](https://forms.gle/vei7mknDX61atotm6). The PCBs you have been assigned to review are located on a spreadsheet linked at the top of the form. Note that you will **fill out the form once for each PCB you review, so you will submit this form three times.**
 
 
 ## Peer Review and Final Submission
