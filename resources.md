@@ -60,3 +60,5 @@ Similarly, Watt-hours = Volts * Amp-hours
 ## TMP36 Wiring
 
 [![TMP36 Pinout](https://cdn-learn.adafruit.com/assets/assets/000/000/471/large1024/temperature_tmp36pinout.gif?1447975787)](https://learn.adafruit.com/tmp36-temperature-sensor/overview)
+
+

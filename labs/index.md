@@ -71,3 +71,4 @@ Read through the rocket selection guidelines to choose your group's rocket and i
 
 - [Link to selection guidelines](https://980.engr100.org/labs/rocket-selection)
 - [Link to form](https://umich.instructure.com/courses/709939/quizzes/410817)
+

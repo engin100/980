@@ -84,8 +84,8 @@ void loop() {
   //  you. For example, if you had an altitude sensor you could check your
   //  altitude in every loop and see if it was similar to the altitude when
   //  launch occurred and turn on the buzzer then. You will need to test this
-  //  thouroughly before launch day as it is how we will find hiding rockets.
+  //  thoroughly before launch day as it is how we will find hiding rockets.
   // - Points may be deducted if your rocket is especially annoying and buzzing
-  //  frequently during the launch preperation and countdown period in front of
+  //  frequently during the launch preparation and countdown period in front of
   //  the teaching staff
 }
