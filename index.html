@@ -1,0 +1,262 @@
+---
+layout: null
+toc: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering 100-980</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding-top: 0;
+    }
+    .navbar {
+      background-color: #00274C;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      transition: padding 0.3s;
+    }
+    .navbar.shrink {
+      padding: 4px 0;
+    }
+    .navbar img.logo {
+      height: 50px;
+      margin-left: 10px;
+      transition: height 0.3s;
+    }
+    .navbar.shrink img.logo {
+      height: 30px;
+    }
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+    .navbar li {
+      position: relative;
+    }
+    .navbar a {
+      display: block;
+      color: #FFCB05;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar li:hover > a {
+      background-color: #001d38;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #00274C;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-content li {
+      width: 100%;
+    }
+    .dropdown-content a {
+      padding: 12px 16px;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      height: 80vh;
+      overflow: hidden;
+    }
+    .hero > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: brightness(60%);
+    }
+    .hero-text h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin: 0.2em 0;
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+    }
+    .hero-text p {
+      margin: 0.2em 0;
+      font-size: 1.2em;
+    }
+    .hero-text img.eng-logo {
+      width: 250px;
+      display: block;
+      margin: 25px auto 0;
+    }
+    .calendar {
+      margin: 40px auto;
+      text-align: center;
+    }
+    .calendar iframe {
+      width: 100%;
+      max-width: 100%;
+    }
+    .calendar-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #00274C;
+      text-align: center;
+    }
+    .about, .links {
+      max-width: 1000px;
+      margin: 40px auto;
+      color: #00274C;
+      padding: 0 20px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .link-group h3 {
+      margin-top: 0;
+      color: #00274C;
+    }
+    .button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #FFCB05;
+      color: #00274C;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+    .button-link:hover {
+      background-color: #e1b700;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: row;
+        align-items: center;
+      }
+      .navbar img.logo {
+        display: none;
+      }
+      .nav-links {
+        flex-direction: row;
+        width: auto;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+      }
+      .navbar li {
+        width: auto;
+      }
+      .navbar a {
+        padding: 10px;
+      }
+      .dropdown-content {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo-link" href="{{ '/' | relative_url }}">
+      <img class="logo" src="{{ '/media/umich-coe3.png' | relative_url }}" alt="University of Michigan, College of Engineering">
+    </a>
+    <ul class="nav-links">
+      <li><a href="{{ '/syllabus' | relative_url }}">Syllabus</a></li>
+      <li><a href="{{ '/labs/' | relative_url }}">Labs</a></li>
+      <li><a href="{{ '/project/project' | relative_url }}">Project</a></li>
+      <li><a href="{{ '/staff' | relative_url }}">Staff</a></li>
+      <li><a href="{{ '/facilities' | relative_url }}">Facilities</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <img src="{{ '/media/soldering-lab1.png' | relative_url }}" alt="Soldering Lab Image">
+    <div class="hero-text">
+      <h1>Engineering 100-980</h1>
+      <p>Rocket Science</p>
+      <img class="eng-logo" src="{{ '/media/umich-coe4.png' | relative_url }}" alt="University of Michigan, College of Engineering">
+    </div>
+  </div>
+  <section class="about">
+    <h2>Welcome to Engineering 100-980!</h2>
+    <p>Over the course of the next semester, you will be learning how to solder, program Arduino micro-controllers, design circuit boards, create 3D CAD files, and launch high-altitude weather balloons!</p>
+    <p>This webpage serves as the homepage for this class. From here, you can access any resources you may need, including the syllabus, labs, and more.</p>
+  </section>
+  <section class="links">
+    <div class="link-group">
+      <h3>Syllabus</h3>
+      <p>Learn about course policies and the weekly schedule.</p>
+      <a class="button-link" href="{{ '/syllabus' | relative_url }}">View Syllabus</a>
+    </div>
+    <div class="link-group">
+      <h3>Labs</h3>
+      <p>The labs will be made publicly visible as they are released in the week leading up to lab.</p>
+      <a class="button-link" href="{{ '/labs/' | relative_url }}">Go to Labs</a>
+    </div>
+    <div class="link-group">
+      <h3>Solder Challenge</h3>
+      <p>Soldering tutorial and challenge to gain or improve soldering abilities.</p>
+      <a class="button-link" href="{{ '/soldering/solder-challenge' | relative_url }}">Soldering Challenge</a>
+    </div>
+    <div class="link-group">
+      <h3>Project</h3>
+      <p>The full project specification, including PDR, Go/No-Go tests, poster, and final report.</p>
+      <a class="button-link" href="{{ '/project/project' | relative_url }}">Project Spec</a>
+    </div>
+    <div class="link-group">
+      <h3>Tutorials</h3>
+      <p>View all walk-through tutorials on how to install, use, and debug resources we are using.</p>
+      <a class="button-link" href="{{ '/tutorials' | relative_url }}">View Tutorials</a>
+    </div>
+    <div class="link-group">
+      <h3>Supplemental Resources</h3>
+      <p>Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more.</p>
+      <a class="button-link" href="{{ '/resources' | relative_url }}">Supplemental Resources</a>
+    </div>
+  </section>
+  <section class="calendar-section">
+    <h2>Course Calendar</h2>
+    <p>Stay up to date with lectures, labs, office hours, and due dates.</p>
+    <div class="calendar">
+      <iframe class="calendar-iframe" src="https://calendar.google.com/calendar/embed?src=umich.edu_qkjptnvc4k91p4t48uq18ah5cs%40group.calendar.google.com&ctz=America%2FNew_York" style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <p><a href="https://calendar.google.com/calendar/u/0?cid=dW1pY2guZWR1X3FranB0bnZjNGs5MXA0dDQ4dXExOGFoNWNzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">Open Calendar in Google</a></p>
+  </section>
+  <script>
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shrink');
+      } else {
+        navbar.classList.remove('shrink');
+      }
+    });
+  </script>
+</body>
+</html>

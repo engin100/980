@@ -1,0 +1,221 @@
+---
+layout: null
+toc: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff - Engineering 100-980</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding-top: 0;
+      background-color: #f8f8f8;
+      color: #00274C;
+    }
+    .navbar {
+      background-color: #00274C;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      transition: padding 0.3s;
+    }
+    .navbar.shrink {
+      padding: 4px 0;
+    }
+    .navbar img.logo {
+      height: 50px;
+      margin-left: 10px;
+      transition: height 0.3s;
+    }
+    .navbar.shrink img.logo {
+      height: 30px;
+    }
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+    .navbar li { position: relative; }
+    .navbar a {
+      display: block;
+      color: #FFCB05;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .home-link { display: none; }
+    .navbar li:hover > a { background-color: #001d38; }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #00274C;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-content li { width: 100%; }
+    .dropdown-content a { padding: 12px 16px; }
+    .dropdown:hover .dropdown-content { display: block; }
+    .hero {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      height: 40vh;
+      overflow: hidden;
+    }
+    .hero > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: brightness(60%);
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+    .hero-text h1 { margin: 0.2em 0; font-size: clamp(2rem, 4vw, 3rem); }
+    .staff-grid {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+    .staff-member {
+      text-align: center;
+      padding: 1em;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #fff;
+    }
+    .staff-member img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      background: #f0f0f0;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: row;
+        align-items: center;
+      }
+      .navbar img.logo {
+        display: none;
+      }
+      .nav-links {
+        flex-direction: row;
+        width: auto;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+      }
+      .navbar li {
+        width: auto;
+      }
+      .navbar a {
+        padding: 10px;
+      }
+      .home-link {
+        display: block;
+      }
+      .dropdown-content {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo-link" href="{{ '/' | relative_url }}">
+      <img class="logo" src="{{ '/media/umich-coe3.png' | relative_url }}" alt="University of Michigan, College of Engineering">
+    </a>
+    <ul class="nav-links">
+      <li><a href="{{ '/syllabus' | relative_url }}">Syllabus</a></li>
+      <li><a href="{{ '/labs/' | relative_url }}">Labs</a></li>
+      <li><a href="{{ '/project/project' | relative_url }}">Project</a></li>
+      <li><a href="{{ '/facilities' | relative_url }}">Facilities</a></li>
+      <li class="home-link"><a href="{{ '/' | relative_url }}">Home</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <img src="{{ '/media/north-campus.png' | relative_url }}" alt="North Campus">
+    <div class="hero-text">
+      <h1>Course Staff</h1>
+    </div>
+  </div>
+  <div class="staff-grid">
+    <div class="staff-member">
+      <img src="{{ '/media/ruf.png' | relative_url }}" alt="Dr. Chris Ruf portrait">
+      <h3>Dr. Chris Ruf</h3>
+      <p>Technical Lead</p>
+      <p><a href="mailto:cruf@umich.edu">cruf@umich.edu</a></p>
+      <p>Office: 2527A CSRB</p>
+    </div>
+    <div class="staff-member">
+      <img src="{{ '/media/alanhogg1.png' | relative_url }}" alt="Dr. Alan Hogg portrait">
+      <h3>Dr. Alan Hogg</h3>
+      <p>Technical Communication Instructor</p>
+      <p><a href="mailto:alanhogg@umich.edu">alanhogg@umich.edu</a></p>
+      <p>Office: GFL</p>
+    </div>
+    <div class="staff-member">
+      <img src="{{ '/media/davidgrs.png' | relative_url }}" alt="Dr. David Greenspan portrait">
+      <h3>Dr. David Greenspan</h3>
+      <p>Technical Communication Instructor</p>
+      <p><a href="mailto:davidgrs@umich.edu">davidgrs@umich.edu</a></p>
+      <p>Office: GFL</p>
+    </div>
+    <div class="staff-member">
+      <img src="{{ '/media/benjamen1.png' | relative_url }}" alt="Ben Miller portrait">
+      <h3>Benjamen Miller</h3>
+      <p>Instructional Aide</p>
+      <p><a href="mailto:benjamen@umich.edu">benjamen@umich.edu</a></p>
+      <p>Office: 1210 CSRB</p>
+    </div>
+    <div class="staff-member">
+      <img src="{{ '/media/zianren.png' | relative_url }}" alt="Zian (Sam) Ren portrait">
+      <h3>Zian (Sam) Ren</h3>
+      <p>Instructional Aide</p>
+      <p><a href="mailto:zianren@umich.edu">zianren@umich.edu</a></p>
+      <p>Office: 1210 CSRB</p>
+    </div>
+    <div class="staff-member">
+      <img src="{{ '/media/ismaenri1.png' | relative_url }}" alt="Ismael Enriquez portrait">
+      <h3>Ismael Enriquez</h3>
+      <p>Instructional Aide</p>
+      <p><a href="mailto:ismaenri@umich.edu">ismaenri@umich.edu</a></p>
+      <p>Office: 1210 CSRB</p>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shrink');
+      } else {
+        navbar.classList.remove('shrink');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+---
+layout: null
+toc: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facilities - Engineering 100-980</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding-top: 0;
+      background-color: #f8f8f8;
+      color: #00274C;
+    }
+    .navbar {
+      background-color: #00274C;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      transition: padding 0.3s;
+    }
+    .navbar.shrink {
+      padding: 4px 0;
+    }
+    .navbar img.logo {
+      height: 50px;
+      margin-left: 10px;
+      transition: height 0.3s;
+    }
+    .navbar.shrink img.logo {
+      height: 30px;
+    }
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+    .navbar li { position: relative; }
+    .navbar a {
+      display: block;
+      color: #FFCB05;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .home-link { display: none; }
+    .navbar li:hover > a { background-color: #001d38; }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #00274C;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-content li { width: 100%; }
+    .dropdown-content a { padding: 12px 16px; }
+    .dropdown:hover .dropdown-content { display: block; }
+    .hero {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      height: 40vh;
+      overflow: hidden;
+    }
+    .hero > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: brightness(60%);
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+    .hero-text h1 { margin: 0.2em 0; font-size: clamp(2rem, 4vw, 3rem); }
+    .facilities {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .facility-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .facility-card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .facility-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .facility-card h3 { margin: 0.5em; }
+    .facility-card p { padding: 0 0.5em 1em; }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: row;
+        align-items: center;
+      }
+      .navbar img.logo {
+        display: none;
+      }
+      .nav-links {
+        flex-direction: row;
+        width: auto;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+      }
+      .navbar li {
+        width: auto;
+      }
+      .navbar a {
+        padding: 10px;
+      }
+      .home-link {
+        display: block;
+      }
+      .dropdown-content {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo-link" href="{{ '/' | relative_url }}">
+      <img class="logo" src="{{ '/media/umich-coe3.png' | relative_url }}" alt="University of Michigan, College of Engineering">
+    </a>
+    <ul class="nav-links">
+      <li><a href="{{ '/syllabus' | relative_url }}">Syllabus</a></li>
+      <li><a href="{{ '/labs/' | relative_url }}">Labs</a></li>
+      <li><a href="{{ '/project/project' | relative_url }}">Project</a></li>
+      <li><a href="{{ '/staff' | relative_url }}">Staff</a></li>
+      <li class="home-link"><a href="{{ '/' | relative_url }}">Home</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <img src="{{ '/media/north-campus.png' | relative_url }}" alt="North Campus">
+    <div class="hero-text">
+      <h1>Facilities</h1>
+    </div>
+  </div>
+  <section class="facilities">
+    <p>Below is a brief overview of the laboratory spaces used by ENGR100-980.</p>
+    <div class="facility-grid">
+      <div class="facility-card">
+        <img src="{{ '/media/soldering-lab1.png' | relative_url }}" alt="Soldering Lab">
+        <h3>Soldering Lab</h3>
+        <p>Workstations equipped with soldering irons and fume extractors for circuit board fabrication.</p>
+      </div>
+      <div class="facility-card">
+        <img src="{{ '/media/computer-lab.png' | relative_url }}" alt="Computer Lab">
+        <h3>Computer Lab</h3>
+        <p>CAEN computing stations for CAD design and PCB production, utilizing industry-standard software packages.</p>
+      </div>
+      <div class="facility-card">
+        <img src="{{ '/media/design-lab.png' | relative_url }}" alt="Research and Design Lab">
+        <h3>Research/Design Lab</h3>
+        <p>Collaborative team workspaces for research and design.</p>
+      </div>
+      <div class="facility-card">
+        <img src="{{ '/media/construction-lab.png' | relative_url }}" alt="Construction Lab">
+        <h3>Construction Lab</h3>
+        <p>Tools and materials for building and assembling the final flight hardware.</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shrink');
+      } else {
+        navbar.classList.remove('shrink');
+      }
+    });
+  </script>
+</body>
+</html>
