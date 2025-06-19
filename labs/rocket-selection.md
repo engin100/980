@@ -45,8 +45,9 @@ If you are a team of 5 people, you are not allowed to select the Estes Green Egg
 
 - The rocket must have an advertised altitude of at least 700 feet.
 
-- Your rocket should be able to support the added weight of electronic components. If your rocket weighs only 1 oz, for example, than we would be more than doubling its weight by adding a PCB, highly affecting its flight. Keep this in mind!
+- Your rocket should be able to support the added weight of electronic components. If your rocket weighs only 1 oz, for example, then we would be more than doubling its weight by adding a PCB, highly affecting its flight. Keep this in mind!
 
 ## Submission
 
 Have **ONE** team member fill out the [Canvas Form](https://umich.instructure.com/courses/709939/quizzes/410817) attached to this page.
+

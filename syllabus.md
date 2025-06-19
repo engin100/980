@@ -237,3 +237,4 @@ GenAI is an advanced writing tool, and will be incorporated into your writing cu
 
 [\[1\]](https://docs.google.com/document/u/1/d/e/2PACX-1vQa6Gp4kuvSjpsSFilGEghIfq5EmZpL8GRDead6Zxbv7l8D0Jl_EthJM0wGnNm40A2ZYkP4utesM8c5/pub#ftnt_ref1) Slightly adapted from Webster’s New Universal Unabridged Dictionary, Deluxe 2nd Ed., Cleveland: New World Dictionaries/Simon & Schuster, 1983.
 
+

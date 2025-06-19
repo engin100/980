@@ -39,7 +39,7 @@ Working at a computer often can become a one person deal. It is important to avo
 
 ## Altium
 
-You may want to try to work through the complete Altium tutorial in the Lab 1 post lab.  You worked through the schematic in Lab 1.  It would be worthwhile to revist this and then try to make the PCB, since that is what you will be doing in this lab.  Remember that this walk through is on Canvas in the Files section.
+You may want to try to work through the complete Altium tutorial in the Lab 1 post lab.  You worked through the schematic in Lab 1.  It would be worthwhile to revisit this and then try to make the PCB, since that is what you will be doing in this lab.  Remember that this walk through is on Canvas in the Files section.
 
 Altium as a software can be very complex, and as such, we have given you some tools to help simplify the process of constructing your PCB. The following pictures are taken from a free online tutorial provided by Altium: [From Idea to Manufacture](https://www.altium.com/documentation/altium-designer/tutorial-complete-design-walkthrough?version=22). You can learn more about this example there.
 
@@ -63,7 +63,7 @@ For additional reference, here is the schematic you made following Lab 1:
 
 _Figure 3: The schematic completed in the Postlab 1 assignment_
 
-Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre- loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so as we will discuss in the procedure, you can simply drag and drop them into place. **Make sure that your team is using the schematic components from the ENGR100 _.SchLib_ files. Using the Simulation Genaric Components library will cause issues down the road.**
+Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre- loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so as we will discuss in the procedure, you can simply drag and drop them into place. **Make sure that your team is using the schematic components from the ENGR100 _.SchLib_ files. Using the Simulation Generic Components library will cause issues down the road.**
 
 
 #### Your Schematic Contents
@@ -179,3 +179,4 @@ Peer reviews are due by 11:59pm on Tuesday, October 29th, 2024. Each person on y
 - [ ] Peer review three other teams' PCBs using provided rubrics by **October 29th, 2024, 11:59pm**.
 
 Remember, accuracy and collaboration are essential. Reach out to the IAs or the **#lab-help** channel on Slack for assistance if needed. Good luck with your PCB design!
+
