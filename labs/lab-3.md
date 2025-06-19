@@ -115,11 +115,11 @@ To build this two-point calibration curve, we need, as the name suggests, two po
     | Outdoor Test |         |                  |
 
 3. Now, let your circuit sit still on your workbench for a minute to let it adjust to the temperature in the lab. Record (using Serial monitor), what the rough average voltage reading is while it is stationary inside. Additionally, make a note of the temperature in the room, which will be written on the whiteboard in lab.
-4. Next, pick up your whole circuit and computer, and take a field trip outside. Find a nice spot in the sun (or out of the rain if the weather doesn't cooperate) and again let your board sit for a while. While you wait, you should be able to watch the voltage readings in your Serial monitor slowly level out. Once there is no longer much change between their values, take their rough average current value and record it into the table in your spreadsheet. Record this along with the current temperature outside. (You could also find a regfrigerator or freezer around the building and put your board in one of these.  There are thermometers in the lab that can be used to measure the temperature of an object - as one of the IAs for one of these.)
+4. Next, pick up your whole circuit and computer, and take a field trip outside. Find a nice spot in the sun (or out of the rain if the weather doesn't cooperate) and again let your board sit for a while. While you wait, you should be able to watch the voltage readings in your Serial monitor slowly level out. Once there is no longer much change between their values, take their rough average current value and record it into the table in your spreadsheet. Record this along with the current temperature outside. (You could also find a refrigerator or freezer around the building and put your board in one of these.  There are thermometers in the lab that can be used to measure the temperature of an object - as one of the IAs for one of these.)
 
 ### 4. Making a Calibration Curve
 
-Now that you have filled out your basic table of indoor and outdoor (or refridge) temperature and voltages, plug these values into your spreadsheet to calculate your calibration curve.
+Now that you have filled out your basic table of indoor and outdoor (or refrigerator) temperature and voltages, plug these values into your spreadsheet to calculate your calibration curve.
 
 Your calibration curve for a TMP36 will be linear, unlike a curve for a thermocouple as described in the introduction. This means your final calibrated equation will take the form of $$y=mx+b$$, where $$m$$ is the slope and $$b$$ is the y-intercept.
 
@@ -171,7 +171,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
-**Seperately**:
+**Separately**:
 
 - [ ] Also upload your memo as a PDF to the Memo 1 - Temperature Sensing assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab.
 

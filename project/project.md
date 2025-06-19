@@ -73,7 +73,7 @@ All teams must collectively present a preliminary design review, which must incl
 
 11. Testing strategies that you have come up with.
 
-    - Look at the testing strategies layed out in the Go / No-Go section below! This will help guide your response to this requirement, but you will also need to come up with tests for your extra sensor!
+    - Look at the testing strategies laid out in the Go / No-Go section below! This will help guide your response to this requirement, but you will also need to come up with tests for your extra sensor!
 
 12. Any test results that you may have at this point.
 

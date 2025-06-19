@@ -71,3 +71,5 @@ _Figure 2: Rocket Board Drawing_
 3. Figure out how you'd like to collect data using Arduino IDE
 
 As always, don't hesitate to reach out to Prof. Ruf or the IAs (Jack will probably give you the best answer, he designed the board) if you need help, or have any questions!
+
+
