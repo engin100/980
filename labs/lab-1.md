@@ -23,7 +23,7 @@ latex: true
 
 For this lab, you will need:
 
-- [ ] 1 Arduino Nano
+- [ ] 1 Arduino Nano Every
 - [ ] 1 Breadboard
 - [ ] 1 Programming Cable (and adapters if necessary)
 - [ ] 6 LEDs
@@ -35,11 +35,11 @@ For this lab, you will need:
 
 Welcome to ENGR100-950! Over the course of the next semester, you will be designing and building your own circuit board, complete with measurement instruments to gather information on acceleration and pressure (altitude!) data. To get to that point, we will spend the first several labs learning about various components and eventually how to combine them into a cohesive system.
 
-In lecture, you've had a crash course on the ins and outs of micro-controllers. Now, you'll be working with your own **Arduino Nano** micro-controller so you can begin to learn how to use it. The Nano will be the brain of your payload; it is very well-suited to these sorts of applications, as you will see.
+In lecture, you've had a crash course on the ins and outs of micro-controllers. Now, you'll be working with your own **Arduino Nano Every** micro-controller so you can begin to learn how to use it. The Nano Every will be the brain of your payload; it is very well-suited to these sorts of applications, as you will see.
 
-![Arduino Nano pinout](https://docs.arduino.cc/static/aea75b21cea87290ef2ed4e783b336ef/A000005-pinout.png)
+![Arduino Nano Every pinout](https://content.arduino.cc/assets/Pinout-NANOevery_latest.png)
 
-The **IO pins** on the Nano each serve different purposes. Above, and in [resources](/resources#arduino-nano-pinout), is a helpful diagram detailing the types of pins on the board.
+The **IO pins** on the Nano Every each serve different purposes. Above, and in [resources](/resources#arduino-nano-pinout), is a helpful diagram detailing the types of pins on the board.
 
 *[IO]: Input/Output
 
@@ -59,7 +59,7 @@ In the circuit on the right, the top node is held at 5V by some unseen source, a
 
 Before actually launching into the building of circuits, it's important to understand the tools that you are working with. Your breadboard will act as the "circuit board" on which you build your systems. Notice that it is organized by enumerated rows and columns.
 
-The pins of the electronic devices go into the holes in the breadboard. These holes are related to each other in that every row of 5, as defined on the board, are electrically connected. This means that if, for instance, you connect a 5V battery to a given hole, all of the holes in that row are raised to 5V. The Arduino Nano will supply 5V, so if you supply a given hole with 5V, all of the holes in that row will have 5V.
+The pins of the electronic devices go into the holes in the breadboard. These holes are related to each other in that every row of 5, as defined on the board, are electrically connected. This means that if, for instance, you connect a 5V battery to a given hole, all of the holes in that row are raised to 5V. The Arduino Nano Every will supply 5V, so if you supply a given hole with 5V, all of the holes in that row will have 5V.
 
 [Here is a helpful video on breadboards](https://www.youtube.com/watch?v=fq6U5Y14oM4)
 
@@ -84,10 +84,10 @@ Your lab instructors will demonstrate using a breadboard before the lab begins. 
 
    *[IDE]: Integrated Development Environment
 
-5. Make sure the correct board is connected under the "Tools" menu. The board should be "Arduino Nano". You might have to change the selected port if the IDE is failing to find the board.
+5. Make sure the correct board is connected under the "Tools" menu. The board should be "Arduino Nano Every". You might have to change the selected port if the IDE is failing to find the board.
 
 <div class="primer-spec-callout warning" markdown="1">
-Do not continue to the next section unless you can see your Arduino Nano and its port in your Arduino IDE, and there are LED(s) on its board that are lit up.
+Do not continue to the next section unless you can see your Arduino Nano Every and its port in your Arduino IDE, and there are LED(s) on its board that are lit up.
 </div>
 
 ### 2. LED Blink
