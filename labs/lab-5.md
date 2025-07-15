@@ -25,7 +25,7 @@ latex: true
 
 ## Materials
 
-- [ ] 1 Arduino Nano
+- [ ] 1 Arduino Nano Every
 - [ ] 1 Breadboard
 - [ ] 1 Programming Cable (and adapters if necessary)
 - [ ] 1 TMP36 Temperature Sensor

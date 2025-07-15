@@ -25,7 +25,7 @@ latex: true
 
 ## Materials
 
-- [ ] 1 Arduino Nano
+- [ ] 1 Arduino Nano Every
 - [ ] 1 Breadboard
 - [ ] 1 Programming Cable (and adapters if necessary)
 - [ ] 1 TMP36 Temperature Sensor
@@ -85,7 +85,7 @@ This sensor is rather simple to interface with. When the temperature changes, th
 
 ### 2. Uploading the Code
 
-Once your TMP36 is plugged in to your Arduino Nano, go to File → Examples → ENGR100-980 → Lab3-TMP36.
+Once your TMP36 is plugged in to your Arduino Nano Every, go to File → Examples → ENGR100-980 → Lab3-TMP36.
 
 <div class="primer-spec-callout info" markdown="1">
 If Lab3's example script does not show up, your library may be out of date. To update it, first try restarting the Arduino IDE. If this doesn't work, try following the same steps you took to install the library to update it.
