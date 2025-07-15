@@ -108,21 +108,21 @@ To open your projects again, go to File>Open, or double click on the `.ino` file
 
 ### Connecting to an Arduino
 
-To start, we need to tell the Arduino IDE which type of Arduino we are using (in our case, an Arduino Nano), and which port it is located at.
+To start, we need to tell the Arduino IDE which type of Arduino we are using (in our case, an Arduino Nano Every), and which port it is located at.
 
 To do this, either select the "Select Board" dropdown
 
 ![Select board dropdown](media/select-board.png)
 
-and choose the Arduino Nano and whatever port shows up when it is plugged into your computer like so:
+and choose the Arduino Nano Every and whatever port shows up when it is plugged into your computer like so:
 
-![Select board and port popup window](media/nano-selection.png).
+![Select board and port popup window for the Arduino Nano Every](media/nano-selection.png).
 
 Alternatively, you can open Tools>Board and specify the board and port quickly from there. This looks like this:
 
 ![Tools dropdown](media/tools-board.png)
 
-From this dropdown you can choose the Arduino Nano and specify which port you would like to connect on.
+From this dropdown you can choose the Arduino Nano Every and specify which port you would like to connect on.
 
 When you plug in Arduino, it _should_ show up in the list of options for the port regardless of which way you specify the port. If it is not showing up, before asking for help, try:
 
