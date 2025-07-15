@@ -118,13 +118,7 @@ and choose the Arduino Nano Every and whatever port shows up when it is plugged 
 
 ![Select board and port popup window for the Arduino Nano Every](media/nano-selection.png).
 
-Alternatively, you can open Tools>Board and specify the board and port quickly from there. This looks like this:
-
-![Tools dropdown](media/tools-board.png)
-
-From this dropdown you can choose the Arduino Nano Every and specify which port you would like to connect on.
-
-When you plug in Arduino, it _should_ show up in the list of options for the port regardless of which way you specify the port. If it is not showing up, before asking for help, try:
+When you plug in an Arduino, it _should_ show up in the list of options for the port regardless of the way you specify the port. If it is not showing up, before asking for help, try:
 
 1. Unplugging and re-plugging the Arduino / USB cables
 2. Force quitting the Arduino IDE (after saving your work!) and relaunching it
