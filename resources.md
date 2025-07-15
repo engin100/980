@@ -11,29 +11,29 @@ A collection of useful cheat-sheets and diagrams you may find yourself referring
 
 - [Resources](#resources)
   - [Contents](#contents)
-  - [Arduino Nano Pinout](#arduino-nano-pinout)
-  - [Arduino Nano Tech-Specs](#arduino-nano-tech-specs)
+  - [Arduino Nano Every Pinout](#arduino-nano-every-pinout)
+  - [Arduino Nano Every Tech-Specs](#arduino-nano-every-tech-specs)
   - [Voltage Divider](#voltage-divider)
   - [LED Anode vs Cathode](#led-anode-vs-cathode)
   - [Basic Circuitry Formulas](#basic-circuitry-formulas)
   - [Resistor Color Codes](#resistor-color-codes)
   - [TMP36 Wiring](#tmp36-wiring)
 
-## Arduino Nano Pinout
+## Arduino Nano Every Pinout
 
-![Arduino Nano pinout](https://docs.arduino.cc/static/aea75b21cea87290ef2ed4e783b336ef/A000005-pinout.png)
+![Arduino Nano Every pinout](https://content.arduino.cc/assets/Pinout-NANOevery_latest.png)
 
-## Arduino Nano Tech-Specs
+## Arduino Nano Every Tech-Specs
 
 - Built-in LED Pin #: 13
 - Digital Pins: 14
 - Analog Pins: 8
-- PWM Pins: 6
+- PWM Pins: 5
 - Voltage: 5V
-- Input-Voltage: 7-12V
+- Input-Voltage: 7-21V
 - Current per Pin: 20mA
 
-For more detailed specs, see [the Arduino Nano website](https://docs.arduino.cc/hardware/nano)
+For more detailed specs, see [the Arduino Nano Every website](https://docs.arduino.cc/hardware/nano-every)
 
 *[PWM]: Pulse Width Modulation
 
