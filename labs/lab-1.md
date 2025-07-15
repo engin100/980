@@ -39,7 +39,7 @@ In lecture, you've had a crash course on the ins and outs of micro-controllers. 
 
 ![Arduino Nano Every pinout](https://content.arduino.cc/assets/Pinout-NANOevery_latest.png)
 
-The **IO pins** on the Nano Every each serve different purposes. Above, and in [resources](/resources#arduino-nano-pinout), is a helpful diagram detailing the types of pins on the board.
+The **IO pins** on the Nano Every each serve different purposes. Above, and in [resources](/resources#arduino-nano-every-pinout), is a helpful diagram detailing the types of pins on the board.
 
 *[IO]: Input/Output
 
