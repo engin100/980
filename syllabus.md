@@ -41,6 +41,7 @@ Here is contact information for all the course staff. If you have a question tha
 | **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | TBD |
 | **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB | TBD |
 | **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB | TBD |
+| **Felix Foreman-Braunschweig** <br> Instructional Assistant | <felixfb@umich.edu> <br> 1210 CSRB | TBD |
 
 ### Office Hours
 
