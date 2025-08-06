@@ -3,7 +3,7 @@ layout: spec
 latex: true
 ---
 
-# Engineering 100-980 “Rocket Science” Fall 2024
+# Engineering 100-980 “Rocket Science” Fall 2025
 
 ## Course Overview
 
@@ -23,11 +23,11 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 | ----- | ---- | -------- |
 | **Lecture (980)** | TuTh 3:00-4:30p | 1017 DOW |
 | Lab (981) | W 3:30-5:30p | 1225 CSRB |
-| Discussion (982) | W 2:30-3:30p | 1032 FXB |
+| Discussion (982) | W 2:30-3:30p | 1012 EECS |
 | Lab (983) | Th 12:30-2:30p | 1225 CSRB |
-| Discussion (984) | W 12:30-1:30p | 4440 EECS |
+| Discussion (984) | W 12:30-1:30p | 1012 EECS |
 | Lab (985) | W 12:30-2:30p | 1225 CSRB |
-| Discussion (986) | W 11:30a-12:30p | 4440 EECS |
+| Discussion (986) | W 11:30a-12:30p | 1012 EECS |
 
 ### Instructor Information
 
@@ -49,9 +49,9 @@ Office hours are a chance to get to know the course staff, to get clarification 
 
 **For an up-to-date listing of office hours, always refer to the week’s agenda on Canvas.**
 
-There is a google calendar available [here,](https://calendar.google.com/calendar/u/0?cid=Y19hMWVjNDA3MTJmZGZkNDhlYzA3NmNiYmE2MTliYWM5MDI0MWZkYWI1NmY2NmUxYTRhNGUwZDFiYjkwZDY3OTU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) and shown below.
+There is a google calendar available [here,](https://calendar.google.com/calendar/embed?src=c_274bdbcc5302aa23df4e74c2f1aed12d3a3795f1cb34759cd8072a7c3d71f692%40group.calendar.google.com&ctz=America%2FNew_York) and shown below.
 
-<iframe src="https://calendar.google.com/calendar/embed?src=c_a1ec40712fdfd48ec076cbba619bac90241fdab56f66e1a4a4e0d1bb90d67957%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_274bdbcc5302aa23df4e74c2f1aed12d3a3795f1cb34759cd8072a7c3d71f692%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## Canvas & Course Resources
 
