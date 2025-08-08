@@ -119,7 +119,7 @@ To do this, either select the "Select Board" dropdown
 
 and choose the Arduino Nano Every and whatever port shows up when it is plugged into your computer like so:
 
-![Select board and port popup window for the Arduino Nano Every](media/nano-selection.png).
+![Select board and port popup window for the Arduino Nano Every](media/nano-selection.png)
 
 When you plug in an Arduino, it _should_ show up in the list of options for the port regardless of the way you specify the port. If it is not showing up, before asking for help, try:
 
