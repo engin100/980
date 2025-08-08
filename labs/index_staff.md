@@ -13,8 +13,6 @@ Learning how to program and wire an Arduino micro-controller to control LEDs on 
 
 [Link to lab 1](/labs/lab-1)
 
-<!--
-
 ## Lab 2: Iterative Numerical Analysis in a Computer
 
 Learning how to become an Excel (or Google Sheets) wiz to manipulate and integrate data, and make beautiful and practical plots.
@@ -74,4 +72,3 @@ Read through the rocket selection guidelines to choose your group's rocket and i
 - [Link to selection guidelines](https://980.engr100.org/labs/rocket-selection)
 - [Link to form](https://umich.instructure.com/courses/709939/quizzes/410817)
 
--->
