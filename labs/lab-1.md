@@ -33,7 +33,18 @@ For this lab, you will need:
 
 ## Introduction
 
-Welcome to ENGR100-950! Over the course of the next semester, you will be designing and building your own circuit board, complete with measurement instruments to gather information on acceleration and pressure (altitude!) data. To get to that point, we will spend the first several labs learning about various components and eventually how to combine them into a cohesive system.
+<div class="primer-spec-callout warning" markdown="1">
+Starting in this lab, you will be graded on your use of color coding when wiring breadboard circuits. Please take careful note of the guidelines listed below!
+
+- **Red:** Power (5v, 3.3v, etc.)
+- **Black:** Ground
+- **Blue:** Analog (Pins labeled with an A, and most likely used for analogRead or sensor data)
+- **Yellow:** Digital (Pins labeled with a D, most likely used to control things or for more complicated sensors)
+
+**Use of vertical breadboard rails:** Utilize the breadboard rails (blue and red) to run power and ground lines for easy access across the entire breadboard. For example, run a black jumper cabled from the Arduino ground pin to one of the blue rails, and then connect another black jumper from the grounded blue rail to the other blue rail. Now both blue rails are grounded, and can be used as the ground terminal for any components. Similarly, you could connect a red jumper from the 5v pin on the Arduino to one of the red rails, and use that rail for a 5v supply. In future labs, when we're working with 5v and 3.3v, we will have you run a rail for each voltage.
+</div>
+
+Welcome to ENGR100-980! Over the course of the next semester, you will be designing and building your own circuit board, complete with measurement instruments to gather information on acceleration and pressure (altitude!) data. To get to that point, we will spend the first several labs learning about various components and eventually how to combine them into a cohesive system.
 
 In lecture, you've had a crash course on the ins and outs of micro-controllers. Now, you'll be working with your own **Arduino Nano Every** micro-controller so you can begin to learn how to use it. The Nano Every will be the brain of your payload; it is very well-suited to these sorts of applications, as you will see.
 
@@ -159,7 +170,7 @@ Hint: Resistors in series add together.  So, if you have three resistors that ar
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
-- [ ] A picture of your breadboard with an external LED on it being lit up while plugged into an Arduino.
+- [ ] A picture of your breadboard with an external LED on it being lit up while plugged into an Arduino. (You'll receive full points for submitting this. We will simply be using it to give feedback on color coding in preparation for stricter grading in later labs.)
 - [ ] A photo of your breadboard (unplugged from your computer) in its broken state.
 - [ ] Written post-lab answers for questions 1-3.
 - [ ] 2 circuit diagrams (i.e., schematics) in total for post-lab questions 2 and 3.
