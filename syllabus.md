@@ -37,7 +37,7 @@ Here is contact information for all the course staff. If you have a question tha
 | ---------- | -------- | ------------ |
 | **Dr. Chris Ruf** <br> Technical Lead  | <cruf@umich.edu> <br> 2527A CSRB | TBD |
 | **Dr. Alan Hogg** <br> Communication Instructor - Lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom, scheduled through Slack/email) | TBD |
-| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) | TBD |
+| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) | Thursday from 1:30 to 2:30 pm in 305 GFL, Thursday 5-6 pm via Zoom (email to schedule) |
 | **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | TBD |
 | **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB | TBD |
 | **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB | TBD |
