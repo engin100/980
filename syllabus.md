@@ -22,11 +22,11 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 | Class | Time | Location |
 | ----- | ---- | -------- |
 | **Lecture (980)** | TuTh 3:00-4:30p | 1017 DOW |
-| Lab (981) | W 3:30-5:30p | 1225 CSRB |
+| Lab (981) | W 3:30-5:30p | 1210 CSRB |
 | Discussion (982) | W 2:30-3:30p | 1012 EECS |
-| Lab (983) | Th 12:30-2:30p | 1225 CSRB |
+| Lab (983) | Th 12:30-2:30p | 1210 CSRB |
 | Discussion (984) | W 12:30-1:30p | 1012 EECS |
-| Lab (985) | W 12:30-2:30p | 1225 CSRB |
+| Lab (985) | W 12:30-2:30p | 1210 CSRB |
 | Discussion (986) | W 11:30a-12:30p | 1012 EECS |
 
 ### Instructor Information
@@ -38,7 +38,7 @@ Here is contact information for all the course staff. If you have a question tha
 | **Dr. Chris Ruf** <br> Technical Lead  | <cruf@umich.edu> <br> 2527A CSRB | TBD |
 | **Dr. Alan Hogg** <br> Communication Instructor - Lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom, scheduled through Slack/email) | TBD |
 | **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) | Thursday from 1:30 to 2:30 pm in 305 GFL, Thursday 5-6 pm via Zoom (email to schedule) |
-| **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | TBD |
+| **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | Mondays 5-7p |
 | **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB | TBD |
 | **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB | TBD |
 | **Felix Foreman-Braunschweig** <br> Instructional Assistant | <felixfb@umich.edu> <br> 1210 CSRB | TBD |
