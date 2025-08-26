@@ -42,7 +42,6 @@ Starting in this lab, you will be graded on your use of color coding when wiring
 - **Yellow:** Digital (Pins labeled with a D, most likely used to control things or for more complicated sensors)
 
 **Use of vertical breadboard rails:** Utilize the breadboard rails (blue and red) to run power and ground lines for easy access across the entire breadboard. For example, run a black jumper cabled from the Arduino ground pin to one of the blue rails, and then connect another black jumper from the grounded blue rail to the other blue rail. Now both blue rails are grounded, and can be used as the ground terminal for any components. Similarly, you could connect a red jumper from the 5v pin on the Arduino to one of the red rails, and use that rail for a 5v supply. In future labs, when we're working with 5v and 3.3v, we will have you run a rail for each voltage.
-![Breadboard Inner Workings](https://cdn.sparkfun.com/r/600-600/assets/3/d/f/a/9/518c0b34ce395fea62000002.jpg)
 </div>
 
 Welcome to ENGR100-980! Over the course of the next semester, you will be designing and building your own circuit board, complete with measurement instruments to gather information on acceleration and pressure (altitude!) data. To get to that point, we will spend the first several labs learning about various components and eventually how to combine them into a cohesive system.
@@ -81,6 +80,10 @@ Circuit elements are connected in breadboards by connecting the input pins of on
 ![Voltage divider on a breadboard](../media/voltage-divider-breadboard.png)
 
 Your lab instructors will demonstrate using a breadboard before the lab begins. If you have questions about whether or not you are connecting devices appropriately, please don't hesitate to ask.
+
+The image below shows the inner workings of a breadboard. Hopefully this demystifies the connections inside of the plastic housing for you.
+
+![Breadboard Inner Workings](https://cdn.sparkfun.com/r/600-600/assets/3/d/f/a/9/518c0b34ce395fea62000002.jpg)
 
 1. [Check out the first half of this video.](https://www.youtube.com/watch?v=QM6EY0VEqBA)  This shows how to connect an LED to the 5V output pin of the Arduino, a resistor, and then to ground.  This circuit will work without any Arduino code at all and is a good test for the circuit board and powering the Arduino!  This is the circuit you will build in step 2.
 
