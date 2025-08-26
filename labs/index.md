@@ -5,7 +5,7 @@ latex: true
 
 # Labs
 
-As we publish labs, they will become available here.
+As we publish labs, they will become available here. 
 
 ## Lab 1: Arduino 101
 
