@@ -25,7 +25,7 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 | Lab (981) | W 3:30-5:30p | 1210 CSRB |
 | Discussion (982) | W 2:30-3:30p | 1012 EECS |
 | Lab (983) | Th 12:30-2:30p | 1210 CSRB |
-| Discussion (984) | W 12:30-1:30p | 1012 EECS |
+| Discussion (984) | Th 11:30-12:30p | 1012 EECS |
 | Lab (985) | W 12:30-2:30p | 1210 CSRB |
 | Discussion (986) | W 11:30a-12:30p | 1012 EECS |
 
