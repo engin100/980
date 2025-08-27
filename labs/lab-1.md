@@ -34,7 +34,7 @@ For this lab, you will need:
 ## Introduction
 
 <div class="primer-spec-callout warning" markdown="1">
-Starting in this lab, you will be graded on your use of color coding when wiring breadboard circuits. Please take careful note of the guidelines listed below!
+You will be given feedback (and later graded) on your use of color coding when wiring breadboard circuits. Please take careful note of the guidelines listed below!
 
 - **Red:** Power (5v, 3.3v, etc.)
 - **Black:** Ground
