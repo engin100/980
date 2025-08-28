@@ -35,9 +35,9 @@ Note: While it is okay to work next to someone else to accomplish this goal and 
 For this lab, you will need:
 
 - [ ] A CAEN computer, or a computer running UofM VMWare to access Altium software.
-- [ ] [Altium libraries .zip file](https://drive.google.com/file/d/1JMCNjsRCwUEqwYapCFaCCkwo2zHAycD3/view?usp=drive_link) (you will need to unzip before using)
-- [ ] [Spreadsheet of Footprints](https://drive.google.com/file/d/1tsC8cM-wiYfIB25BBM7o7ymhQ4F3gtD8/view?usp=sharing)
-- [ ] [Second Spreadsheet of Footprints](https://drive.google.com/file/d/1LVTbnMMa6W0KI2mwZwTfUbNu1QJWeqjq/view?usp=sharing)
+- [ ] [Altium libraries .zip file](https://drive.google.com/file/d/18H11wjUpd7nUb7cCcznSYSPikSVopoY2/view?usp=drive_link) (you will need to unzip before using)
+- [ ] [Spreadsheet of Footprints](https://drive.google.com/file/d/1egc5fYAgJI6w-IgFakAdnRgtKLkATzhf/view?usp=drive_link)
+- [ ] [Second Spreadsheet of Footprints](https://drive.google.com/file/d/1NpD_mBxw7ZWVhoHwYRWJQyuaEXjcVOu1/view?usp=drive_link)
 
 ## Getting Started
 
