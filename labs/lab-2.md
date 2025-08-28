@@ -40,27 +40,27 @@ One of the goals of this class is to teach you how computers can be used to solv
 
 One of the assumptions of basic kinematic equations is that acceleration is constant. With complicated systems like objects in orbit, that is often not true. In this case, you cannot use the algebraic kinematic equations to solve for the motion–you need an often complicated system of differential equations that require calculus. In that case, you need a computer to help you solve the system.
 
-We are not in a position for that yet, so we will simplify things to get started! Let's look at some of the simple kinematic equations and explore solving a system of equations. The basic variables in kinematic equations are:
+We are not ready for that yet, so we will simplify things to get started! Let's look at some of the simple kinematic equations and explore solving a system of equations. The basic variables in kinematic equations are:
 
 ### Kinematic Equations
 
 - **Time (t):** the time of the system (units: s). Often, we have variables that are labeled with a zero (0), which means “initial”, or the value at the start. So, **t<sub>0</sub>** is the initial time, while "**t**" is the current time. The difference in time between the start and current time can be thought of as delta time, or **&Delta;t**.
-- **Position (x)**: where the object is (units: m). The initial position is **x<sub>0</sub>**, while the change in position is **&Delta;t**.
-- **Velocity (v)**: how fast the object is moving, or the change in position over time (units: m/s). The initial velocity is **v<sub>o</sub>**, while the change in velocity is **&Delta;v**.
-- **Acceleration (a)**: the change in velocity over time (units: m/s<sup>2</sup>) Here we are going to assume that acceleration is constant.
+- **Position (x)**: where the object is (units: m). The initial position is **x<sub>0</sub>**, while the change in position is **&Delta;x**.
+- **Velocity (v)**: how fast the object is moving, or the change in position over time (units: m/s). The initial velocity is **v<sub>0</sub>**, while the change in velocity is **&Delta;v**.
+- **Acceleration (a)**: the change in velocity over time (units: m/s<sup>2</sup>). Here we are going to assume that acceleration is constant.
 
 These variables can be related through these kinematic equations:
 
 1. $$ \Delta t = t - t_0 $$
-2. $$ x = x_0 + \frac{v_0 + v}{2}dt $$
-3. $$ v = v_0 + a\cdot dt $$
-4. $$ x = x_0 + v_0 \cdot dt + \frac{a \cdot dt^2}{2} $$
+2. $$ x = x_0 + \frac{v_0 + v}{2} \Delta t $$
+3. $$ v = v_0 + a\cdot \Delta t $$
+4. $$ x = x_0 + v_0 \cdot \Delta t + \frac{a \cdot (\Delta t)^2}{2} $$
 
 ## Procedure
 
 ### Using Equations in Spreadsheets
 
-You can use spreadsheets as a simple way to solve equations with given inputs. You let the spreadsheet know that you’re writing an equation by starting with “=”. You can then input numbers, multiplication (*), division (/), addition (+), and subtraction (-). You can also do exponents (x^y). Some functions are also built into the spreadsheet like a calculator, such as pi (written as PI() ) and trigonometric functions (but be careful, these are set to radians).
+You can use spreadsheets as a simple way to solve equations with given inputs. You let the spreadsheet know that you’re writing an equation by starting with “=”. You can then input numbers, multiplication (*), division (/), addition (+), and subtraction (-). You can also do exponents (x^y). Some functions are also built into the spreadsheet like a calculator, such as π (written as PI()) and trigonometric functions (but be careful, these are set to radians).
 
 Another thing you can do is use inputs from other cells in the spreadsheet. For example, if you wanted to find the area of a circle (A = pi * r^2) based on an input radius, you could do the following:
 
@@ -80,13 +80,13 @@ In calculus, we use a system called integration to find the exact area under a c
 
 We can view this as a rectangle with a height of 10 (ft/min) and a width of 5 (min). To find the area, we multiply the width by the height:
 
-$$\frac{10m}{s}\cdot 5s = 50m$$
+$$\frac{10\,\mathrm{ft}}{\mathrm{min}}\cdot 5\,\mathrm{min} = 50\,\mathrm{ft}$$
 
 However, when we have curves with less defined shapes, it can be harder to find the area using this method. We can instead use an approximation using bars to “fill” the area under the curve. We will be using two such approximation methods for two types of curves.
 
 ### Left-Side Riemann Sums
 
-For this method, we create bars of a width dx using the height of the curve on the left hand side of this box. For example, here we approximate the area under this curve $$y = sin(x) + 2$$ in the domain $$[0, 10]$$ with a $$dx$$ of 1.
+For this method, we create bars of a width dx using the height of the curve on the left hand side of this box. For example, here we approximate the area under this curve $$y = \sin(x) + 2$$ in the domain $$[0, 10]$$ with a $$dx$$ of 1.
 
 ![Sine Bar and Line Graph](media/sin_and_bar.png)
 
@@ -95,8 +95,8 @@ You then can find the area of each box based on the width and height. When you a
 To find how many boxes B you’re creating, divide the range of the domain by dx. For each box, use the following equations based on n, which box it is, starting at 1:
 
 $$X_N = (N - 1) \cdot dx$$       (This is so we get the left-hand side of the box.)
-$$f \cdot X_N = y_N$$            (In other words, find the y-value of the function at XN.)
-$$ A_N = dx \cdot yN$$.          (The area of the box is AN.)
+$$y_N = f(X_N)$$            (In other words, find the y-value of the function at \(X_N\).)
+$$ A_N = dx \cdot y_N$$.          (The area of the box is \(A_N\).)
 $$A = \sum_{N=1}^B A_N$$         Where A is the approximate area under the curve and B is the total 
 number of boxes created.
 
@@ -114,15 +114,15 @@ Let’s walk through this spreadsheet a bit:
   - B (x1 - right): defines the right edge of our area of the small box
   - C (y = sin(x) + 2): this is the function that we want to evaluate.  We are calculating the area under this function.
   - D (area in single cell): This is the area in the single small box from x0 to x1.
-  - E (area in while domain): This is the sum of all of the small areas.
+  - E (area in whole domain): This is the sum of all of the small areas.
   - F: There are indicators of the start cell and end cell for the calculation. We will get more sophisticated in this as the semester progresses, but for now, this really just indicates when column B (x1) is 10.0.
-- There should be 2 plots (charts, in google speak):
+- There should be 2 plots (charts, in Google Sheets):
   - A plot of “y = sin(x) + 2” (column C) from row 8 to row 17 (C8:C17)
   - A plot of “area in whole domain” (column E) from E8:E17
 
 Just so we are all on the same page, according to this calculation, the total area under the curve at this point should be 21.96 (in cell E17).
 
-Make a copy of this page (File - Make a copy) and place it somewhere in your own google drive directory.  You could download this as an excel spreadsheet if you would like also and do all of this on your computer with Excel.
+Make a copy of this page (File - Make a copy) and place it somewhere in your own Google Drive directory. You could download this as an Excel spreadsheet if you would like also and do all of this on your computer with Excel.
 
 Using your personal copy, let’s change some things and see what happens:
 
@@ -149,7 +149,7 @@ Ok, now that we have run through this with our example, we would like you to try
 - Create the spreadsheet with the proper columns (x0, x1, y, area in single cell, area in whole domain); as well as plots of y and the area. (HINT: Just duplicate the "Sin" tab and change the formula!)
 - Play with the dx and see how dx alters the error, including a plot.
 
-We’re going to apply this information to three types of common curves: a linear curve, a quadratic curve and a logarithmic curve. You will use Excel (or google sheets) to make your calculations easier. For both types of curves, we will give you the domain and the exact area under the curve so you can calculate the exact error. We will give you an example spreadsheet for the sine curve, but you will create your own for the quadratic and logarithmic curves. Try changing the dx value to make your error smaller, and plot your absolute errors as a function of dx. You will see that as your dx becomes smaller, your error also becomes smaller. As dx becomes infinitely small, your error should approach zero!
+We’re going to apply this information to three types of common curves: a linear curve, a quadratic curve and a logarithmic curve. You will use Excel (or Google Sheets) to make your calculations easier. For these curves, we will give you the domain and the exact area under the curve so you can calculate the exact error. We will give you an example spreadsheet for the sine curve, but you will create your own for the linear, quadratic, and logarithmic curves. Try changing the dx value to make your error smaller, and plot your absolute errors as a function of dx. You will see that as your dx becomes smaller, your error also becomes smaller. As dx becomes infinitely small, your error should approach zero!
 
 ### Linear Curve
 
@@ -169,13 +169,13 @@ Exact area under the curve: -74.25 square units
 
 ### Logarithmic Curve
 
-$$Y = ln(x)$$  (where ln is the natural logarithm)
+$$y = \ln(x)$$  (where ln is the natural logarithm)
 
-Note: the excel function for this is LN(#), where # is your chosen value.
+Note: the Excel function for this is LN(#), where # is your chosen value.
 
 Domain: $$x = [1, 10]$$
 
-Exact area under the curve: 10ln(10) - 9 square units (use this expression for greater resolution in error calculations)
+Exact area under the curve: $$(10\ln(10) - 9)$$ square units (use this expression for greater resolution in error calculations)
 
 ## Submission
 
@@ -189,7 +189,7 @@ Submitting anything other than a single PDF may result in your work not being gr
 
 ## Post-Lab Extra Assignment
 
-This semester, we are going to use a tool called **Altium**.  We are also going to work with schematics a LOT.  Instead of hand drawing all of the schematics, we are going to draw them in Altium.  Therefore, as part of our first lab, we are going to have you do an exercise that walks you through how to draw a simple schematic in Altium.  This is a separate lab assignment called Postlab 2b.
+This semester, we are going to use a tool called **Altium**. We are also going to work with schematics a lot. Instead of hand drawing all of the schematics, we are going to draw them in Altium. Therefore, as part of our second lab, we are going to have you do an exercise that walks you through how to draw a simple schematic in Altium. This is a separate lab assignment called Postlab 2b.
 
 [Link to lab 2b](/labs/lab-2b)
 
@@ -205,22 +205,22 @@ Same as with the left-side boxes, you find the area of each individual box then 
 
 To find how many boxes B you’re creating, divide the range of the domain by dx. For each box, use the following equations based on n, which box it is, starting at 1:
 
-$$X_N = (N - \frac{1}{2}) \cdot dx$$       (This is so we get the left-hand side of the box.)
+$$X_N = (N - \frac{1}{2}) \cdot dx$$       (This is so we get the midpoint of the box.)
 
-$$f \cdot X_N = y_N$$            (In other words, find the y-value of the function at XN.)
+$$y_N = f(X_N)$$            (In other words, find the y-value of the function at \(X_N\).)
 
-$$ A_N = dx \cdot yN$$.          (The area of the box is AN.)
+$$ A_N = dx \cdot y_N$$.          (The area of the box is \(A_N\).)
 
-$$A = \sum_{N=1}^B A_N$$         Where A is the approximate area under the curve and B is the total
+$$A = \sum_{N=1}^B A_N$$         Where A is the approximate area under the curve and B is the total number of boxes created.
 
 What does this mean practically?
 
-In our $$y = sin(x) + 2$$ spreadsheet, we can do the following things to make the area more accurate:
+In our $$y = \sin(x) + 2$$ spreadsheet, we can do the following things to make the area more accurate:
 
 - Select column C, so the whole column is highlighted (click on “C”)
 - Insert a column to the left of Column C (insert->Column left)
 - In Cell C8, write a formula “=(A8+B8)/2”
 - Google will ask if you want to autofill the rest of the column. Yes you do!
-= In cell D8, it should have “=sin(A8) + 2”.  Change this to “=sin(C8) + 2”
+- In cell D8, it should have “=sin(A8) + 2”. Change this to “=sin(C8) + 2”.
 - Copy cell D8 to the rest of the cells in column D.
 Now your spreadsheet is set up to use the cell center values instead of the left side values!  You can then see if this is more accurate by looking at the behavior as a function of dx.
