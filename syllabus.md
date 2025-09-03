@@ -38,10 +38,10 @@ Here is contact information for all the course staff. If you have a question tha
 | **Dr. Chris Ruf** <br> Technical Lead  | <cruf@umich.edu> <br> 2527A CSRB | TBD |
 | **Dr. Alan Hogg** <br> Communication Instructor - Lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom, scheduled through Slack/email) | TBD |
 | **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) | Thursday from 1:30 to 2:30 pm in 305 GFL, Thursday 5-6 pm via Zoom (email to schedule) |
-| **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | Mondays 5-7p |
-| **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB | TBD |
-| **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB | TBD |
-| **Felix Foreman-Braunschweig** <br> Instructional Assistant | <felixfb@umich.edu> <br> 1210 CSRB | TBD |
+| **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | Wednesdays 5:30-7:30p |
+| **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB | Thursdays 5:30-7:30p |
+| **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB | Fridays 3:30-5:30p |
+| **Felix Foreman-Braunschweig** <br> Instructional Assistant | <felixfb@umich.edu> <br> 1210 CSRB | Mondays 5-7p |
 
 ### Office Hours
 
