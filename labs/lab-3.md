@@ -29,7 +29,7 @@ latex: true
 - [ ] 1 Breadboard
 - [ ] 1 Programming Cable (and adapters if necessary)
 - [ ] 1 TMP36 Temperature Sensor
-- [ ] A hand-full of jumper wires
+- [ ] A handful of jumper wires
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
 ## Introduction
@@ -42,12 +42,12 @@ Starting in this lab, you will be graded on your use of color coding when wiring
 - **Blue:** Analog (Pins labeled with an A, and most likely used for analogRead or sensor data)
 - **Yellow:** Digital (Pins labeled with a D, most likely used to control things or for more complicated sensors)
 
-**Use of vertical breadboard rails:** Utilize the breadboard rails (blue and red) to run power and ground lines for easy access across the entire breadboard. For example, run a black jumper cabled from the Arduino ground pin to one of the blue rails, and then connect another black jumper from the grounded blue rail to the other blue rail. Now both blue rails are grounded, and can be used as the ground terminal for any components. Similarly, you could connect a red jumper from the 5v pin on the Arduino to one of the red rails, and use that rail for a 5v supply. In future labs, when we're working with 5v and 3.3v, we will have you run a rail for each voltage.
+**Use of vertical breadboard rails:** Utilize the breadboard rails (blue and red) to run power and ground lines for easy access across the entire breadboard. For example, run a black jumper cable from the Arduino ground pin to one of the blue rails, and then connect another black jumper from the grounded blue rail to the other blue rail. Now both blue rails are grounded and can be used as the ground terminal for any components. Similarly, you could connect a red jumper from the 5v pin on the Arduino to one of the red rails and use that rail for a 5v supply. In future labs, when we're working with 5v and 3.3v, we will have you run a rail for each voltage.
 </div>
 
 [This video goes through how to set up the TMP36 and is very useful to watch before you get started.](https://www.youtube.com/watch?v=Mdx2m6hNuqc)
 
-This lab represents the start of your journey into the development of your rocket's sensor board. Your board will measure an ensemble of variables, including temperature, pressure (to derive altitude), and acceleration vector. We will begin with the simplest, most visceral metric: temperature. This lab will introduce you to the temperature sensor associated with your sensor board.
+This lab represents the start of your journey into developing your rocket's sensor board. Your board will measure an ensemble of variables, including temperature, pressure (to derive altitude), and acceleration. We will begin with the simplest, most visceral metric: temperature. The final sensor board on your rocket will use a digital BME680 environmental sensor for temperature measurements, but in this lab we will work with an analog TMP36 to learn about analog sensors and calibration.
 
 A **sensor** is a device that provides measurement of some environmental observable. Many times, sensors work by **transduction** whereby they convert one form of energy into another, often times converting input to electrical energy. However, how do we know what the relationship is between the input and the output? If, for instance, the output from a temperature sensor reads as 2 Volts at room temperature, what does an output of 3 Volts mean? In order to answer this question, we need to generate a **calibration curve** for the sensor: an equation that maps input values against output values.
 
@@ -55,7 +55,7 @@ Here's a cool example: since you'll be dealing with a temperature sensor this la
 
 ![thermocouple](media/../../media/thermocouple.jpg){: .invert-colors-in-dark-mode }
 
-Over the next few weeks, you will become very familiar with the sensors used in this course. We'll start by looking at the temperature sensor we'll be using for the semester. Unlike the thermocouple, this temperature sensor has a lot of processing circuitry built into it to make its calibration curve linear.
+Over the next few weeks, you will become very familiar with the sensors used in this course. We'll start by looking at the TMP36 as a straightforward analog temperature sensor with built-in circuitry that produces a nearly linear calibration curve. Later, your sensor board will rely on the BME680's digital temperature readings instead.
 
 ### How Analog to Digital Converters (ADCs) Work
 
@@ -95,18 +95,18 @@ You will need to modify the analog pin number you are reading off of for this la
 
 In the provided start code, locate the `loop()` function and find where `analogRead()` is called. It is set to default to pin A1, but you should change this to be whatever **analog** pin you plugged your TMP36 into.
 
-Before we move on to collecting data, let's make sure the circuit is working as expected. To do this, we want to warm up or cool down the temperature sensor. You can do this by simply putting your fingers over the sensor for a minute and watching the voltage change in your Serial monitor. If the voltage does not change, you may have something wrong in your circuit.
+Before we move on to collecting data, let's make sure the circuit is working as expected. To do this, we want to warm up or cool down the temperature sensor. You can do this by simply putting your fingers over the sensor for a minute and watching the voltage change in your Serial Monitor. If the voltage does not change, you may have something wrong in your circuit.
 
 ### 3. Collecting Data
 
-Now we have a circuit and some code to tell us what the raw voltage our TMP36 is reading in, as explained above in [How Analog to Digital Converters (ADCs) Work](#how-analog-to-digital-converters-adcs-work).
+Now we have a circuit and some code to tell us the raw voltage that our TMP36 is reading, as explained above in [How Analog to Digital Converters (ADCs) Work](#how-analog-to-digital-converters-adcs-work).
 
 In order to turn this voltage into a useful temperature, we need to do some math with a calibration curve.
 Here is an [example calibration curve](https://docs.google.com/spreadsheets/d/1Vn4W3_zJlkH9kW7KGmAM1BaS2YcaMYqjPD3fkZrIiWo/edit?usp=sharing) spreadsheet.
 
 To build this two-point calibration curve, we need, as the name suggests, two points. For this lab, we will collect one temperature inside, and one outside.
 
-1. Start by making a copy of the calibration curve spreadsheet you made during lecture. For those of you who did not attend lecture, see the lecture slides on Canvas, watch the lecture recording, or Google/ask a friend about how to make a calibration curve. It is quite simply a way to find the slope and offset of a linear equation to connect two points. This slope and offset is what we will use to convert our voltage into a temperature.
+1. Start by making a copy of the calibration curve spreadsheet you made during lecture. For those of you who did not attend lecture, see the lecture slides on Canvas, watch the lecture recording, or Google/ask a friend about how to make a calibration curve. It is quite simply a way to find the slope and offset of a linear equation to connect two points. This slope and offset are what we will use to convert our voltage into a temperature.
 2. In your calibration curve copy, set aside a space to make raw measurements before entering things into the spreadsheet. This could be a simple table on a new sheet, or just a table off to the side. It should look something like this:
 
     |              | Voltage | Temperature (°C) |
@@ -114,8 +114,8 @@ To build this two-point calibration curve, we need, as the name suggests, two po
     | Indoor Test  |         |                  |
     | Outdoor Test |         |                  |
 
-3. Now, let your circuit sit still on your workbench for a minute to let it adjust to the temperature in the lab. Record (using Serial monitor), what the rough average voltage reading is while it is stationary inside. Additionally, make a note of the temperature in the room, which will be written on the whiteboard in lab.
-4. Next, pick up your whole circuit and computer, and take a field trip outside. Find a nice spot in the sun (or out of the rain if the weather doesn't cooperate) and again let your board sit for a while. While you wait, you should be able to watch the voltage readings in your Serial monitor slowly level out. Once there is no longer much change between their values, take their rough average current value and record it into the table in your spreadsheet. Record this along with the current temperature outside. (You could also find a refrigerator or freezer around the building and put your board in one of these.  There are thermometers in the lab that can be used to measure the temperature of an object - as one of the IAs for one of these.)
+3. Now, let your circuit sit still on your workbench for a minute to let it adjust to the temperature in the lab. Record, using the Serial Monitor, the rough average voltage reading while it is stationary inside. Additionally, make a note of the temperature in the room, which will be written on the whiteboard in lab.
+4. Next, pick up your whole circuit and computer, and take a field trip outside. Find a nice spot in the sun (or out of the rain if the weather doesn't cooperate) and again let your board sit for a while. While you wait, you should be able to watch the voltage readings in your Serial Monitor slowly level out. Once there is no longer much change between their values, take their rough average current value and record it into the table in your spreadsheet. Record this along with the current temperature outside. (You could also find a refrigerator or freezer around the building and put your board in one of these. There are thermometers in the lab that can be used to measure the temperature of an object—ask one of the IAs for one of these.)
 
 ### 4. Making a Calibration Curve
 
@@ -133,17 +133,17 @@ To do this, there are some commented out lines that define `slope`, `intercept`,
 
 Finally, we need to tell the Arduino to print out the `tempC` variable instead of the `voltage` to Serial now, so we do this by changing what variable is passed into `Serial.println()` from `Serial.println(voltage);` to `Serial.println(tempC);`.
 
-Run your code again and look at the Serial monitor. You should now see values that look like temperatures, and they should roughly match the indoor temperature. If they do, move on to the next step.
+Run your code again and look at the Serial Monitor. You should now see values that look like temperatures, and they should roughly match the indoor temperature. If they do, move on to the next step.
 
 ### 6. Field Trip Pt. 2
 
-We are now finally ready to record our temperatures as we go outside. Start by opening the Serial plotter:
+We are now finally ready to record our temperatures as we go outside. Start by opening the Serial Plotter:
 
 ![Serial Plotter](https://docs.arduino.cc/static/007eb89dc4e226a14834d28da2b3f8b6/4ef49/serial-plotter-open.png)
 
 You should now see temperature data being graphed in real time!
 
-While you have the Serial plotter open, walk outside and wait for your temperature to adjust and flatten out on your plot. Once this is done, take a screenshot of the plot. This will be one of the things you include in your submission.
+While you have the Serial Plotter open, walk outside and wait for your temperature to adjust and flatten out on your plot. Once this is done, take a screenshot of the plot. This will be one of the things you include in your submission.
 
 ## Post-Lab Questions
 
