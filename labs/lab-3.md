@@ -150,14 +150,14 @@ While you have the Serial Plotter open, walk outside and wait for your temperatu
 To get you thinking critically about how your 2-point calibration curve works, as well as more comfortable with using a spreadsheet, answer the following questions:
 
 1. If your Arduino read in a voltage of 0.4V, what temperature would that equate to on your calibration curve? (Show your work!)
-2. What would the voltage (based on your own calibration curve) be if it output a temperature of 6 °C? (Show work!)
-3. What **binary value** would your Arduino be reading in for a voltage of 0V? 2.5V? 5V? If you are stuck on this, try re-reading the section about [how analog to digital converters (ADCs) work](#how-analog-to-digital-converters-adcs-work) and try working backwards through the Arduino code. The `analogRead()` function is what actually returns the binary value, so if you know the voltage, could you re-arrange the equation given in the starter code to solve for the binary value?
+2. What would the voltage be (based on your own calibration curve) if it output a temperature of 6 °C? (Show work!)
+3. What **raw digital value** would your Arduino be reading in for a voltage of 0V? 2.5V? 5V? If you are stuck on this, try re-reading the section about [how analog to digital converters (ADCs) work](#how-analog-to-digital-converters-adcs-work) and try working backwards through the Arduino code. The `analogRead()` function is what actually returns the raw value, so if you know the voltage, could you re-arrange the equation given in the starter code to solve for the raw digital value?
 
 ## Memo
 
 In addition to the pdf you will create as detailed in the submission below, you will also be writing a memo for this lab.
 
-For details about the memo, [see the Canvas assignment](https://umich.instructure.com/courses/709939/assignments/2446362).
+For details about the memo, [see the Canvas assignment](https://umich.instructure.com/courses/777414/assignments/2769874).
 
 ## Submission
 
@@ -167,7 +167,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 - [ ] Your data table of indoor and outdoor temperatures and voltages.
 - [ ] A screenshot of your Arduino IDE's Serial Plotter output showing the temperature as it changes as you walk outside.
 - [ ] Answers (and any work you may have) to the post-lab questions.
-- [ ] Photo of completed breadboard circuit. (You'll receive full points for submitting this. We will simply be using it to give feedback on color coding in preparation for stricter grading in later labs.)
+- [ ] Photo of completed breadboard circuit. **(COLOR CODING WILL BE GRADED)**
 
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
