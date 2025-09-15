@@ -85,7 +85,9 @@ Notice that one wire coming out of the battery is red, and one is black. Common 
 
 Take these wires and plug them into your Arduino via your breadboard. Red should go to the Arduino's Vin, and black should go to any GND pin.
 
-<div class="primer-spec-callout danger" markdown="1">Make sure to unplug the Arduino from your computer before powering it with the 9V battery (and vice versa). You should never have the Arduino plugged into your computer and powered by the 9V battery at the same time.</div>
+<div class="primer-spec-callout danger" markdown="1">
+Make sure to unplug the Arduino from your computer before powering it with the 9V battery (and vice versa). You should never have the Arduino plugged into your computer and powered by the 9V battery at the same time.
+</div>
 
 Once you've plugged the 9V in, the Arduino should light up - even though it isn't plugged into your computer! If it does, congrats, your external power is working! If not, check your connections again.
 
@@ -138,7 +140,9 @@ This image is a reference for pin labelling. Make sure to follow the standard co
 | 3v | NC |
 | 5v | 5v |
 
-<div class="primer-spec-callout danger" markdown="1">Remember to connect 5v and GND to the Arduino through the breadboard power rails. Don't take a jumper wire and connect the 5v pin of the module to the 5v pin of the Arduino</div>
+<div class="primer-spec-callout danger" markdown="1">
+Remember to connect 5v and GND to the Arduino through the breadboard power rails. Don't take a jumper wire and directly wire the 5v pin of the module to the 5v pin of the Arduino.
+</div>
 
 <div class="primer-spec-callout danger" markdown="1">
 Again... this image is a reference for pin labelling. Make sure to follow the standard color conventions listed at the top of this lab manual.
