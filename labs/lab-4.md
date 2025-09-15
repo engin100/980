@@ -38,7 +38,7 @@ latex: true
 - [ ] 1 9V battery connector
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
-<div class="primer-spec-callout danger" markdown="1">
+<div class="primer-spec-callout warning" markdown="1">
 This is your first team lab! You can (and should) all work together to complete it and have one student submit the assignment on behalf of the team.
 </div>
 
@@ -125,10 +125,6 @@ We will not be calibrating the accelerometer in this lab, we will do it during t
 
 Unlike the other sensors and modules we have used so far, the MicroSD module we are using uses the Arduino's digital pins. Luckily for us, there are libraries (that you should have installed when following the tutorial and initially setting up your Arduino IDE), that handle all the complicated digital interfacing for us. All we need to know is which pins to plug the adapter module into.
 
-<div class="primer-spec-callout danger" markdown="1">
-This image is a reference for pin labelling. Make sure to follow the standard color conventions listed at the top of this lab manual.
-</div>
-
 | MicroSD module pin | Arduino pin |
 | :----------------: | :---------: |
 | CD | NC (Not connected) |
@@ -142,10 +138,6 @@ This image is a reference for pin labelling. Make sure to follow the standard co
 
 <div class="primer-spec-callout danger" markdown="1">
 Remember to connect 5v and GND to the Arduino through the breadboard power rails. Don't take a jumper wire and directly wire the 5v pin of the module to the 5v pin of the Arduino.
-</div>
-
-<div class="primer-spec-callout danger" markdown="1">
-Again... this image is a reference for pin labelling. Make sure to follow the standard color conventions listed at the top of this lab manual.
 </div>
 
 While your Arduino is powered off and disconnected from the 9V, plug your module in as shown above. The Arduino pins for this **DO** matter and cannot easily be changed, unlike the analog pins.
