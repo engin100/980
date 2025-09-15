@@ -7,20 +7,18 @@
 // CS   - pin 10
 const int chipSelect = 10;
 
-// This is the pin your TMP36 is connected to.
-// Change this as needed.
-const int tmpPin = ??;
+// These are the pins your accelerometer lines are connected to.
+const int xAccelPin = ??;
+const int yAccelPin = ??;
+const int zAccelPin = ??;
 
 // This is the pin your voltage divider is connected to.
 // Change this as needed.
 const int vDivPin = ??;
 
-// For future labs, you may find it helpful to copy the above settings for additional sensors.
-// **HINT HINT WINK WINK**
-
 // This is the string that goes at the top of your csv file. It is the column headers for your spreadsheet.
 // You can change this as needed.
-const String header = "Time (ms),TMP36 (Raw),Voltage (Raw)";
+const String header = "Time (ms),Voltage (raw), X Accel (raw), Y Accel (raw), Z Accel (raw)";
 
 #include <SPI.h>
 #include <SD.h>
@@ -52,11 +50,11 @@ void setup() {
 }
 
 void loop() {
+    int xAccelRaw = analogRead(xAccelPin);
+    int yAccelRaw = analogRead(yAccelPin);
+    int zAccelRaw = analogRead(zAccelPin);
 
-    // Note: in future labs, you may need to change this to add additional sensors.
-
-    int tmpVal = analogRead(tmpPin);
-    int vDivVal = analogRead(vDivPin);
+    int vDivRaw = analogRead(vDivPin);
 
     // Now let's make a nice string to write to the file.
     // This is a comma-separated value (csv) file, so we need to separate each value with a comma.
@@ -64,11 +62,15 @@ void loop() {
     // add the time (since boot) in milliseconds
     dataString += String(millis());
     dataString += ",";
-    // add the raw TMP36 value
-    dataString += String(tmpVal);
-    dataString += ",";
     // add the raw voltage divider value
-    dataString += String(vDivVal);
+    dataString += String(vDivRaw);
+    dataString += ",";
+    // add the raw acceleration values
+    dataString += String(xAccelRaw);
+    dataString += ",";
+    dataString += String(yAccelRaw);
+    dataString += ",";
+    dataString += String(zAccelRaw);
 
     // now let's open the file again
     File dataFile = SD.open("datalog.csv", FILE_WRITE);
