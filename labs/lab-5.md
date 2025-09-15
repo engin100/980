@@ -42,10 +42,6 @@ latex: true
 - [ ] 1 MPX4115A Pressure Sensor
 - [ ] A Computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
-<div class="primer-spec-callout danger" markdown="1">
-This is your first team lab! You can (and should) all work together to complete it and have one student submit the assignment on behalf of the team.
-</div>
-
 ## Introduction
 
 By the end of this lab, you will have re-built your circuit from lab 4, and added an accelerometer and pressure sensor, as well as made calibration curves for each of the sensors.
