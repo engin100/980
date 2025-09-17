@@ -85,9 +85,7 @@ Notice that one wire coming out of the battery is red, and one is black. Common 
 
 Take these wires and plug them into your Arduino via your breadboard. Red should go to the Arduino's Vin, and black should go to any GND pin.
 
-<div class="primer-spec-callout danger" markdown="1">
-Make sure to unplug the Arduino from your computer before powering it with the 9V battery (and vice versa). You should never have the Arduino plugged into your computer and powered by the 9V battery at the same time.
-</div>
+
 
 Once you've plugged the 9V in, the Arduino should light up - even though it isn't plugged into your computer! If it does, congrats, your external power is working! If not, check your connections again.
 
