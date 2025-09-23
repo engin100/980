@@ -44,21 +44,23 @@ latex: true
 
 ## Introduction
 
-By the end of this lab, you will have re-built your circuit from lab 4, and added an accelerometer and pressure sensor, as well as made calibration curves for each of the sensors.
+By the end of this lab, you will have re-built your circuit from lab 4, and added a 4-in-1 digital sensor, as well as made calibration curves for your accelerometer.
 
-Most of the time involved in this lab will be re-wiring what you have previously built, as well as working on calibrating your accelerometer and pressure sensors.
+Most of the time involved in this lab will be re-wiring what you have previously built, adapting your code to support the new digital sensor, as well as working on calibrating your accelerometer.
 
 What this means for you is that we are slowly going to start making our instructions increasingly vague. By this point you should know how to wire up an analog sensor to your Arduino and how to find and run starter code.
 
-### Pressure Sensor
+### BME680 4-in-1 Digital Sensor
 
-Our pressure sensor for this lab is what we will eventually be using to launch on our rocket. With some math and equations we will talk about in lecture, it is possible for us to estimate altitude based on pressure data, which will be useful for our rocket launch.
+The BME680 is a digital sensor that measures temperature, humidity, pressure, and VOC gases. VOC stands for Volitile Organic Compound, think organic solvents like alcohols and paint stripper. The pressure data from this sensor can be used to calculate your altitude since atmospheric pressure decreases with altitude.
+
+You will be using this sensor for all sensing besides acceleration from this lab onwards so it will be important to get familiar with it.
+
+This is a digital sensor, which means that instead of connecting it to an analog pin on your Arduino and reading the raw voltage, it will connect in an almost identical way to the SD logger from lab 4. This also means that you will not need to calibrate this sensor, since you will be reading a direct measurement from it and not voltage.
 
 ### Accelerometer
 
-For this lab, we are using a 3-axis accelerometer. This sensor is capable of measuring acceleration in Gs on the x, y, and z planes.
-
-1 G is considered normal acceleration that we feel on Earth as exerted by gravity. It is equivalent to a magnitude of 9.8m/s<sup>2</sup>.
+In this lab you will continue to use the accelerometer, this time calibrating it and collecting data in Gs (or m/s^2).
 
 ## Procedure
 
@@ -66,49 +68,52 @@ For this lab, we are using a 3-axis accelerometer. This sensor is capable of mea
 
 As mentioned in the introduction, this lab is not going to give you nearly as detailed of instructions as previous labs have. Use your resources and refer to previous labs or references as needed if you are stuck on something!
 
-To start, we are going to wire in a pressure sensor and calibrate it, and then an acceleration sensor and calibrate it. See the next 2 steps for more details about wiring each component.
+To start, we are going to re-wire the same setup that you had last lab. You should end up with a voltage divider and an accelerometer connected to your Arduino, which is powered via a 9V battery.
 
-Plug your Arduino onto your breadboard and hook it up to your computer. These next 2 steps will have you doing calibrations on analog sensors, meaning we will be reading analog values over Serial. Was there a lab (maybe lab 3...) where we had start code to do exactly this that you could repurpose?
+<div class="primer-spec-callout danger" markdown="1">
+Remember that the accelerometer sensor takes 3.3V input, not 5V. Plugging it into 5V can break the sensor or cause other bad and unintended things to happen!
+</div>
+
+Then plug your Arduino onto your breadboard and hook it up to your computer. These next 2 steps will have you doing calibrations on your accelerometer, meaning we will be reading analog values over Serial. Was there a lab (maybe lab 3...) where we had start code to do exactly this that you could repurpose?
 
 <div class="primer-spec-callout info" markdown="1">
 Note: Later in this lab we will ask for a picture of your finished circuit. Part of the requirements for this circuit are that one side of your breadboard's power rail is for 5V, one is for 3.3V, and both sides should have common ground. Additionally it is required that all power is routed with red jumper cables, all ground with black, and all data with other colors.
 </div>
 
-### 2. Pressure Sensor
+### 2. Calibrating The Accelerometer
 
-In the real world of electrical and computer engineering, there most likely won't always be a tutorial to hold your hand and tell you how to wire up a component. As such, instead of *showing you* exactly how to wire up your pressure sensor, [here are the sensor's technical specs, which include wiring information on **page 9**](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1001/MPX4115A.pdf).
+To calibrate your accelerometer, you will have to go through the same procedure that you did in lab 3, for all 3 axes of the accelerometer. This means that for each axis, you will need at least 2 known values of acceleration that you can subject the sensor to while reading the voltage.
 
-Our sensor uses style 1 as listed in the docs. You should only need to connect three pins (Vout, Vin (5V), and GND). Since this is an analog sensor, connect Vout to an analog input pin on the Arduino, and run your code to get values you can use to calibrate the sensor.
+In order to find 2 known values of acceleration, we must understand what exactly is it that the accelerometer measures. The name "accelerometer" is kind of misleading in this case, since it doesn't actually measure total acceleration. Internally, the sensor has a tiny object (usually silicon) that is connected to the rest of the sensor via a spring-like connection. This connection has electrical properties that change based on the tension that the connection experiences. This is a simplified explanation, but the actual sensors don't differ too much. 
 
-Up until now we have been taking two very different measurements (like for the TMP36 temperature sensor) of both a room temperature reading and a very cold reading (like in the cold chamber) in order to build a calibration curve. Unfortunately, for the pressure sensor, it is hard for us to find two wildly different pressures. As such, we are letting you assume that at 0V the pressure is 0. You will need to measure another point and calculate the calibration curve for this sensor accordingly (for example, what does your weather app say the pressure is right now?). To be more precise about the 0 pressure being a 0V measurement, the spec sheet may provide more info, if you are interested.
+If a force is applied to the outside of the sensor, the tension in the connection increases to keep the small internal object accelerating at the same rate as the sensor. This means that the sensor can only detect acceleration from forces that are applied **only** to the outside of the package, since if a force was applied equally to the internal object, the tension in the connection would not have to increase to keep the object accelerating with the rest of the sensor. Usually this isn't a problem, since most forces we're concerned with are fall into this category, however, there is one major force that doesn't: gravity. Recall from physics that gravity acts in a way that makes all objects accelerate at the same rate (9.8 m/s^2). This is the exact type of force that accelerometers cannot measure, since the internal connection does not have to apply any force to the internal object to keep it accelerating with the sensor - in the absence of external forces, everything accelerates at 9.8 m/s^2.
 
-Copy your Google Sheet (or Excel file), record these calibration values and calculate your calibration curve.
+Now let's try to figure out what the accelerometer would measure in 2 different situations: in free-fall, and sitting stationary on a lab table. Start by drawing a free-body diagram for each situation, and then remove the gravitational force. The acceleration from the remaining forces is what the sensor would measure. In the situation of free-fall, since gravity is the only force (in the absence of air resistance), the acclerometer measures nothing. In the situation of the sensor sitting stationary, the normal force opposes gravity and is exactly equal to the force from gravity. The accelerometer will only measure the acceleration from the normal force, and since the normal force is equal to gravity in this case, it will measure 9.8 m/s^2, or 1 G, upwards. You will use this fact to calibrate the accelerometer.
 
-### 3. Accelerometer
+Reminder to pay attention to the 3-axis figure printed on the sensor module. When the sensor is flat on the table, the Z-axis should be vertical, and the others will be parallel to the table/ground.
 
-The accelerometer is relatively straightforward to wire compared to the pressure sensor. All of the pinouts are clearly labelled on the sensor. You will wire GND to GND, X, Y, and Z each to its own analog pin on the Arduino, and **VCC to the 3V3 pin on the Arduino**.
+In this orientation, the Z-axis is straight up, and from our previous findings should measure 1G. X and Y are both perpendicular to the force of gravity and would be recording 0Gs. If you turn your board upside down, the Z axis should read -1G. Rotate your sensor around as needed so that each axis has at least two data-points where it is (anti-)parallel to the force of gravity.
 
-<div class="primer-spec-callout danger" markdown="1">
-This accelerometer sensor takes 3.3V input, not 5V like everything else we have used so far. Plugging it into 5V can break the sensor or cause other bad and unintended things to happen!
-</div>
+With this calibration process completed, each axis will have a calibration value of 1G and -1G. Record these values in your spreadsheet again, and calculate the calibration curve for each axis.
 
-To read the number of Gs coming in on each axis, we will simply read the analog input for each axis pin. X, Y, and Z all should have their own analog pins to read off of. Make the necessary changes in your code so that you can read from these pins.
+Include your data table for all 3 axes, and your spreadsheet for the calibration of all 3 axes in your lab submission.
 
-When calibrating this sensor, we will use our understanding of what 1 G is to our advantage. You will need to pay careful attention to the small 3-axis figure printed on the sensor module. When the sensor is flat on the table, the Z-axis should be vertical, and the others will be parallel to the table/ground.
+### 3. BME680
 
-In this orientation, the Z-axis is straight up and down and is therefore experiencing -1G. X and Y are both perpendicular to the force of gravity and would be recording 0Gs. If you turn your board upside down, the Z axis should read +1G. Rotate your sensor around as needed so that each axis has at least two data-points where it is (anti-)parallel to the force of gravity.
+As noted above, the BME680 connects to the Arduino using the same pins as the SD logger. This is ok to do since they both use a protocol called SPI. This is a very common protocol used to connect different digital chips together. SPI uses 3 pins to transfer data, and 1 pin to select which chip to communicate with, called chip select (CS for short). This chip select pin tells the device (the SD logger or BME680) to either pay attention to the 3 data pins, or ignore them. Both the SD logger and the BME680 will connect the 3 data pins to the same 3 pins on the Arduino, however the select pin for the BME680 will not connect to the same pin as the chip select pin on the SD logger, it will instead connect to a different digital pin on the Arduino. The goal is for the Arduino to be able to "select" which chip it wants to communicate using the chip select pins.
 
-With this calibration process completed, each axis will have a calibration value of -1G and 1G. Record these values in your spreadsheet again, and calculate the calibration curve for each axis.
+Use this table to connect your BME680 to the Arduino:
+| BME680 | Arduino |
+| :----: | :-----: |
+| Vin    | 5v      |
+| 3Vo    | NC      |
+| GND    | GND     |
+| SCK    | 13      |
+| SDO    | 12      |
+| SDI    | 11      |
+| CS     | 9       |
 
-### 4. Putting It All Together
-
-With your calibration curves calculated for both new sensors, we will now begin putting everything together. You can refer to the procedure in the previous lab should you need help.
-
-Again, note that as described earlier, there are organizational and color requirements for breadboard wiring this lab. This makes it easier for other people to quickly look at and understand, and will make things more organized when moving into Altium later.
-
-To re-iterate these requirements, you need a 5V power rail on one side of the breadboard, a 3.3V power rail on the other side, and 2 GND rails on either side. Additionally, all the GND connections should use black wires, all the 5V and 3.3V should use red wires (it is also ok if 5V uses red and 3.3V uses say orange), and all data wires (like analog in and SD card connections) using another color not used by any of the power circuitry.
-
-The end result will be a temperature sensor, pressure sensor, accelerometer, and voltage divider all wired to an Arduino which stores data onto a microSD card and receives power via a 9V battery.
+### 4. Modifying The Code
 
 Modify the code given for the previous lab to add your new sensors to the csv the Arduino outputs. You will need to modify the pins defined at the top of the file, and will need to add some column titles to the header string defined above the `setup()` function as well. You will also need to modify the code in `loop()` to include the sensor values in the string added each iteration.
 
@@ -140,7 +145,7 @@ All of this will give you the final skills you need for your teams to work toget
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
-- [ ] A screenshot of your calibration curves and data for both new sensors added. This should be 4 total calibration curves (1 from each axis of the accelerometer).
+- [ ] A screenshot of your calibration spreadsheet(s) and data for the accelerometer. This should be 3 total calibration curves (1 from each axis of the accelerometer).
 - [ ] Your plot comparing temperature and pressure to time.
 - [ ] Your plot comparing max acceleration and acceleration on each axis to time.
 - [ ] A picture of your final breadboard with all the sensors connected and all of the power rail and wire color requirements satisfied.
