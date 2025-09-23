@@ -11,13 +11,13 @@ latex: true
   - [Contents](#contents)
   - [Materials](#materials)
   - [Introduction](#introduction)
-    - [Pressure Sensor](#pressure-sensor)
+    - [The BME680](#bme680-4-in-1-digital-sensor)
     - [Accelerometer](#accelerometer)
   - [Procedure](#procedure)
     - [1. Setup](#1-setup)
-    - [2. Pressure Sensor](#2-pressure-sensor)
-    - [3. Accelerometer](#3-accelerometer)
-    - [4. Putting It All Together](#4-putting-it-all-together)
+    - [2. Calibrating The Accelerometer](#2-calibrating-the-accelerometer)
+    - [3. Connecting The BME680](#3-connecting-the-bme680)
+    - [4. Modifying The Code](#4-modifying-the-code)
     - [5. Collecting Data](#5-collecting-data)
     - [6. Analyzing the Data in Google Sheets (or Excel)](#6-analyzing-the-data-in-google-sheets-or-excel)
   - [Wrap-Up and Conclusion](#wrap-up-and-conclusion)
@@ -28,7 +28,6 @@ latex: true
 - [ ] 1 Arduino Nano Every
 - [ ] 1 Breadboard
 - [ ] 1 Programming Cable (and adapters if necessary)
-- [ ] 1 TMP36 Temperature Sensor
 - [ ] 1 MicroSD Card
 - [ ] 1 Data Logger
 - [ ] 1 MicroSD Card - USB Adapter
@@ -39,7 +38,7 @@ latex: true
 - [ ] 1 9V Battery
 - [ ] 1 9V Battery Connector
 - [ ] 1 ADXL335 3-Axis Accelerometer
-- [ ] 1 MPX4115A Pressure Sensor
+- [ ] 1 BME680 Digital Sensor
 - [ ] A Computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
 
 ## Introduction
@@ -98,24 +97,17 @@ With this calibration process completed, each axis will have a calibration value
 
 Include your data table for all 3 axes, and your spreadsheet for the calibration of all 3 axes in your lab submission.
 
-### 3. BME680
+### 3. Connecting The BME680
 
-As noted above, the BME680 connects to the Arduino using the same pins as the SD logger. This is ok to do since they both use a protocol called SPI. This is a very common protocol used to connect different digital chips together. SPI uses 3 pins to transfer data, and 1 pin to select which chip to communicate with, called chip select (CS for short). This chip select pin tells the device (the SD logger or BME680) to either pay attention to the 3 data pins, or ignore them. Both the SD logger and the BME680 will connect the 3 data pins to the same 3 pins on the Arduino, however the select pin for the BME680 will not connect to the same pin as the chip select pin on the SD logger, it will instead connect to a different digital pin on the Arduino. The goal is for the Arduino to be able to "select" which chip it wants to communicate using the chip select pins.
+As noted above, the BME680 connects to the Arduino using the same pins as the SD logger. This is ok to do since they both use a protocol called SPI. This is a very common protocol used to connect different digital chips together. SPI uses 3 pins to transfer data, and 1 pin to select which chip to communicate with, called chip select (CS for short). This chip select pin tells the device (the SD logger or BME680) to either pay attention to the 3 data pins, or ignore them. Both the SD logger and the BME680 will connect the 3 data pins to the same 3 pins on the Arduino, however the chip select pin for the BME680 will not connect to the same pin as the chip select pin on the SD logger, it will instead connect to a different digital pin on the Arduino. The goal is for the Arduino to be able to "select" which chip it wants to communicate using the chip select pins.
 
-Use this table to connect your BME680 to the Arduino:
-| BME680 | Arduino |
-| :----: | :-----: |
-| Vin    | 5v      |
-| 3Vo    | NC      |
-| GND    | GND     |
-| SCK    | 13      |
-| SDO    | 12      |
-| SDI    | 11      |
-| CS     | 9       |
+In the real world of electrical and computer engineering, there most likely won't always be a tutorial to hold your hand and tell you how to wire up a component. As such, instead of *showing you* exactly how to wire up your BME680, [here are the sensor's technical specs, which include wiring information on **page 12**](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas.pdf). Remember that while you can connect the CS pin on both the SD logger and the BME680 to any Arduino digital pins, they should not connect to the same pin. 
 
 ### 4. Modifying The Code
 
-Modify the code given for the previous lab to add your new sensors to the csv the Arduino outputs. You will need to modify the pins defined at the top of the file, and will need to add some column titles to the header string defined above the `setup()` function as well. You will also need to modify the code in `loop()` to include the sensor values in the string added each iteration.
+Modify either your code or the code given for the previous lab to add your new sensor to the csv the Arduino outputs. You will need to modify the pins defined at the top of the file, and will need to add some column titles to the header string defined above the `setup()` function as well. You will also need to modify the code in `loop()` to include the sensor values in the string added each iteration. The new data from the BME680 will be in the physical units of the corresponding type of measurement (e.g. C for temperature), and not voltage or raw value like your analog data. Make sure this is reflected in the new column titles of your header string.
+
+Since the BME680 can be somewhat complicated to interface with, an example has been provided in the Arduino library for this class. Note that this example only covers basic communication with the BME680, so you will need to use this program as an example of what to add to either your code or the code given for the previous lab.
 
 ### 5. Collecting Data
 
@@ -127,7 +119,7 @@ Now, before you jump ahead and start to dissemble your board, take a picture of 
 
 In your spreadsheet, upload the csv file that your Arduino created. Similar to the previous lab, you will need to add some new columns to calculate values.
 
-In addition to the columns your Arduino recorded, you will need a temperature (in C) column, a battery (in V) column, a pressure (hPa, mmHg, etc up to you), acceleration in X direction (Gs), acceleration in Y direction (Gs), acceleration in Z direction (Gs), and max acceleration (highest G-Force reading from any direction at each point in time) (Gs).
+In addition to the columns your Arduino recorded, you will need a battery (in V) column, acceleration in X direction (Gs), acceleration in Y direction (Gs), acceleration in Z direction (Gs), and max acceleration (highest G-Force reading from any direction at each point in time) (Gs).
 
 Graph temperature and pressure on the same graph compared to time. Since the Y-axis of this graph will have 2 different units, you may need to make sure your graph has a second Y-axis on the other side. Both graphs need to be labelled in a legend. Follow tech comm best practices when making the graph.
 
