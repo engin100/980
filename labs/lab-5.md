@@ -105,9 +105,9 @@ In the real world of electrical and computer engineering, there most likely won'
 
 ### 4. Modifying The Code
 
-Modify either your code or the code given for the previous lab to add your new sensor to the csv the Arduino outputs. You will need to modify the pins defined at the top of the file, and will need to add some column titles to the header string defined above the `setup()` function as well. You will also need to modify the code in `loop()` to include the sensor values in the string added each iteration. The new data from the BME680 will be in the physical units of the corresponding type of measurement (e.g. C for temperature), and not voltage or raw value like your analog data. Make sure this is reflected in the new column titles of your header string.
+Modify either your code or the code given for the previous lab to add your new sensor to the csv the Arduino outputs. You will need to modify the pins defined at the top of the file, and will need to add some column titles to the header string defined above the `setup()` function as well. You will also need to modify the code in `loop()` to include the sensor values in the string added each iteration. The new data from the BME680 will be in the physical units of the corresponding type of measurement (e.g. C for temperature), and not voltage or raw value like your analog data. Check what unit each sensor reads, and make sure it is reflected in the new column titles of your header string.
 
-Since the BME680 can be somewhat complicated to interface with, an example has been provided in the Arduino library for this class. Note that this example only covers basic communication with the BME680, so you will need to use this program as an example of what to add to either your code or the code given for the previous lab.
+Since the BME680 can be somewhat complicated to interface with, an example has been provided in the Arduino library for this class. Take a few minutes to look through the example and understand each part. Note that this example only covers basic communication with the BME680, so you will need to use this program as an example of what to add to either your code or the code given for the previous lab.
 
 ### 5. Collecting Data
 
