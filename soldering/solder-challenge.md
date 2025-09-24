@@ -138,7 +138,7 @@ The most common mixture for soldering wire contains lead. When heating leaded so
 
 - You will receive points (out of 20) based on how the board functions and if the code runs correctly on your board.
 
-- [ ] Submit a picture of your board with all LEDs turned on in Canvas, and leave a comment of the instructor's name who checked your board!
+- [ ] Submit a picture of your board with all LEDs turned on in Canvas, a picture of the back of the board, and a picture of the front without the battery. Also leave a comment of the instructor's name who checked your board!
 
 ## Grading
 
