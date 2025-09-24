@@ -13,7 +13,7 @@ const int BMEchipSelect = ??;
 #include <Adafruit_Sensor.h>
 #include "Adafruit_BME680.h"
 
-Adafruit_BME680 bme(BMEchipSelect);
+Adafruit_BME680 bme(BMEchipSelect, &SPI);
 
 void setup() {
     Serial.begin(9600);
