@@ -139,7 +139,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 - [ ] A screenshot of your calibration spreadsheet(s) and data for the accelerometer. This should be 3 total calibration curves (1 from each axis of the accelerometer).
 - [ ] Your plot comparing temperature and pressure to time.
-- [ ] Your plot comparing max acceleration and acceleration on each axis to time.
+- [ ] Your plot comparing overall acceleration magnitude and acceleration on each axis to time.
 - [ ] A picture of your final breadboard with all the sensors connected and all of the power rail and wire color requirements satisfied.
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
