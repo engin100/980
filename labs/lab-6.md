@@ -39,6 +39,10 @@ Use the following steps to run SolidWorks once you have entered a CAEN workspace
 
 1. Search for SolidWorks in the CAEN software directory.
 
+<div class="primer-spec-callout warning" markdown="1">
+The SolidWorks license model may be different now than at the time of writing this tutorial, so simply select the most recent student instructional license.
+</div>
+
 2. Launch SolidWorks 2023 SP3.0 (Student Instructional License).
 
 3. SolidWorks will begin virtualizing. When available, click on SolidWorks and press launch in the small "Cloudpaging Player" window.

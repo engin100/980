@@ -43,13 +43,13 @@ Adding an accelerometer and pressure sensor to our Arduino breadboard circuit.
 
 [Link to lab 5](/labs/lab-5)
 
-<!--
-
 ## Lab 6: SolidWorks Modeling
 
 Learning how to use a CAD program to design a 3D model of a SpaceX Starship Booster.
 
 [Link to lab 6](/labs/lab-6)
+
+<!--
 
 ## Lab 7: Altium
 
