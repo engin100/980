@@ -65,18 +65,26 @@ _Figure 3: The schematic completed in the Postlab 1 assignment_
 
 Note that each component is defined with its own individual symbol. Capacitors, resistors, and transistors (Q1 and Q2), and some connectors (P1) are standardized and thus have pre- loaded symbols in the software, but for most of our components, that is not the case. We have additional libraries custom made by ENGR100 staff with our components pre-loaded, so as we will discuss in the procedure, you can simply drag and drop them into place. **Make sure that your team is using the schematic components from the ENGR100 _.SchLib_ files. Using the Simulation Generic Components library will cause issues down the road.**
 
-
 #### Your Schematic Contents
 
 Obviously, the functionality we're trying to put on a PCB is the ability to record data from a model rocket, so starting your schematic off by adding your full Lab 5 circuit is a good starting point. Additionally, we decided that turning on and off your board would be nice, so add the SW-SPST switch included in the miscellaneous devices library between the positive terminal of the battery and the VIN pin on the Arduino.
 
-LEDs are also useful when diagnosing software bugs without a computer, telling you if the board is on or off, and also making cool light patterns. Please wire any remaining digital pins to their own LED with a 1K resistor on each LED. This way, you have some LEDs to diagnose problems and play with.
+LEDs are also useful when diagnosing software bugs without a computer, telling you if the board is on or off, and also making cool light patterns. Please wire LEDs from the 5v, 3.3v, and 9v battery lines through a resistor and to ground. Please wire any remaining digital pins to their own LED with a 1K resistor on each LED. This way, you have some LEDs to diagnose problems and play with.
 
 It is extremely helpful to draw this out on a piece of paper first.  Remember, the schematic is only an electrical connectivity diagram - it doesn't describe where things are located.  So, your schematic doesn't have to look like the PCB, it just has to have all of the components connected together in the correct way.
 
+In summary, your schematic (and the PCB) must have:
+- [ ] An Arduino Nano (Classic or Every is fine, they have the same pinout/footprint)
+- [ ] BME sensor (humidity, pressure, and temperature)
+- [ ] Accelerometer
+- [ ] SD Card writer
+- [ ] LEDs with resistors from 3.3V, 5.0V, and battery voltage lines to ground
+- [ ] LEDs on any remaining digital pins with resistors
+- [ ] SW-SPST switch for battery toggle
+
 #### Procedure: Starting Your Design and Creating A Schematic
 
-1. Download the resources provided in the Canvas Files section for the Altium lab. There should be 1 folder called 'Altium Libraries' for you to download.
+1. Download the resources provided [here](https://drive.google.com/drive/folders/1wIgUdKXh0QONzqq7_L_cMQ2zt0h4-O7Z?usp=sharing). There should be 1 folder called 'New Altium Libraries' for you to download.
 2. Open Altium Designer on a CAEN computer. Navigate to File -> New -> Project...
 3. Choose the PCB project type.
 4. The "Folder" field allows you to choose where this folder is created. You can save it to your "Documents" folder for it to sync across all CAEN instances or, you can navigate to "This PC" -> "U-M Google Drive (I:)" as shown in Fig. 5 and save it in a folder here so that you can share it with teammates. Just be sure that whatever you do, **do not save the project in your Downloads folder. On CAEN machines, this location is wiped every 24 hours.**
