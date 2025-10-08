@@ -81,6 +81,8 @@ In summary, your schematic (and the PCB) must have:
 - [ ] LEDs with resistors from 3.3V, 5.0V, and battery voltage lines to ground
 - [ ] LEDs on any remaining digital pins with resistors
 - [ ] SW-SPST switch for battery toggle
+- [ ] Voltage divider to read battery voltage
+- [ ] Any other components from lab 5 circuits
 
 #### Procedure: Starting Your Design and Creating A Schematic
 
