@@ -39,7 +39,7 @@ Working at a computer often can become a one person deal. It is important to avo
 
 ## Altium
 
-You may want to try to work through the complete Altium tutorial in the Lab 1 post lab.  You worked through the schematic in Lab 1.  It would be worthwhile to revisit this and then try to make the PCB, since that is what you will be doing in this lab.  Remember that this walk through is on Canvas in the Files section.
+You may want to try to work through the complete Altium tutorial in the Lab 1 post lab.  You worked through the schematic in Lab 1.  It would be worthwhile to revisit this and then try to make the PCB, since that is what you will be doing in this lab. Note that this walk through is on Canvas in the Files section. (Labs -> Altium Resources -> "Altium - Getting Started.pdf").
 
 Altium as a software can be very complex, and as such, we have given you some tools to help simplify the process of constructing your PCB. The following pictures are taken from a free online tutorial provided by Altium: [From Idea to Manufacture](https://www.altium.com/documentation/altium-designer/tutorial-complete-design-walkthrough?version=22). You can learn more about this example there.
 
@@ -70,7 +70,7 @@ Note that each component is defined with its own individual symbol. Capacitors, 
 
 Obviously, the functionality we're trying to put on a PCB is the ability to record data from a model rocket, so starting your schematic off by adding your full Lab 5 circuit is a good starting point. Additionally, we decided that turning on and off your board would be nice, so add the SW-SPST switch included in the miscellaneous devices library between the positive terminal of the battery and the VIN pin on the Arduino.
 
-LEDs are also useful when diagnosing software bugs without a computer, telling you if the board is on or off, and also making cool light patterns. Please wire pins D4-D9 to their own LED with a 1K resistor on each LED. This way, you have 6 LEDs to diagnose problems and play with.
+LEDs are also useful when diagnosing software bugs without a computer, telling you if the board is on or off, and also making cool light patterns. Please wire any remaining digital pins to their own LED with a 1K resistor on each LED. This way, you have some LEDs to diagnose problems and play with.
 
 It is extremely helpful to draw this out on a piece of paper first.  Remember, the schematic is only an electrical connectivity diagram - it doesn't describe where things are located.  So, your schematic doesn't have to look like the PCB, it just has to have all of the components connected together in the correct way.
 
@@ -159,7 +159,7 @@ The DRC, or Design Rule Check is a way to check the validity of your PCB with re
 
 ## Final Deliverable
 
-Each team must upload a single zip file containing **all project files and a screenshot showing all DRCs passed** to this designated Google Drive folder [(click here)](https://drive.google.com/drive/folders/1y27cAo7rI_dbcW6PWJHTmzySY-dYiv7R) by 11:59pm on October 21st, 2025. Make sure that your PCB passes all design rule checks before submitting it to the Google Drive folder. Each student will peer review three PCBs with rubrics provided on Canvas. 
+Each team must upload a single zip file containing **all project files and a screenshot showing all DRCs passed** to the Canvas assignment called "Altium Assignment Uploads" by 11:59pm on October 21st, 2025. Make sure that your PCB passes all design rule checks before submitting it. Each student will peer review three PCBs with rubrics provided on Canvas. 
 
 The zip file must:
 * Contain all information so that another person can unzip the file, open Altium, and see you schematic and PCB.
@@ -170,7 +170,7 @@ The zip file must:
 
 After the lab, every student will be required to peer review the PCBs of three other teams. 
 
-Peer reviews are due by 11:59pm on Tuesday, October 28th, 2025. Each person on your team will personally review the PCBs of three other teams. You will evaluate each one by filling out a [Google form](https://forms.gle/vei7mknDX61atotm6). The PCBs you have been assigned to review are located on a spreadsheet linked at the top of the form. Note that you will **fill out the form once for each PCB you review, so you will submit this form three times.**
+Peer reviews are due by 11:59pm on Tuesday, October 28th, 2025. Each person on your team will personally review the PCBs of three other teams. You will evaluate each one by filling out a Google Form that will be published later in the week. You will be assigned the three teams to review. Note that you will **fill out the form once for each PCB you review, so you will submit the form three times.**
 
 
 ## Peer Review and Final Submission
