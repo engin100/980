@@ -71,9 +71,9 @@ Imagine you are on the ground. If you walk up one set of stairs the ceiling abov
 
 We are going to measure the terminal velocity of your parachute with three different mass configurations, and create plots of terminal velocity vs mass. We have created a [spreadsheet](https://docs.google.com/spreadsheets/d/1g0C3GjiIXb2twbJVo77Gfwd3KZr_5--W4aGh4ZKWDxo/edit?usp=sharing) for you to record your values in. The sheet is laid out as a 1x3 matrix: one parachute area paired with the three payload masses you will test.
 
-- Go to the EECS building across the street. If you have three team members present, designate one as the person transporting the system back up the stairs between trials, one as the dropper, and one as the recorder.
+- Go to the Robotics building across the street. If you have three team members present, designate one as the person transporting the system back up the stairs between trials, one as the dropper, and one as the recorder. Additional members can work on the Altium lab or aid in the drop tests.
 
-- Prepare your parachute by attaching a payload bucket and placing a single figurine into the bucket.
+- Prepare your parachute by flattening it out a little such that it isn't crumpled.
 
 - Drop the parachute and have the partner on the ground take a video of the parachute as it falls.
 
@@ -81,7 +81,7 @@ We are going to measure the terminal velocity of your parachute with three diffe
 
   - **Note:** The top of the second floor refers to the height of the ceiling above someone walking on the second floor.
 
-- Repeat this with 2 and 4-5 figurines loaded into the bucket, recording the total masses and time differences for all trials in your spreadsheet.
+- Repeat this with 2 and 4-5 figurines attached to the parachute, recording the total masses and time differences for all trials in your spreadsheet.
 
 ### Computations
 

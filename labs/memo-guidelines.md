@@ -46,7 +46,7 @@ latex: true
 
 - A conclusion on the size and type of parachute that you would recommend for your team.
 
-- Include data plots that convince us that you understand the problem. Bare minimum needed is a plot of terminal velocity vs mass for different parachutes following Tech Comm guidelines from class.
+- Include data plots that convince us that you understand the problem. Bare minimum needed is a plot of terminal velocity vs mass following Tech Comm guidelines from class.
 
 ## Topics Addressed in the Memo
 
