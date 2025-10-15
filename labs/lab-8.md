@@ -60,7 +60,7 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 2. Measure the mass of the payload you are carrying for each iteration. (1, 2, 4-5 figurines).
 
-3. Measure the mass of the parachute with the payload bucket attached.
+3. Measure the mass of the parachute with one figurine attached (as given).
 
 ### Parachute Trials
 
