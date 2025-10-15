@@ -53,8 +53,6 @@ Learning how to use a CAD program to design a 3D model of a SpaceX Starship Boos
 
 [Link to lab 7](/labs/lab-7)
 
-<!--
-
 ## Lab 8: Terminal Velocity & Drop Tests
 
 Analyzing terminal velocities of different parachute sizes under varying masses.
@@ -66,6 +64,8 @@ Analyzing terminal velocities of different parachute sizes under varying masses.
 Submit a separate PDF for the memo assignment aligning with the lab 8 memo guidelines.
 
 [Link to memo guidelines](https://980.engr100.org/labs/memo-guidelines)
+
+<!--
 
 ## Rocket Selection Guidelines
 
