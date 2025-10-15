@@ -21,9 +21,7 @@ latex: true
 
 - [ ] Scale (kg)
 - [ ] Measuring tape / ruler
-- [ ] 1 - 12" Parachute
-- [ ] 1 - 15" Parachute
-- [ ] 1 - 18" Parachute
+- [ ] 1 Parachute (all groups will use the same size)
 - [ ] 4-5 Figurines
 - [ ] Stopwatch, camera, or other timing method
 - [ ] **Optional:** A fitness watch to track the large number of stairs you're going to climb...
@@ -58,11 +56,11 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 ### Setup
 
-1. Measure each parachute's area and record the values in the spreadsheet given below.
+1. Measure the parachute's area and record the value in the spreadsheet given below.
 
 2. Measure the mass of the payload you are carrying for each iteration. (1, 2, 4-5 figurines).
 
-3. Measure the mass of each parachute with the payload bucket attached.
+3. Measure the mass of the parachute with the payload bucket attached.
 
 ### Parachute Trials
 
@@ -71,7 +69,7 @@ Note: The distance from the floor to the ceiling of the second floor is: 10' 6".
 Imagine you are on the ground. If you walk up one set of stairs the ceiling above your head is this height^.
 </div>
 
-We are going to measure the terminal velocity of your different sized parachutes with three mass configurations, and create plots of terminal velocity vs mass for different parachutes. We have created a [spreadsheet](https://docs.google.com/spreadsheets/d/1g0C3GjiIXb2twbJVo77Gfwd3KZr_5--W4aGh4ZKWDxo/edit?usp=sharing) for you to record your values in.
+We are going to measure the terminal velocity of your parachute with three different mass configurations, and create plots of terminal velocity vs mass. We have created a [spreadsheet](https://docs.google.com/spreadsheets/d/1g0C3GjiIXb2twbJVo77Gfwd3KZr_5--W4aGh4ZKWDxo/edit?usp=sharing) for you to record your values in. The sheet is laid out as a 1x3 matrix: one parachute area paired with the three payload masses you will test.
 
 - Go to the EECS building across the street. If you have three team members present, designate one as the person transporting the system back up the stairs between trials, one as the dropper, and one as the recorder.
 
@@ -91,11 +89,9 @@ We are going to measure the terminal velocity of your different sized parachutes
 
 - Produce two graphs with the following:
 
-  - Plot all 9 trials on the same graph. Use a legend to show the differences between parachute areas (m^2, not the given inches), the y-axis will be terminal velocity, and the x-axis will be mass.
+  - Plot the three experimental trials on the same graph. The y-axis will be terminal velocity and the x-axis will be mass. Be sure to label your axes clearly and include the measured parachute area in the graph title or caption.
 
-  - You'll end up with three terminal velocity vs mass graphs (each with three data points) plotted on the same figure, with a legend clarifying parachute area.
-
-  - Repeat this same plot again but with the theoretically determined terminal velocities.
+  - Repeat this same plot again but with the theoretically determined terminal velocities for the same masses.
 
 ## Submission
 
