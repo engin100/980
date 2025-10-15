@@ -108,5 +108,3 @@ Submitting anything other than a single PDF may result in your work not being gr
 #### Separately:
 
 - [ ] Upload your memo as a PDF to the **Memo 2** assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab. Take a look at the [memo guidelines](https://980.engr100.org/labs/memo-guidelines) page for this lab for help.
-
-
