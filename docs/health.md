@@ -5,6 +5,7 @@ latex: true
 
 ## For Physical and Mental Health
 
+
 U-M is an enormous place. This sometimes means that it's tough to figure out where you can go to get help. This is a list of some places that make a good starting point if you're needing help for physical or mental health. Please reach out to any of the staff as well! We are always happy to talk and get you started with one of these places if that's what you decide you'd like to do.
 
 **UHS** [uhs.umich.edu](http://uhs.umich.edu)
