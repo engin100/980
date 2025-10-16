@@ -44,13 +44,13 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 [![Terminal Velocity](https://www1.grc.nasa.gov/wp-content/uploads/termv.jpg)](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/termvel/)
 
-- For Cd, you should look up typical values for parachutes and play around with it. There will be variations, so find which coefficients get you closest to your experimental values!
+- For \(C_d\), you should look up typical values for parachutes and play around with it. There will be variations, so find which coefficients get you closest to your experimental values!
 
-- For mass and cross-sectional area, you will measure both of these as part of your experimental setup. Since parachutes have the cross-sectional area of a circle, you can calculate the area using standard circle equations. Keep in mind that when you measure the circle's diameter on a flat surface, it is not the same as when it is falling and looks more like a hemisphere! Keep this in mind when doing your calculations.
+- For mass and cross-sectional area, you will measure both of these as part of your experimental setup. Since parachutes have the cross-sectional area of a circle, you can calculate the area using standard circle equations ($A = \pi r^2$). Keep in mind that when you measure the circle's diameter on a flat surface, it is not the same as when it is falling and looks more like a hemisphere! Keep this in mind when doing your calculations.
 
   - Think about the difference between a half-circumference of a sphere and the radius of the sphere. Drawing this in 2D may help.
 
-- The density of air is typically 1.29 kg/m^3.
+- The density of air is typically $1.29~\text{kg/m}^3$.
 
 ## Procedure
 
@@ -65,11 +65,12 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 ### Parachute Trials
 
 <div class="primer-spec-callout info" markdown="1">
-Note: The distance from the floor to the ceiling of the second floor is: 10' 6".
-Imagine you are on the ground. If you walk up one set of stairs the ceiling above your head is this height^.
+Note: The vertical distances are given in the Slack lab-help channel.
 </div>
 
-We are going to measure the terminal velocity of your parachute with three different mass configurations, and create plots of terminal velocity vs mass. We have created a [spreadsheet](https://docs.google.com/spreadsheets/d/1g0C3GjiIXb2twbJVo77Gfwd3KZr_5--W4aGh4ZKWDxo/edit?usp=sharing) for you to record your values in. The sheet is laid out as a 1x3 matrix: one parachute area paired with the three payload masses you will test.
+Before you begin collecting data, identify the exact location from which you will release the parachute. Use the measuring tape to determine the vertical distance from your release point to the top of the second-floor ceiling marker (the point described above) and from that ceiling marker to the ground. Record both distances in meters in your spreadsheet so that you can calculate the travel distances associated with each timing interval.
+
+We are going to measure the terminal velocity of your parachute with three different mass configurations, and create plots of terminal velocity vs mass. You should create a spreadsheet to record your values in, such as total system mass, parachute area, trial numbers, time between two points (ground and some other intermediate location), experimental terminal velocity calculated as distance divided by time, and theoretical terminal velocity from the equations below.
 
 - Go to the Robotics building across the street. If you have three team members present, designate one as the person transporting the system back up the stairs between trials, one as the dropper, and one as the recorder. Additional members can work on the Altium lab or aid in the drop tests.
 
@@ -85,13 +86,33 @@ We are going to measure the terminal velocity of your parachute with three diffe
 
 ### Computations
 
-- With all of your trials completed and recorded in your spreadsheet, calculate the terminal velocity of each trial in the provided column. HINT: The height of the top of the second floor, the time it takes to reach the second floor, and the time it takes to reach the ground are particularly helpful in this calculation.
+- With all of your trials completed and recorded in your spreadsheet, calculate the terminal velocity of each trial. Use the video timestamps to determine the time it takes for the parachute to travel from the top-of-second-floor height marker to the ground. Convert the corresponding travel distance to meters and compute the experimental terminal velocity as
+
+  $$v_{\text{exp}} = \frac{\Delta z}{\Delta t}$$
+
+  where $\Delta z$ is the vertical distance between the two reference points and $\Delta t$ is the elapsed time once the system has reached steady descent. (This is simply the "distance = velocity $\times$ time" relationship solved for velocity.)
+
+- For the theoretical prediction, use the drag-balance equation. When an object reaches terminal velocity, drag equals weight:
+
+  $$\tfrac{1}{2} \rho C_d A v_{\text{term}}^2 = m g.$$
+
+  Solve for terminal velocity to obtain
+
+  $$v_{\text{term}} = \sqrt{\frac{2 m g}{\rho C_d A}},$$
+
+  where $m$ is the total mass of the parachute plus payload, $A$ is the effective cross-sectional area of the parachute, $C_d$ is the drag coefficient (use literature values for similar parachutes and refine based on your data), $\rho$ is the density of air ($1.29~\text{kg/m}^3$), and $g = 9.81~\text{m/s}^2$.
+
+- To estimate the altitude at which the system reaches terminal velocity, model the vertical motion with linear drag. Define $k = \tfrac{1}{2} \rho C_d A$. The velocity and position of a falling object released from rest are
+
+  $$v(t) = \sqrt{\frac{m g}{k}}\,\tanh\!\left(\sqrt{\frac{g k}{m}}\, t\right), \qquad z(t) = z_0 - \frac{m}{k}\,\ln\!\left[\cosh\!\left(\sqrt{\frac{g k}{m}}\, t\right)\right],$$
+
+  where $z_0$ is the release height measured from the ground. Choose a criterion such as $95\%$ of $v_{\text{term}}$ to define "reaching" terminal velocity, solve $v(t_{95}) = 0.95\,v_{\text{term}}$ for $t_{95}$, and substitute into $z(t)$ to determine the altitude at that instant. Compare this theoretical altitude to your video observations.
 
 - Produce two graphs with the following:
 
   - Plot the three experimental trials on the same graph. The y-axis will be terminal velocity and the x-axis will be mass. Be sure to label your axes clearly and include the measured parachute area in the graph title or caption.
 
-  - Repeat this same plot again but with the theoretically determined terminal velocities for the same masses.
+  - Repeat this same plot again but with the theoretically determined terminal velocities for the same masses. Clearly state which drag coefficient you used and any adjustments you made while fitting theory to experiment.
 
 ## Submission
 
@@ -107,4 +128,4 @@ Submitting anything other than a single PDF may result in your work not being gr
 
 #### Separately:
 
-- [ ] Upload your memo as a PDF to the **Memo 2** assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab. Take a look at the [memo guidelines](https://980.engr100.org/labs/memo-guidelines) page for this lab for help.
+- [ ] Upload your memo as a PDF to the **Memo 2** assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab. Take a look at the [memo guidelines](/memo-guidelines.md) page for this lab for help.
