@@ -88,11 +88,14 @@ The image below shows the inner workings of a breadboard. Hopefully this demysti
 1. [Check out the first half of this video.](https://www.youtube.com/watch?v=QM6EY0VEqBA)  This shows how to connect an LED to the 5V output pin of the Arduino, a resistor, and then to ground.  This circuit will work without any Arduino code at all and is a good test for the circuit board and powering the Arduino!  This is the circuit you will build in step 2.
 
 2. Build the LED circuit shown in the schematic below. When built, it should look similar to the voltage divider circuit in Fig. 3, except one of the resistors will now be an LED. Be aware that LEDs only turn on when placed in your circuit in the correct orientation. Try switching the orientation of your LED if it doesn't turn on after completing step 2.
+
     <div class="primer-spec-callout info" markdown="1">
     **Hint:** one leg is longer than the other! Check the [references](/resources.md) page for more...
     </div>
     ![LED Circuit to build](/media/lab1-led-circuit.png){: .invert-colors-in-dark-mode }
-    Note: Vin refers to the 5V pin on the Arduino for now.  We will move this in **2.3** below.
+    <div class="primer-spec-callout info" markdown="1">
+    **Note:** Vin refers to the 5V pin on the Arduino for now.  We will move this in **2.3** below.
+    </div>
 
 3. Turn on the Arduino by plugging in the mini USB cord into the device and the USB into the computer. Note that an LED built into the micro-controller should begin glowing. The LED you connected to the Arduino should also begin to glow if your circuit is correct.
 
@@ -158,7 +161,7 @@ The concept of the voltage divider can be extended to any number of resistors. T
   - Our code uses the `analogRead()` function to read in the voltage and record the raw number that the function returns.
 1. Try playing with various resistor values, and take down the values from two more combinations of resistors. Make sure to write down the resistor combinations as well as the analog output for both of your additional experiments.
 2. Come up with a combination of resistors that will result in an output voltage of less than 1.25V.
-  - You can convert the raw output from `analogRead()` into voltage values by multiplying by 5/1023.
+  - You can convert the raw output from `analogRead()` into voltage values by multiplying by $$\frac{5}{1023}$$.
   - You will learn why in lab 3! Try it and see if it works.
 
 ## Post-Lab Questions

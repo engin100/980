@@ -100,7 +100,7 @@ We are going to measure the terminal velocity of your parachute with three diffe
 
   $$v_{\text{term}} = \sqrt{\frac{2 m g}{\rho C_d A}},$$
 
-  where $$m$$ is the total mass of the parachute plus payload, $$A$$ is the effective cross-sectional area of the parachute, $$C_d$$ is the drag coefficient (use literature values for similar parachutes and refine based on your data), $\rho$ is the density of air ($$1.29~\text{kg/m}^3$$), and $$g = 9.81~\text{m/s}^2$$.
+  where $$m$$ is the total mass of the parachute plus payload, $$A$$ is the effective cross-sectional area of the parachute, $$C_d$$ is the drag coefficient (use literature values for similar parachutes and refine based on your data), $$\rho$$ is the density of air ($$1.29~\text{kg/m}^3$$), and $$g = 9.81~\text{m/s}^2$$.
 
 - To estimate the altitude at which the system reaches terminal velocity, model the vertical motion with linear drag. Define $$k = \tfrac{1}{2} \rho C_d A$$. The velocity and position of a falling object released from rest are
 
