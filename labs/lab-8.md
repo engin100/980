@@ -44,13 +44,13 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 [![Terminal Velocity](https://www1.grc.nasa.gov/wp-content/uploads/termv.jpg)](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/termvel/)
 
-- For \(C_d\), you should look up typical values for parachutes and play around with it. There will be variations, so find which coefficients get you closest to your experimental values!
+- For $$C_d$$, you should look up typical values for parachutes and play around with it. There will be variations, so find which coefficients get you closest to your experimental values!
 
-- For mass and cross-sectional area, you will measure both of these as part of your experimental setup. Since parachutes have the cross-sectional area of a circle, you can calculate the area using standard circle equations ($A = \pi r^2$). Keep in mind that when you measure the circle's diameter on a flat surface, it is not the same as when it is falling and looks more like a hemisphere! Keep this in mind when doing your calculations.
+- For mass and cross-sectional area, you will measure both of these as part of your experimental setup. Since parachutes have the cross-sectional area of a circle, you can calculate the area using standard circle equations ($$A = \pi r^2$$). Keep in mind that when you measure the circle's diameter on a flat surface, it is not the same as when it is falling and looks more like a hemisphere! Keep this in mind when doing your calculations.
 
   - Think about the difference between a half-circumference of a sphere and the radius of the sphere. Drawing this in 2D may help.
 
-- The density of air is typically $1.29~\text{kg/m}^3$.
+- The density of air is typically $$1.29~\text{kg/m}^3$$.
 
 ## Procedure
 
@@ -90,7 +90,7 @@ We are going to measure the terminal velocity of your parachute with three diffe
 
   $$v_{\text{exp}} = \frac{\Delta z}{\Delta t}$$
 
-  where $\Delta z$ is the vertical distance between the two reference points and $\Delta t$ is the elapsed time once the system has reached steady descent. (This is simply the "distance = velocity $\times$ time" relationship solved for velocity.)
+  where $$\Delta z$$ is the vertical distance between the two reference points and $$\Delta t$$ is the elapsed time once the system has reached steady descent. (This is simply the "distance = velocity $$\times$$ time" relationship solved for velocity.)
 
 - For the theoretical prediction, use the drag-balance equation. When an object reaches terminal velocity, drag equals weight:
 
@@ -100,13 +100,13 @@ We are going to measure the terminal velocity of your parachute with three diffe
 
   $$v_{\text{term}} = \sqrt{\frac{2 m g}{\rho C_d A}},$$
 
-  where $m$ is the total mass of the parachute plus payload, $A$ is the effective cross-sectional area of the parachute, $C_d$ is the drag coefficient (use literature values for similar parachutes and refine based on your data), $\rho$ is the density of air ($1.29~\text{kg/m}^3$), and $g = 9.81~\text{m/s}^2$.
+  where $$m$$ is the total mass of the parachute plus payload, $$A$$ is the effective cross-sectional area of the parachute, $$C_d$$ is the drag coefficient (use literature values for similar parachutes and refine based on your data), $\rho$ is the density of air ($$1.29~\text{kg/m}^3$$), and $$g = 9.81~\text{m/s}^2$$.
 
-- To estimate the altitude at which the system reaches terminal velocity, model the vertical motion with linear drag. Define $k = \tfrac{1}{2} \rho C_d A$. The velocity and position of a falling object released from rest are
+- To estimate the altitude at which the system reaches terminal velocity, model the vertical motion with linear drag. Define $$k = \tfrac{1}{2} \rho C_d A$$. The velocity and position of a falling object released from rest are
 
   $$v(t) = \sqrt{\frac{m g}{k}}\,\tanh\!\left(\sqrt{\frac{g k}{m}}\, t\right), \qquad z(t) = z_0 - \frac{m}{k}\,\ln\!\left[\cosh\!\left(\sqrt{\frac{g k}{m}}\, t\right)\right],$$
 
-  where $z_0$ is the release height measured from the ground. Choose a criterion such as $95\%$ of $v_{\text{term}}$ to define "reaching" terminal velocity, solve $v(t_{95}) = 0.95\,v_{\text{term}}$ for $t_{95}$, and substitute into $z(t)$ to determine the altitude at that instant. Compare this theoretical altitude to your video observations.
+  where $$z_0$$ is the release height measured from the ground. Choose a criterion such as $$95\%$$ of $$v_{\text{term}}$$ to define "reaching" terminal velocity, solve $$v(t_{95}) = 0.95\,v_{\text{term}}$$ for $$t_{95}$$, and substitute into $$z(t)$$ to determine the altitude at that instant. Compare this theoretical altitude to your video observations.
 
 - Produce two graphs with the following:
 
