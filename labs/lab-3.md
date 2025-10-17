@@ -69,7 +69,7 @@ $$ Resolution = \frac{V_{ref}}{(2^{bits}-1)} $$
 
 Now, to turn the raw value returned by `analogRead()` into a voltage, you need to simply multiply it by the resolution of the ADC. This is shown by the formula below.
 
-$$ Voltage = Value * Resolution $$
+$$ Voltage = Value \cdot Resolution $$
 
 This is not exactly correct, but we will cover this in class later.
 
@@ -77,7 +77,11 @@ This is not exactly correct, but we will cover this in class later.
 
 ### 1. Wiring the TMP36
 
-Using the image below, take note of which pins must be connected to each circuit element. Connecting the TMP36 backwards will quickly smell like BBQ...  Please watch the youtube video above to get the orientation right before burning your fingers.
+Using the image below, take note of which pins must be connected to each circuit element.
+<div class="primer-spec-callout danger" markdown="1">
+Connecting the TMP36 backwards will quickly smell like BBQ...  
+<div> 
+Please watch the youtube video above to get the orientation right before burning your fingers.
 
 [![TMP36 Pinout](https://cdn-learn.adafruit.com/assets/assets/000/000/471/large1024/temperature_tmp36pinout.gif?1447975787)](https://learn.adafruit.com/tmp36-temperature-sensor/overview)
 
@@ -88,7 +92,7 @@ This sensor is rather simple to interface with. When the temperature changes, th
 Once your TMP36 is plugged in to your Arduino Nano Every, go to File → Examples → ENGR100-980 → Lab3-TMP36.
 
 <div class="primer-spec-callout info" markdown="1">
-If Lab3's example script does not show up, your library may be out of date. To update it, first try restarting the Arduino IDE. If this doesn't work, try following the same steps you took to install the library to update it.
+**Note:** If Lab3's example script does not show up, your library may be out of date. To update it, first try restarting the Arduino IDE. If this doesn't work, try following the same steps you took to install the library to update it.
 </div>
 
 You will need to modify the analog pin number you are reading off of for this lab. Unlike the last lab, where we provided a specific `#define` compiler variable for you to change the pin with at the top of the example script, this time, you will be changing the value yourself.
@@ -148,9 +152,11 @@ While you have the Serial Plotter open, walk outside and wait for your temperatu
 ## Post-Lab Questions
 
 To get you thinking critically about how your 2-point calibration curve works, as well as more comfortable with using a spreadsheet, answer the following questions:
-
-1. If your Arduino read in a voltage of 0.4V, what temperature would that equate to on your calibration curve? (Show your work!)
-2. What would the voltage be (based on your own calibration curve) if it output a temperature of 6 °C? (Show work!)
+<div class="primer-spec-callout danger" markdown="1">
+You must show all of your work for all questions to earn full credit
+<div> 
+1. If your Arduino read in a voltage of 0.4V, what temperature would that equate to on your calibration curve? 
+2. What would the voltage be (based on your own calibration curve) if it output a temperature of 6°C?
 3. What **raw digital value** would your Arduino be reading in for a voltage of 0V? 2.5V? 5V? If you are stuck on this, try re-reading the section about [how analog to digital converters (ADCs) work](#how-analog-to-digital-converters-adcs-work) and try working backwards through the Arduino code. The `analogRead()` function is what actually returns the raw value, so if you know the voltage, could you re-arrange the equation given in the starter code to solve for the raw digital value?
 
 ## Memo
@@ -167,7 +173,10 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 - [ ] Your data table of indoor and outdoor temperatures and voltages.
 - [ ] A screenshot of your Arduino IDE's Serial Plotter output showing the temperature as it changes as you walk outside.
 - [ ] Answers (and any work you may have) to the post-lab questions.
-- [ ] Photo of completed breadboard circuit. **(COLOR CODING WILL BE GRADED)**
+- [ ] Photo of completed breadboard circuit. 
+<div class="primer-spec-callout danger" markdown="1">
+**(COLOR CODING WILL BE GRADED)**
+<div> 
 
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
