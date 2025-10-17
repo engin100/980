@@ -60,13 +60,13 @@ These variables can be related through these kinematic equations:
 
 ### Using Equations in Spreadsheets
 
-You can use spreadsheets as a simple way to solve equations with given inputs. You let the spreadsheet know that you’re writing an equation by starting with “=”. You can then input numbers, multiplication (*), division (/), addition (+), and subtraction (-). You can also do exponents ($$x^y$$). Some functions are also built into the spreadsheet like a calculator, such as π (written as `PI()`) and trigonometric functions (but be careful, these are set to radians).
+You can use spreadsheets as a simple way to solve equations with given inputs. You let the spreadsheet know that you’re writing an equation by starting with “=”. You can then input numbers, multiplication (*), division (/), addition (+), and subtraction (-). You can also do exponents (c^x). Some functions are also built into the spreadsheet like a calculator, such as π (written as `PI()`) and trigonometric functions (but be careful, these are set to radians).
 
 Another thing you can do is use inputs from other cells in the spreadsheet. For example, if you wanted to find the area of a circle ($$A=\pi r^2$$) based on an input radius, you could do the following:
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRhSGIhjrbpW8pHbsjqsHXEsfuim8gFMDlTg311B0SDyENsLTJZ64YZ3BJLik6-5XvSH1uNJKytiCJ2/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
-You could then put a radius value in cell A2 and cell B2 would give you the resulting numerical area.
+You could then put a radius value in cell `A2` and cell `B2` would give you the resulting numerical area.
 
 If you need more help, watch the first 10 minutes of this video:
 
@@ -94,14 +94,13 @@ You then can find the area of each box based on the width and height. When you a
 
 To find how many boxes B you’re creating, divide the range of the domain by $$dx$$. For each box, use the following equations based on n, which box it is, starting at 1:
 
-$$X_N = (N - 1) \cdot dx$$       (This is so we get the left-hand side of the box)
+$$X_N = (N - 1) \cdot dx$$     (This is so we get the left-hand side of the box)
 
-$$y_N = f(X_N)$$            (In other words, find the y-value of the function at $$X_N$$)
+$$y_N = f(X_N)$$               (In other words, find the y-value of the function at $$X_N$$)
 
-$$A_N = dx \cdot y_N$$.          (The area of the box is $$A_N$$)
+$$A_N = dx \cdot y_N$$         (The area of the box is $$A_N$$)
 
-$$A = \sum_{N=1}^B A_N$$, Where A is the approximate area under the curve and B is the total 
-number of boxes created.
+$$A = \sum_{N=1}^B A_N$$       (Where A is the approximate area under the curve and B is the total number of boxes created)
 
 Let’s play with this a bit for real.
 <a href="https://docs.google.com/spreadsheets/d/1qwdVO5giQ8eXjdE3P_upk91-q7MF9NkFf7Zpxr_XuAY/edit?usp=drive_link" target="_blank">>>There is a viewable spreadsheet here you can make a copy of.<<</a>
@@ -219,7 +218,7 @@ $$y_N = f(X_N)$$            (In other words, find the y-value of the function at
 
 $$ A_N = dx \cdot y_N$$.          (The area of the box is $$A_N$$.)
 
-$$A = \sum_{N=1}^B A_N$$         Where A is the approximate area under the curve and B is the total number of boxes created.
+$$A = \sum_{N=1}^B A_N$$         (Where A is the approximate area under the curve and B is the total number of boxes created)
 
 What does this mean practically?
 
@@ -229,6 +228,6 @@ In our $$y = \sin(x) + 2$$ spreadsheet, we can do the following things to make t
 - Insert a column to the left of Column C (insert->Column left)
 - In Cell `C8`, write a formula `=(A8+B8)/2`
 - Google will ask if you want to autofill the rest of the column. Yes you do!
-- In cell `D8`, it should have “=sin(A8) + 2”. Change this to `=sin(C8) + 2`.
+- In cell `D8`, it should have `=sin(A8) + 2`. Change this to `=sin(C8) + 2`.
 - Copy cell `D8` to the rest of the cells in column D.
 Now your spreadsheet is set up to use the cell center values instead of the left side values!  You can then see if this is more accurate by looking at the behavior as a function of $$dx$$.
