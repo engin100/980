@@ -67,7 +67,7 @@ The Arduino Nano Every that we use in this class operates at 5V logic. This mean
 
 For this lab, we are using a 3-axis accelerometer. This sensor is capable of measuring acceleration in Gs on the x, y, and z planes.
 
-1 G is considered normal acceleration that we feel on Earth as exerted by gravity. It is equivalent to a magnitude of 9.8m/s<sup>2</sup>.
+1 G is considered normal acceleration that we feel on Earth as exerted by gravity. It is equivalent to a magnitude of $$9.8\,\frac{m}{s^2}$$.
 
 ### Data Logging
 

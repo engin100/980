@@ -180,6 +180,9 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 </div> 
 
 To put said content into a PDF, it is suggested you create a new Google Doc and paste your images and write your text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
+<div class="primer-spec-callout danger" markdown="1">
+Submitting anything other than a single PDF may result in your work not being graded or your scores being heavily delayed.
+</div>
 
 **Separately**:
 
