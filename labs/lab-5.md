@@ -131,7 +131,7 @@ In addition to the columns your Arduino recorded, you will need to add these col
 - Magnitude of acceleration (Gs)
 
 <div class="primer-spec-callout info" markdown="1">
-**HINT:** For 2D, its $$\sqrt{x^2+y^2}$$. For 3D, it is very similar...
+**HINT:** To find the magnitude of something in 2D, its $$\sqrt{x^2+y^2}$$. For 3D, it is very similar...
 </div>
 
 Graph temperature and pressure on the same graph compared to time. Since the Y-axis of this graph will have 2 different units, you **NEED** to make sure your graph has a second Y-axis on the other side. Both graphs need to be labelled in a legend. Follow tech comm best practices when making the graph.
