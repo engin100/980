@@ -51,9 +51,13 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 ## Resources and Files
 
 <a href="../sensor-board/Rocket Boards_rev2.step" download>3D STEP File</a>
+
 <a href="../sensor-board/Rocket_Boards_-_Rev2.zip" download>Production .zip</a>
+
 <a href="../sensor-board/Rev2 Schematic.pdf" download>Schematic</a>
+
 <a href="../sensor-board/Rocket Boards_rev2 Drawing v1.pdf" download>Technical Drawing</a>
+
 <a href="../sensor-board/bom.csv" download>Bill of Materials</a>
 
 ## Next Steps
