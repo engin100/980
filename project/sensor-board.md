@@ -83,6 +83,8 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 
 <a href="../components/SM1206NYC-IL.pdf" download>Yellow LED</a>
 
+![Link to SD Logger Documenation](https://github.com/adafruit/MicroSD-breakout-board)
+
 ## Next Steps
 1. Assemble the board!
 2. Figure out how you'll mount it within your rocket
