@@ -7,6 +7,7 @@ latex: true
 
 - [Sensor Board Documenation](#sensor-board-documentation)
     - [Sensor Pin Connections](#sensor-pin-connections)
+    - [Board Example](#board-example)
     - [Standard Operation](#standard-operation)
     - [Hardware Remarks](#hardware-remarks)
         - [Assembly Tips](#assembly-tips)
@@ -24,6 +25,9 @@ Because you are going to be using the sensor board that the staff designed for y
 Here is the schematic for the rocket boards. Take note of voltages, resistance values, etc. **Take note of what sensor is connected to which Arduino pin as it may be different from what is currently in your code, and may require updates.**
 
 ![Rocket Board Schematic](/media/Rev2%20Schematic.png)
+
+## Board Example
+
 
 ## Standard Operation
 When fully assembled, the rocket board records various sensor measurements and drives 5 LEDs. The device draws power from a battery, connected to the JST connector. Power is controlled by the SMD switch. 
