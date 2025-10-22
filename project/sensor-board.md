@@ -83,7 +83,7 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 
 <a href="../components/SM1206NYC-IL.pdf" download>Yellow LED</a>
 
-[Link to SD Logger Documentation](https://learn.adafruit.com/adafruit-microsd-spi-or-sdio-card-breakout-board/overview)
+[Link to SD Logger Documentation](https://github.com/adafruit/MicroSD-breakout-board)
 
 ## Next Steps
 1. Assemble the board!
