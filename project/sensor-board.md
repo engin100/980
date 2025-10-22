@@ -11,7 +11,8 @@ latex: true
     - [Hardware Remarks](#hardware-remarks)
         - [Assembly Tips](#assembly-tips)
         - [Technical Drawing](#technical-drawing)
-    - [Resources and Files](#resources-and-files)
+    - [Sensor Board Files](#sensor-board-files)
+    - [Component Files](#component-files)
     - [Next Steps](#next-steps)
 
 # Sensor Board Documentation
@@ -48,7 +49,7 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 
 ![Rocket Board Inner Copper](/media/inner_copper.png)
 
-## Resources and Files
+## Sensor Board Files
 
 <a href="../sensor-board/Rocket Boards_rev2.step" download>3D STEP File</a>
 
@@ -59,6 +60,28 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 <a href="../sensor-board/Rocket Boards_rev2 Drawing v1.pdf" download>Technical Drawing</a>
 
 <a href="../sensor-board/bom.csv" download>Bill of Materials</a>
+
+## Component Files
+
+<a href="../components/ABX00033.pdf" download>Arduino Nano</a>
+
+<a href="../components/ADXL335.pdf" download>ADXL335 - Accelerometer</a>
+
+<a href="../components/bme680.pdf" download>BME680</a>
+
+<a href="../components/buzzer.pdf" download>Buzzer</a>
+
+<a href="../components/slide-switch.pdf" download>Slide Switch</a>
+
+<a href="../components/SM1206NAC-IL.pdf" download>Amber LED</a>
+
+<a href="../components/SM1206NBWC-IL.pdf" download>Blue LED</a>
+
+<a href="../components/SM1206NHC-IL.pdf" download>Red LED</a>
+
+<a href="../components/SM1206NPGC-IL.pdf" download>Green LED</a>
+
+<a href="../components/SM1206NYC-IL.pdf" download>Yellow LED</a>
 
 ## Next Steps
 1. Assemble the board!
