@@ -27,7 +27,11 @@ Here is the schematic for the rocket boards. Take note of voltages, resistance v
 ![Rocket Board Schematic](/media/Rev2%20Schematic.png)
 
 ## Board Example
-
+![PCB1](/media/pcb1.jpeg)
+![PCB2](/media/pcb2.jpeg)
+![PCB3](/media/pcb3.jpeg)
+![PCB4](/media/pcb4.jpeg)
+![PCB5](/media/pcb5.jpeg)
 
 ## Standard Operation
 When fully assembled, the rocket board records various sensor measurements and drives 5 LEDs. The device draws power from a battery, connected to the JST connector. Power is controlled by the SMD switch. 
