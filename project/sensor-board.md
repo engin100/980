@@ -69,7 +69,7 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 
 <a href="../sensor-board/bom.csv" download>Bill of Materials</a>
 
-## Component Files
+# Component Files
 
 <a href="../components/ABX00033.pdf" download>Arduino Nano</a>
 
@@ -93,7 +93,7 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 
 [Link to SD Logger Documentation](https://github.com/adafruit/MicroSD-breakout-board)
 
-## Next Steps
+# Next Steps
 1. Assemble the board!
 2. Figure out how you'll mount it within your rocket
 3. Figure out how you'd like to collect data using Arduino IDE
