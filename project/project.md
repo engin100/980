@@ -141,6 +141,7 @@ Verify that each sensor that you are **utilizing** can detect and respond to a l
 1. Begin by collecting a few seconds of stable baseline data
 2. Perform the chosen action to make the “spike”
 3. Let the system return to equilibrium
+
 The goal is to observe how each sensor reacts to large variations and confirm its responsiveness. For each sensor, you must create plots that clearly show a “spike” and explain what you did to get this “spike”.
 
 ### 4. Elevator Test
