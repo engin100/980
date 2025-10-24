@@ -145,7 +145,7 @@ Verify that each sensor that you are **utilizing** can detect and respond to a l
 The goal is to observe how each sensor reacts to large, fast variations and confirm its responsiveness. For each sensor, you must create plots that clearly show a “spike” and explain what you did to get this “spike”.
 
 <div class="primer-spec-callout info" markdown="1">
-**Note:** The humidity sensor should be the only one that cannot create a **spike**. Still, we should see a significant change, but not over a short period like the other sensors. It will look more like a hill. **If you chose the humidity sensor, you must explain why in the Go/No-Go Presentations.**
+**Note:** The humidity sensor should be the only one that cannot create a **spike**. Still, we should see a significant change, but not over a short period like the other sensors. It will look more like a hill. **If you chose the humidity sensor, you must explain why the humidity sensor behaves like this in the Go/No-Go Presentation.**
 </div>
 
 ### 4. Elevator Test
