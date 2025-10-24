@@ -13,7 +13,7 @@ latex: true
         - [Assembly Tips](#assembly-tips)
         - [Technical Drawing](#technical-drawing)
     - [Sensor Board Files](#sensor-board-files)
-    - [Component Files](#component-files)
+    - [Component Spec Sheets](#component-spec-sheets)
     - [Next Steps](#next-steps)
 
 # Sensor Board Documentation
@@ -69,13 +69,15 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 
 <a href="../sensor-board/bom.csv" download>Bill of Materials</a>
 
-# Component Files
+# Component Spec Sheets
 
 <a href="../components/ABX00033.pdf" download>Arduino Nano</a>
 
 <a href="../components/ADXL335.pdf" download>ADXL335 - Accelerometer</a>
 
 <a href="../components/bme680.pdf" download>BME680</a>
+
+[Link to BME680 Arduino Library Documentation](https://adafruit.github.io/Adafruit_BME680/html/class_adafruit___b_m_e680.html)
 
 <a href="../components/buzzer.pdf" download>Buzzer</a>
 
@@ -98,4 +100,6 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 2. Figure out how you'll mount it within your rocket
 3. Figure out how you'd like to collect data using Arduino IDE
 
-As always, don't hesitate to reach out to the IAs if you need help, or have any questions!
+<div class="primer-spec-callout danger" markdown="1">
+As always, don't hesitate to reach out to the IAs if you need help, or have any questions! If you do **NOT** plan accordingly, this class can get overwhelming. **Office hours and slack are your best friends**
+</div>
