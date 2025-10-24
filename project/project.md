@@ -14,29 +14,40 @@ latex: true
 - [Final Report](#final-report)
 
 ## Project Specification
-
 The goal of this semester's project is to:
 
-1. Build a (model) rocket that will ascend to approximately 1,000 ft altitude carrying a (roughly) 3 oz payload in the nose cone, with a specified length, width, and height.  The selection criteria and choice of the model rockets is provided in [this document](https://980.engr100.org/labs/rocket-selection).  The nose cone or body tube may need to be modified to allow the sensor board and battery to be safely enclosed with no motion during the flight.  The nose cone or body may need to be further modified to allow the team to see the LEDs on the sensor board - the LEDs must be visible after the sensor board is enclosed in the nose cone or body. The rocket must survive and operate properly in all phases of the flight (thrust, drift, descent).
+### 1. Build
+Build a (model) rocket that will ascend to approximately 1,000 ft altitude carrying a (roughly) 3 oz payload in the nose cone, with a specified length, width, and height.  The selection criteria and choice of the model rockets is provided in [this document](https://980.engr100.org/labs/rocket-selection).  The nose cone or body tube may need to be modified to allow the sensor board and battery to be safely enclosed with no motion during the flight.  The nose cone or body may need to be further modified to allow the team to see the LEDs on the sensor board - the LEDs must be visible after the sensor board is enclosed in the nose cone or body. The rocket must survive and operate properly in all phases of the flight (thrust, drift, descent).
 
-    - Teams of 5 cannot build the "Green Eggs" rocket for launch. They must choose between either the Vapor or the High-Flier XL. Teams of 4 can choose between either of those rockets, in addition to the Green Eggs variation. The PDR may be presented on a different rocket other than these options, however the final build will be restricted to those three. Take a look at the [rocket selection guidelines](/labs/rocket-selection) for help with this topic. (The spreadsheet has been updated, so it may be worth taking a second look).
+<div class="primer-spec-callout warning" markdown="1">
+Teams of 5 cannot build the "Green Eggs" rocket for launch. They must choose between either the Vapor or the High-Flier XL. Teams of 4 can choose between either of those rockets, in addition to the Green Eggs variation. The PDR may be presented on a different rocket other than these options, however the final build will be restricted to those three. Take a look at the [rocket selection guidelines](/labs/rocket-selection) for help with this topic. (The spreadsheet has been updated, so it may be worth taking a second look).
+</div>
 
-2. Provide a complete CAD drawing of your chosen rocket, complete with dimensions.  The CAD must include all aspects of the rocket, including: nose cone, sensor payload in the nose cone, body tube, parachute and connection points, motor housing, motor, motor holder, and fins. Additionally, the CAD model must include descent phase also, with parachute deployed.
+### 2. CAD
+Provide a complete CAD drawing of your chosen rocket, complete with dimensions.  The CAD must include all aspects of the rocket, including: nose cone, sensor payload in the nose cone, body tube, parachute and connection points, motor housing, motor, motor holder, and fins. Additionally, the CAD model must include descent phase also, with parachute deployed.
 
-3. Build a sensor board that will measure the rocket's acceleration and altitude during both the ascent and descent phase of the launch.  The acceleration must capture the different phases of the flight with enough robustness that the velocity and altitude can be determined.  The pressure sensor readings must be translated to altitude with enough robustness that the velocity and acceleration can be determined.  The sensor board needs to survive the flight using a 9V battery and store all of the data on a microSD card.  The sensor board needs to have a timer so that the user can turn the sensor board on, pack it into the nose cone in a way that it will survive the flight, put the nose cone back on to the rocket, put the rocket onto the launch pad, and prep the rocket for launch, all before the sensor board STARTS taking data.  The sensor board should provide some indication that it is counting down and should provide the user with warnings when it is just about ready to start taking data, and then when it is actually taking data.  The board should continue to take data until turned off.  All data should be recorded on the SD card as it is being taken.  It should be stored in a format that is easy for the user to read (such as a csv file).  All sensors must be calibrated. Additionally, you'll choose one extra sensor on the BME680 to use to record data. All teams must record pressure with the BME680, but you may also choose to measure humidity, VOC/gases, or temperature. [More information on sensor board documentation](/project/sensor-board).
+### 3. Sensors
+Build a sensor board that will measure the rocket's acceleration and altitude during both the ascent and descent phase of the launch.  The acceleration must capture the different phases of the flight with enough robustness that the velocity and altitude can be determined.  The pressure sensor readings must be translated to altitude with enough robustness that the velocity and acceleration can be determined.  The sensor board needs to survive the flight using a 9V battery and store all of the data on a microSD card.  The sensor board needs to have a timer so that the user can turn the sensor board on, pack it into the nose cone in a way that it will survive the flight, put the nose cone back on to the rocket, put the rocket onto the launch pad, and prep the rocket for launch, all before the sensor board STARTS taking data.  The sensor board should provide some indication that it is counting down and should provide the user with warnings when it is just about ready to start taking data, and then when it is actually taking data.  The board should continue to take data until turned off.  All data should be recorded on the SD card as it is being taken.  It should be stored in a format that is easy for the user to read (such as a csv file).  All sensors must be calibrated. Additionally, you'll choose one extra sensor on the BME680 to use to record data. All teams must record pressure with the BME680, but you may also choose to measure humidity, VOC/gases, or temperature. [More information on sensor board documentation](/project/sensor-board).
 
-4. Build a simulation package that describes the different phases of the flight (thrust, drift, descent) robustly.  This simulation package must:
-A. Calculate the changing accelerations given the (vertical) forces that are acting on the rocket at the time.
-B. Take into account the changing mass of the rocket.
-C. Take into account the changing area of the rocket.
-D. Calculate the velocity of the rocket as a function of time.
-E. Calculate the altitude of the rocket as a function of time.
+### 4. Simulation
+Build a simulation package that describes the different phases of the flight (thrust, drift, descent) robustly.  This simulation package must:
+
+1. Calculate the changing accelerations given the (vertical) forces that are acting on the rocket at the time.
+
+2. Take into account the changing mass of the rocket.
+
+3. Take into account the changing area of the rocket.
+
+4. Calculate the velocity of the rocket as a function of time.
+
+5. Calculate the altitude of the rocket as a function of time.
+
 The coding language can be Google Spreadsheets, Excel, Python, Matlab, or C++. Additionally, the simulation should accurately capture the thrust profile of the specific rocket engine used and should accurately capture the deployment of the parachute over the course of the time specified through experimentation (drop tests???).
 
-5. Conduct data analysis by comparing and contrasting the different methods of calculating acceleration, velocity, and position for the flight and simulation data.  This comparison must be included in the poster and final reports, as described below.
+### 5. Data Analysis
+Conduct data analysis by comparing and contrasting the different methods of calculating acceleration, velocity, and position for the flight and simulation data.  This comparison must be included in the poster and final reports, as described below.
 
 ## Preliminary Design Review
-
 All teams must collectively present a preliminary design review, which must include:
 
 1. Team number, name, members with a logo
