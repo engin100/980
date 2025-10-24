@@ -50,45 +50,73 @@ Conduct data analysis by comparing and contrasting the different methods of calc
 ## Preliminary Design Review
 All teams must collectively present a preliminary design review, which must include:
 
-1. Team number, name, members with a logo
+### 1. Team information
+Team number, name, members with a logo
 
-2. Area of focused refinement/analysis (CAD, build, sensors, simulation)
+### 2. Area of focused refinement/analysis
+Choose an area (Build, CAD, Sensors, or Simulation) in which your team will focus the project design around and provide **MORE** detailed analysis in the project reports.
 
-    - Note that all teams must complete all requirements listed within the project sub-sections (CAD, rocket structures, extra sensors, thrust modeled simulations) but teams will also pick one of these areas to focus your design around and provide more detailed analysis in the project reports.
+<div class="primer-spec-callout info" markdown="1">
+**Note:** All teams must complete all requirements listed within the project sub-sections (Build, CAD, Sensors, or Simulation)
+</div>
 
-3. Level 1 Requirements for the project
+### 3. Level 1 Requirements for the project
+See above!
 
-    - See above!
+### 4. System-level block diagram
+This is very much like your schematic, but simplified and with connections (5V, 3.3V, analog, digital)
+<div class="primer-spec-callout info" markdown="1">
+**Note:** This doesn't need to show every connection, such as ground wires, but rather should give an overview of the important connections between components.
+</div>
 
-4. System-level block diagram - Very much like your schematic, but simplified and with connections (5V, 3.3V, analog, digital)
+### 5. Sensor board physical specifications
+Any important specifications about the sensor board. For more details go to the [sensor board spec](/project/sensor-board) page.
 
-    - This doesn't need to show every connection, such as ground wires, but rather should give an overview of the important connections between components.
+### 6. Chosen rocket
+Show images and preliminary measurements of the chosen rocket.
+<div class="primer-spec-callout info" markdown="1">
+**Note:** Again, it isn't required that you build the rocket that you present on in the PDR. You may find out the rocket you selected won't work well for the final build, or it may not be an allowed rocket! That's part of why we are giving these presentations.
+</div>
 
-5. Sensor board physical specifications.
+### 7. Mass budget spreadsheet
+<div class="primer-spec-callout info" markdown="1">
+**Note:** If you do not have any concrete numbers for the weight of some components, search it up online or simply ask an IA if you can weight that component during Lab or OH! **Make sure to watch out for sig figs.**
+</div>
 
-6. Chosen rocket with images and preliminary measurements.
+### 8. Extra BME680 sensor 
+Explain the chosen extra BME680 sensor, its characteristics, and how you can implement it into your rocket to **gather meaningful data**.
+<div class="primer-spec-callout info" markdown="1">
+**Note:** You do not need to know specifically how to implement the extra sensor into your rocket yet; however, we do want to see that you have considered a way to implement it. You may find out that your sensor implementation for the final build may not work! That's part of why we are giving these presentations.
+</div>
 
-    - Again, it isn't required that you build the rocket that you present on in the PDR. You may find out the rocket you selected won't work well for the final build, or it may not be an allowed rocket! That's part of why we are giving these presentations.
+### 9. Simulation Results
+Explain your simulation design strategy. Show any initial simulation results if available; otherwise, the simulation design strategy will suffice.
 
-7. A mass budget spreadsheet!
+### 10. Design
+Explain how your design was shaped by the requirements.
 
-8. Your extra BME680 sensor and its characteristics 
+### 11. Testing strategies
+Explain your testing strategies. 
 
-9. Initial simulation results if you have any. Otherwise, the simulation design strategy.
+<div class="primer-spec-callout info" markdown="1">
+**Note:** Look at the testing strategies laid out in the [Go / No-Go Testing Section](#go--no-go-testing)! This will help guide your response to this requirement, but you will also need to come up with tests for your extra sensor!
+</div>
 
-10. How your design was shaped by the requirements.
+### 12. Test results
+Explain any test results that you have up until this point. 
 
-11. Testing strategies that you have come up with.
+<div class="primer-spec-callout info" markdown="1">
+**Note:** Obviously we are still early in the build process, so you may not have any obvious test results. You could talk about the drop tests for design testing, rather than final product testing.
+</div>
 
-    - Look at the testing strategies laid out in the Go / No-Go section below! This will help guide your response to this requirement, but you will also need to come up with tests for your extra sensor!
+### 13. Team Format
+Which team member will be responsible for which aspect of the project, including a back-up member.
 
-12. Any test results that you may have at this point.
-
-    - Obviously we are still early in the build process, so you may not have any obvious test results. You could talk about the drop tests for design testing, rather than final product testing.
-
-13. Which team member will be responsible for which aspect of the project, including a back-up member.
-
-14. What questions do you have for us?
+### 14. What questions do you have for us?
+You can ask us any questions that you have. The PDR is a **two-way deal**: we ask you guys questions about your design, and you can ask us questions as well! 
+<div class="primer-spec-callout danger" markdown="1">
+Be mindful of the time limit!
+</div>
 
 ## Go / No-Go Testing
 
