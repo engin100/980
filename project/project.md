@@ -124,14 +124,14 @@ Test all critical aspects of the system (rocket and sensor board), showing that 
 
 ### 1. Bench Test
 Validate that the system works while sitting on the workbench and that all sensors are calibrated. 
-- Data plots must indicate passing of this test. 
-- Video should show the LEDs indicating when the sensor package is waiting for the time delay and when it is taking data. 
-- Video should also highlight the buzzer going off at an appropriate time.
+- Data plots must indicate passing of this test
+- Video should show the LEDs indicating when the sensor package is waiting for the time delay and when it is taking data
+- Video should also highlight the buzzer going off at an appropriate time
 
 ### 2. Pendulum Test
 Attach the sensor board (with battery) to different lengths of strings. Take data while the sensor board swings back and forth. 
-- Show that the measured 3D acceleration can be used to determine the angle and velocity of the sensor board as it swings.
-- Show that the period of the pendulum is as expected from an analytical solution. 
+- Show that the measured 3D acceleration can be used to determine the angle and velocity of the sensor board as it swings
+- Show that the period of the pendulum is as expected from an analytical solution
 <div class="primer-spec-callout info" markdown="1">
 **Note:** If your team is focusing on **simulation**, you should have a simulation of the pendulum that shows that you are getting consistent results between the measurements and the simulations.
 </div>
