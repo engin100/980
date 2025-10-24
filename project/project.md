@@ -137,12 +137,16 @@ Attach the sensor board (with battery) to different lengths of strings. Take dat
 </div>
 
 ### 3. Spike Test
-Verify that each sensor that you are **utilizing** can detect and respond to a large change (“spike”) in its measured variable. You will need to use some creativity to design and execute your own methods to produce a clear “spike” for each sensor. To create a “spike”:
+Verify that each sensor that you are **utilizing** can detect and respond to a large change in a **small amount of time** (“spike”) in its measured variable. You will need to use some creativity to design and execute your own methods to produce a clear “spike” for each sensor. To create a “spike”:
 1. Begin by collecting a few seconds of stable baseline data
 2. Perform the chosen action to make the “spike”
 3. Let the system return to equilibrium
 
-The goal is to observe how each sensor reacts to large variations and confirm its responsiveness. For each sensor, you must create plots that clearly show a “spike” and explain what you did to get this “spike”.
+The goal is to observe how each sensor reacts to large, fast variations and confirm its responsiveness. For each sensor, you must create plots that clearly show a “spike” and explain what you did to get this “spike”.
+
+<div class="primer-spec-callout info" markdown="1">
+**Note:** The humidity sensor should be the only one that cannot create a **spike**. Still, we should see a significant change, but not over a short period like the other sensors. It will look more like a hill. **If you chose the humidity sensor, you must explain why in the Go/No-Go Presentations.**
+</div>
 
 ### 4. Elevator Test
 Find a building that is at least 8 stories tall and ride an elevator from the bottom floor to at least the 8th floor. The sensor package must be taking data during the elevator ride and should be placed on the floor so that it is measuring the acceleration of the elevator. There should be at least two stops on the way to the 8th floor, so the stopping and starting can be noted and correlated with the pressure data.
