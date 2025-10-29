@@ -27,6 +27,9 @@ Here is the schematic for the rocket boards. Take note of voltages, resistance v
 ![Rocket Board Schematic](/media/Rev2%20Schematic.png)
 
 ## Board Example
+<div class="primer-spec-callout danger" markdown="1">
+READ THIS VERY CAREFULLY: Make sure that you ADD **headers** to the arduino. Other than this, your PCB board should look identical to the example below. The SD Card can be soldered on directly to the board as seen on the example below.
+</div>
 ![PCB1](/media/pcb1.jpeg)
 ![PCB2](/media/pcb2.jpeg)
 ![PCB3](/media/pcb3.jpeg)
