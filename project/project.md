@@ -138,7 +138,7 @@ Attach the sensor board (with battery) to different lengths of strings. Take dat
 </div>
 
 <div class="primer-spec-callout danger" markdown="1">
-You should have a sample rate of at least 5 Hz when you are sampling all of the sensors as usual. When performing any tests with the accelerometer specifically (such as this pendulum test) you should have a sample rate of at least 100 Hz. In order to do this, you may need to lower the BME680's gas sensor heating time to allow for faster sampling.
+You should have a sample rate of at least 5 Hz when you are sampling all of the sensors (except the accelerometer) as usual. When performing any tests with the accelerometer specifically (such as this pendulum test) you should have a sample rate of at least 100 Hz. In order to do this, you may need to lower the BME680's gas sensor heating time to allow for faster sampling.
 </div>
 
 ### 3. Spike Test
@@ -154,7 +154,7 @@ The goal is to observe how each sensor reacts to large, fast variations and conf
 </div>
 
 <div class="primer-spec-callout danger" markdown="1">
-You should have a sample rate of at least 5 Hz when you are sampling all of the sensors as usual. When performing any tests with the accelerometer specifically you should have a sample rate of at least 100 Hz. In order to do this, you may need to lower the BME680's gas sensor heating time to allow for faster sampling.
+You should have a sample rate of at least 5 Hz when you are sampling all of the sensors (except the accelerometer) as usual. When performing any tests with the accelerometer specifically you should have a sample rate of at least 100 Hz. In order to do this, you may need to lower the BME680's gas sensor heating time to allow for faster sampling.
 </div>
 
 ### 4. Elevator Test
