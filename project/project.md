@@ -137,6 +137,10 @@ Attach the sensor board (with battery) to different lengths of strings. Take dat
 **Note:** If your team is focusing on **simulation**, you should have a simulation of the pendulum that shows that you are getting consistent results between the measurements and the simulations.
 </div>
 
+<div class="primer-spec-callout danger" markdown="1">
+You should have a sample rate of at least 5 Hz when you are sampling all of the sensors as usual. When performing any tests with the accelerometer specifically (such as this pendulum test) you should have a sample rate of at least 100 Hz. In order to do this, you may need to lower the BME680's gas sensor heating time to allow for faster sampling.
+</div>
+
 ### 3. Spike Test
 Verify that each sensor that you are **utilizing** can detect and respond to a large change in a **small amount of time** (“spike”) in its measured variable. You will need to use some creativity to design and execute your own methods to produce a clear “spike” for each sensor. To create a “spike”:
 1. Begin by collecting a few seconds of stable baseline data
@@ -147,6 +151,10 @@ The goal is to observe how each sensor reacts to large, fast variations and conf
 
 <div class="primer-spec-callout info" markdown="1">
 **Note:** The humidity sensor should be the only one that cannot create a **spike**. Still, we should see a significant change, but not over a short period like the other sensors. It will look more like a hill. **If you chose the humidity sensor, you must explain why the humidity sensor behaves like this in the Go/No-Go Presentation.**
+</div>
+
+<div class="primer-spec-callout danger" markdown="1">
+You should have a sample rate of at least 5 Hz when you are sampling all of the sensors as usual. When performing any tests with the accelerometer specifically you should have a sample rate of at least 100 Hz. In order to do this, you may need to lower the BME680's gas sensor heating time to allow for faster sampling.
 </div>
 
 ### 4. Elevator Test
