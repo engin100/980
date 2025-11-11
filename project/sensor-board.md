@@ -98,6 +98,36 @@ In the figure below you'll find the schematic of the inner copper layers and edg
 
 [Link to SD Logger Documentation](https://github.com/adafruit/MicroSD-breakout-board)
 
+# Async for BME680
+Everytime the BME680 does a reading, it blocks all other inputs from happening. This causes a delay between 300 ms - 500 ms. To fix this we have to use async functions.
+
+An async function is a type of function in programming that allows for asynchronous operations, meaning it can perform tasks without blocking the execution of other code.
+
+The three main functions that you will need to use are `beginReading()`, `endReading()`, and `remainingReadingMillis()`. You can read the documentation of these functions [here](https://adafruit.github.io/Adafruit_BME680/html/class_adafruit___b_m_e680.html#:~:text=member%20variables.%20More...-,uint32_t%C2%A0,has%20started%2C%20%2D1%20or%20Adafruit_BME680%3A%3Areading_not_started.%20Does%20not%20block.%20More...,-Public%20Attributes)
+
+You will have to do something along these lines
+
+```python
+bme.beginReading();
+if(bme.remainingReadingMillis() == 0){
+    bme.endReading();
+    //print out any sensor values or add to datastring, up to you
+    //you can get the specific values you want by doing
+    //bme.temperature, bme.pressure, bme.humidity, bme.gas_resistance
+}
+else{
+    //do nothing or whatever you want
+}
+```
+
+In words, this code:
+1. Starts an async function, `beginReading()`.
+2. Checks if the async function is done by checking if `remainingReadingMillis()` equals 0.
+3. If it is done, we end the reading using `endReading()`, which defines all environment variables and print the values out to the SD logger.
+4. If it is not done, then we do nothing or whatever you want, we just want to be able to move down and read the other sensor values. 
+
+This makes your code non-blocking for the BME680 functions.
+
 # Next Steps
 1. Assemble the board!
 2. Figure out how you'll mount it within your rocket
