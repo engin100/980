@@ -107,7 +107,7 @@ The three main functions that you will need to use are `beginReading()`, `endRea
 
 You will have to do something along these lines
 
-```python
+```cpp
 bme.beginReading();
 if(bme.remainingReadingMillis() == 0){
     bme.endReading();
@@ -123,7 +123,7 @@ else{
 In words, this code:
 1. Starts an async function, `beginReading()`.
 2. Checks if the async function is done by checking if `remainingReadingMillis()` equals 0.
-3. If it is done, we end the reading using `endReading()`, which defines all environment variables and print the values out to the SD logger.
+3. If it is done, we end the reading using `endReading()`, which defines all environment variables (temperature, pressure, humidity, and gas_resistance). Optionally, you would print the values out to the SD logger, store it into the data string, or just set them equal to a variable that you can then use later on. Totally up to you how you approach this!
 4. If it is not done, then we do nothing or whatever you want, we just want to be able to move down and read the other sensor values. 
 
 This makes your code non-blocking for the BME680 functions.
