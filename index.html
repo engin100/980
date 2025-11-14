@@ -132,8 +132,13 @@ toc: false
     }
     .links {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 20px;
+    }
+    @media (max-width: 1100px) {
+      .links {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
     }
     .link-group h3 {
       margin-top: 0;
@@ -203,7 +208,7 @@ toc: false
       <li><a href="{{ '/project/project' | relative_url }}">Project</a></li>
       <li><a href="{{ '/project/sensor-board' | relative_url }}">Sensor Board Spec</a></li>
       <li><a href="{{ '/staff' | relative_url }}">Staff</a></li>
-      <li><a href="{{ '/facilities' | relative_url }}">Facilities</a></li>
+      <li><a href="{{ '/launch-day/logistics' | relative_url }}">Launch Logistics</a></li>
     </ul>
   </nav>
   <div class="hero">
@@ -236,6 +241,11 @@ toc: false
       <a class="button-link" href="{{ '/soldering/solder-challenge' | relative_url }}">Soldering Challenge</a>
     </div>
     <div class="link-group">
+      <h3>Facilities</h3>
+      <p>Preview the soldering, fabrication, and collaboration spaces we'll use all semester.</p>
+      <a class="button-link" href="{{ '/facilities' | relative_url }}">Explore Facilities</a>
+    </div>
+    <div class="link-group">
       <h3>Project</h3>
       <p>The full project specification, including PDR, Go/No-Go tests, poster, and final report.</p>
       <a class="button-link" href="{{ '/project/project' | relative_url }}">Project Spec</a>
@@ -249,6 +259,11 @@ toc: false
       <h3>Supplemental Resources</h3>
       <p>Reference pages that may be useful, like C++/Arduino cheat-sheet, Arduino pinout diagrams, and more.</p>
       <a class="button-link" href="{{ '/resources' | relative_url }}">Supplemental Resources</a>
+    </div>
+    <div class="link-group">
+      <h3>Launch Day Logistics</h3>
+      <p>See lab access times, launch kit info, and the game plan for Saturday.</p>
+      <a class="button-link" href="{{ '/launch-day/logistics' | relative_url }}">Launch Plan</a>
     </div>
   </section>
   <section class="calendar-section">
