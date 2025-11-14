@@ -90,9 +90,36 @@ title: Launch Day Logistics
   stroke-width: 1;
 }
 
+
+.meteogram-panel-label {
+  font-size: 0.75rem;
+  fill: #57606a;
+}
+
 .meteogram-temp-line {
   stroke: #cf222e;
   stroke-width: 3;
+}
+
+.meteogram-windchill-line {
+  stroke: #0969da;
+  stroke-width: 2.5;
+}
+
+.meteogram-wind-line {
+  stroke: #1a7f37;
+  stroke-width: 2.5;
+}
+
+.meteogram-gust-line {
+  stroke: #9a6700;
+  stroke-width: 2.5;
+  stroke-dasharray: 6 4;
+}
+
+.meteogram-humidity-line {
+  stroke: #0a3069;
+  stroke-width: 2.2;
 }
 
 .meteogram-precip-bar {
@@ -140,8 +167,24 @@ title: Launch Day Logistics
   background: #cf222e;
 }
 
+.legend-swatch.windchill {
+  background: #0969da;
+}
+
+.legend-swatch.wind {
+  background: #1a7f37;
+}
+
+.legend-swatch.gust {
+  background: #9a6700;
+}
+
 .legend-swatch.precip {
   background: #1f6feb;
+}
+
+.legend-swatch.humidity {
+  background: #0a3069;
 }
 
 .meteogram-updated {
@@ -187,7 +230,7 @@ Bring the essentials so you can debug on site after your first flight:
 
 ## Weather Outlook
 
-Stay informed with the live NOAA meteogram for Ann Arbor.
+Stay informed with the live NOAA meteogram for Ann Arbor. The chart below always locks onto the 48-hour Saturday/Sunday window so you can compare temperature, wind, gusts, humidity, and precipitation potential at a glance.
 
 <div class="forecast-frame">
   <div class="meteogram-card">
