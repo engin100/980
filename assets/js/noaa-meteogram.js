@@ -78,12 +78,18 @@
     const windChills = forecast.periods.map((p) => computeWindChill(p.temperature, parseWind(p.windSpeed)));
     const summary = document.createElement('div');
     summary.className = 'meteogram-summary';
-    summary.appendChild(summaryItem('48h High', `${Math.round(Math.max(...temps))}°F`));
-    summary.appendChild(summaryItem('48h Low', `${Math.round(Math.min(...temps))}°F`));
-    summary.appendChild(summaryItem('Min Wind Chill', `${Math.round(Math.min(...windChills))}°F`));
-    summary.appendChild(summaryItem('Peak Wind', `${Math.round(Math.max(...winds))} mph`));
-    summary.appendChild(summaryItem('Peak Gust', `${Math.round(Math.max(...gusts))} mph`));
-    summary.appendChild(summaryItem('Max Precip Chance', `${Math.round(Math.max(...precip))}%`));
+    const high = getMaxValue(temps);
+    const low = getMinValue(temps);
+    const coldestChill = getMinValue(windChills);
+    const peakWind = getMaxValue(winds);
+    const peakGust = getMaxValue(gusts);
+    const precipMax = getMaxValue(precip);
+    summary.appendChild(summaryItem('48h High', formatStatValue(high, '°F')));
+    summary.appendChild(summaryItem('48h Low', formatStatValue(low, '°F')));
+    summary.appendChild(summaryItem('Min Wind Chill', formatStatValue(coldestChill, '°F')));
+    summary.appendChild(summaryItem('Peak Wind', formatStatValue(peakWind, ' mph')));
+    summary.appendChild(summaryItem('Peak Gust', formatStatValue(peakGust, ' mph')));
+    summary.appendChild(summaryItem('Max Precip Chance', formatStatValue(precipMax, '%')));
     return summary;
   }
 
@@ -126,9 +132,8 @@
     const humidityValues = periods.map((p) => p.relativeHumidity?.value ?? 0);
 
     const tempValues = [...temps, ...windChills].filter((v) => Number.isFinite(v));
-    const tempMin = Math.min(...tempValues) - 3;
-    const tempMax = Math.max(...tempValues) + 3;
-    const tempRange = Math.max(tempMax - tempMin, 1);
+    const rawTempMin = tempValues.length ? Math.min(...tempValues) : 0;
+    const rawTempMax = tempValues.length ? Math.max(...tempValues) : 1;
     const windValues = [...windSpeeds, ...windGusts].filter((v) => Number.isFinite(v));
     const windMax = Math.max(10, Math.ceil(Math.max(...windValues, 0) / 5) * 5);
 
@@ -136,9 +141,37 @@
     const windTop = tempTop + tempAreaHeight + axisGap;
     const precipTop = windTop + windAreaHeight + axisGap;
 
+    const tempTicks = generateTicks(rawTempMin, rawTempMax, 4);
+    const tempAxisMin = tempTicks.length ? tempTicks[0] : rawTempMin;
+    const tempAxisMax = tempTicks.length ? tempTicks[tempTicks.length - 1] : rawTempMax;
+    const tempScale = (value) =>
+      tempTop +
+      tempAreaHeight -
+      ((value - tempAxisMin) / Math.max(tempAxisMax - tempAxisMin || 1, 1)) * tempAreaHeight;
+
+    const windTicks = generateTicks(0, windMax, 4);
+    const windAxisMin = windTicks.length ? windTicks[0] : 0;
+    const windAxisMax = windTicks.length ? windTicks[windTicks.length - 1] : Math.max(windMax, 1);
+    const windScale = (value) =>
+      windTop +
+      windAreaHeight -
+      ((value - windAxisMin) / Math.max(windAxisMax - windAxisMin || 1, 1)) * windAreaHeight;
+
+    const precipTicks = generateTicks(0, 100, 5);
+    const precipAxisMin = precipTicks.length ? precipTicks[0] : 0;
+    const precipAxisMax = precipTicks.length ? precipTicks[precipTicks.length - 1] : 100;
+    const precipScale = (value) =>
+      precipTop +
+      precipAreaHeight -
+      ((value - precipAxisMin) / Math.max(precipAxisMax - precipAxisMin || 1, 1)) * precipAreaHeight;
+
     addGridLines(svg, margin, width, tempTop, tempAreaHeight);
     addGridLines(svg, margin, width, windTop, windAreaHeight);
     addGridLines(svg, margin, width, precipTop, precipAreaHeight);
+
+    drawYAxisLabels(svg, margin, tempTicks, tempScale, (value) => `${Math.round(value)}°`);
+    drawYAxisLabels(svg, margin, windTicks, windScale, (value) => `${Math.round(value)}`);
+    drawYAxisLabels(svg, margin, precipTicks, precipScale, (value) => `${Math.round(value)}%`);
 
     drawPanelLabel(svg, 'Temperature & Wind Chill (°F)', margin.left, tempTop - 4);
     drawPanelLabel(svg, 'Wind Speed & Gusts (mph)', margin.left, windTop - 4);
@@ -147,24 +180,24 @@
     svg.appendChild(
       createLinePath(periods, xStep, margin, (index) => {
         const value = temps[index];
-        const y = tempTop + tempAreaHeight - ((value - tempMin) / tempRange) * tempAreaHeight;
-        return y;
+        return tempScale(value);
       }, 'meteogram-temp-line')
     );
 
     svg.appendChild(
       createLinePath(periods, xStep, margin, (index) => {
         const value = windChills[index];
-        const y = tempTop + tempAreaHeight - ((value - tempMin) / tempRange) * tempAreaHeight;
-        return y;
+        return tempScale(value);
       }, 'meteogram-windchill-line')
     );
 
     svg.appendChild(
       createLinePath(periods, xStep, margin, (index) => {
         const value = windSpeeds[index];
-        const y = windTop + windAreaHeight - (value / Math.max(windMax, 1)) * windAreaHeight;
-        return y;
+        if (!Number.isFinite(value)) {
+          return null;
+        }
+        return windScale(value);
       }, 'meteogram-wind-line')
     );
 
@@ -174,8 +207,7 @@
         if (!Number.isFinite(value)) {
           return null;
         }
-        const y = windTop + windAreaHeight - (value / Math.max(windMax, 1)) * windAreaHeight;
-        return y;
+        return windScale(value);
       }, 'meteogram-gust-line')
     );
 
@@ -197,8 +229,7 @@
     svg.appendChild(
       createLinePath(periods, xStep, margin, (index) => {
         const value = humidityValues[index];
-        const y = precipTop + precipAreaHeight - (value / 100) * precipAreaHeight;
-        return y;
+        return precipScale(value);
       }, 'meteogram-humidity-line')
     );
 
@@ -244,19 +275,45 @@
   }
 
   function parseWind(value) {
-    if (!value) {
-      return 0;
+    if (value === null || value === undefined) {
+      return Number.NaN;
     }
     if (typeof value === 'number') {
       return value;
     }
-    const matches = value.match(/(\d+)/g);
+    if (typeof value === 'object' && Number.isFinite(value.value)) {
+      return value.value;
+    }
+    const matches = String(value).match(/(\d+)/g);
     if (!matches) {
-      return 0;
+      return Number.NaN;
     }
     const numbers = matches.map((n) => Number(n));
     const sum = numbers.reduce((acc, current) => acc + current, 0);
     return sum / numbers.length;
+  }
+
+  function formatStatValue(value, suffix) {
+    if (!Number.isFinite(value)) {
+      return '—';
+    }
+    return `${Math.round(value)}${suffix}`;
+  }
+
+  function getMaxValue(values) {
+    const filtered = values.filter((value) => Number.isFinite(value));
+    if (!filtered.length) {
+      return Number.NaN;
+    }
+    return Math.max(...filtered);
+  }
+
+  function getMinValue(values) {
+    const filtered = values.filter((value) => Number.isFinite(value));
+    if (!filtered.length) {
+      return Number.NaN;
+    }
+    return Math.min(...filtered);
   }
 
   function computeWindChill(tempF, windMph) {
@@ -361,6 +418,77 @@
     });
     label.textContent = text;
     svg.appendChild(label);
+  }
+
+  function drawYAxisLabels(svg, margin, ticks, scale, formatter) {
+    ticks.forEach((value) => {
+      if (!Number.isFinite(value)) {
+        return;
+      }
+      const y = scale(value);
+      if (!Number.isFinite(y)) {
+        return;
+      }
+      const label = createSvgElement('text', {
+        x: margin.left - 8,
+        y,
+        class: 'meteogram-y-axis-label',
+        'text-anchor': 'end',
+        'dominant-baseline': 'middle'
+      });
+      label.textContent = formatter(value);
+      svg.appendChild(label);
+    });
+  }
+
+  function generateTicks(min, max, approxCount) {
+    if (!Number.isFinite(min) || !Number.isFinite(max)) {
+      return [];
+    }
+    if (min === max) {
+      return [min];
+    }
+    const safeCount = Math.max(approxCount || 2, 2);
+    const range = niceNumber(max - min, false);
+    const step = niceNumber(range / (safeCount - 1), true);
+    const niceMin = Math.floor(min / step) * step;
+    const niceMax = Math.ceil(max / step) * step;
+    const ticks = [];
+    for (let value = niceMin; value <= niceMax + step / 2; value += step) {
+      ticks.push(Number(value.toFixed(2)));
+    }
+    return ticks;
+  }
+
+  function niceNumber(range, round) {
+    if (range === 0) {
+      return 0;
+    }
+    const exponent = Math.floor(Math.log10(Math.abs(range)));
+    const fraction = Math.abs(range) / Math.pow(10, exponent);
+    let niceFraction;
+    if (round) {
+      if (fraction < 1.5) {
+        niceFraction = 1;
+      } else if (fraction < 3) {
+        niceFraction = 2;
+      } else if (fraction < 7) {
+        niceFraction = 5;
+      } else {
+        niceFraction = 10;
+      }
+    } else {
+      if (fraction <= 1) {
+        niceFraction = 1;
+      } else if (fraction <= 2) {
+        niceFraction = 2;
+      } else if (fraction <= 5) {
+        niceFraction = 5;
+      } else {
+        niceFraction = 10;
+      }
+    }
+    return niceFraction * Math.pow(10, exponent);
   }
 
   function getWeekendWindow() {

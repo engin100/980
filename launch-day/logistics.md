@@ -133,6 +133,13 @@ title: Launch Day Logistics
   text-anchor: middle;
 }
 
+.meteogram-y-axis-label {
+  font-size: 0.7rem;
+  fill: #57606a;
+  text-anchor: end;
+  dominant-baseline: middle;
+}
+
 .meteogram-loading,
 .meteogram-error {
   text-align: center;
