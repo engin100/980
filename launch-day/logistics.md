@@ -39,8 +39,8 @@ title: Launch Day Logistics
 
 <div class="launch-status go">
   We are a GO for launch!
-  <small>Switch the class to <code>no-go</code> if we scrub and the banner will turn red.</small>
 </div>
+<!-- Switch the class to `no-go` if we scrub and the banner will turn red. -->
 
 ## Lab Access Windows (Nov 13-14)
 
@@ -77,8 +77,8 @@ Stay informed with the live NOAA meteogram for Ann Arbor.
 
 <div class="forecast-frame">
   <img
-    src="https://forecast.weather.gov/meteograms/Plotter.php?lat=42.286&lon=-83.7238&w0=temperature&w1=dewpoint&w2=windchill&w3=surfacewind&w4=sky&w5=pop&w6=rh&w7=rain&unit=0&tz=EST&start=1&duration=48"
-    alt="NWS Graphical Forecast for Ann Arbor">
+    src="https://forecast.weather.gov/meteograms/Plotter.php?point=42.29,-83.73&zcode=MIZ068&gset=20&g=0&r=0&a=0&pcmd=0&relative=0&wfo=DTX&lat=42.29&lon=-83.73&z=0&tz=EST"
+    alt="NOAA meteogram showing temperature, wind, humidity, and precipitation for Ann Arbor">
 </div>
 
 <p class="caption">Source: <a href="https://forecast.weather.gov/MapClick.php?lon=-83.7238&lat=42.286" target="_blank" rel="noopener">NOAA / NWS Detroit-Pontiac</a></p>
