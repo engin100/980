@@ -185,6 +185,52 @@ toc: false
         display: none;
       }
     }
+    .hall-of-fame {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #00274C;
+      text-align: center;
+    }
+    .hall-of-fame h2 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+    .hall-of-fame p.intro {
+      margin-top: 0;
+      margin-bottom: 1.5em;
+    }
+    .hof-window {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      background-color: #f8f9fb;
+      padding: 16px;
+    }
+    .hof-item {
+      display: none;
+    }
+    .hof-item.active {
+      display: block;
+    }
+    .hof-image {
+      width: 100%;
+      height: auto;
+      max-height: 380px;
+      object-fit:contain;
+      border-radius: 6px;
+    }
+    .hof-description {
+      margin-top: 12px;
+    }
+    .hof-description h3 {
+      margin: 0 0 0.25em;
+      color: #00274C;
+    }
+    .hof-description p {
+      margin: 0;
+    }
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -266,6 +312,47 @@ toc: false
       <a class="button-link" href="{{ '/launch-day/logistics' | relative_url }}">Launch Plan</a>
     </div>
   </section>
+  <section class="hall-of-fame">
+    <h2>Rocket Hall of Fame 2025</h2>
+    <p class="intro">YOU COULD BE HERE</p>
+    <div class="hof-window">
+      <div class="hof-item active">
+        <img
+          src="{{ '/media/web-page-under-construction.png' | relative_url }}"
+          alt="Team 01 Rocket"
+          class="hof-image"
+        >
+        <div class="hof-description">
+          <h3>Team XX – Team Name Here</h3>
+          <p>Short description of the team!</p>
+        </div>
+      </div>
+
+      <div class="hof-item">
+        <img
+          src="{{ '/media/web-page-under-construction-1.png' | relative_url }}"
+          alt="Team 02 Rocket"
+          class="hof-image"
+        >
+        <div class="hof-description">
+          <h3>Team XX – Team Name Here</h3>
+          <p>Short description of the team!</p>
+        </div>
+      </div>
+
+      <div class="hof-item">
+        <img
+          src="{{ '/media/web-page-under-construction-2.png' | relative_url }}"
+          alt="Team 03 Rocket"
+          class="hof-image"
+        >
+        <div class="hof-description">
+          <h3>Team XX – Team Name Here</h3>
+          <p>Short description of the team!</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="calendar-section">
     <h2>Course Calendar</h2>
     <p>Stay up to date with lectures, labs, office hours, and due dates.</p>
@@ -282,6 +369,20 @@ toc: false
       } else {
         navbar.classList.remove('shrink');
       }
+    });
+    // Hall of Fame rotation
+    document.addEventListener('DOMContentLoaded', function() {
+      var items = document.querySelectorAll('.hof-item');
+      if (!items.length) return;
+
+      var index = 0;
+      items[index].classList.add('active');
+
+      setInterval(function() {
+        items[index].classList.remove('active');
+        index = (index + 1) % items.length;
+        items[index].classList.add('active');
+      }, 1000); // change slide every 10 seconds
     });
   </script>
 </body>
