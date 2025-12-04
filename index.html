@@ -231,6 +231,31 @@ toc: false
     .hof-description p {
       margin: 0;
     }
+
+    .hof-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.4);
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      font-size: 24px;
+      cursor: pointer;
+      border-radius: 4px;
+      z-index: 2;
+      user-select: none;
+    }
+    .hof-prev {
+      left: 10px;
+    }
+    .hof-next {
+      right: 10px;
+    }
+    .hof-arrow:hover {
+      background-color: rgba(0,0,0,0.6);
+    }
+
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -313,44 +338,58 @@ toc: false
     </div>
   </section>
   <section class="hall-of-fame">
-    <h2>Rocket Hall of Fame 2025</h2>
+    <h2>Rocket Hall of Fame</h2>
     <p class="intro">Nominate your team <a href="https://forms.gle/EZLBRXeGzkU4CVi87">here</a></p>
     <div class="hof-window">
       <div class="hof-item active">
         <img
-          src="{{ '/media/web-page-under-construction.png' | relative_url }}"
-          alt="Team 01 Rocket"
+          src="{{ '/media/FA25team11HOF.png' | relative_url }}"
+          alt="Team 11 Rocket"
           class="hof-image"
         >
         <div class="hof-description">
-          <h3>Team XX – Team Name Here</h3>
-          <p>Short description of the team!</p>
+          <h3>Team 11 – Snoopy Space Program (2025)</h3>
+          <p>
+            Our rocket underwent several design modifications throughout the project. The most significant change was the 
+            redesign of the fins. Instead of using the stock fins provided with the kit, we created standard clipped delta fins 
+            that we laser cut and were able to adjust and shorten across consecutive launches. Combined with our D-engine 
+            configuration, these improvements allowed the rocket to reach a higher apogee than anticipated and contributed to a 
+            strong and successful final launch.
+          </p>
         </div>
       </div>
 
       <div class="hof-item">
         <img
-          src="{{ '/media/web-page-under-construction-1.png' | relative_url }}"
-          alt="Team 02 Rocket"
+          src="{{ '/media/FA25team13HOF.png' | relative_url }}"
+          alt="Team 13 Rocket"
           class="hof-image"
         >
         <div class="hof-description">
-          <h3>Team XX – Team Name Here</h3>
-          <p>Short description of the team!</p>
+          <h3>Team 13 – Antennas to Heaven (2025)</h3>
+          <p>
+            We built a two stage rocket with one engine in each stage that 
+            fired sequentially. We carried the normal payload set and a camera 
+            procured separately.
+          </p>
         </div>
       </div>
 
       <div class="hof-item">
         <img
           src="{{ '/media/web-page-under-construction-2.png' | relative_url }}"
-          alt="Team 03 Rocket"
+          alt="Team 14 Rocket"
           class="hof-image"
         >
         <div class="hof-description">
-          <h3>Team XX – Team Name Here</h3>
-          <p>Short description of the team!</p>
+          <h3>Team 14 – Terminal Velocity (2025)</h3>
+          <p>
+              Pending description and picture
+          </p>
         </div>
       </div>
+      <button class="hof-arrow hof-prev">&#10094;</button>
+      <button class="hof-arrow hof-next">&#10095;</button>
     </div>
   </section>
   <section class="calendar-section">
@@ -373,16 +412,19 @@ toc: false
     // Hall of Fame rotation
     document.addEventListener('DOMContentLoaded', function() {
       var items = document.querySelectorAll('.hof-item');
-      if (!items.length) return;
-
       var index = 0;
-      items[index].classList.add('active');
 
-      setInterval(function() {
+      function showItem(newIndex){
         items[index].classList.remove('active');
-        index = (index + 1) % items.length;
+        index = (newIndex + items.length) % items.length;
         items[index].classList.add('active');
-      }, 1000); // change slide every 10 seconds
+      }
+      document.querySelector('.hof-prev').addEventListener('click', function() {
+        showItem(index - 1);
+      })
+      document.querySelector('.hof-next').addEventListener('click', function() {
+        showItem(index + 1);
+      })
     });
   </script>
 </body>
