@@ -6,7 +6,7 @@ latex: true
 # Lab 2b: Creating an Altium Schematic
 
 <div class="primer-spec-callout danger" markdown="1">
-Note: While it is okay to work next to someone else to accomplish this goal and to help each other with it, each person needs to work through this and provide their own screenshot.  Please do not work as a team and turn in the same screenshot.
+You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDIVIDUAL WORK**. Aside from hardware photos, all submitted content must be your original work and not copied from anyone else. Submissions that are not your own may result **IN POINT DEDUCTION OR A ZERO.**
 </div>
 
 - You can and should watch this HandsOnEngineering video on Altium: [Link to video](https://www.youtube.com/watch?v=9W7zGEHqjcg)
@@ -171,6 +171,10 @@ them.
 Later on, in lab 6 prelab, you will turn this schematic into a PCB!
 
 ## Submission
+
+<div class="primer-spec-callout danger" markdown="1">
+Reminder: You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDIVIDUAL WORK**. Aside from hardware photos, all submitted content must be your original work and not copied from anyone else. Submissions that are not your own may result **IN POINT DEDUCTION OR A ZERO.**
+</div>
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 

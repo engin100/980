@@ -5,6 +5,10 @@ latex: true
 
 # Lab 2: Iterative Numerical Analysis in a Computer
 
+<div class="primer-spec-callout danger" markdown="1">
+You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDIVIDUAL WORK**. Aside from hardware photos, all submitted content must be your original work and not copied from anyone else. Submissions that are not your own may result **IN POINT DEDUCTION OR A ZERO.**
+</div>
+
 ## Contents
 
 - [Lab 2: Iterative Numerical Analysis in a Computer](#lab-2-iterative-numerical-analysis-in-a-computer)
@@ -185,6 +189,10 @@ Domain: $$x = [1, 10]$$
 Exact area under the curve: $$(10\ln(10) - 9)$$ square units (use this expression for greater resolution in error calculations)
 
 ## Submission
+
+<div class="primer-spec-callout danger" markdown="1">
+Reminder: You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDIVIDUAL WORK**. Aside from hardware photos, all submitted content must be your original work and not copied from anyone else. Submissions that are not your own may result **IN POINT DEDUCTION OR A ZERO.**
+</div>
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 

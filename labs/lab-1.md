@@ -5,6 +5,10 @@ latex: true
 
 # Lab 1: Arduino 101
 
+<div class="primer-spec-callout danger" markdown="1">
+You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDIVIDUAL WORK**. Aside from hardware photos, all submitted content must be your original work and not copied from anyone else. Submissions that are not your own may result **IN POINT DEDUCTION OR A ZERO.**
+</div>
+
 ## Contents
 
 - [Lab 1: Arduino 101](#lab-1-arduino-101)
@@ -175,6 +179,10 @@ Hint: Resistors in series add together.  So, if you have three resistors that ar
 </div>
 
 ## Submission
+
+<div class="primer-spec-callout danger" markdown="1">
+Reminder: You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDIVIDUAL WORK**. Aside from hardware photos, all submitted content must be your original work and not copied from anyone else. Submissions that are not your own may result **IN POINT DEDUCTION OR A ZERO.**
+</div>
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
