@@ -63,6 +63,15 @@ In general, the digital pins are on one side (D2 - D13), and the analog pins are
 
 Finally, it's worth noting the GND pin. Voltage values are read with respect to some constant reference. They are relative, not absolute. This reference is usually called 'Ground.' There should ALWAYS be a ground connection on every circuit you make, whether you are using a micro-controller or not. This is essential when dealing with electricity, to make sure that things don't spark or get fried because they draw too much power.
 
+Before building any circuit, always sketch your design first. The components below are the essential ones you'll be working with most.
+
+![Circuit basic building blocks](../media/lab1/lab1_circuit.png){: .invert-colors-in-dark-mode }
+
+- **Resistor (RES)** — limits the flow of current in a circuit. Measured in ohms (Ω), resistors protect components from receiving too much current.
+- **Capacitor (CAP)** — stores and releases electrical energy. Capacitors are commonly used to smooth out voltage fluctuations or filter signals.
+- **Diode** — allows current to flow in only one direction. This makes diodes useful for protecting circuits from accidental reverse current. A special type of diode is the **LED** (Light Emitting Diode), which emits light when current flows through it. Like all diodes, LEDs are polarized — current must enter through the positive leg (anode) and exit through the negative leg (cathode), or the LED will not light up.
+- **Ground (GND)** — the common reference point (0V) for all voltage measurements in a circuit. Every circuit must have a ground connection.
+
 To illustrate, consider the simple LED circuit shown below, where a 5V supply powers a bulb, which is attached to GND. The two circuits shown are actually equivalent representations of the same thing. In the circuit on the left, the 5-volt battery raises the top half of the loop 5 volts higher than the bottom half. The bottom half of the loop is held at zero volts, since it is grounded. Current flows clockwise from the positive (top) to the negative (bottom) terminals of the battery.
 
 In the circuit on the right, the top node is held at 5V by some unseen source, and the bottom is held at 0V because it is grounded. The current flows down, into the grounded node. This representation works great if you want to analyze a fragment from a larger circuit.
