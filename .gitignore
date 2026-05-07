@@ -54,3 +54,9 @@ dkms.conf
 *.DS_Store
 *.Identifier
 
+# Locally rendered website
+_site
+
+# Other Jekyll files
+.sass-cache
+.jekyll-metadata

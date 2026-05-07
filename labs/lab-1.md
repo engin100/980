@@ -63,7 +63,7 @@ In general, the digital pins are on one side (D2 - D13), and the analog pins are
 
 Finally, it's worth noting the GND pin. Voltage values are read with respect to some constant reference. They are relative, not absolute. This reference is usually called 'Ground.' There should ALWAYS be a ground connection on every circuit you make, whether you are using a micro-controller or not. This is essential when dealing with electricity, to make sure that things don't spark or get fried because they draw too much power.
 
-Before building any circuit, always sketch your design first. The components below are the essential ones you'll be working with most.
+Before building any circuit, always sketch your design first. The components below are the essential ones you'll be working with most throughout this semester.
 
 ![Circuit basic building blocks](../media/lab1/lab1_circuit.png){: .invert-colors-in-dark-mode }
 
@@ -84,26 +84,55 @@ In the circuit on the right, the top node is held at 5V by some unseen source, a
 
 Before actually launching into the building of circuits, it's important to understand the tools that you are working with. Your breadboard will act as the "circuit board" on which you build your systems. Notice that it is organized by enumerated rows and columns.
 
-The pins of the electronic devices go into the holes in the breadboard. These holes are related to each other in that every row of 5, as defined on the board, are electrically connected. This means that if, for instance, you connect a 5V battery to a given hole, all of the holes in that row are raised to 5V. The Arduino Nano Every will supply 5V, so if you supply a given hole with 5V, all of the holes in that row will have 5V.
+The pins of your electronic devices plug into the holes on the breadboard. To use it effectively, you need to know which holes are electrically connected to each other — and just as importantly, which ones are *not*. The diagram below highlights the two types of connections inside the board:
+
+<img src="../media/lab1/Breadboard-Horizontal-Vertical.png" alt="Grounding circuit schematic example" style="max-width: 400px; width: 100%;">
+
+**Horizontal connections (red regions):** Inside each red region, the five holes in any given numbered row are electrically connected. For example, holes a1, b1, c1, d1, and e1 all share the same node — plug a wire into any one of them, and that signal is available at the other four. The same applies to f1 – j1, and so on for every numbered row.
+
+<div class="primer-spec-callout info" markdown="1">
+  **Note:** the left red region (columns a – e) and the right red region (columns f – j) are *not* connected to each other. The gap down the middle of the board separates them. So a1 and f1 are on different nodes, even though they sit on the same numbered row.
+</div>
+
+**Vertical connections (blue regions):** The four narrow strips along the outer edges, marked with "+" and "−", are the *power rails*. Every hole in a single "+" column is connected together along the entire length of the board, and the same is true for each "−" column. These rails make it easy to distribute power and ground around your circuit without running a separate wire from the Arduino to every component.
+
+<div class="primer-spec-callout info" markdown="1">
+  **Note:** the left "+" rail and the right "+" rail are separate nodes. They aren't automatically connected to each other - if you want both rails at the same voltage, you have to add a jumper wire between them yourself. The same goes for the two "−" rails. Usually for the "+" rails, you will have two different voltages, 5V and 3.3V as you will see later in the semester.
+</div>
+
+So in practice: if you connect the Arduino's 5V pin to any hole in one of the "+" rails, every other hole in that same rail is now at 5V. From there, a short jumper from the rail to any row gives that row 5V — much cleaner than running a dedicated wire from the Arduino for each component.
 
 [Here is a helpful video on breadboards](https://www.youtube.com/watch?v=fq6U5Y14oM4)
 
-Circuit elements are connected in breadboards by connecting the input pins of one device to the same row as the output pins of another device. In this way, devices can be chained together to create complex circuits. An example is shown below. This circuit is called a voltage divider, and consists of two resistors connected end to end. A formal circuit diagram of a voltage divider is shown later in this manual, and in [resources](\resources#voltage-divider).
+Circuit elements are connected in breadboards by placing their legs into holes that share the same row. In this way, devices can be chained together to create complex circuits. An example is shown below — a **voltage divider** made from two resistors connected end to end.
 
-![Voltage divider on a breadboard](../media/voltage-divider-breadboard.png)
+<img src="../media/lab1/Voltage-Div-Ex.png" alt="Voltage divider on a breadboard" style="max-width: 400px; width: 100%;">
 
-Your lab instructors will demonstrate using a breadboard before the lab begins. If you have questions about whether or not you are connecting devices appropriately, please don't hesitate to ask.
+Tracing the circuit in the image:
+- The **battery's positive terminal** connects to the right **+** power rail and there is also a red wire that goes to j1.
+- **R1** (top resistor) sits in column i. Its top leg is in row 1 and is in the same row as the red wire, so it receives the supply voltage.
+- **R2** (bottom resistor) sits in column g. Its bottom leg is in row 9 and is connected to the **−** rail by a black wire, giving it a path to ground.
+- The two resistors share row 5 — R1's bottom leg and R2's top leg are both in row 5, connecting them together. This shared node is the **output** of the voltage divider.
+- A **blue jumper wire** runs from that shared node (h5) to whatever component needs the divided voltage.
+
+A formal circuit diagram of a voltage divider is shown later in this manual, and in [resources](\resources#voltage-divider).
+
+<div class="primer-spec-callout info" markdown="1">
+  Your lab instructors will demonstrate using a breadboard before the lab begins. If you have questions about whether or not you are connecting devices appropriately, please don't hesitate to ask.
+</div>
 
 The image below shows the inner workings of a breadboard. Hopefully this demystifies the connections inside of the plastic housing for you.
 
 ![Breadboard Inner Workings](https://cdn.sparkfun.com/r/600-600/assets/3/d/f/a/9/518c0b34ce395fea62000002.jpg)
 
-1. [Check out the first half of this video.](https://www.youtube.com/watch?v=QM6EY0VEqBA)  This shows how to connect an LED to the 5V output pin of the Arduino, a resistor, and then to ground.  This circuit will work without any Arduino code at all and is a good test for the circuit board and powering the Arduino!  This is the circuit you will build in step 2.
+Inside the plastic housing, the breadboard is made up of metal clips that run in two directions, horizontal and vertical. When you push a component leg or wire into a hole, it presses against the metal clip inside, making contact with everything else connected to that same strip. No soldering needed — the friction hold is strong enough for prototyping.
 
-2. Build the LED circuit shown in the schematic below. When built, it should look similar to the voltage divider circuit in Fig. 3, except one of the resistors will now be an LED. Be aware that LEDs only turn on when placed in your circuit in the correct orientation. Try switching the orientation of your LED if it doesn't turn on after completing step 2.
+1. [Check out the first half of this video.](https://www.youtube.com/watch?v=QM6EY0VEqBA) (You may stop the video at 2:33) This shows how to connect an LED to the 5V output pin of the Arduino, a resistor, and then to ground.  This circuit will work without any Arduino code at all and is a good test for the circuit board and powering the Arduino!  This is the circuit you will build in step 2.
+
+2. Build the LED circuit shown in the schematic below. When built, it should look similar to the voltage divider circuit, except one of the resistors will now be an LED. Be aware that LEDs only turn on when placed in your circuit in the correct orientation. Try switching the orientation of your LED if it doesn't turn on after completing step 2.
 
     <div class="primer-spec-callout info" markdown="1">
-    **Hint:** one leg is longer than the other! Check the [references](/resources.md) page for more...
+    **Hint:** one leg is longer than the other! Check the [resources](/resources) page for more...
     </div>
     ![LED Circuit to build](/media/lab1-led-circuit.png){: .invert-colors-in-dark-mode }
     <div class="primer-spec-callout info" markdown="1">
@@ -125,20 +154,20 @@ Do not continue to the next section unless you can see your Arduino Nano Every a
 ### 2. LED Blink
 
 1. [Check out this video that walks you through how to do this part.](https://www.youtube.com/watch?v=vD98tOiiRws)
-2. Let's run our first code. Navigate to File → Examples → ENGR100-980 → Lab1-LED. A new window should open up, with some code on it. (Make sure to set the proper micro-controller and processor under the Tools menu). Upload and run the code, and observe what happens.
+2. Let's run our first code. Navigate to `File → Examples → ENGR100-980 → Lab1-LED`. A new window should open up, with some code on it. (Make sure to set the proper micro-controller and processor under the Tools menu). Upload and run the code, and observe what happens.
 3. Now, let's try making an external LED blink instead of the built-in one. To do this, connect your LED and resistor circuit's positive side to one of the digital pins on the Arduino. Make sure you modify the code such that `#define LED_PIN_0 ?` replaces "?" with the pin number you are plugged into. For example, D7 would replace "?" with "7".
 4. Once this works, we are going to connect 5 more LEDs all to different pins. Your goal here is to take your new knowledge about breadboards to connect all 6 of your LEDs to your breadboard while using only 1 resistor. (Each LED still needs to be connected through a resistor though!) Now edit the code, using the existing lines as context, to make all 6 LEDs (not the built-in LED) flash in a wave pattern (Knightrider).
 5. Upload this code and again observe that the same behavior happens, but this time on the external LED as well. Now, take a picture of your breadboard in its working state. This will be included in your submission later.
 
-<div class="primer-spec-callout danger" markdown="1">
-REMEMBER TO TAKE A PICTURE, YOU WILL BE SUBMITTING IT!
-</div>
+    <div class="primer-spec-callout danger" markdown="1">
+    REMEMBER TO TAKE A PICTURE, YOU WILL BE SUBMITTING IT!
+    </div>
 
 6. When someone around you is ready to help you with this step, unplug your Arduinos and breadboards from your computers and swap them with a neighbor. Each of you should move one wire on each other's circuit without the other person watching. Hand each others boards back and attempt to diagnose what the other person changed in your board. Take a picture of this new board state to include in your submission. Once you believe you have fixed the issue, consult your original photo to ensure everything is wired as it was. Now, plug the Arduino and breadboard back into your computer and verify the LED still flashes as expected.
 
-<div class="primer-spec-callout info" markdown="1">
-**Note:** If you are having trouble finding a partner, you do not need to swap with someone, simply having someone else change your board without you watching will suffice.
-</div>
+    <div class="primer-spec-callout info" markdown="1">
+    **Note:** If you are having trouble finding a partner, you do not need to swap with someone, simply having someone else change your board without you watching will suffice.
+    </div>
 
 <div class="primer-spec-callout danger" markdown="1">
 AGAIN, DON'T FORGET THE PICTURE FOR YOUR SUBMISSION.
