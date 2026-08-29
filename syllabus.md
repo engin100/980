@@ -3,7 +3,7 @@ layout: spec
 latex: true
 ---
 
-# Engineering 100-980 “Rocket Science” Fall 2025
+# Engineering 100-980 “Rocket Science” Fall 2026
 
 ## Course Overview
 
@@ -17,17 +17,15 @@ Engineering 100 is a team-based, project-based course. It is intended to provide
 
 ### Course Structure
 
-You enrolled in a course with lectures, a discussion, and a lab. Your discussion and lab together make up a three-hour block on Monday, Tuesday, or Wednesday, and attendance during this time is critical to course success. Your teams will be assigned from within the \~20 students of your discussion/lab section. Teams will complete some of their work during these slots, though you will likely also need to arrange some time on your own.
+You enrolled in a course with lectures, a discussion, and a lab. Your discussion and lab together make up a three-hour block on Tuesday, and attendance during this time is critical to course success. Your teams will be assigned from within the \~20 students of your discussion/lab section. Teams will complete some of their work during these slots, though you will likely also need to arrange some time on your own.
 
 | Class | Time | Location |
 | ----- | ---- | -------- |
-| **Lecture (980)** | TuTh 3:00-4:30p | 1017 DOW |
-| Lab (981) | W 3:30-5:30p | 1210 CSRB |
-| Discussion (982) | W 2:30-3:30p | 1012 EECS |
-| Lab (983) | Th 12:30-2:30p | 1210 CSRB |
-| Discussion (984) | Th 11:30-12:30p | 1012 EECS |
-| Lab (985) | W 12:30-2:30p | 1210 CSRB |
-| Discussion (986) | W 11:30a-12:30p | 1012 EECS |
+| **Lecture (980)** | MoWe 3:00-4:30p | 1050 FMCRB |
+| Lab (981) | Tu 3:30-5:30p | 1225 CSRB |
+| Discussion (982) | Tu 2:30-3:30p | 1012 EECS |
+| Lab (985) | Tu 12:30-2:30p | 1225 CSRB |
+| Discussion (986) | Tu 11:30a-12:30p | 1025 GGBL |
 
 ### Instructor Information
 
@@ -35,23 +33,20 @@ Here is contact information for all the course staff. If you have a question tha
 
 | Instructor | Contact  | Office Hours |
 | ---------- | -------- | ------------ |
-| **Dr. Chris Ruf** <br> Technical Lead  | <cruf@umich.edu> <br> 2527A CSRB | TBD |
-| **Dr. Alan Hogg** <br> Communication Instructor - Lead | <alanhogg@umich.edu> <br> 307 GFL (or zoom, scheduled through Slack/email) | TBD |
-| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) | Thursday from 1:30 to 2:30 pm in 305 GFL, Thursday 5-6 pm via Zoom (email to schedule) |
-| **Benjamen Miller** <br> Instructional Assistant | <benjamen@umich.edu> <br> 1210 CSRB | Wednesdays 5:30-7:30p |
-| **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB | Thursdays 5:30-7:30p |
-| **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB | Fridays 3:30-5:30p |
-| **Felix Foreman-Braunschweig** <br> Instructional Assistant | <felixfb@umich.edu> <br> 1210 CSRB | Mondays 5-7p |
+| **Dr. Ridley** <br> Technical Lead  | <ridley@umich.edu> <br> 1416 CSRB | TBD |
+| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) | TBD |
+| **Storey Huntley** <br> Instructional Assistant | <storeyh@umich.edu> <br> 1210 CSRB | TBD |
+| **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB | TBD |
+| **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB | TBD |
+| **Felix Foreman-Braunschweig** <br> Instructional Assistant | <felixfb@umich.edu> <br> 1210 CSRB | TBD |
 
 ### Office Hours
 
-Office hours are a chance to get to know the course staff, to get clarification on concepts presented in class, and get encouragement on homework and labs. Extensive office hours will be held throughout the semester. In person office hours are posted above.
+Office hours are a chance to get to know the course staff, to get clarification on concepts presented in class, and get encouragement on homework and labs. Extensive office hours will be held throughout the semester. In person office hours are listed above once scheduled.
 
-**For an up-to-date listing of office hours, always refer to the week’s agenda on Canvas.**
+**For an up-to-date listing of office hours, always refer to the course calendar below, also shown on the [course homepage]({{ '/' | relative_url }}).**
 
-There is a google calendar available [here,](https://calendar.google.com/calendar/embed?src=c_274bdbcc5302aa23df4e74c2f1aed12d3a3795f1cb34759cd8072a7c3d71f692%40group.calendar.google.com&ctz=America%2FNew_York) and shown below.
-
-<iframe src="https://calendar.google.com/calendar/embed?src=c_274bdbcc5302aa23df4e74c2f1aed12d3a3795f1cb34759cd8072a7c3d71f692%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## Canvas & Course Resources
 

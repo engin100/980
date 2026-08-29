@@ -20,7 +20,7 @@ latex: true
 
 - First page of a memo (heading/foreword/summary) advising management about which size parachute your team thinks will work best for a total payload of about 6 oz. This is an individual assignment, even though the lab works as teams.
 
-  - You are writing to Dr. Ruf & Dr. Hogg or Dr. Greenspan.
+  - You are writing to Dr. Ridley & Dr. Greenspan.
 
   - Your foreword should set up what you are doing and why it is important for the project work to come.
 

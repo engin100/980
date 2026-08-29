@@ -60,3 +60,7 @@ _site
 # Other Jekyll files
 .sass-cache
 .jekyll-metadata
+
+# Claude Code
+CLAUDE.md
+.claude/
