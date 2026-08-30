@@ -1,0 +1,105 @@
+<style>
+  .navbar {
+    background-color: #00274C;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+  }
+  .navbar img.logo {
+    height: 30px;
+    margin-left: 10px;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar a {
+    display: block;
+    color: #FFCB05;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .home-link {
+    display: none;
+  }
+  .navbar li:hover > a {
+    background-color: #001d38;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00274C;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown-content li {
+    width: 100%;
+  }
+  .dropdown-content a {
+    padding: 12px 16px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: row;
+      align-items: center;
+    }
+    .navbar img.logo {
+      display: none;
+    }
+    .nav-links {
+      flex-direction: row;
+      width: auto;
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .navbar li {
+      width: auto;
+    }
+    .navbar a {
+      padding: 10px;
+    }
+    .home-link {
+      display: block;
+    }
+    .dropdown-content {
+      display: none;
+    }
+  }
+</style>
+
+<nav class="navbar">
+  <a class="logo-link" href="{{ '/' | relative_url }}">
+    <img class="logo" src="{{ '/media/umich-coe3.png' | relative_url }}" alt="University of Michigan, College of Engineering">
+  </a>
+  <ul class="nav-links">
+    <li><a href="{{ '/syllabus' | relative_url }}">Syllabus</a></li>
+    <li><a href="{{ '/labs/' | relative_url }}">Labs</a></li>
+    <li><a href="{{ '/tech-comm/' | relative_url }}">Tech Comm</a></li>
+    <li><a href="{{ '/project/project' | relative_url }}">Project</a></li>
+    <li><a href="{{ '/project/sensor-board' | relative_url }}">Sensor Board Spec</a></li>
+    <li><a href="{{ '/staff' | relative_url }}">Staff</a></li>
+    {% comment %} Restore closer to launch day.
+    <li><a href="{{ '/launch-day/logistics' | relative_url }}">Launch Logistics</a></li>
+    {% endcomment %}
+    {% unless page.url == '/' %}
+    <li class="home-link"><a href="{{ '/' | relative_url }}">Home</a></li>
+    {% endunless %}
+  </ul>
+</nav>
