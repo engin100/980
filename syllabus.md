@@ -19,6 +19,8 @@ Engineering 100 is a team-based, project-based course. It is intended to provide
 
 You enrolled in a course with lectures, a discussion, and a lab. Your discussion and lab together make up a three-hour block on Tuesday, and attendance during this time is critical to course success. Your teams will be assigned from within the \~20 students of your discussion/lab section. Teams will complete some of their work during these slots, though you will likely also need to arrange some time on your own.
 
+
+
 | Class | Time | Location |
 | ----- | ---- | -------- |
 | **Lecture (980)** | MoWe 3:00-4:30p | 1050 FMCRB |
@@ -31,20 +33,24 @@ You enrolled in a course with lectures, a discussion, and a lab. Your discussion
 
 Here is contact information for all the course staff. If you have a question that might be relevant to others, **please use the course Slack workspace first**. Otherwise, please do email us with any questions or concerns that you have about class. We’re very happy to set up one-on-one meetings.
 
-| Instructor | Contact  | Office Hours |
-| ---------- | -------- | ------------ |
-| **Dr. Ridley** <br> Technical Lead  | <ridley@umich.edu> <br> 1416 CSRB | TBD |
-| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) | TBD |
-| **Storey Huntley** <br> Instructional Assistant | <storeyh@umich.edu> <br> 1210 CSRB | TBD |
-| **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB | TBD |
-| **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB | TBD |
-| **Felix Foreman-Braunschweig** <br> Instructional Assistant | <felixfb@umich.edu> <br> 1210 CSRB | TBD |
+| Instructor | Contact  |
+| ---------- | -------- |
+| **Dr. Ridley** <br> Technical Lead  | <ridley@umich.edu> <br> 1416 CSRB |
+| **Dr. David Greenspan** <br> Communication Instructor - Lead | <davidgrs@umich.edu> <br> 305 GFL (or zoom, scheduled through Slack/email) |
+| **Storey Huntley** <br> Instructional Assistant | <storeyh@umich.edu> <br> 1210 CSRB |
+| **Zian (Sam) Ren** <br> Instructional Assistant | <zianren@umich.edu> <br> 1210 CSRB |
+| **Ismael Enriquez** <br> Instructional Assistant | <ismaenri@umich.edu> <br> 1210 CSRB |
+| **Felix Foreman-Braunschweig** <br> Instructional Assistant | <felixfb@umich.edu> <br> 1210 CSRB | 
 
 ### Office Hours
 
-Office hours are a chance to get to know the course staff, to get clarification on concepts presented in class, and get encouragement on homework and labs. Extensive office hours will be held throughout the semester. In person office hours are listed above once scheduled.
+Office hours are a chance to get to know the course staff, to get clarification on concepts presented in class, and get encouragement on homework and labs. Extensive office hours will be held throughout the semester.
 
 **For an up-to-date listing of office hours, always refer to the course calendar below, also shown on the [course homepage]({{ '/' | relative_url }}).**
+
+<div class="primer-spec-callout warning" markdown="1">
+**Office hours may change at any point but it will always be communicated through Slack and the calendar, so make sure to check before going to office hours!**
+</div>
 
 <iframe src="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
