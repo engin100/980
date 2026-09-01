@@ -206,6 +206,10 @@ The concept of the voltage divider can be extended to any number of resistors. T
   - You can convert the raw output from `analogRead()` into voltage values by multiplying by $$\frac{5}{1023}$$.
   - You will learn why in lab 3! Try it and see if it works.
 
+    <div class="primer-spec-callout danger" markdown="1">
+    REMEMBER TO TAKE A PICTURE, YOU WILL BE SUBMITTING IT!
+    </div>
+
 ## Post-Lab Questions
 
 1. Write a short explanation of what your peer changed on your breadboard and why you think this would cause it to not work as normal (or, why you think their change would not have impacted anything).
@@ -226,6 +230,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 - [ ] A picture of your breadboard with an external LED on it being lit up while plugged into an Arduino. (You'll receive full points for submitting this. We will simply be using it to give feedback on color coding in preparation for stricter grading in later labs.)
 - [ ] A photo of your breadboard (unplugged from your computer) in its broken state.
+- [ ] A photo of the voltage divider circuit you made in class
 - [ ] Written post-lab answers for questions 1-3.
 - [ ] 2 circuit diagrams (i.e., schematics) in total for post-lab questions 2 and 3.
 
