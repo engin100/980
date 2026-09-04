@@ -21,7 +21,7 @@ Learning how to become an Excel (or Google Sheets) wiz to manipulate and integra
 
 ### Lab 2b: Creating an KiCad Schematic
 
-Learning how to produce a PCB schematic in Altium, in preparation for later labs.
+Learning how to produce a PCB schematic in KiCad, in preparation for later labs.
 
 [Link to lab 2b](/labs/lab-2b)
 
