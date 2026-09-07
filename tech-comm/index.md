@@ -13,13 +13,13 @@ Write a paragraph recounting a communication misunderstanding, using a clear top
 
 [Link to Tech Comm HW 1](/tech-comm/tech-comm-hw-1)
 
-<!--
-
 ## Tech Comm Assignment #2
 
 Write a claim-and-evidence paragraph summarizing a research article on science, engineering, or space.
 
 [Link to Tech Comm HW 2](/tech-comm/tech-comm-hw-2)
+
+<!--
 
 ## Tech Comm Assignment #3
 
