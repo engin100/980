@@ -23,8 +23,8 @@ Walk-throughs on common issues or installations.
     - [Connecting to an Arduino](#connecting-to-an-arduino)
     - [Uploading Code](#uploading-code)
     - [Viewing Arduino Output](#viewing-arduino-output)
-  - [Altium Student License](#altium-student-license)
-  - [Problems with Altium](#problems-with-altium)
+  - [KiCad Install](#kicad-install)
+  - [KiCad Net Labels and Power Labels](#kicad-net-labels-and-power-labels)
   - [Installing VMware](#installing-vmware)
 
 ## Arduino IDE Install
@@ -145,41 +145,56 @@ Arduinos have 2 main ways of interfacing and displaying data on your computer. T
 
 Both of these connections only work when an Arduino is plugged in and the port is specified correctly. Additionally, you will need to confirm that the baud rate - the speed at which the Arduino and your computer agree to exchange data at - is set the same for both your computer and your Arduino. This is configurable from Serial Monitor in the top right hand corner of the console in the bottom of your screen. The default for most instances is 9600 baud.
 
-## Altium Student License
+## KiCad Install
 
-Altium licenses are no longer automatically provided to all students. All University Altium licenses will be tied to individual Altium accounts. The process for getting one of these accounts can take a day or two (business days) so we strongly recommend you set up your Altium account now before you need it to run Altium.
+<div class="primer-spec-callout info" markdown="1">
+The first link below is to the download page hosted by KiCad. Feel free to use this option to download the latest release. The links listed below that option are direct downloads for the different operating systems with the most current release as of January 12, 2026 (version 9.0.7).
+</div>
 
-1. Go this page: [https://www.altium.com/education/students](https://www.altium.com/education/students) and click "Enroll for Free."
-   - You will eventually need to log in using your university credentials and be required to submit documentation proving you are a student. Submit a picture of your MCard, front and back, for this step.
+To use the general download page, pick your operating system and then choose the North America GitHub download option:
+[https://www.kicad.org/download/](https://www.kicad.org/download/)
 
-2. When your application gets approved and activated, you should have an Altium Education account. Unfortunately, this is not the same as the actual Altium software account. The password for the education account will not allow you to run Altium Designer. You should at this point, however, also receive the correct Altium account but this step is often buggy.
+Direct download links for version 9.0.7:
 
-3. Assuming you didn't get an email to set up the Altium software account/password, go to this page: [https://auth.altium.com/?ReturnUrl=https://www.altium.com/](https://auth.altium.com/?ReturnUrl=https://www.altium.com/) and either click "forgot password" or utilize the Google log in on the bottom left.
+- Windows x64 (9.0.7): [https://github.com/KiCad/kicad-source-mirror/releases/download/9.0.7/kicad-9.0.7-x86_64.exe](https://github.com/KiCad/kicad-source-mirror/releases/download/9.0.7/kicad-9.0.7-x86_64.exe)
+- Windows ARM64 (9.0.7): [https://github.com/KiCad/kicad-source-mirror/releases/download/9.0.7/kicad-9.0.7-arm64.exe](https://github.com/KiCad/kicad-source-mirror/releases/download/9.0.7/kicad-9.0.7-arm64.exe)
+- macOS universal (9.0.7): [https://github.com/KiCad/kicad-source-mirror/releases/download/9.0.7/kicad-unified-universal-9.0.7.dmg](https://github.com/KiCad/kicad-source-mirror/releases/download/9.0.7/kicad-unified-universal-9.0.7.dmg)
 
-![](/media/altium_tutorial_figures/image.PNG)
+## KiCad Net Labels and Power Labels
 
-4. With the Altium account you can now log in to Altium Designer to obtain a license. You can also download and install Altium on your own machine if you desire.
+The schematic editor is essentially a connection guide for the PCB editor that comes later. Wires (the green lines) show direct connections, while **net labels** create the same underlying electrical connection without drawing the wire across the page. This keeps schematics clean and readable while still telling KiCad exactly how every pin must connect.
 
-5. When you run Altium and the old license doesn't work, you will see a license page. Click sign in and either use the Google G button or the Altium username and password from step 3.
+Net labels may be useful when:
+- The same signal appears in multiple places (for example, `GND`, `VCC`, `3V3`, `MOSI`, `MISO`, `SCK`).
+- A connection would require long, messy wires that criss-cross the page.
+- You want repeated or standard connections to look consistent and easy to trace.
+- You are connecting across sheets (global or hierarchical labels).
 
-![](/media/altium_tutorial_figures/image%202.PNG)
+Use wires when:
+- The connection is local and short.
+- The wire itself helps communicate the flow of the circuit (e.g., a simple resistor-divider or op-amp feedback loop).
 
-6. Now select the Altium license and click "use" (or right click on the license and choose "use").
+### How net labels work
+- Any wires (or pins) that share **the exact same net label text** are connected electrically, even if there is no green wire drawn between them.
+- A net can only have one name. If you place multiple different labels on the same net, KiCad will flag it in ERC.
+- Labels have scope: **local labels** connect within a sheet, **global labels** connect across the entire schematic, and **hierarchical labels** connect between parent and child sheets in a hierarchical design.
 
-![](/media/altium_tutorial_figures/image%203.PNG)
+### Power labels (power symbols)
+Power labels are specialized net labels that use power symbols (like `GND`, `VCC`, `+5V`, `+3V3`). They behave like **global labels**: any matching power symbol connects to the same net everywhere in the project. This is why you can place `GND` symbols all over a schematic without drawing wires between them.
 
-7. You should now be licensed in Altium and see something like this.
+### How to place a net label
+1. Click the **Net Label** tool (right toolbar) for same-sheet connections.
+2. Click on a wire end (or directly on a wire) and type the net name.
+3. Place the same label anywhere else that net should connect.
 
-![](/media/altium_tutorial_figures/image%204.PNG)
+Tip: the tiny square at the edge of a label shows the connection point. When it is snapped to a wire, the square disappears.
 
-## Problems with Altium
+### Examples (photos)
+Below are screenshots showing where the buttons are located for net labels
 
-Some common issues on Altium results from a previous work session not being shut down properly. An error displaying "License Renewal Failed" would show up in the Altium window. To address this issue, please go through the following links/resources.
+![Net Labels Button](/media/net%20labels.png)
 
-[https://www.altium.com/documentation/altium-designer/license-management#roaming-an-on-demand-license]( https://www.altium.com/documentation/altium-designer/license-management#roaming-an-on-demand-license)
-
-[https://www.altium.com/documentation/knowledge-base/altium-designer/cannot-use-an-on-demand-license-as-the-seat-is-occupied](https://www.altium.com/documentation/knowledge-base/altium-designer/cannot-use-an-on-demand-license-as-the-seat-is-occupied)
-
+![Power Symbols](/media/power%20symbols.png)
 
 ## Installing VMware
 The Windows Remote Desktop Service allows eligible individuals at Michigan Engineering to remotely access the CAEN Lab Software Environment (CLSE) for Windows. It is intended to provide the same experience as being in a CAEN computer lab.

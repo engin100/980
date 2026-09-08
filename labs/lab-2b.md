@@ -30,7 +30,7 @@ You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDI
 
 For this lab, you will need:
 
-- [ ] KiCAD properly [installed](https://950.engr100.org/tutorials#kicad-install).
+- [ ] KiCAD properly [installed](/tutorials.md#kicad-install).
 - [ ] You can, and should watch this HandsOnEngineering video on KiCAD: [Link to video](https://www.youtube.com/watch?v=N5ABkj99-lc)
 
 <!--
