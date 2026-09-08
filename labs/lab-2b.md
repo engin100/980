@@ -30,7 +30,6 @@ You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDI
 
 For this lab, you will need:
 
-- [ ] A computer running [UofM Omnissa Horizon Client](https://950.engr100.org/tutorials#installing-omnissa-horizon-client) to access KiCAD software.
 - [ ] KiCAD properly [installed](https://950.engr100.org/tutorials#kicad-install).
 - [ ] You can, and should watch this HandsOnEngineering video on KiCAD: [Link to video](https://www.youtube.com/watch?v=N5ABkj99-lc)
 
@@ -133,10 +132,6 @@ them.
 3. Select PDF as the output format, and click on Plot All Pages
 4. Make sure the output messages box say done and plotted to a location
 5. Double check that the PDF is now in your files
-
-## Schematic to PCB
-
-Later on, in lab 6 prelab, you will turn this schematic into a PCB! The instructions to do so can be found [here](/labs/lab-6-prelab).
 
 ## Submission
 
