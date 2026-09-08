@@ -11,7 +11,7 @@ You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDI
 
 ## Contents
 
-- [Lab 1b: Creating a KiCad Schematic](#lab-1b-creating-a-kicad-schematic)
+- [Lab 2b: Creating a KiCad Schematic](#lab-2b-creating-a-kicad-schematic)
     - [Contents](#contents)
     - [Resources](#resources)
     - [Getting Started](#getting-started)
@@ -30,7 +30,7 @@ You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDI
 
 For this lab, you will need:
 
-- [ ] KiCAD properly [installed](/tutorials.md#kicad-install).
+- [ ] KiCAD properly [installed](https://980.engr100.org/tutorials#kicad-install).
 - [ ] You can, and should watch this HandsOnEngineering video on KiCAD: [Link to video](https://www.youtube.com/watch?v=N5ABkj99-lc)
 
 <!--
