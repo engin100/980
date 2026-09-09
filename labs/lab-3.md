@@ -164,11 +164,13 @@ You must show all of your work for all questions to earn full credit
 2. What would the voltage be (based on your own calibration curve) if it output a temperature of 6°C?
 3. What **raw digital value** would your Arduino be reading in for a voltage of 0V? 2.5V? 5V? If you are stuck on this, try re-reading the section about [how analog to digital converters (ADCs) work](#how-analog-to-digital-converters-adcs-work) and try working backwards through the Arduino code. The `analogRead()` function is what actually returns the raw value, so if you know the voltage, could you re-arrange the equation given in the starter code to solve for the raw digital value?
 
+<!--
 ## Memo
 
 In addition to the pdf you will create as detailed in the submission below, you will also be writing a memo for this lab.
 
 For details about the memo, [see the Canvas assignment](https://umich.instructure.com/courses/777414/assignments/2769874).
+-->
 
 ## Submission
 
@@ -192,7 +194,9 @@ To put said content into a PDF, it is suggested you create a new Google Doc and 
 Submitting anything other than a single PDF may result in your work not being graded or your scores being heavily delayed.
 </div>
 
+<!--
 **Separately**:
 
 - [ ] Also upload your memo as a PDF to the Memo 1 - Temperature Sensing assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab.
 
+-->
