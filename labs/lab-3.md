@@ -27,8 +27,7 @@ You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDI
     - [7. Modifying the Code](#7-modifying-the-code)
     - [8. Freezer Test](#8-freezer-test)
   - [Post-Lab Questions](#post-lab-questions)
-  - [Schematic Tips](#schematic-tips)
-  - [Memo](#memo)
+  - [Schematic](#schematic)
   - [Submission](#submission)
 
 ## Materials
