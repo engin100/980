@@ -25,6 +25,7 @@ Walk-throughs on common issues or installations.
     - [Viewing Arduino Output](#viewing-arduino-output)
   - [KiCad Install](#kicad-install)
   - [KiCad Net Labels and Power Labels](#kicad-net-labels-and-power-labels)
+  - [Importing Symbols and Footprints into KiCAD](#importing-symbols-and-footprints-into-kicad)
   - [Installing VMware](#installing-vmware)
 
 ## Arduino IDE Install
@@ -195,6 +196,36 @@ Below are screenshots showing where the buttons are located for net labels
 ![Net Labels Button](/media/net%20labels.png)
 
 ![Power Symbols](/media/power%20symbols.png)
+
+## Importing Symbols and Footprints into KiCAD
+
+### Import Symbols
+-Using the *.kicad_sym file:
+
+-Extract the content of the downloaded *.zip file.
+-In KiCad, go to Preferences.
+-Click on Manage Symbol Libraries.
+-On the Global Libraries tab, click on Browse Libraries (the small folder icon)
+-Select the .kicad_sym file, then click Open.
+-The library will appear, click OK.
+-Click on Symbol Editor.
+-Type on the filter search field, and navigate to the symbol you imported.
+-Double-click over it to open the file.
+
+### Import Footprints
+-Using the *.kicad_mod file:
+
+-Extract the content of the downloaded *.zip file.
+-In KiCad, go to Preferences.
+-Click on Manage Footprint Libraries.
+-On the Global Libraries tab, click on Browse Libraries (the small folder icon)
+-Navigate to the Folder where the .kicad_mod file is located. Then click Select Folder.
+-Note: You will not normally see the .kicad_mod file on this step because you need to select the folder where it is located.
+
+-The library will appear, click OK.
+-Click on Footprint Editor.
+-Type on the filter search field, and navigate to the footprint you imported.
+-Double-click over it to open the file.
 
 ## Installing VMware
 The Windows Remote Desktop Service allows eligible individuals at Michigan Engineering to remotely access the CAEN Lab Software Environment (CLSE) for Windows. It is intended to provide the same experience as being in a CAEN computer lab.
