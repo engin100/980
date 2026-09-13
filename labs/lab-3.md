@@ -39,8 +39,8 @@ You should work on this assignment in pairs, but you must **SUBMIT YOUR OWN INDI
 - [ ] 1 BME680 Digital Sensor
 - [ ] A handful of jumper wires
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
-- [ ] KiCad [installed](/tutorials#kicad-install)
-- [ ] BME680 and TMP36 KiCad [symbols](https://drive.google.com/drive/folders/1nf7gW98DLbIMlhNs1pC0pqOG59n_sK79?usp=sharing)
+- [ ] KiCAD [installed](/tutorials#kicad-install)
+- [ ] ENGR100 KiCAD Library [Library](https://drive.google.com/drive/folders/1Q-wHqaKj7w7wq1GUlMQrJVHRTt22oBnl?usp=sharing)
 - [ ] The following list of symbols to use in your schematic:
 
 ![Symbols to use in the Lab 3 schematic](/media/list-of-footprints-lab3.png)
