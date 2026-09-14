@@ -23,7 +23,7 @@ Your task is to find one figure and one table, write captions for each, write on
 
 Your visuals must be effectively formatted, e.g. reduce cognitive load by having a caption, following best practices discussed in lecture and discussion, having a citation if necessary.
 
-The paragraphs that you write must make a claim and use evidence to support that claim. I encourage you to use the PEEL method to make sure your paragraphs are structured correctly.
+The paragraphs that you write must make a claim and use evidence to support that claim. I recommend writing each paragraph about what you did in lab to get the particular visual. Remember to include an introduction for each visual within your paragraph and before the visual. I encourage you to use the PEEL method to make sure your paragraphs are structured correctly. 
 
 Your visuals must be effectively integrated into your document.
 
