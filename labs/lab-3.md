@@ -233,6 +233,8 @@ You must show all of your work for all questions to earn full credit
 
 Create a KiCad schematic of the complete Lab 3 circuit, including the Arduino Nano Every, BME680, and TMP36. Use the specific component symbols listed in the Materials section rather than generic substitutes. Refer back to [Lab 2b](/labs/lab-2b) for schematic construction guidance.
 
+Refer to this guide for importing libraries into KiCAD [Link](/https://980.engr100.org/tutorials#importing-symbols-and-footprints-into-kicad)
+
 The BME680 and TMP36 symbols are not included in KiCad's default libraries, so import the provided symbol files before placing them in your schematic. Pay attention to power, ground, signal names, and the BME680's SPI connections.
 
 <!--
