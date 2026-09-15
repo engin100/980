@@ -200,6 +200,11 @@ Finally, tell the Arduino to print the calibrated `tempC` variable instead of th
 
 Run your code again and look at the Serial Monitor. You should now see two temperature values: the calibrated TMP36 temperature and the BME680 temperature. They should roughly match. If they do, move on to the next step.
 
+<div class="primer-spec-callout danger" markdown="1">
+**Once you have verified everything works as intended, take a picture of your completed breadboard for submission**
+</div> 
+
+
 ### 8. Freezer Test
 
 You are now ready to record the temperature change as the sensors cool in the lab freezer. Start by opening the Serial Plotter:
