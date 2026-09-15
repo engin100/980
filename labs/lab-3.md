@@ -96,7 +96,11 @@ Because the BME680 is a digital sensor, it connects to digital pins instead of a
 
 ### 1. Wiring the BME680
 
-In engineering practice, there will not always be a tutorial showing exactly how to wire every component. Instead of providing a wiring diagram, use the [BME680 technical guide; its SPI wiring information is on page 12](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas.pdf).
+In engineering practice, there will not always be a tutorial showing exactly how to wire
+every component. Instead of providing a wiring diagram, use the [BME680 technical guide;
+its SPI wiring information is on page
+12](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas.pdf).
+Only use this datasheet for wiring information, do NOT use Adafruit's BME680 example code.
 
 <div class="primer-spec-callout info" markdown="1">
 Also follow the guide's *Install Adafruit_BME680 library* instructions before continuing.
@@ -233,7 +237,7 @@ You must show all of your work for all questions to earn full credit
 
 Create a KiCad schematic of the complete Lab 3 circuit, including the Arduino Nano Every, BME680, and TMP36. Use the specific component symbols listed in the Materials section rather than generic substitutes. Refer back to [Lab 2b](/labs/lab-2b) for schematic construction guidance.
 
-Refer to this guide for importing libraries into KiCAD [Link](/https://980.engr100.org/tutorials#importing-symbols-and-footprints-into-kicad)
+Refer to this guide for importing libraries into KiCAD [Link](/tutorials#importing-symbols-and-footprints-into-kicad)
 
 The BME680 and TMP36 symbols are not included in KiCad's default libraries, so import the provided symbol files before placing them in your schematic. Pay attention to power, ground, signal names, and the BME680's SPI connections.
 
