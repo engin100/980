@@ -211,7 +211,7 @@ Run your code again and look at the Serial Monitor. You should now see two tempe
 
 ### 8. Freezer Test
 
-You are now ready to record the temperature change as the sensors cool in the lab freezer. Start by opening the Serial Plotter:
+You are now ready to record the temperature change as the sensors cool in the lab freezer. Start by opening the Serial Monitor:
 
 <div class="primer-spec-callout danger" markdown="1">
 Before continuing, verify that **every value shown in the Serial Plotter is a temperature in degrees Celsius (°C)**. The plot should not contain voltage or raw sensor values.
@@ -259,7 +259,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 - [ ] A **screenshot** of your calibration curve spreadsheet.
 - [ ] Your data table of room-temperature and freezer temperatures and voltages.
-- [ ] A screenshot of your Arduino IDE's Serial Plotter output showing the temperature changing and stabilizing in the lab freezer.
+- [ ] A screenshot of your Arduino IDE's Serial Monitor output showing the temperature changing and stabilizing in the lab freezer.
 - [ ] Answers (and any work you may have) to the post-lab questions.
 - [ ] Photo of completed breadboard circuit. 
 - [ ] A **screenshot** of the complete temperature-sensing schematic in KiCad.
