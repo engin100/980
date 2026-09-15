@@ -200,7 +200,7 @@ Now we are ready to change the Arduino's code so that instead of printing a volt
 
 To do this, there are some commented out lines that define `slope`, `intercept`, and `tempC`. You need to now uncomment those lines (by removing the leading slashes), and update their values to whatever values you got in the previous procedure step.
 
-Finally, tell the Arduino to print the calibrated `tempC` variable instead of the uncalibrated `voltage`. In the line that builds `dataString`, change `dataString += String(voltage);` to `dataString += String(tempC);`.
+Finally, tell the Arduino to print the calibrated `tempC` variable instead of the uncalibrated `voltage`.
 
 Run your code again and look at the Serial Monitor. You should now see two temperature values: the calibrated TMP36 temperature and the BME680 temperature. They should roughly match. If they do, move on to the next step.
 
