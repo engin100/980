@@ -19,13 +19,13 @@ Write a claim-and-evidence paragraph summarizing a research article on science, 
 
 [Link to Tech Comm HW 2](/tech-comm/tech-comm-hw-2)
 
-<!--
-
 ## Tech Comm Assignment #3
 
 Select and integrate a figure and a table into your writing, with captions and supporting paragraphs.
 
 [Link to Tech Comm HW 3](/tech-comm/tech-comm-hw-3)
+
+<!--
 
 ## Team Contract
 
