@@ -43,19 +43,19 @@ latex: true
 
 ## Introduction
 
-By the end of this lab, you will have re-built your circuit from lab 4, and added a 4-in-1 digital sensor, as well as made calibration curves for your accelerometer.
+By the end of this lab, you will have added the BME680 digital sensor from Lab 3 to your circuit from Lab 4, as well as made calibration curves for your accelerometer.
 
-Most of the time involved in this lab will be re-wiring what you have previously built, adapting your code to support the new digital sensor, as well as working on calibrating your accelerometer.
+Most of the time involved in this lab will be adding the BME680 to your Lab 4 circuit and code, as well as working on calibrating your accelerometer.
 
 What this means for you is that we are slowly going to start making our instructions increasingly vague. By this point you should know how to wire up an analog sensor to your Arduino and how to find and run starter code.
 
 ### BME680 4-in-1 Digital Sensor
 
-The BME680 is a digital sensor that measures temperature, humidity, pressure, and VOC gases. VOC stands for Volitile Organic Compound, think organic solvents like alcohols and paint stripper. The pressure data from this sensor can be used to calculate your altitude since atmospheric pressure decreases with altitude.
+You already used the BME680 in [Lab 3](/labs/lab-3) as the reference for calibrating your TMP36. As a reminder, it measures temperature, humidity, pressure, and VOC gases, and its pressure data can be used to calculate your altitude since atmospheric pressure decreases with altitude.
 
 You will be using this sensor for all sensing besides acceleration from this lab onwards so it will be important to get familiar with it.
 
-This is a digital sensor, which means that instead of connecting it to an analog pin on your Arduino and reading the raw voltage, it will connect in an almost identical way to the SD logger from lab 4. This also means that you will not need to calibrate this sensor, since you will be reading a direct measurement from it and not voltage.
+Like the MicroSD Card Adapter Module from Lab 4, the BME680 communicates over SPI, so it connects to your Arduino in almost the same way. Since it reports measurements in physical units instead of a voltage, you will not need to calibrate it.
 
 ### Accelerometer
 
@@ -67,13 +67,13 @@ In this lab you will continue to use the accelerometer, this time calibrating it
 
 As mentioned in the introduction, this lab is not going to give you nearly as detailed of instructions as previous labs have. Use your resources and refer to previous labs or references as needed if you are stuck on something!
 
-To start, we are going to re-wire the same setup that you had last lab. You should end up with a voltage divider and an accelerometer connected to your Arduino, which is powered via a 9V battery.
+To start, grab your assembled circuit from Lab 4. You should have a voltage divider, an accelerometer, and a MicroSD Card Adapter Module connected to your Arduino, which is powered via a 9V battery. If anything came loose, re-wire it before moving on.
 
 <div class="primer-spec-callout danger" markdown="1">
 Remember that the accelerometer sensor takes 3.3V input, not 5V. Plugging it into 5V can break the sensor or cause other bad and unintended things to happen!
 </div>
 
-Then plug your Arduino onto your breadboard and hook it up to your computer. These next 2 steps will have you doing calibrations on your accelerometer, meaning we will be reading analog values over Serial. Was there a lab (maybe lab 3...) where we had start code to do exactly this that you could repurpose?
+Then hook your Arduino up to your computer. These next 2 steps will have you doing calibrations on your accelerometer, meaning we will be reading analog values over Serial. Was there a lab (maybe lab 3...) where we had start code to do exactly this that you could repurpose?
 
 <div class="primer-spec-callout info" markdown="1">
 **Note:** Later in this lab we will ask for a picture of your finished circuit. Part of the requirements for this circuit are that one side of your breadboard's power rail is for 5V, one is for 3.3V, and both sides should have common ground. Additionally it is required that all power is routed with red jumper cables, all ground with black, and all data with other colors.
@@ -99,18 +99,18 @@ Include your data table for all 3 axes, and your spreadsheet for the calibration
 
 ### 3. Connecting The BME680
 
-As noted above, the BME680 connects to the Arduino using the same pins as the SD logger. This is ok to do since they both use a protocol called SPI. This is a very common protocol used to connect different digital chips together. SPI uses 3 pins to transfer data, and 1 pin to select which chip to communicate with, called chip select (CS for short). This chip select pin tells the device (the SD logger or BME680) to either pay attention to the 3 data pins, or ignore them. Both the SD logger and the BME680 will connect the 3 data pins to the same 3 pins on the Arduino, however the chip select pin for the BME680 will not connect to the same pin as the chip select pin on the SD logger, it will instead connect to a different digital pin on the Arduino. The goal is for the Arduino to be able to "select" which chip it wants to communicate using the chip select pins.
+As noted above, the BME680 connects to the Arduino using the same SPI pins as the MicroSD Card Adapter Module. As you learned in Lab 4, both devices share the 3 SPI data pins (11, 12, and 13), but each one needs its **own** chip select (CS) pin so the Arduino can choose which device it is talking to.
 
-In the real world of electrical and computer engineering, there most likely won't always be a tutorial to hold your hand and tell you how to wire up a component. As such, instead of *showing you* exactly how to wire up your BME680, [here are the sensor's technical specs, which include wiring information on **page 12**](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas.pdf). 
+Wire the BME680 the same way you did in [Lab 3](/labs/lab-3). If you need a refresher, [the sensor's technical guide has wiring information on **page 12**](https://cdn-learn.adafruit.com/downloads/pdf/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas.pdf).
 <div class="primer-spec-callout danger" markdown="1">
-Remember that while you can connect the CS pin on both the SD logger and the BME680 to any Arduino digital pins, they should **NOT** connect to the same pin. 
+The MicroSD Card Adapter Module and the BME680 should **NOT** connect their CS pins to the same Arduino pin. The MicroSD module uses pin 10, so if you used pin 10 for the BME680's CS in Lab 3, move it to a different digital pin and update `BMEchipSelect` in your code to match.
 </div>
 
 ### 4. Modifying The Code
 
 Modify either your code or the code given for the previous lab to add your new sensor to the csv the Arduino outputs. You will need to modify the pins defined at the top of the file, and will need to add some column titles to the header string defined above the `setup()` function as well. You will also need to modify the code in `loop()` to include the sensor values in the string added each iteration. The new data from the BME680 will be in the physical units of the corresponding type of measurement (e.g. C for temperature), and not voltage or raw value like your analog data. Check what unit each sensor reads, and make sure it is reflected in the new column titles of your header string.
 
-Since the BME680 can be somewhat complicated to interface with, an example has been provided in the Arduino library for this class. Take a few minutes to look through the example and understand each part. Note that this example only covers basic communication with the BME680, so you will need to use this program as an example of what to add to either your code or the code given for the previous lab.
+You already added the BME680 to your Lab 3 code, so use that code (or the BME680-Example sketch in the course library) as a guide for what to add to either your code or the code given for the previous lab.
 
 ### 5. Collecting Data
 

@@ -1,19 +1,21 @@
 // These are the pins your MicroSD Card Adapter will be connected to.
-// These pins are specific and should not change. You do not need to worry
-// about why these are the pins, just connect them as listed.
+// MOSI, MISO, and CLK are the Arduino's hardware SPI pins. They are fixed,
+// should not change, and are shared by every SPI device (like the BME680).
 // MOSI - pin 11
 // MISO - pin 12
 // CLK  - pin 13
-// CS   - pin 10
+// CS (chip select) can be any unused digital pin, but it must NOT be shared
+// with another SPI device. Change this if you wire CS to a different pin.
 const int chipSelect = 10;
 
 // These are the pins your accelerometer lines are connected to.
+// Replace each ?? with the analog pin you wired it to (for example, A1).
 const int xAccelPin = ??;
 const int yAccelPin = ??;
 const int zAccelPin = ??;
 
 // This is the pin your voltage divider is connected to.
-// Change this as needed.
+// Replace ?? with the analog pin you wired it to.
 const int vDivPin = ??;
 
 // This is the string that goes at the top of your csv file. It is the column headers for your spreadsheet.
@@ -29,11 +31,12 @@ void setup() {
     delay(100); // arbitrary delay to let the serial monitor start up
     Serial.print("Initializing SD card...");
 
-    // see if the card is present and can be initialized:
-    if (!SD.begin(chipSelect)) {
-        Serial.println("Card failed, or not present");
-        // don't do anything more:
-        while (1);
+    // see if the card is present and can be initialized.
+    // if it isn't, wait 2 seconds and check again so you can
+    // fix the wiring or reseat the card without re-uploading.
+    while (!SD.begin(chipSelect)) {
+        Serial.println("Card failed, or not present. Checking again in 2 seconds...");
+        delay(2000);
     }
     Serial.println("card initialized.");
 
@@ -82,9 +85,11 @@ void loop() {
         // ################ UNCOMMENT THIS LINE TO PRINT TO SERIAL ################
         // Serial.println(dataString);
     }
-    // if the file isn't open, pop up an error:
+    // if the file isn't open, pop up an error and try to reconnect to the card
+    // (for example, if it got bumped loose). data will resume once it reconnects.
     else {
-        Serial.println("error opening datalog.txt");
+        Serial.println("error opening datalog.csv, reconnecting to SD card...");
+        SD.begin(chipSelect);
     }
 
     delay(500);

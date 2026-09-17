@@ -33,7 +33,7 @@ Using our Arduino and circuitry knowledge to read data from a temperature sensor
 
 ## Lab 4: Creating a Standalone Arduino
 
-Saving Arduino sensor data to a microSD card to that we can use it later, and powering an Arduino with a battery.
+Saving Arduino sensor data to a microSD card so that we can use it later, and powering an Arduino with a battery.
 
 [Link to lab 4](/labs/lab-4)
 
