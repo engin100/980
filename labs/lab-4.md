@@ -229,7 +229,7 @@ Now, we need to make some graphs to analyze the data. Each graph to make is deta
 
 ## Schematic
 
-Create a KiCad schematic of the complete Lab 3 circuit, including the Arduino Nano Every, Accelerometer, and the MicroSD Card. Use the specific component symbols listed in the Materials section rather than generic substitutes. Refer back to [Lab 2b](/labs/lab-2b) for schematic construction guidance.
+Create a KiCad schematic of the complete Lab 4 circuit, including the Arduino Nano Every, Accelerometer, and the MicroSD Card. Use the specific component symbols listed in the Materials section rather than generic substitutes. Refer back to [Lab 2b](/labs/lab-2b) for schematic construction guidance.
 
 Refer to this guide for importing libraries into KiCAD [Link](/tutorials#importing-symbols-and-footprints-into-kicad)
 
