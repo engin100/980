@@ -25,13 +25,13 @@ Select and integrate a figure and a table into your writing, with captions and s
 
 [Link to Tech Comm HW 3](/tech-comm/tech-comm-hw-3)
 
-<!--
-
 ## Team Contract
 
 Establish your team's goals, logistics, etiquette, commitment, and accountability for the semester.
 
 [Link to team contract](/tech-comm/team-contract)
+
+<!--
 
 ## Lightning Talk
 
