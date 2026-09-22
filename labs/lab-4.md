@@ -22,6 +22,7 @@ latex: true
     - [4. Adding the MicroSD Card Adapter Module](#4-adding-the-microsd-card-adapter-module)
     - [5. Collecting Data](#5-collecting-data)
     - [6. Analyzing the Data in Google Sheets (or Excel)](#6-analyzing-the-data-in-google-sheets-or-excel)
+    - [Schematic](#schematic)
   - [Submission](#submission)
 
 ## Materials
@@ -42,6 +43,8 @@ latex: true
 - [ ] 1 9V battery
 - [ ] 1 9V battery connector
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library).
+- [ ] KiCAD [installed](/tutorials#kicad-install)
+- [ ] ENGR100 KiCAD Library [Library](https://drive.google.com/drive/folders/1Q-wHqaKj7w7wq1GUlMQrJVHRTt22oBnl?usp=sharing)
 
 <div class="primer-spec-callout warning" markdown="1">
 This is your first team lab! You can (and should) all work together to complete it and have one student submit the assignment on behalf of the team.
@@ -224,6 +227,15 @@ Leave the acceleration columns as raw values for now. You will calibrate the acc
 
 Now, we need to make some graphs to analyze the data. Each graph to make is detailed in its own submission checkbox. Make sure each graph follows tech-comm best-practices and includes a title, axis labels, units, and is clearly visible. For graphs with multiple values over-layed, ensure you have added a legend.
 
+## Schematic
+
+Create a KiCad schematic of the complete Lab 3 circuit, including the Arduino Nano Every, Accelerometer, and the MicroSD Card. Use the specific component symbols listed in the Materials section rather than generic substitutes. Refer back to [Lab 2b](/labs/lab-2b) for schematic construction guidance.
+
+Refer to this guide for importing libraries into KiCAD [Link](/tutorials#importing-symbols-and-footprints-into-kicad)
+
+The Accelerometer and MicroSD Card symbols are not included in KiCad's default libraries, so import the provided symbol files before placing them in your schematic. Pay attention to power, ground, and signal names.
+
+
 ## Submission
 
 On Canvas, you (one person on your team) will submit ***ONE PDF*** that will include all of the following:
@@ -233,6 +245,7 @@ On Canvas, you (one person on your team) will submit ***ONE PDF*** that will inc
 - [ ] A screenshot of your completed data table. (You only need to submit a screenshot of whatever number of rows fits into a single image)
 - [ ] A plot of all raw value variables versus time.
 - [ ] An image of your fully color-coded breadboard.
+- [ ] A screenshot of the completed KiCAD schematic
 
 Note that only one person on your team needs to submit to canvas.
 
