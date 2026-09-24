@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">
+  <!-- Plot area: input 0-10 V maps to x 70-600 (53 px/V); output 0-6 V maps to y 340-40 (50 px/V) -->
+
+  <!-- Regulating region shading (input >= 6 V) -->
+  <rect x="388" y="40" width="212" height="300" fill="#000" fill-opacity="0.05"/>
+
+  <!-- Grid -->
+  <g stroke="#000" stroke-opacity="0.12" stroke-width="1">
+    <line x1="176" y1="40" x2="176" y2="340"/>
+    <line x1="282" y1="40" x2="282" y2="340"/>
+    <line x1="388" y1="40" x2="388" y2="340"/>
+    <line x1="494" y1="40" x2="494" y2="340"/>
+    <line x1="600" y1="40" x2="600" y2="340"/>
+    <line x1="70" y1="290" x2="600" y2="290"/>
+    <line x1="70" y1="240" x2="600" y2="240"/>
+    <line x1="70" y1="190" x2="600" y2="190"/>
+    <line x1="70" y1="140" x2="600" y2="140"/>
+    <line x1="70" y1="90" x2="600" y2="90"/>
+    <line x1="70" y1="40" x2="600" y2="40"/>
+  </g>
+
+  <!-- Axes -->
+  <g stroke="#222" stroke-width="1.5">
+    <line x1="70" y1="340" x2="600" y2="340"/>
+    <line x1="70" y1="340" x2="70" y2="40"/>
+  </g>
+
+  <!-- X ticks -->
+  <g text-anchor="middle">
+    <text x="70" y="360">0</text>
+    <text x="176" y="360">2</text>
+    <text x="282" y="360">4</text>
+    <text x="388" y="360">6</text>
+    <text x="494" y="360">8</text>
+    <text x="600" y="360">10</text>
+    <text x="335" y="392" font-size="15">Input voltage (V)</text>
+  </g>
+
+  <!-- Y ticks -->
+  <g text-anchor="end">
+    <text x="60" y="345">0</text>
+    <text x="60" y="295">1</text>
+    <text x="60" y="245">2</text>
+    <text x="60" y="195">3</text>
+    <text x="60" y="145">4</text>
+    <text x="60" y="95">5</text>
+    <text x="60" y="45">6</text>
+  </g>
+  <text x="22" y="190" font-size="15" text-anchor="middle" transform="rotate(-90 22 190)">Output voltage (V)</text>
+
+  <!-- Reference: output = input -->
+  <line x1="70" y1="340" x2="388" y2="40" stroke="#222" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="250" y="150" text-anchor="end" font-style="italic" fill="#555">output = input</text>
+
+  <!-- Fresh 9 V battery marker -->
+  <line x1="547" y1="90" x2="547" y2="340" stroke="#222" stroke-width="1" stroke-dasharray="2 4"/>
+  <text x="547" y="310" text-anchor="middle" font-size="13">fresh 9V</text>
+  <text x="547" y="325" text-anchor="middle" font-size="13">battery</text>
+
+  <!-- 5 V LDO output -->
+  <polyline points="70,340 123,340 388,90 600,90" fill="none" stroke="#0b5cad" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- Dropout voltage bracket at the knee -->
+  <g stroke="#b3261e" stroke-width="2">
+    <line x1="388" y1="42" x2="388" y2="88"/>
+    <line x1="382" y1="42" x2="394" y2="42"/>
+    <line x1="382" y1="88" x2="394" y2="88"/>
+  </g>
+  <text x="400" y="62" fill="#b3261e" font-weight="bold">dropout voltage</text>
+
+  <!-- Region labels -->
+  <text x="494" y="118" text-anchor="middle" font-weight="bold">Regulating</text>
+  <text x="494" y="136" text-anchor="middle" font-size="13">output held at 5V</text>
+  <text x="300" y="286" text-anchor="middle" font-weight="bold">In dropout</text>
+  <text x="300" y="304" text-anchor="middle" font-size="13">output follows input down</text>
+</svg>

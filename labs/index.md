@@ -41,13 +41,15 @@ Saving Arduino sensor data to a microSD card so that we can use it later, and po
 
 [Link to lab 4](/labs/lab-4)
 
+## Lab 5: Acceleration, Pressure & Power
+
+Adding an accelerometer and pressure sensor to our Arduino breadboard circuit, and creating a voltage regulating circuit to handle the power from the battery.
+
+- [Link to lab 5 - START HERE](/labs/lab-5)
+- [Link to lab 5 - Group A](/labs/lab-5GroupA)
+- [Link to lab 5 - Group B](/labs/lab-5GroupB)
+
 <!--
-## Lab 5: Acceleration & Pressure
-
-Adding an accelerometer and pressure sensor to our Arduino breadboard circuit.
-
-[Link to lab 5](/labs/lab-5)
-
 ## Lab 6: SolidWorks Modeling
 
 Learning how to use a CAD program to design a 3D model of a SpaceX Starship Booster.
