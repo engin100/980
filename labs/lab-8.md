@@ -20,10 +20,10 @@ latex: true
 ## Materials
 
 - [ ] Scale (kg)
-- [ ] Measuring tape / ruler
+- [ ] Measuring tape / ruler (yellow windup)
 - [ ] 1 Parachute (all groups will use the same size)
 - [ ] 4-5 Figurines
-- [ ] Stopwatch, camera, or other timing method
+- [ ] Stopwatch, cell phone camera, or other timing method
 - [ ] **Optional:** A fitness watch to track the large number of stairs you're going to climb...
 
 ## Introduction
@@ -102,11 +102,9 @@ We are going to measure the terminal velocity of your parachute with three diffe
 
   where $$m$$ is the total mass of the parachute plus payload, $$A$$ is the effective cross-sectional area of the parachute, $$C_d$$ is the drag coefficient (use literature values for similar parachutes and refine based on your data), $$\rho$$ is the density of air ($$1.29~\text{kg/m}^3$$), and $$g = 9.81~\text{m/s}^2$$.
 
-- To estimate the altitude at which the system reaches terminal velocity, model the vertical motion with linear drag. Define $$k = \tfrac{1}{2} \rho C_d A$$. The velocity and position of a falling object released from rest are
+- To estimate the altitude at which the system reaches terminal velocity, model the vertical motion using the spreadsheet [Terminal Velocity Starter Sheet](https://docs.google.com/spreadsheets/d/1hlk_3I4oJg9j72UHO7ofK7Ac5dVZWYYVeI8OElhqC8U/edit).
 
-  $$v(t) = \sqrt{\frac{m g}{k}}\,\tanh\!\left(\sqrt{\frac{g k}{m}}\, t\right), \qquad z(t) = z_0 - \frac{m}{k}\,\ln\!\left[\cosh\!\left(\sqrt{\frac{g k}{m}}\, t\right)\right],$$
-
-  where $$z_0$$ is the release height measured from the ground. Choose a criterion such as $$95\%$$ of $$v_{\text{term}}$$ to define "reaching" terminal velocity, solve $$v(t_{95}) = 0.95\,v_{\text{term}}$$ for $$t_{95}$$, and substitute into $$z(t)$$ to determine the altitude at that instant. Compare this theoretical altitude to your video observations.
+  Choose a criterion such as $$95\%$$ of $$v_{\text{term}}$$ to define "reaching" terminal velocity to determine the altitude at that instant. Compare this theoretical altitude to your video observations.
 
 - Produce two graphs with the following:
 
