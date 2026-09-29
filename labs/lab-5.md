@@ -260,8 +260,6 @@ Remember that the 9V battery connects **only** to the input of your 5V LDO, and 
 
 Verify that your board runs and records data properly (including the battery voltage, 5v line, and all of your sensor data).
 
-Put your completed board into the cold chamber for at least 5 minutes, recording data the entire time.  Make plots of the data in Google Sheets (or Excel).
-
 ### 9. Collecting Data
 
 With everything plugged into the 9V and running, unplug the Arduino from your computer. Walk around with your Arduino and try to think about things you can do to wildly influence the sensor values (without breaking your circuit!). More interesting changes will be more visible and easier to see in your final plots. (Question - will walking up 4 flights of stairs cause the pressure sensor to change?)
@@ -310,8 +308,7 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 - [ ] A (complete) system-level block diagram of your completed system.  The color coding on your system-level block diagram should match the color coding on your board.  You should be able to look at your picture of your board and your system-level block diagram and understand what is going on with your board. Not every line needs to be drawn though (like ground lines should NOT be on the block diagram).
 - [ ] A (complete) schematic of your completed system (**IN KICAD**). Make sure to update your Arduino symbol to the new one in the libraries. You must use the footprints and schematic symbols we provide in the [Google Drive](https://drive.google.com/drive/folders/1Q-wHqaKj7w7wq1GUlMQrJVHRTt22oBnl?usp=sharing) instead of the default KiCAD ones.
 - [ ] A screenshot of your (battery, 5V, and 3.3V) voltage readings from your Arduino (serial monitor) on your power board.
-- [ ] Nice plots that show data from your completed board going into the cold chamber for at least 5 minutes.  The data should be calibrated with plots in actual geophysical units, including time (in minutes). **For simplicity, any CSV files should print voltages, and your spreadsheet should perform the conversions to geophysical units.**
-- [ ] Discuss whether the battery voltages changed as it got colder. Is there any relationship between temperature and battery voltage?
+- [ ] Nice plots that show data from your completed board for at least 5 minutes.  The data should be calibrated with plots in actual geophysical units, including time (in minutes). **For simplicity, any CSV files should print voltages, and your spreadsheet should perform the conversions to geophysical units.**
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
