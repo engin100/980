@@ -31,8 +31,6 @@ Establish your team's goals, logistics, etiquette, commitment, and accountabilit
 
 [Link to team contract](/tech-comm/team-contract)
 
-<!--
-
 ## Lightning Talk
 
 Deliver a two-minute argumentative talk convincing your teammates that your chosen space company is the best.
@@ -44,6 +42,8 @@ Deliver a two-minute argumentative talk convincing your teammates that your chos
 Write a short IEEE-formatted essay arguing whether NASA is still a hub for innovation.
 
 [Link to argumentative essay](/tech-comm/argumentative-essay)
+
+<!--
 
 ## Project Review
 
