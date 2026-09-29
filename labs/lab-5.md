@@ -15,7 +15,6 @@ Starting with this lab, we will **no longer** plug the 9V battery straight into 
   - [Contents](#contents)
   - [Materials](#materials)
   - [Safety](#safety)
-    - [Electrostatic Discharge](#electrostatic-discharge)
   - [Introduction](#introduction)
     - [The BME680](#bme680-4-in-1-digital-sensor)
     - [Accelerometer](#accelerometer)
@@ -63,9 +62,8 @@ For the power portion of the lab:
 - [ ] 9V Battery
 - [ ] 1 Programming Cable (and adapters if necessary)
 - [ ] A computer with the Arduino IDE [installed](/tutorials#arduino-ide-install) and [setup](/tutorials#arduino-library)
-- [ ] ENGR100-950 Arduino Library
-- [ ] Completed sensor board from Lab 3
-- [ ] ENGR 100 950 KiCAD [libary](https://drive.google.com/drive/folders/1rgl_aX9MQJvx8G1FlQenvKY04iy5qNv3?usp=share_link)
+- [ ] ENGR100-980 Arduino Library
+- [ ] ENGR 100 980 KiCAD [library](https://drive.google.com/drive/folders/1Q-wHqaKj7w7wq1GUlMQrJVHRTt22oBnl?usp=sharing)
 
 ## Safety
 
@@ -74,12 +72,6 @@ This lab involves working with a power supply which can provide higher voltages/
 <div class="primer-spec-callout danger" markdown="1">
 It is very easy to accidentally short batteries when wires are connected to them. When not using the 9V battery, make sure that they have wire ends that are taped/secured, so the battery can not be shorted!
 </div>
-
-### Electrostatic Discharge
-
-In this lab we will start taking precautions when dealing with electronics as there is possibly of ESDs damaging components. When you eventually start soldering your PCB’s, you will be dealing with much smaller components and will thus absolutely need to take ESD precautions. For the subteam that will be working with the power portion of the lab: whoever is touching and interacting with the circuit will be needing to wear an ESD bracelet at all times.
-
-An ESD bracelet provides your body contact through a conductive element to ground, therefore allowing any static discharge accumulated on your body to be discharged to ground. The blue ESD mats serve a similar purpose, and when using the smaller board to do the power lab please do so on the blue mat.
 
 ## Introduction
 
@@ -209,9 +201,11 @@ NOTE 3: Your system and your battery eventually need to share a common ground fo
 NOTE 4: **We are now going to disconnect power whenever we rewire components on our breadboard!**
 </div>
 
-Use a multimeter to measure the actual outputs of the 5V and 3.3V LDO lines. If the 5V line is not exactly 5V, it can cause errors on the conversions of the sensor data from voltage into actual ”geophysical” units (C, %, g, etc.) You may want to use the reading from the 5V LDO in your calibration calculations.
+<div class="primer-spec-callout danger" markdown="1">
+Do **NOT** connect the battery to your circuit until an IA has checked it! Wiring an LDO or capacitor backwards can cause it to overheat, burst, or be destroyed. Build the circuit with the battery disconnected, then call an IA over to inspect it.
+</div>
 
-**Have a staff member check your circuit before you proceed.**
+Once an IA has approved your circuit, connect the battery and use a multimeter to measure the actual outputs of the 5V and 3.3V LDO lines. If the 5V line is not exactly 5V, it can cause errors on the conversions of the sensor data from voltage into actual ”geophysical” units (C, %, g, etc.) You may want to use the reading from the 5V LDO in your calibration calculations.
 
 A staff member will work with you on replacing the battery with a power supply.
 
@@ -221,15 +215,20 @@ The figure below shows a lab **power supply.** This is a device we frequently us
 
 ![Power Supply](/media/power-supply.png)
 
-You will be using the power supply on your workbenches today to power portions on your circuit. Please do **NOT** connect the power supply to the board until looked at by one of the instructors. The power supply has been current-limited at 500 mA and can cause some serious damage if used improperly. Please call the instructor to have them examine the breadboard before connecting to power. Also, do not increase the power supply voltage above 10V.
-
-The wires to the power supply should already be connected (Red = positive and Black = negative). Connect the red wire to the positive rail located at the top of the breadboard, and the black wire to the blue rail located adjacent to it. Do not connect them in holes adjacent to one another; we want to remove any possibility of the two wires accidentally coming in contact and shorting the circuit. **Please do not turn on the power supply until your connections have been verified by an instructor.** Please do not adjust the wires connected to the power supply unless the supply is turned off. You can use this rail to power the components of your circuit as illustrated in Part 1 below.
+You will **not** be using a power supply at your workbench. Instead, bring your board to one of the IAs, who has a power supply set up for you. You will handle the power supply yourself, with the IA there to guide you. The power supply is current-limited at 500 mA and can cause serious damage if used improperly, so follow the steps below in order. Do not increase the power supply voltage above 10V.
 
 <div class="primer-spec-callout danger" markdown="1">
-Do not turn on the power supply until your connections have been verified by an instructor!
+Do not turn on the power supply until your connections have been verified by an IA!
 </div>
 
-Slowly reduce the voltage on the power supply (you can use the “Coarse” knob but rotate it slowly). Reduce it to 0V in increments of 1V, using a multimeter to record the voltage on the 5V and the 3.3V lines. **Note the power supply voltage at which the 5V line no longer reads 5V and the voltage at which the 3.3V line no longer reads 3.3V.** There will be some variation, so let's assume that once it is more than .15V away from the value it has sufficiently dropped.
+1. The IA will ask if you have read the outputs of your LDOs in the previous step. Have your readings ready; if you haven't taken them yet, go back and do so before continuing.
+2. If so, disconnect the battery and wire the two terminals of the power supply to power your circuit in its place (Red = positive and Black = negative). Your two power rails are the 5V and 3.3V LDO outputs, so do **not** connect the power supply to a rail. Instead, plug the red wire into the same breadboard row where the battery's positive lead was connected (the row feeding the LDO inputs), and the black wire into the row where the battery's negative lead was connected. Do not connect them in holes adjacent to one another; we want to remove any possibility of the two wires accidentally coming in contact and shorting the circuit. Only adjust these wires while the power supply is off.
+3. Connect the multimeter to measure the output of the 5V LDO.
+4. **BEFORE TURNING ON THE POWER SUPPLY, make sure all of its knobs are turned all the way to the left.**
+5. Turn on the power supply and bring it up to 10V.
+6. Slowly drop the voltage of the power supply (rotate the knob slowly) until the output voltage of the 5V LDO reads more than 0.15V below its expected value (5V). **Take note of this power supply voltage and label it as the 5V LDO's value.**
+7. Connect the multimeter to measure the output of the 3.3V LDO.
+8. Repeat what you did for the 5V LDO: start at the power supply voltage where you left off for the 5V LDO and keep decreasing it until the output of the 3.3V LDO reads more than 0.15V below its expected value (3.3V). **Take note of this power supply voltage as well.**
 
 **Turn the power supply off!**
 
@@ -303,13 +302,13 @@ On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
 - [ ] A screenshot of your calibration spreadsheet(s) and data for the accelerometer. This should be 3 total calibration curves (1 from each axis of the accelerometer).
 - [ ] Your plot comparing temperature and pressure to time.
-- [ ] Your plot comparing overall acceleration magnitude and acceleration on each axis to time.
+- [ ] Your plot comparing acceleration magnitude and acceleration on each axis to time.
 - [ ] A picture of your final breadboard with all the sensors connected and all of the power rail and wire color requirements satisfied.
 - [ ] A short description of your power supply tests with the cutoff voltages that you found.
 - [ ] A picture of your completed power board.
 - [ ] A picture of your completed consolidated board.
 - [ ] A (complete) system-level block diagram of your completed system.  The color coding on your system-level block diagram should match the color coding on your board.  You should be able to look at your picture of your board and your system-level block diagram and understand what is going on with your board. Not every line needs to be drawn though (like ground lines should NOT be on the block diagram).
-- [ ] A (complete) schematic of your completed system (**IN KICAD**). Make sure to update your Arduino symbol to the new one in the libaries (We uploaded a new and improved Arduino Nano Every Symbol. You should be using this one instead of the default KiCAD one from now on).
+- [ ] A (complete) schematic of your completed system (**IN KICAD**). Make sure to update your Arduino symbol to the new one in the libraries. You must use the footprints and schematic symbols we provide in the [Google Drive](https://drive.google.com/drive/folders/1Q-wHqaKj7w7wq1GUlMQrJVHRTt22oBnl?usp=sharing) instead of the default KiCAD ones.
 - [ ] A screenshot of your (battery, 5V, and 3.3V) voltage readings from your Arduino (serial monitor) on your power board.
 - [ ] Nice plots that show data from your completed board going into the cold chamber for at least 5 minutes.  The data should be calibrated with plots in actual geophysical units, including time (in minutes). **For simplicity, any CSV files should print voltages, and your spreadsheet should perform the conversions to geophysical units.**
 - [ ] Discuss whether the battery voltages changed as it got colder. Is there any relationship between temperature and battery voltage?
