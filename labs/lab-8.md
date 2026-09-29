@@ -46,7 +46,7 @@ Terminal velocity is when the drag force is equal to the weight of the object, a
 
 - For $$C_d$$, you should look up typical values for parachutes and play around with it. There will be variations, so find which coefficients get you closest to your experimental values!
 
-- For mass and cross-sectional area, you will measure both of these as part of your experimental setup. Since parachutes have the cross-sectional area of a circle, you can calculate the area using standard circle equations ($$A = \pi r^2$$). Keep in mind that when you measure the circle's diameter on a flat surface, it is not the same as when it is falling and looks more like a hemisphere! Keep this in mind when doing your calculations.
+- For mass and cross-sectional area, you will measure both of these as part of your experimental setup. Since parachutes have the cross-sectional area of a circle, you can calculate the area using standard circle equations ($$A = \pi r^2$$). Keep in mind that when you measure the circle's diameter on a flat surface, **it is not the same as when it is falling** and looks more like a hemisphere! Keep this in mind when doing your calculations.
 
   - Think about the difference between a half-circumference of a sphere and the radius of the sphere. Drawing this in 2D may help.
 
