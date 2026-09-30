@@ -3,11 +3,11 @@ layout: spec
 latex: true
 ---
 
-# Lab 6: SolidWorks Modeling
+# Lab 6a: SolidWorks Modeling
 
 ## Contents
 
-- [Lab 6: SolidWorks Modeling](#lab-6-solidworks-modeling)
+- [Lab 6a: SolidWorks Modeling](#lab-6-solidworks-modeling)
   - [Contents](#contents)
   - [Resources](#resources)
   - [Introduction](#introduction)
@@ -257,9 +257,9 @@ Use the skills you learned in this lab to create a model rocket's booster with a
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
-- [ ] A screenshot of your finished "tutorial" model with matching dimensions.
-- [ ] A screenshot of your custom model rocket CAD design with the mentioned requirements.
-- [ ] A list of dimensions for your custom design, such as body tube length and diameter, and fin sizes.
+- [ ] A screenshot of your finished "tutorial" model with matching dimensions. There should be a proper caption for this and a short description of what is shown.
+- [ ] A screenshot of your custom model rocket CAD design with the mentioned requirements. There should be a proper caption for this and a short description of what is shown.
+- [ ] A list of dimensions for your custom design, such as body tube length and diameter, and fin sizes. This list of dimensions should be in the form of a table that clearly articulates the components and the different dimensions.
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 

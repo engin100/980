@@ -49,28 +49,33 @@ Adding an accelerometer and pressure sensor to our Arduino breadboard circuit, a
 - [Link to lab 5 - Group A](/labs/lab-5GroupA)
 - [Link to lab 5 - Group B](/labs/lab-5GroupB)
 
-<!--
-## Lab 6: SolidWorks Modeling
+## Lab 6a: SolidWorks Modeling
 
 Learning how to use a CAD program to design a 3D model of a SpaceX Starship Booster.
 
-[Link to lab 6](/labs/lab-6)
+[Link to lab 6a](/labs/lab-6)
 
-## Lab 7: Altium
-
-[Link to lab 7](/labs/lab-7)
-
-## Lab 8: Terminal Velocity & Drop Tests
+## Lab 6b: Terminal Velocity & Drop Tests
 
 Analyzing terminal velocities of different parachute sizes under varying masses.
 
-[Link to lab 8](/labs/lab-8)
+[Link to lab 6b](/labs/lab-8)
 
+<!--
 ### Memo Guidelines: Lab 8
 
 Submit a separate PDF for the memo assignment aligning with the lab 8 memo guidelines.
 
 [Link to memo guidelines](https://980.engr100.org/labs/memo-guidelines)
+
+-->
+
+
+<!--
+
+## Lab 7: Designing a PCB
+
+[Link to lab 7](/labs/lab-7)
 
 ## Rocket Selection Guidelines
 

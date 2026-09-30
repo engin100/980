@@ -3,11 +3,11 @@ layout: spec
 latex: true
 ---
 
-# Lab 8: Terminal Velocity and Drop Tests
+# Lab 6b: Terminal Velocity and Drop Tests
 
 ## Contents
 
-- [Lab 8: Terminal Velocity & Drop Tests](#lab-8-terminal-velocity-and-drop-tests)
+- [Lab 6b: Terminal Velocity & Drop Tests](#lab-8-terminal-velocity-and-drop-tests)
   - [Contents](#contents)
   - [Materials](#materials)
   - [Introduction](#introduction)
@@ -104,19 +104,47 @@ We are going to measure the terminal velocity of your parachute with three diffe
 
 - To estimate the altitude at which the system reaches terminal velocity, model the vertical motion using the spreadsheet [Terminal Velocity Starter Sheet](https://docs.google.com/spreadsheets/d/1hlk_3I4oJg9j72UHO7ofK7Ac5dVZWYYVeI8OElhqC8U/edit).
 
-  Choose a criterion such as $$95\%$$ of $$v_{\text{term}}$$ to define "reaching" terminal velocity to determine the altitude at that instant. Compare this theoretical altitude to your video observations.
+  Choose a criterion such as $$99\%$$ of $$v_{\text{term}}$$ to define "reaching" terminal velocity to determine the altitude at that instant. Play with the dt to try to get a good value for the altitude. Compare this theoretical altitude to your video observations.
 
-- Produce two graphs with the following:
+### Plotting Results
 
-  - Plot the three experimental trials on the same graph. The y-axis will be terminal velocity and the x-axis will be mass. Be sure to label your axes clearly and include the measured parachute area in the graph title or caption.
+- Produce the following graphs:
 
-  - Repeat this same plot again but with the theoretically determined terminal velocities for the same masses. Clearly state which drag coefficient you used and any adjustments you made while fitting theory to experiment.
+  - Plot A: Plot the terminal velocity results of your three experimental trials on the same graph. The y-axis will be terminal velocity and the x-axis will be mass. Be sure to label your axes clearly and include the measured parachute area in the graph title or caption.
+
+  - Plot B: Repeat this same plot again but with the theoretically determined terminal velocities for the same masses. Clearly state which drag coefficient you used and any adjustments you made while fitting theory to experiment.
+
+  - Plot C: Combine the experimental results with the theoretical results and plot the three experimentally determined terminal velocity results (y-axis) against the analytically derived terminal velocities (x-axis). The title should say something about how well these match.
+
+  - Plots E, F, G: At least one plot each of height, velocity, and net acceleration (each versus time) for a trial of your kinematic integrator with titles that clearly label the mass and area used. While not required, it would be great to put a vertical line at the point at which your system reached terminal velocity.
+
+  - Plot H: Rerun your kinematic integrator code for the three masses and note the altitudes at which they reach terminal velocity. Plot these altitudes (y-axis) as a function of mass (x-axis). The title should say something about any trends.
+
+## Discussion
+
+Your write up should include discussions on the plots and experimental setup that you have made. Things that you should comment on:
+
+- Do your experimental terminal velocity results match the theoretical (analytical) results? Why or why not? What did you have to adjust (if anything) in your calculations to better match them?  Did your initial estimate of the parachute area work ok? 
+
+- How quickly did your falling masses reach terminal velocity? Does mass control this at all? Did your experimental analysis method have any issues with respect to when your masses reached terminal velocity?
+
+- How else could you have identified terminal velocity besides 99% of the theoretical terminal velocity speed?
 
 ## Submission
 
 On Canvas, you will submit ***ONE PDF*** that will include all of the following:
 
-- [ ] Screenshots of the two plots made above.
+- A short **Introduction** section that describes why you are measuring terminal velocity and comparing it to numerical and analytical results.
+
+- A description of the technique that you used to measure the terminal velocity of the falling masses. This should be in a section that is clearly labeled **Methodology**.
+
+- A **Results** section that has **all of the plots** and short paragraphs that describe them.
+
+- A **Discussion** section that addresses the questions listed above. 
+
+- A **Conclusion** section that has a very short paragraph that summarizes the introduction and methodology.  It should then have a bulleted list of the conclusions that you take away from this lab.
+
+- If you would like, you could have an **Appendix** that includes a screenshot of your kinematic integrator with a short description. This is not required.
 
 To put said content into a PDF, it is suggested you create a new Google Doc ([docs.new](https://docs.new)) and paste your images and write any text in the document. Export/Download this document as a PDF and upload it. **DO NOT SUBMIT A GOOGLE DOC FILE OR SPREADSHEET FILES.**
 
@@ -124,6 +152,4 @@ To put said content into a PDF, it is suggested you create a new Google Doc ([do
 Submitting anything other than a single PDF may result in your work not being graded or your scores being heavily delayed.
 </div>
 
-#### Separately:
 
-- [ ] Upload your memo as a PDF to the **Memo 2** assignment on Canvas. This memo is a completely separate submission from the PDF you turn in for this lab. Take a look at the [memo guidelines](/memo-guidelines.md) page for this lab for help.
