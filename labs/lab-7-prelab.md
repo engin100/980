@@ -25,7 +25,7 @@ latex: true
 ## Resources
 
 - [ ] A computer running the latest stable version of KiCad
-- [ ] [KiCad Power Board libraries .zip file](https://drive.google.com/file/d/1-PR87u7RzkhpizaJybwOJ49HODIKl4W9)
+- [ ] [KiCad Power Board libraries .zip file](https://drive.google.com/file/d/1usAn7vWidAW6uWIW-OHvf6QwITUhHjH3/view)
 - [ ] [Youtube Tutorial](https://www.youtube.com/watch?v=NHHwZCHNMq8)
 <!--
  [Spreadsheet of Footprints](https://drive.google.com/file/d/1tsC8cM-wiYfIB25BBM7o7ymhQ4F3gtD8)
