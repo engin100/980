@@ -76,7 +76,7 @@ We are going to measure the terminal velocity of your parachute with three diffe
 
 - Prepare your parachute by flattening it out a little such that it isn't crumpled.
 
-- Drop the parachute and have the partner on the ground take a video of the parachute as it falls.
+- Drop the parachute and have the partner on the ground take a video of the parachute as it falls. Repeat this 2 more times per height (for a total of 3 trials per height).
 
   - You can look frame-by-frame to pull timestamps and record the number of seconds until the object reaches the top of the second floor and then the ground.
 
