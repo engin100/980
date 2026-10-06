@@ -42,7 +42,7 @@ Working at a computer can easily become a one-person activity. It is important t
 
 - **October 14th, 2026, 3:00pm**: Initial PCB design submission (for peer reviews).
 - **October 14th, 2026, 5:00pm**: Peer review submissions due.
-- **October 16th, 2026, 5:00pm**: Final PCB design submission.
+- **October 16th, 2026, 12:00pm noon**: Final PCB design submission.
 
 ## KiCad
 
