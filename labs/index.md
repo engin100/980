@@ -61,6 +61,18 @@ Analyzing terminal velocities of different parachute sizes under varying masses.
 
 [Link to lab 6b](/labs/lab-8)
 
+### Lab 7 Prelab: KiCad Schematic to PCB
+
+Finishing up postlab 2b to turn the schematic into a finished PCB.
+
+[Link to Lab 7 Prelab](/labs/lab-7-prelab)
+
+## Lab 7: KiCad
+
+Moving away from the breadboards and creating a custom PCB (Printed Circuit Board) using KiCad.
+
+[Link to lab 7](/labs/lab-7)
+
 <!--
 ### Memo Guidelines: Lab 8
 
