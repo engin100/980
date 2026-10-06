@@ -30,7 +30,7 @@ In this lab, you will be designing a PCB using KiCad, an industry-standard PCB d
 <div class="primer-spec-callout warning" markdown="1">
 
 **Required KiCad Library:**  
-[Final Project Library Folder](https://drive.google.com/drive/folders/1gzB8r_jQqfqcvdIvM8kyhk7KWFfNFwsK?usp=sharing)
+[Final Project Library Folder](https://drive.google.com/drive/folders/1Q-wHqaKj7w7wq1GUlMQrJVHRTt22oBnl)
 
 </div>
 
