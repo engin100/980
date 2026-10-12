@@ -48,7 +48,7 @@ The coding language can be Google Spreadsheets, Excel, Python, Matlab, or C++. A
 Conduct data analysis by comparing and contrasting the different methods of calculating acceleration, velocity, and position for the flight and simulation data.  This comparison must be included in the poster and final reports, as described below.
 
 ## Preliminary Design Review
-All teams must collectively present a preliminary design review, which must include: <a href=" https://980.engr100.org/tech-comm/project-review))">this document</a>
+All teams must collectively present a preliminary design review, which must include: <a href=" https://980.engr100.org/tech-comm/project-review">this document</a>
 
 ### 1. Team information
 Team number, name, members with a logo
