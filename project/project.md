@@ -49,6 +49,7 @@ Conduct data analysis by comparing and contrasting the different methods of calc
 
 ## Preliminary Design Review
 All teams must collectively present a preliminary design review, which must include:
+[this document]((https://980.engr100.org/tech-comm/project-review)). 
 
 ### 1. Team information
 Team number, name, members with a logo
