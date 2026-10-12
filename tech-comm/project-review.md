@@ -27,53 +27,62 @@ Your review will be delivered as a slide deck that includes the following:
 
    - Team number, name, members, logo
 
-2. Area of focused refinement/analysis - you will use this for your end-of-semester deliverables
+2. Area of focused refinement/analysis
 
-3. Build, CAD, sensors, simulation
+   - Build, CAD, sensors, or simulation. Whichever you pick will shape your end-of-semester deliverables. 
 
-   - How you have already implemented focus, and how you will continue to
+4. More detail on area of focused refinement/analysis
 
-4. Level 1 requirements for project
+   - How you have already implemented build, CAD, sensors, or simulation? How you will continue to?
+   - Note that all teams must complete all requirements listed within the project sub-sections. This is simply your choice as a team of where you'll spend additional time and energy.
 
-5. System-level block diagram
+5. Level 1 requirements for project
+
+   - See Requirement lecture slide deck
+
+7. System-level block diagram
 
    - This is very much like your schematic, but simplified and with connections (5V, 3.3V, analog, digital)
+   - Note: You don't need to show every connection, such as ground wires, but rather  give an overview of the important connections between components.
 
-6. Sensor board physical specifications
+8. Sensor board physical specifications
+    - Any important specifications about the sensor board. For more details go to the sensor board spec page.
 
-7. Chosen rocket with justification
+10. Chosen rocket with justification
 
    - Image and preliminary measurements
+   - Note: Again, it isn’t required that you build the rocket that you present. You may find out the rocket you selected won’t work well for the final build, or it may not be an allowed rocket! That’s part of why we are giving these presentations.
 
-8. Mass budget spreadsheet
+11. Mass budget spreadsheet
+   - Note: If you do not have any concrete numbers for the weight of some components, search it up online or simply ask an IA if you can weight that component during Lab or OH! Make sure to watch out for sig figs.
 
-9. Simulation design/results
+12. Simulation design/results
 
    - Explain your simulation design strategy. Show any initial simulation results if available; otherwise, the simulation design strategy will suffice.
 
-10. Testing strategies/results
+11. Testing strategies/results
 
     - Hint: look at the testing strategies laid out in the Go / No-Go Testing Section of the course website
 
-11. Division of labor
+12. Division of labor
 
     - What team members are responsible for what elements of the project
 
-12. CPM/Trello board information
+13. CPM/Trello board information
 
     - How are you using your Trello board for project management? How are you implementing CPM project management strategies?
 
-13. What are next steps from here to the end of the semester?
+14. What are next steps from here to the end of the semester?
 
-14. Summary
+15. Summary
 
     - Succinctly restate your review’s most important ideas
 
-15. Reference slide
+16. Reference slide
 
     - Formatted in IEEE
 
-16. Questions you have for the teaching team
+17. Questions you have for the teaching team
 
     - This will make up part of your Q\&A
 
