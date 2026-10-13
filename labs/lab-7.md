@@ -87,7 +87,7 @@ Please wire the 5V, 3.3V and battery line to their own LEDs with a 1K resistor o
 
 Footprints of LEDs, resistors and capacitors:
 - Generic capacitors have to be 1206 SMD (surface mount only)
-- LEDs have to be LED_THT:LED_D5.0mm  (thru-hole)
+- LEDs can be LED_THT:LED_D5.0mm or 1206 SMD  (surface mount or thru-hole)
 - Resistors can be 1206 SMD (surface mount) **or** Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (thru-hole)
 
 Some notes:
