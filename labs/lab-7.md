@@ -107,7 +107,7 @@ In summary, your schematic (and the PCB) must have:
 - [ ] SW-SPST switch for battery toggle
 - [ ] 0.1 uF (micro-F) capacitors from the SD card input voltage to ground and the Arduino
   5V pin to ground (2 capacitors).
-- [ ] 0.1 uF (micro-F) capacitors from input line to ground close to BME680, and accelerometer (3 more capacitors).
+- [ ] 0.1 uF (micro-F) capacitors from input line to ground close to BME680, and accelerometer (2 more capacitors).
 - [ ] A voltage divider running off of the battery line (the analog line from this voltage divider needs to have a capacitor to ground(1 more capacitor))
 - [ ] Any other components from lab 5 circuits
 
