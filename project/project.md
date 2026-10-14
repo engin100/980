@@ -49,6 +49,7 @@ Conduct data analysis by comparing and contrasting the different methods of calc
 
 ## Preliminary Design Review
 All teams must collectively present a project review. Find the most recent requirements in <a href=" https://980.engr100.org/tech-comm/project-review">this document</a>
+
 <!--
 
 ### 1. Team information
@@ -118,6 +119,7 @@ You can ask us any questions that you have. The PDR is a **two-way deal**: we as
 <div class="primer-spec-callout danger" markdown="1">
 Be mindful of the time limit!
 </div>
+
 -->
 
 ## Go / No-Go Testing
