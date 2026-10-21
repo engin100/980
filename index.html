@@ -18,10 +18,14 @@ toc: false
       position: relative;
       text-align: center;
       color: #fff;
-      height: 80vh;
+      min-height: 80vh;
       overflow: hidden;
+      display: flex;
+      align-items: center;
     }
     .hero > img {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -33,11 +37,10 @@ toc: false
       margin: 0.2em 0;
     }
     .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: relative;
       width: 100%;
+      box-sizing: border-box;
+      padding: 90px 20px 32px;
       text-align: center;
     }
     .hero-text p {
@@ -45,10 +48,94 @@ toc: false
       font-size: 1.2em;
     }
     .hero-text img.eng-logo {
-      width: 250px;
+      width: 200px;
       display: block;
-      margin: 25px auto 0;
+      margin: 16px auto 0;
     }
+    .progress-card {
+      max-width: 1200px;
+      margin: 24px auto 0;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+      color: #00274C;
+      text-align: left;
+    }
+    .progress-caption {
+      background-color: #00274C;
+      color: #FFCB05;
+      font-weight: bold;
+      padding: 10px 14px;
+      text-align: center;
+    }
+    .hero-text p.progress-link {
+      margin-top: 16px;
+      font-size: 1em;
+    }
+    .progress-scroll {
+      overflow-x: auto;
+    }
+    .progress-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+    .progress-table th {
+      background-color: #e8edf3;
+      padding: 8px 6px;
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
+      vertical-align: bottom;
+    }
+    .progress-table th .step {
+      display: block;
+      color: #6b7a8c;
+      font-size: 0.7rem;
+      font-weight: normal;
+    }
+    .progress-table td {
+      padding: 5px 6px;
+      border-top: 1px solid #e3e8ef;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .progress-table tbody td {
+      background-color: #fff;
+    }
+    .progress-table tbody tr:nth-child(even) td {
+      background-color: #e3e9f1;
+    }
+    .progress-table th:first-child,
+    .progress-table td:first-child {
+      position: sticky;
+      left: 0;
+      text-align: left;
+      font-weight: bold;
+      padding-left: 14px;
+    }
+    .progress-table th:first-child {
+      background-color: #e8edf3;
+    }
+    .progress-table td.progress-message {
+      position: static;
+      text-align: center;
+      font-weight: normal;
+      padding: 16px;
+    }
+    .status {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .status-bad { background-color: #b3261e; }
+    .status-progress { background-color: #FFCB05; color: #00274C; }
+    .status-done { background-color: #2e7d32; }
+    .status-other { background-color: #5c6bc0; }
     .calendar {
       margin: 40px auto;
       text-align: center;
@@ -191,6 +278,15 @@ toc: false
       <h1>Engineering 100-980</h1>
       <p>Rocket Science</p>
       <img class="eng-logo" src="{{ '/media/umich-coe4.png' | relative_url }}" alt="University of Michigan, College of Engineering">
+      <div class="progress-card">
+        <div class="progress-caption">PCB Build Progress &mdash; do these in order, left &rarr; right</div>
+        <div class="progress-scroll">
+          <table class="progress-table" id="pcb-progress">
+            <tbody><tr><td class="progress-message">Loading team progress&hellip;</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <p class="progress-link"><a class="button-link" href="https://docs.google.com/spreadsheets/d/1iIWKfQP_2mutuzimVdfFsbymK9aJVsWVjc5083C_Afo/edit?usp=drive_link">Open Project Tracker in Google Sheets</a></p>
     </div>
   </div>
   <section class="about">
@@ -210,11 +306,6 @@ toc: false
       <a class="button-link" href="{{ '/syllabus' | relative_url }}">View Syllabus</a>
     </div>
     <div class="link-group">
-      <h3>Labs</h3>
-      <p>The labs will be made publicly visible as they are released in the week leading up to lab.</p>
-      <a class="button-link" href="{{ '/labs/' | relative_url }}">Go to Labs</a>
-    </div>
-    <div class="link-group">
       <h3>Solder Challenge</h3>
       <p>Soldering tutorial and challenge to gain or improve soldering abilities.</p>
       <a class="button-link" href="{{ '/soldering/solder-challenge' | relative_url }}">Soldering Challenge</a>
@@ -223,11 +314,6 @@ toc: false
       <h3>Facilities</h3>
       <p>Preview the soldering, fabrication, and collaboration spaces we'll use all semester.</p>
       <a class="button-link" href="{{ '/facilities' | relative_url }}">Explore Facilities</a>
-    </div>
-    <div class="link-group">
-      <h3>Project</h3>
-      <p>The full project specification, including PDR, Go/No-Go tests, poster, and final report.</p>
-      <a class="button-link" href="{{ '/project/project' | relative_url }}">Project Spec</a>
     </div>
     <div class="link-group">
       <h3>Tutorials</h3>
@@ -308,13 +394,96 @@ toc: false
   </section>
   <section class="calendar-section">
     <h2>Course Calendar</h2>
-    <p>Stay up to date with lectures, labs, office hours, and due dates.</p>
     <div class="calendar">
       <iframe src="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
-    <p><a href="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York">Open Calendar in Google</a></p>
+    <p><a class="button-link" href="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York">Open Calendar in Google</a></p>
   </section>
   <script>
+    // PCB build progress, read live from the published Google Sheet
+    (function() {
+      var SHEET = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSAQBqZqb3p2WXXNEq2uaTOZUJpDVYvFNXW8rfPDskOq_bLEBnb3FucDRECbETh_McRk3sNvvOpjWYe/';
+      var table = document.getElementById('pcb-progress');
+
+      function parseCSV(text) {
+        var rows = [], row = [], field = '', quoted = false;
+        for (var i = 0; i < text.length; i++) {
+          var c = text[i];
+          if (quoted) {
+            if (c === '"' && text[i + 1] === '"') { field += '"'; i++; }
+            else if (c === '"') { quoted = false; }
+            else { field += c; }
+          } else if (c === '"') { quoted = true; }
+          else if (c === ',') { row.push(field); field = ''; }
+          else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+          else if (c !== '\r') { field += c; }
+        }
+        row.push(field);
+        rows.push(row);
+        return rows;
+      }
+
+      function statusClass(value) {
+        var s = value.toLowerCase();
+        if (/not|no.?go|fail|block/.test(s)) return 'status-bad';
+        if (/progress|partial|working/.test(s)) return 'status-progress';
+        if (/done|complet|verif|pass|finish|go|yes/.test(s)) return 'status-done';
+        return 'status-other';
+      }
+
+      function cell(tag, text) {
+        var el = document.createElement(tag);
+        if (text !== undefined) el.textContent = text;
+        return el;
+      }
+
+      function showMessage(text, linkText) {
+        table.innerHTML = '';
+        var td = cell('td', text);
+        td.className = 'progress-message';
+        if (linkText) {
+          var a = cell('a', linkText);
+          a.href = SHEET + 'pubhtml';
+          td.appendChild(document.createTextNode(' '));
+          td.appendChild(a);
+        }
+        table.appendChild(cell('tbody')).appendChild(cell('tr')).appendChild(td);
+      }
+
+      fetch(SHEET + 'pub?gid=0&single=true&output=csv')
+        .then(function(r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+        .then(function(text) {
+          var rows = parseCSV(text);
+          var h = rows.findIndex(function(r) { return r[0].trim() === 'Team'; });
+          if (h < 0) throw new Error('no header row');
+          var header = rows[h];
+          var teams = rows.slice(h + 1).filter(function(r) { return r[0].trim(); });
+
+          table.innerHTML = '';
+          var headRow = table.appendChild(cell('thead')).appendChild(cell('tr'));
+          header.forEach(function(name, i) {
+            var th = cell('th');
+            if (i > 0) th.appendChild(cell('span', 'Step ' + i)).className = 'step';
+            th.appendChild(document.createTextNode(name.trim()));
+            headRow.appendChild(th);
+          });
+
+          var body = table.appendChild(cell('tbody'));
+          teams.forEach(function(r) {
+            var tr = body.appendChild(cell('tr'));
+            tr.appendChild(cell('td', r[0].trim()));
+            for (var i = 1; i < header.length; i++) {
+              var value = (r[i] || '').trim();
+              var td = tr.appendChild(cell('td'));
+              if (value) td.appendChild(cell('span', value)).className = 'status ' + statusClass(value);
+            }
+          });
+        })
+        .catch(function() {
+          showMessage('Could not load team progress.', 'Open the tracker');
+        });
+    })();
+
     // Hall of Fame rotation
     document.addEventListener('DOMContentLoaded', function() {
       var items = document.querySelectorAll('.hof-item');

@@ -46,7 +46,7 @@ Your review will be delivered as a slide deck that includes the following:
    - Note: You don't need to show every connection, such as ground wires, but rather  give an overview of the important connections between components.
 
 8. Sensor board physical specifications
-    - Any important specifications about the sensor board. For more details go to the sensor board spec page.
+    - Any important specifications about the sensor board. For more details go to the [sensor board spec](/project/sensor-board) page.
 
 10. Chosen rocket with justification
 

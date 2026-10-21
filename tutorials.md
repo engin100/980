@@ -26,8 +26,6 @@ Walk-throughs on common issues or installations.
   - [KiCad Install](#kicad-install)
   - [KiCad Net Labels and Power Labels](#kicad-net-labels-and-power-labels)
   - [Importing Symbols and Footprints into KiCAD](#importing-symbols-and-footprints-into-kicad)
-  - [Installing VMware](#installing-vmware)
-
 ## Arduino IDE Install
 
 ### Windows
@@ -226,13 +224,4 @@ Below are screenshots showing where the buttons are located for net labels
 -Click on Footprint Editor.
 -Type on the filter search field, and navigate to the footprint you imported.
 -Double-click over it to open the file.
-
-## Installing VMware
-The Windows Remote Desktop Service allows eligible individuals at Michigan Engineering to remotely access the CAEN Lab Software Environment (CLSE) for Windows. It is intended to provide the same experience as being in a CAEN computer lab.
-
-1. Follow instructions here to install VMware to your computer. **This software is essential for Mac users to run Altium.**
-[https://teamdynamix.umich.edu/TDClient/76/Portal/KB/ArticleDet?ID=5311](https://teamdynamix.umich.edu/TDClient/76/Portal/KB/ArticleDet?ID=5311)
-
-2. To connect VMware to the CAEN server: <br>
-[https://teamdynamix.umich.edu/TDClient/76/Portal/KB/ArticleDet?ID=5309](https://teamdynamix.umich.edu/TDClient/76/Portal/KB/ArticleDet?ID=5309)
 

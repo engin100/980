@@ -5,6 +5,10 @@ latex: true
 
 # Rocket Selection
 
+<div class="primer-spec-callout warning" markdown="1">
+**This page is outdated.** It was written for a previous semester, so the board dimensions, rocket options, and submission links below may no longer apply. For the current rocket requirements, see the [Project Specification](/project/specification).
+</div>
+
 ## Contents
 
 - [Rocket Selection](#rocket-selection)

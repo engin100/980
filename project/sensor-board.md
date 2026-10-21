@@ -3,6 +3,10 @@ layout: spec
 latex: true
 ---
 
+<div class="primer-spec-callout warning" markdown="1">
+**This page documents last year's board, not yours.** In previous semesters, every team was given the same sensor board, designed by the staff. This semester, you are building and flying **the PCB your team designed in KiCad** in [Lab 7](/labs/lab-7). Your board's pins, LEDs, and layout will be different from the board below, so always go by your own schematic. Use this page as a reference however you see fit.
+</div>
+
 ## Contents
 
 - [Sensor Board Documenation](#sensor-board-documentation)
@@ -18,7 +22,7 @@ latex: true
 
 # Sensor Board Documentation
 
-Because you are going to be using the sensor board that the staff designed for your project, we thought it would be best to also give you some documentation on the board.
+Previously, because every team used the sensor board that the staff designed for the project, we gave them the documentation on that board below.
 
 ## Sensor Pin Connections
 

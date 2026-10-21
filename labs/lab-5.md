@@ -290,7 +290,7 @@ Graph all (4) acceleration values on the same graph compared to time. **All of t
 
 Congratulations! You have made it through the bread-boarding portion of this class! We hope that you enjoyed your time with Arduinos and learned a thing or two.
 
-Moving forward, you are going to learn how to make 3D CAD (computer aided design) models and how to use Altium to build our Arduino breadboard circuits on a printed circuit board that can be soldered directly onto.
+Moving forward, you are going to learn how to make 3D CAD (computer aided design) models and how to use KiCad to build our Arduino breadboard circuits on a printed circuit board that can be soldered directly onto.
 
 All of this will give you the final skills you need for your teams to work together and assemble a package that you will build to launch on a model rocket!
 
