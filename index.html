@@ -78,6 +78,8 @@ toc: false
     }
     .progress-table {
       width: 100%;
+      min-width: 960px;
+      table-layout: fixed;
       border-collapse: collapse;
       font-size: 0.8rem;
     }
@@ -88,6 +90,14 @@ toc: false
       line-height: 1.2;
       text-align: center;
       vertical-align: bottom;
+      overflow-wrap: anywhere;
+    }
+    .progress-table th .name {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      overflow: hidden;
     }
     .progress-table th .step {
       display: block;
@@ -114,6 +124,7 @@ toc: false
       text-align: left;
       font-weight: bold;
       padding-left: 14px;
+      width: 90px;
     }
     .progress-table th:first-child {
       background-color: #e8edf3;
@@ -464,7 +475,8 @@ toc: false
           header.forEach(function(name, i) {
             var th = cell('th');
             if (i > 0) th.appendChild(cell('span', 'Step ' + i)).className = 'step';
-            th.appendChild(document.createTextNode(name.trim()));
+            th.appendChild(cell('span', name.trim())).className = 'name';
+            th.title = name.trim();
             headRow.appendChild(th);
           });
 
