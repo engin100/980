@@ -52,6 +52,9 @@ Find a building that is at least 8 stories tall and ride an elevator from the bo
 ### 5. Simulation Test
 Show that your rocket with the sensor board incorporated will reach at least 500 ft and will not exceed 1200 ft with one of the recommended motors. The exact motor that your group would like will be specified with this test. Plots will prove that this test passed.
 
+### 6. The Final Test
+This test is very similar to the bench test, but it requires you to mostly done. This is because we want to see a video of you turning on your payload, inserting the payload into the rocket quickly, preparing the parachute, and show that you can see (or hear) that the payload is working correctly. Lastly show what data was collected and briefly proof that it works.
+
 <div class="primer-spec-callout danger" markdown="1">
 All tests need to be presented at the Go/No-Go meeting. Each team must pass all tests before being OKed for launch.
 </div>
