@@ -53,7 +53,46 @@ Find a building that is at least 8 stories tall and ride an elevator from the bo
 Show that your rocket with the sensor board incorporated will reach at least 500 ft and will not exceed 1200 ft with one of the recommended motors. The exact motor that your group would like will be specified with this test. Plots will prove that this test passed.
 
 ### 6. The Final Test
-This test is very similar to the bench test, but it requires you to mostly done. This is because we want to see a video of you turning on your payload, inserting the payload into the rocket quickly, preparing the parachute, and show that you can see (or hear) that the payload is working correctly. Lastly show what data was collected and briefly proof that it works.
+This is a full dress rehearsal of launch day. It is similar to the bench test, but your rocket and payload should be essentially finished. Record **one continuous video** of your team doing exactly what you will do at the launch site, in the same order, from a powered-off payload to a rocket that is ready to go on the pad.
+
+The video must show:
+1. **Powering on the payload** and starting data collection, using the same switch, button, or jumper you will use on launch day.
+2. **Confirming the payload is working** before it goes in, using the LEDs (or buzzer) to show that it is waiting for the time delay and then taking data.
+3. **Inserting the payload** into the nose cone or payload bay and securing it. This should be quick and should not require any tools, tape, or wiring you won't have at the field.
+4. **Preparing the recovery system:** packing the parachute with your chosen method (see [Parachute Packing Research](#parachute-packing-research) below) and stowing it and the shock cord in the body tube. Leave room for recovery wadding below them and point out where it will go (see the note below).
+
+   <div class="primer-spec-callout info" markdown="1">
+   **Recovery wadding:** You won't receive wadding until launch day, so you don't need it for this video, but your rocket must have room for it. Wadding is flame-resistant paper that protects the parachute from the hot gases of the motor's ejection charge. On launch day:
+
+   - Wadding goes in **first**, pushed down the body tube so it sits right above the motor mount, between the ejection charge and the parachute
+   - Crumple each sheet loosely; it should fill the tube from wall to wall without being packed tight, so the ejection charge can still push everything out
+   - The shock cord and parachute go in **on top of** the wadding, and the parachute must never touch the motor end directly
+   </div>
+
+5. **Fully assembling the rocket** (nose cone on, everything secured) as if you were about to walk it to the pad.
+6. **Confirming the payload is still working** once it is sealed inside the rocket: you should be able to see the LEDs or hear the buzzer without taking the rocket apart.
+
+<div class="primer-spec-callout warning" markdown="1">
+**Do not install a motor or igniter for this test.** Everything else should be done exactly as it will be on launch day.
+</div>
+
+After filming, take the payload out, pull the microSD card, and show the data that was collected during the video:
+- Plot every sensor you are using against time for the whole recording
+- Point out the moments from the video in the data (e.g. powering on, inserting the payload, handling the rocket)
+- Show that your sample rates meet the requirements above and that no data was lost or corrupted
+
+#### Parachute Packing Research
+A parachute that doesn't open will destroy your payload, so the way you pack it matters. Before filming, each team must:
+- Research **three different methods** of packing a model rocket parachute
+- **Briefly** describe each method with a pro and a con (e.g. how reliably it opens, how much space it takes up, how easy it is to tangle, how quickly it can be packed at the field)
+- Explain **which method you chose and why** in a sentence or two
+- Cite where you found each method
+
+Use your chosen method in the Final Test video and include this research in your Go/No-Go presentation.
+
+<div class="primer-spec-callout info" markdown="1">
+**Keep this short.** The goal is just to see that there is more than one way to pack a parachute and that packing it well matters. This should take some time to research, but not hours, and only needs about **one slide** (under a minute) in your Go/No-Go presentation.
+</div>
 
 <div class="primer-spec-callout danger" markdown="1">
 All tests need to be presented at the Go/No-Go meeting. Each team must pass all tests before being OKed for launch.
