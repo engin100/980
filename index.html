@@ -32,6 +32,58 @@ toc: false
       object-position: center top;
       filter: brightness(60%);
     }
+    .countdown {
+      display: inline-block;
+      margin: 0 auto 16px;
+      padding: 14px 22px;
+      background-color: rgba(0, 39, 76, 0.85);
+      border: 2px solid #FFCB05;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+    }
+    .countdown-title {
+      color: #FFCB05;
+      font-weight: bold;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .countdown-date {
+      font-size: 0.95rem;
+      margin-top: 2px;
+    }
+    .countdown-units {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .countdown-unit {
+      min-width: 64px;
+    }
+    .countdown-unit .num {
+      display: block;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: bold;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+    .countdown-unit .label {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #cfd8e3;
+      margin-top: 4px;
+    }
+    .countdown [hidden] {
+      display: none;
+    }
+    .countdown-status {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
     .hero-text h1 {
       font-size: clamp(2.5rem, 5vw, 4rem);
       margin: 0.2em 0;
@@ -286,6 +338,17 @@ toc: false
   <div class="hero">
     <img src="{{ '/media/design-lab.png' | relative_url }}" alt="Design Lab Image">
     <div class="hero-text">
+      <div class="countdown" id="launch-countdown">
+        <div class="countdown-title">Launch Day Countdown</div>
+        <div class="countdown-date">Tuesday, November 24 &middot; 1:00&ndash;4:00 PM</div>
+        <div class="countdown-units">
+          <div class="countdown-unit"><span class="num" data-unit="days">--</span><span class="label">Days</span></div>
+          <div class="countdown-unit"><span class="num" data-unit="hours">--</span><span class="label">Hours</span></div>
+          <div class="countdown-unit"><span class="num" data-unit="minutes">--</span><span class="label">Minutes</span></div>
+          <div class="countdown-unit"><span class="num" data-unit="seconds">--</span><span class="label">Seconds</span></div>
+        </div>
+        <div class="countdown-status" hidden></div>
+      </div>
       <h1>Engineering 100-980</h1>
       <p>Rocket Science</p>
       <img class="eng-logo" src="{{ '/media/umich-coe4.png' | relative_url }}" alt="University of Michigan, College of Engineering">
@@ -411,6 +474,38 @@ toc: false
     <p><a class="button-link" href="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York">Open Calendar in Google</a></p>
   </section>
   <script>
+    // Launch day countdown (Ann Arbor time, EST in November)
+    (function() {
+      var START = new Date('2026-11-24T13:00:00-05:00').getTime();
+      var END = new Date('2026-11-24T16:00:00-05:00').getTime();
+      var box = document.getElementById('launch-countdown');
+      var units = box.querySelector('.countdown-units');
+      var status = box.querySelector('.countdown-status');
+      var nums = {};
+      box.querySelectorAll('[data-unit]').forEach(function(el) { nums[el.dataset.unit] = el; });
+      var timer;
+
+      function showStatus(text) {
+        units.hidden = true;
+        status.hidden = false;
+        status.textContent = text;
+      }
+
+      function tick() {
+        var now = Date.now();
+        if (now >= END) { showStatus('Launch day is complete. Thanks for flying with us!'); clearInterval(timer); return; }
+        if (now >= START) { showStatus('Launch in progress!'); return; }
+        var s = Math.floor((START - now) / 1000);
+        nums.days.textContent = Math.floor(s / 86400);
+        nums.hours.textContent = String(Math.floor(s / 3600) % 24).padStart(2, '0');
+        nums.minutes.textContent = String(Math.floor(s / 60) % 60).padStart(2, '0');
+        nums.seconds.textContent = String(s % 60).padStart(2, '0');
+      }
+
+      tick();
+      timer = setInterval(tick, 1000);
+    })();
+
     // PCB build progress, read live from the published Google Sheet
     (function() {
       var SHEET = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSAQBqZqb3p2WXXNEq2uaTOZUJpDVYvFNXW8rfPDskOq_bLEBnb3FucDRECbETh_McRk3sNvvOpjWYe/';
