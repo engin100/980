@@ -32,14 +32,19 @@ toc: false
       object-position: center top;
       filter: brightness(60%);
     }
-    .countdown {
-      display: inline-block;
-      margin: 0 auto 16px;
-      padding: 14px 22px;
+    .hero-panel {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 36px 24px;
       background-color: rgba(0, 39, 76, 0.85);
-      border: 2px solid #FFCB05;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+      border-top: 4px solid #FFCB05;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    }
+    .countdown {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
     .countdown-title {
       color: #FFCB05;
@@ -92,38 +97,52 @@ toc: false
       position: relative;
       width: 100%;
       box-sizing: border-box;
-      padding: 90px 20px 32px;
+      padding: 110px 20px 70px;
       text-align: center;
     }
     .hero-text p {
       margin: 0.2em 0;
       font-size: 1.2em;
     }
+    .hero-text p.hero-eyebrow {
+      margin: 0;
+      color: #FFCB05;
+      font-size: 1.1rem;
+      font-weight: bold;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .hero-text p.hero-lede {
+      max-width: 620px;
+      margin: 14px auto 0;
+      font-size: 1.05em;
+      line-height: 1.5;
+      color: #e6ebf1;
+    }
     .hero-text img.eng-logo {
       width: 200px;
       display: block;
       margin: 16px auto 0;
     }
-    .progress-card {
+    .progress-section {
       max-width: 1200px;
-      margin: 24px auto 0;
-      background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+      margin: 56px auto 40px;
+      padding: 0 20px;
       color: #00274C;
-      text-align: left;
-    }
-    .progress-caption {
-      background-color: #00274C;
-      color: #FFCB05;
-      font-weight: bold;
-      padding: 10px 14px;
       text-align: center;
     }
-    .hero-text p.progress-link {
-      margin-top: 16px;
-      font-size: 1em;
+    .progress-section h2 {
+      margin: 0 0 0.25em;
+    }
+    .progress-section p.intro {
+      margin: 0 0 1.5em;
+    }
+    .progress-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      text-align: left;
     }
     .progress-scroll {
       overflow-x: auto;
@@ -200,8 +219,14 @@ toc: false
     .status-done { background-color: #2e7d32; }
     .status-other { background-color: #5c6bc0; }
     .calendar {
-      margin: 40px auto;
+      margin: 0 auto;
       text-align: center;
+    }
+    .calendar-section h2 {
+      margin: 0 0 0.25em;
+    }
+    .calendar-section p.intro {
+      margin: 0 0 1.5em;
     }
     .calendar iframe {
       width: 100%;
@@ -209,7 +234,7 @@ toc: false
     }
     .calendar-section {
       max-width: 1000px;
-      margin: 40px auto;
+      margin: 56px auto;
       padding: 0 20px;
       color: #00274C;
       text-align: center;
@@ -338,6 +363,13 @@ toc: false
   <div class="hero">
     <img src="{{ '/media/design-lab.png' | relative_url }}" alt="Design Lab Image">
     <div class="hero-text">
+      <div class="hero-panel">
+      <p class="hero-eyebrow">Welcome to</p>
+      <h1>Engineering 100-980</h1>
+      <p>Rocket Science</p>
+      <p class="hero-lede">Over the course of the next semester, you will be learning how to solder, program Arduino micro-controllers, design circuit boards, create 3D CAD files, and launch rockets!</p>
+      <p class="hero-lede">This webpage serves as the homepage for this class. From here, you can access any resources you may need, including the syllabus, labs, and more.</p>
+      <img class="eng-logo" src="{{ '/media/umich-coe4.png' | relative_url }}" alt="University of Michigan, College of Engineering">
       <div class="countdown" id="launch-countdown">
         <div class="countdown-title">Launch Day Countdown</div>
         <div class="countdown-date">Tuesday, November 24 &middot; 1:00&ndash;4:00 PM</div>
@@ -349,24 +381,31 @@ toc: false
         </div>
         <div class="countdown-status" hidden></div>
       </div>
-      <h1>Engineering 100-980</h1>
-      <p>Rocket Science</p>
-      <img class="eng-logo" src="{{ '/media/umich-coe4.png' | relative_url }}" alt="University of Michigan, College of Engineering">
-      <div class="progress-card">
-        <div class="progress-caption">PCB Build Progress &mdash; do these in order, left &rarr; right</div>
-        <div class="progress-scroll">
-          <table class="progress-table" id="pcb-progress">
-            <tbody><tr><td class="progress-message">Loading team progress&hellip;</td></tr></tbody>
-          </table>
-        </div>
       </div>
-      <p class="progress-link"><a class="button-link" href="https://docs.google.com/spreadsheets/d/1iIWKfQP_2mutuzimVdfFsbymK9aJVsWVjc5083C_Afo/edit?usp=drive_link">Open Project Tracker in Google Sheets</a></p>
     </div>
   </div>
+  <section class="progress-section">
+    <h2>PCB Build Progress</h2>
+    <p class="intro">Complete these steps in order, left to right.</p>
+    <div class="progress-card">
+      <div class="progress-scroll">
+        <table class="progress-table" id="pcb-progress">
+          <tbody><tr><td class="progress-message">Loading team progress&hellip;</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p><a class="button-link" href="https://docs.google.com/spreadsheets/d/1iIWKfQP_2mutuzimVdfFsbymK9aJVsWVjc5083C_Afo/edit?usp=drive_link">Open Project Tracker in Google Sheets</a></p>
+  </section>
+  <section class="calendar-section">
+    <h2>Office Hours &amp; Course Calendar</h2>
+    <p class="intro">Office hours, labs, and lectures are all on the calendar. Hours can change, so check here or Slack before you go.</p>
+    <div class="calendar">
+      <iframe src="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York&mode=WEEK" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <p><a class="button-link" href="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York">Open Calendar in Google</a></p>
+  </section>
   <section class="about">
-    <h2>Welcome to Engineering 100-980!</h2>
-    <p>Welcome to Engineering 100-980! Over the course of the next semester, you will be learning how to solder, program Arduino micro-controllers, design circuit boards, create 3D CAD files, and launch rockets!</p>
-    <p>This webpage serves as the homepage for this class. From here, you can access any resources you may need, including the syllabus, labs, and more.</p>
+    <h2>Course Resources</h2>
   </section>
   <section class="links">
     <div class="link-group">
@@ -465,13 +504,6 @@ toc: false
       <button class="hof-arrow hof-prev">&#10094;</button>
       <button class="hof-arrow hof-next">&#10095;</button>
     </div>
-  </section>
-  <section class="calendar-section">
-    <h2>Course Calendar</h2>
-    <div class="calendar">
-      <iframe src="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-    <p><a class="button-link" href="https://calendar.google.com/calendar/embed?src=c_a4c156beeb11d05a1542920150a80d723c2939152f01a0226b332c27403bb8c6%40group.calendar.google.com&ctz=America%2FNew_York">Open Calendar in Google</a></p>
   </section>
   <script>
     // Launch day countdown (Ann Arbor time, EST in November)
