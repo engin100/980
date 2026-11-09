@@ -43,8 +43,6 @@ Write a short IEEE-formatted essay arguing whether NASA is still a hub for innov
 
 [Link to argumentative essay](/tech-comm/argumentative-essay)
 
-<!--
-
 ## Project Review
 
 Deliver a slide deck presentation on your project's progress, design decisions, and next steps.
@@ -74,5 +72,3 @@ Create an investor-focused slide deck pitching your proposed product, company, o
 Create an investor-focused "Kickstarter video" telling the story of your semester's work.
 
 [Link to final video](/tech-comm/final-video)
-
--->
