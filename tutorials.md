@@ -7,6 +7,8 @@ latex: true
 
 Walk-throughs on common issues or installations.
 
+Stuck on your Arduino code? See [Programming Tips](/programming-tips) for timers, sensor quirks, and SD logging.
+
 ## Contents
 
 - [Tutorials](#tutorials)

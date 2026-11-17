@@ -7,6 +7,8 @@ latex: true
 
 As we publish labs, they will become available here. 
 
+Stuck on the code? Check out the [Programming Tips](/programming-tips) page.
+
 ## Lab 1: Arduino 101
 
 Learning how to program and wire an Arduino micro-controller to control LEDs on a breadboard.
