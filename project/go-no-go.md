@@ -14,7 +14,7 @@ Validate that the system works while sitting on the workbench and that all senso
 - If your board has a buzzer, the video should also highlight the buzzer going off at an appropriate time
 
 ### 2. Pendulum Test
-Attach the sensor board (with battery) to different lengths of strings. Take data while the sensor board swings back and forth. [Tips for the pendulum test.](/project/pendulum)
+Attach the sensor board (with battery) to certain length of string. Take data while the sensor board swings back and forth. [Tips for the pendulum test.](/project/pendulum)
 - Show that the measured 3D acceleration can be used to determine the angle and velocity of the sensor board as it swings
 - Show that the period of the pendulum is as expected from an analytical solution
 
